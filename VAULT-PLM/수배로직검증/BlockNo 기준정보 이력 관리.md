@@ -8,7 +8,8 @@ tags:
 ---
 <span style="color:rgb(194, 68, 0)">| PLM에서 BlockNo 기준정보 조회 Query</span>
 
-`SELECT  
+```
+SELECT  
        A.MD$NUMBER, --BLOCK NO  
        A.MD$CDATE, --등록일  
        A.MD$MDATE, --수정일  
@@ -48,6 +49,28 @@ tags:
        A.COLOR21, A.COLOR22, A.COLOR23, A.COLOR24, A.COLOR25, A.COLOR26, A.COLOR27, A.COLOR28, A.COLOR29, A.COLOR30  
 FROM BLOCKNO$SF A  
 --WHERE A.MD$NUMBER = 'E280A99'  
-;`
+```
+;
 
+
+<span style="color:rgb(194, 68, 0)"> | BlockNo 정보 저장 테이블 </span>
+`
+```
+CREATE TABLE BLOCK_HISTORY (  
+    BLOCKNO VARCHAR(50) NOT NULL,  
+    BLOCKNAME VARCHAR(100),  
+    VERSION VARCHAR(20),  
+    GC_PRODUCT VARCHAR(20),  -- 제품군  
+    PARTTYPE VARCHAR(20),  -- 자재유형  
+    BLOCK_OPT VARCHAR(20),  -- 품목구분  
+    MODDATE VARCHAR(50),  -- 수정일  
+    UOM VARCHAR(20), -- 단위  
+  
+    PICK VARCHAR(2000),  
+    PICKNAME VARCHAR(2000),  
+    QTY VARCHAR(2000),  
+    CMT VARCHAR(2000),  
+    COLOR VARCHAR(2000)  
+);
+```
 
