@@ -7,3 +7,9 @@
 
 
 
+### 🔗옵시디언 경로
+- C:\obsidiak_document\kyh_obsidi\
+
+
+## **🔗** 개발 소스 경로
+- C:\Dev_WorkSpace\hyundai_work\boot_jsp
