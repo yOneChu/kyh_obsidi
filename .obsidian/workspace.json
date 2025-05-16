@@ -10,7 +10,7 @@
           {
             "id": "f924f5b3bc0ccfb3",
             "type": "tabs",
-            "dimension": 69.1970802919708,
+            "dimension": 64.34010152284264,
             "children": [
               {
                 "id": "daef085651fd1a2d",
@@ -32,12 +32,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "VAULT-PLM/Query-정리/제품 관련 Query.md",
+                    "file": "업무/To Do List.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "제품 관련 Query"
+                  "title": "To Do List"
                 }
               }
             ],
@@ -46,25 +46,25 @@
           {
             "id": "cc12038df02030eb",
             "type": "split",
-            "dimension": 30.802919708029197,
+            "dimension": 35.659898477157356,
             "children": [
               {
                 "id": "1b03f33b8525fd56",
                 "type": "tabs",
-                "dimension": 61.050328227571114,
+                "dimension": 53.07692307692307,
                 "children": [
                   {
-                    "id": "189a854fe1e7dd57",
+                    "id": "c9d440fc766e4eeb",
                     "type": "leaf",
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "업무/To Do List.md",
+                        "file": "VAULT_고도화/ㅇㄴㅇㄴㅇ.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "To Do List"
+                      "title": "ㅇㄴㅇㄴㅇ"
                     }
                   }
                 ]
@@ -72,7 +72,7 @@
               {
                 "id": "0233f3c4c8ee39f1",
                 "type": "tabs",
-                "dimension": 38.949671772428886,
+                "dimension": 46.92307692307693,
                 "children": [
                   {
                     "id": "d4e8111467a9864c",
@@ -265,41 +265,41 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "189a854fe1e7dd57",
+  "active": "d7516f74473e811f",
   "lastOpenFiles": [
+    "VAULT_고도화/프로젝트 개요.md",
+    "VAULT_고도화/목차.md",
+    "VAULT_고도화/ㅇㄴㅇㄴㅇ.md",
+    "VAULT_고도화/완료보고서.md",
+    "업무/업무일지/2025-05-13.md",
+    "VAULT-PLM/Query-정리/견적 연동 기록.md",
+    "VAULT_고도화/도면뷰어.md",
+    "업무/업무일지/2025-05-16(금).md",
     "업무/업무일지/2025-05-15(목).md",
+    "VAULT-PLM/수배로직/법인출장 관련(팀장) 요청 사항.md",
+    "VAULT-PLM/수배로직/수배로직 공부.md",
     "VAULT-PLM/Query-정리/제품 관련 Query.md",
+    "업무/To Do List.md",
     "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
     "엘리베이터/기계실/STATOR(스테이터).md",
-    "업무/To Do List.md",
-    "업무/업무일지/2025-05-13.md",
     "업무/업무일지/2025-05-12.md",
     "업무/업무일지/2025-05-14(수).md",
     "엘리베이터/CAR/CAR CAGE.md",
     "독서노트/📚 초압축 공부법.md",
-    "VAULT_고도화/완료보고서.md",
     "Untitled.canvas",
     "독서노트/숫자로 일하는 법/0. 목차.md",
     "2025-05-11.md",
     "Untitled.md",
-    "VAULT_고도화/ㅇㄴㅇㄴㅇ.md",
     "VAULT_고도화",
     "Pasted image 20250508210813.png",
     "엘리베이터/CAR/레일브라켓 방진 라이너.md",
     "엘리베이터/용어/조적작업.md",
     "엘리베이터/CAR/FLATFORM.md",
     "엘리베이터/CAR/기타 정보.md",
-    "엘리베이터/용어/재질 관련.md",
     "image/Pasted image 20250513083954.png",
-    "엘리베이터/CAR/보상 체인(Compensation Chain) = Compen Hitch Plate.md",
     "image",
-    "엘리베이터/용어/기타용어.md",
-    "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
     "Pasted image 20250513083010.png",
     "Pasted image 20250512084657.png",
-    "독서노트/숫자로 일하는 법/2. 집중해야 할 숫자를  파악한다..md",
-    "독서노트/숫자로 일하는 법/1. 먼저 문제가 무엇인지 정확히 알아야 한다..md",
-    "독서노트/숫자로 일하는 법/1. 먼제 문제가 무엇인지.md",
     "독서노트/숫자로 일하는 법",
     "VAULT-PLM/수배로직",
     "VAULT-PLM/Query-정리",
