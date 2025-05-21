@@ -6,10 +6,6 @@ tags:
 ---
 
 
-```
-select * from ZMMT005  
-WHERE LIFNR = '20410518G2300';
-```
 
 ### | 📝 JQPR 정보
 ```
