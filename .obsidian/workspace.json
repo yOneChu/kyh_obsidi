@@ -32,12 +32,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "업무/To Do List.md",
+                    "file": "VAULT-PLM/MLB/중국 자재번호 규칙.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "To Do List"
+                  "title": "중국 자재번호 규칙"
                 }
               }
             ],
@@ -80,7 +80,7 @@
                     "state": {
                       "type": "localgraph",
                       "state": {
-                        "file": "업무/To Do List.md",
+                        "file": "VAULT-PLM/MLB/중국 자재번호 규칙.md",
                         "options": {
                           "collapse-filter": false,
                           "search": "",
@@ -103,12 +103,12 @@
                           "repelStrength": 10,
                           "linkStrength": 1,
                           "linkDistance": 250,
-                          "scale": 1.0000000000000022,
+                          "scale": 1.0000000000000033,
                           "close": true
                         }
                       },
                       "icon": "lucide-git-fork",
-                      "title": "Graph of To Do List"
+                      "title": "Graph of 중국 자재번호 규칙"
                     }
                   }
                 ]
@@ -267,18 +267,24 @@
   },
   "active": "d7516f74473e811f",
   "lastOpenFiles": [
-    "업무/업무일지/2025-05-16(금).md",
-    "VAULT-PLM/SAP/JQPR 정보.md",
+    "VAULT-PLM/MLB/00. 업무절차.md",
+    "VAULT-PLM/MLB/중국 자재번호 규칙.md",
     "VAULT_고도화/설계복사.md",
+    "VAULT-PLM/MLB",
+    "VAULT_고도화/ㅇㄴㅇㄴㅇ.md",
+    "VAULT_고도화/도면뷰어.md",
+    "업무/To Do List.md",
+    "SAP/JQPR 정보.md",
+    "SAP/💡 SAP 계정.md",
+    "image/Pasted image 20250522091543.png",
+    "image/Pasted image 20250522091321.png",
+    "업무/업무일지/2025-05-16(금).md",
     "VAULT-PLM/SAP",
     "업무/업무일지/2025-05-13.md",
-    "VAULT_고도화/도면뷰어.md",
     "VAULT_고도화/목차.md",
-    "VAULT_고도화/ㅇㄴㅇㄴㅇ.md",
     "VAULT_고도화/완료보고서.md",
     "VAULT-PLM/수배로직/자동화율.md",
     "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
-    "업무/To Do List.md",
     "VAULT_고도화/프로젝트 개요.md",
     "VAULT-PLM/Query-정리/견적 연동 기록.md",
     "업무/업무일지/2025-05-15(목).md",
@@ -292,9 +298,6 @@
     "엘리베이터/CAR/CAR CAGE.md",
     "독서노트/📚 초압축 공부법.md",
     "Untitled.canvas",
-    "독서노트/숫자로 일하는 법/0. 목차.md",
-    "2025-05-11.md",
-    "Untitled.md",
     "VAULT_고도화",
     "Pasted image 20250508210813.png",
     "image/Pasted image 20250513083954.png",
@@ -306,7 +309,6 @@
     "VAULT-PLM/Query-정리",
     "업무/업무일지",
     "엘리베이터/PIT",
-    "SAP",
-    "독서노트"
+    "SAP"
   ]
 }
