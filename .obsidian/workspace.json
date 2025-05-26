@@ -32,12 +32,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "VAULT-PLM/MLB/중국 자재번호 규칙.md",
+                    "file": "업무/To Do List.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "중국 자재번호 규칙"
+                  "title": "To Do List"
                 }
               }
             ],
@@ -80,7 +80,7 @@
                     "state": {
                       "type": "localgraph",
                       "state": {
-                        "file": "VAULT-PLM/MLB/중국 자재번호 규칙.md",
+                        "file": "업무/To Do List.md",
                         "options": {
                           "collapse-filter": false,
                           "search": "",
@@ -108,7 +108,7 @@
                         }
                       },
                       "icon": "lucide-git-fork",
-                      "title": "Graph of 중국 자재번호 규칙"
+                      "title": "Graph of To Do List"
                     }
                   }
                 ]
@@ -267,8 +267,10 @@
   },
   "active": "d7516f74473e811f",
   "lastOpenFiles": [
-    "VAULT-PLM/MLB/00. 업무절차.md",
+    "업무/업무일지/2025-05-16(금).md",
+    "업무/업무일지/2025-05-13.md",
     "VAULT-PLM/MLB/중국 자재번호 규칙.md",
+    "VAULT-PLM/MLB/00. 업무절차.md",
     "VAULT_고도화/설계복사.md",
     "VAULT-PLM/MLB",
     "VAULT_고도화/ㅇㄴㅇㄴㅇ.md",
@@ -278,9 +280,7 @@
     "SAP/💡 SAP 계정.md",
     "image/Pasted image 20250522091543.png",
     "image/Pasted image 20250522091321.png",
-    "업무/업무일지/2025-05-16(금).md",
     "VAULT-PLM/SAP",
-    "업무/업무일지/2025-05-13.md",
     "VAULT_고도화/목차.md",
     "VAULT_고도화/완료보고서.md",
     "VAULT-PLM/수배로직/자동화율.md",
