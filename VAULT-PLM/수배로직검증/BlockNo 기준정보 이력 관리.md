@@ -6,7 +6,14 @@ tags:
 
 
 ---
-<span style="color:rgb(194, 68, 0)">| PLM에서 BlockNo 기준정보 조회 Query</span>
+### 📌 수행 프로세스
+1. 초기화
+	- PLM에서 BlockNo 기준정보 전체 조회해서 저장
+
+
+
+
+📝 <span style="color:rgb(194, 68, 0)">| PLM에서 BlockNo 기준정보 조회 Query</span>
 
 ```
 SELECT  
@@ -54,8 +61,7 @@ WHERE SUBSTR(A.MD$MDATE, 0, 8) = '20250424'
 ;
 
 
-<span style="color:rgb(194, 68, 0)"> | BlockNo 정보 저장 테이블 </span>
-`
+📝<span style="color:rgb(194, 68, 0)"> | BlockNo 정보 저장 테이블 </span>
 ```
 CREATE TABLE BLOCK_HISTORY (  
     BLOCKNO VARCHAR(50) NOT NULL,  
@@ -65,13 +71,14 @@ CREATE TABLE BLOCK_HISTORY (
     PARTTYPE VARCHAR(20),  -- 자재유형  
     BLOCK_OPT VARCHAR(20),  -- 품목구분  
     MODDATE VARCHAR(50),  -- 수정일  
+    CREDATE VARCHAR(50), -- 테이블에 입력일
     UOM VARCHAR(20), -- 단위  
   
     PICK VARCHAR(2000),  
     PICKNAME VARCHAR(2000),  
     QTY VARCHAR(2000),  
     CMT VARCHAR(2000),  
-    COLOR VARCHAR(2000)  
+    COLOR VARCHAR(2000)
 );
 ```
 
