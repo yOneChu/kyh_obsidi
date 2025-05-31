@@ -32,12 +32,26 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "업무/To Do List.md",
+                    "file": "엘리베이터/CAR/SAFETY.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "To Do List"
+                  "title": "SAFETY"
+                }
+              },
+              {
+                "id": "9d2266e1236faf51",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "독서노트/📚 초압축 공부법.md",
+                    "mode": "source",
+                    "source": false
+                  },
+                  "icon": "lucide-file",
+                  "title": "📚 초압축 공부법"
                 }
               },
               {
@@ -55,7 +69,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 2
           },
           {
             "id": "cc12038df02030eb",
@@ -73,12 +87,12 @@
                     "state": {
                       "type": "markdown",
                       "state": {
-                        "file": "VAULT_고도화/ㅇㄴㅇㄴㅇ.md",
+                        "file": "업무/To Do List.md",
                         "mode": "source",
                         "source": false
                       },
                       "icon": "lucide-file",
-                      "title": "ㅇㄴㅇㄴㅇ"
+                      "title": "To Do List"
                     }
                   }
                 ]
@@ -279,13 +293,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d7516f74473e811f",
+  "active": "c9d440fc766e4eeb",
   "lastOpenFiles": [
     "독서노트/📚 초압축 공부법.md",
+    "업무/To Do List.md",
+    "VAULT_고도화/ㅇㄴㅇㄴㅇ.md",
+    "엘리베이터/CAR/CAR CAGE.md",
+    "엘리베이터/CAR/SAFETY.md",
+    "엘리베이터/용어/조적작업.md",
     "독서노트/숫자로 일하는 법/2. 집중해야 할 숫자를  파악한다..md",
     "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
-    "VAULT_고도화/ㅇㄴㅇㄴㅇ.md",
-    "업무/To Do List.md",
     "VAULT_고도화/목차.md",
     "VAULT_고도화/도면뷰어.md",
     "VAULT_고도화/설계복사.md",
@@ -305,12 +322,9 @@
     "업무/업무일지/2025-05-13.md",
     "VAULT-PLM/MLB",
     "SAP/JQPR 정보.md",
-    "SAP/💡 SAP 계정.md",
     "image/Pasted image 20250522091543.png",
     "image/Pasted image 20250522091321.png",
     "VAULT-PLM/SAP",
-    "업무/업무일지/2025-05-15(목).md",
-    "엘리베이터/기계실/STATOR(스테이터).md",
     "Untitled.canvas",
     "VAULT_고도화",
     "Pasted image 20250508210813.png",
