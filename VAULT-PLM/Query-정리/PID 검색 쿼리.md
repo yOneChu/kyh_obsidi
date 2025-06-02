@@ -5,7 +5,7 @@ tags:
 ---
 ---
 
-
+### ✍️ PID 조회
 ```
 ## SPEC 조건  
 SELECT h.pid, D.NO, NVL(D.REMARKS, '-') AS REMARKS,  
@@ -54,7 +54,7 @@ SELECT h.pid, D.NO, NVL(D.REMARKS, '-') AS REMARKS,
 		 AND h.HOUID =d.HOUID  
 AND (  
 		D.SPEC1 LIKE '%EL_BWMT%' OR D.SPEC2 LIKE '%EL_BWMT%'  
-		OR D.CON3 LIKE '%EL_BWMT%'  OR D.SPEC4 LIKE '%EL_BWMT%'  
+		OR D.SPEC3 LIKE '%EL_BWMT%'  OR D.SPEC4 LIKE '%EL_BWMT%'  
 		OR D.SPEC5 LIKE '%EL_BWMT%' OR D.SPEC6 LIKE '%EL_BWMT%'  
 		OR D.SPEC7 LIKE '%EL_BWMT%' OR D.SPEC18 LIKE '%EL_BWMT%'  
 		OR D.SPEC9 LIKE '%EL_BWMT%' OR D.SPEC10 LIKE '%EL_BWMT%'  
@@ -69,7 +69,7 @@ AND (
 ```
 
 
-#### | SEPC 1개 EQUAL
+#### 💻| SEPC 1개 EQUAL
 ```
 AND (  
 		D.SPEC1 = 'EL_BWMT' OR D.SPEC2 = 'EL_BWMT'  
@@ -84,4 +84,20 @@ AND (
 		OR D.SPEC17 = 'EL_BWMT' OR D.SPEC18 = 'EL_BWMT'  
 		OR D.SPEC19 = 'EL_BWMT' OR D.SPEC20 = 'EL_BWMT'  
 	)
+```
+
+### 💻| CON - LIKE
+```
+AND (  
+      D.CON1 LIKE '%KC01%' OR D.CON2 LIKE '%KC01%'  
+      OR D.CON3 LIKE '%KC01%' OR D.CON4 LIKE '%KC01%'  
+      OR D.CON5 LIKE '%KC01%' OR D.CON6 LIKE '%KC01%'  
+      OR D.CON7 LIKE '%KC01%' OR D.CON18 LIKE '%KC01%'  
+      OR D.CON9 LIKE '%KC01%' OR D.CON10 LIKE '%KC01%'  
+      OR D.CON11 LIKE '%KC01%' OR D.CON12 LIKE '%KC01%'  
+      OR D.CON13 LIKE '%KC01%' OR D.CON14 LIKE '%KC01%'  
+      OR D.CON15 LIKE '%KC01%' OR D.CON16 LIKE '%KC01%'  
+      OR D.CON17 LIKE '%KC01%' OR D.CON18 LIKE '%KC01%'  
+      OR D.CON19 LIKE '%KC01%' OR D.CON20 LIKE '%KC01%'  
+   )
 ```

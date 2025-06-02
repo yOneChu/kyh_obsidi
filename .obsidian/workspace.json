@@ -46,12 +46,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "업무/📚시험일정.md",
+                    "file": "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "📚시험일정"
+                  "title": "PID 검색 쿼리"
                 }
               },
               {
@@ -108,7 +108,7 @@
                     "state": {
                       "type": "localgraph",
                       "state": {
-                        "file": "업무/To Do List.md",
+                        "file": "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
                         "options": {
                           "collapse-filter": false,
                           "search": "",
@@ -136,7 +136,7 @@
                         }
                       },
                       "icon": "lucide-git-fork",
-                      "title": "Graph of To Do List"
+                      "title": "Graph of PID 검색 쿼리"
                     }
                   }
                 ]
@@ -293,11 +293,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c9d440fc766e4eeb",
+  "active": "9d2266e1236faf51",
   "lastOpenFiles": [
+    "업무/To Do List.md",
+    "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
+    "VAULT-PLM/Query-정리/제품 관련 Query.md",
+    "VAULT-PLM/Query-정리/견적 연동 기록.md",
     "업무/📚시험일정.md",
     "독서노트/📚 초압축 공부법.md",
-    "업무/To Do List.md",
     "VAULT_고도화/ㅇㄴㅇㄴㅇ.md",
     "엘리베이터/CAR/CAR CAGE.md",
     "엘리베이터/CAR/SAFETY.md",
@@ -315,9 +318,6 @@
     "VAULT-PLM/수배로직/자동화율.md",
     "VAULT-PLM/MLB/00. 업무절차.md",
     "VAULT-PLM/MLB/중국 자재번호 규칙.md",
-    "VAULT-PLM/Query-정리/견적 연동 기록.md",
-    "VAULT-PLM/Query-정리/제품 관련 Query.md",
-    "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
     "VAULT-PLM/부품공용화 대시보드.md",
     "업무/업무일지/2025-05-16(금).md",
     "업무/업무일지/2025-05-13.md",
