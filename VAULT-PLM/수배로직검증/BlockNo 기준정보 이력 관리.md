@@ -59,7 +59,7 @@ WHERE SUBSTR(A.MD$MDATE, 0, 8) = '20250424'
 ```
 ;
 
-
+partManagement
 📝<span style="color:rgb(194, 68, 0)"> | BlockNo 정보 저장 테이블 </span>
 ```
 CREATE TABLE BLOCK_HISTORY (  
@@ -70,14 +70,20 @@ CREATE TABLE BLOCK_HISTORY (
     PARTTYPE VARCHAR(20),  -- 자재유형  
     BLOCK_OPT VARCHAR(20),  -- 품목구분  
     MODDATE VARCHAR(50),  -- 수정일  
-    CREDATE VARCHAR(50), -- 테이블에 입력일
+    CREDATE VARCHAR(50), -- 테이블에 입력일  
     UOM VARCHAR(20), -- 단위  
-  
+    BLOCK_STATUS VARCHAR(50), --활성상태  
+    PARTMANAGEMENT VARCHAR(50), --부품명 관리  
+    MATERIAL_CHECK VARCHAR(50), -- 재질관리  
+    LEVEL1 VARCHAR(50), --신1레벨여부  
+    FLOOR_PART VARCHAR(50), -- 층별부품  
+    MODUSER VARCHAR(50), --수정자  
+    DRAWINGONLY VARCHAR(50),  
     PICK VARCHAR(2000),  
     PICKNAME VARCHAR(2000),  
     QTY VARCHAR(2000),  
     CMT VARCHAR(2000),  
-    COLOR VARCHAR(2000)
+    COLOR VARCHAR(2000)  
 );
 ```
 

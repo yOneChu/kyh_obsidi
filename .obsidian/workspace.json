@@ -108,7 +108,7 @@
                     "state": {
                       "type": "localgraph",
                       "state": {
-                        "file": "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
+                        "file": "업무/To Do List.md",
                         "options": {
                           "collapse-filter": false,
                           "search": "",
@@ -136,7 +136,7 @@
                         }
                       },
                       "icon": "lucide-git-fork",
-                      "title": "Graph of PID 검색 쿼리"
+                      "title": "Graph of To Do List"
                     }
                   }
                 ]
@@ -293,10 +293,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d2266e1236faf51",
+  "active": "c9d440fc766e4eeb",
   "lastOpenFiles": [
-    "업무/To Do List.md",
     "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
+    "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
+    "업무/To Do List.md",
     "VAULT-PLM/Query-정리/제품 관련 Query.md",
     "VAULT-PLM/Query-정리/견적 연동 기록.md",
     "업무/📚시험일정.md",
@@ -306,7 +307,6 @@
     "엘리베이터/CAR/SAFETY.md",
     "엘리베이터/용어/조적작업.md",
     "독서노트/숫자로 일하는 법/2. 집중해야 할 숫자를  파악한다..md",
-    "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
     "VAULT_고도화/목차.md",
     "VAULT_고도화/도면뷰어.md",
     "VAULT_고도화/설계복사.md",
