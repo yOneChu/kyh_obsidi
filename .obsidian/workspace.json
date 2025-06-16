@@ -10,38 +10,20 @@
           {
             "id": "f924f5b3bc0ccfb3",
             "type": "tabs",
-            "dimension": 59.22818791946308,
+            "dimension": 56.66131621187801,
             "children": [
               {
                 "id": "daef085651fd1a2d",
                 "type": "leaf",
                 "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "업무/업무일지/2025-05-13.md",
-                    "mode": "source",
-                    "source": false
-                  },
+                  "type": "empty",
+                  "state": {},
                   "icon": "lucide-file",
-                  "title": "2025-05-13"
+                  "title": "New tab"
                 }
               },
               {
-                "id": "d7516f74473e811f",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "엘리베이터/CAR/SAFETY.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "SAFETY"
-                }
-              },
-              {
-                "id": "9d2266e1236faf51",
+                "id": "e23cdf47a60fbf51",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
@@ -53,33 +35,19 @@
                   "icon": "lucide-file",
                   "title": "수배로직 공부"
                 }
-              },
-              {
-                "id": "e23cdf47a60fbf51",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
-                    "mode": "source",
-                    "source": false
-                  },
-                  "icon": "lucide-file",
-                  "title": "BlockNo 기준정보 이력 관리"
-                }
               }
             ],
-            "currentTab": 2
+            "currentTab": 1
           },
           {
             "id": "cc12038df02030eb",
             "type": "split",
-            "dimension": 40.77181208053691,
+            "dimension": 43.33868378812199,
             "children": [
               {
                 "id": "1b03f33b8525fd56",
                 "type": "tabs",
-                "dimension": 57.64563106796117,
+                "dimension": 54.36893203883495,
                 "children": [
                   {
                     "id": "c9d440fc766e4eeb",
@@ -100,7 +68,7 @@
               {
                 "id": "0233f3c4c8ee39f1",
                 "type": "tabs",
-                "dimension": 42.35436893203883,
+                "dimension": 45.63106796116505,
                 "children": [
                   {
                     "id": "d4e8111467a9864c",
@@ -293,35 +261,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9d2266e1236faf51",
+  "active": "e23cdf47a60fbf51",
   "lastOpenFiles": [
-    "VAULT-PLM/수배로직/자동화율.md",
-    "엘리베이터/기계실/메인 엔코더(Main rotary Encoder).md",
-    "엘리베이터/기계실/머신룸.md",
+    "English/영문장외우기/ㄷㄹㄷㄹ.md",
+    "업무/To Do List.md",
+    "VAULT-PLM/수배로직/✍️ 수배 정리.md",
+    "English/영문장외우기",
+    "English",
+    "VAULT-PLM/수배로직/수배로직 공부.md",
+    "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
+    "VAULT-PLM/수배로직/법인출장 관련(팀장) 요청 사항.md",
+    "VAULT-PLM/Query-정리/견적 연동 기록.md",
+    "VAULT-PLM/Query-정리/제품 관련 Query.md",
+    "image/Pasted image 20250609144235.png",
+    "VAULT_고도화/목차.md",
+    "VAULT_고도화/ㅇㄴㅇㄴㅇ.md",
     "엘리베이터/기계실/기계실.md",
+    "엘리베이터/기계실/메인 엔코더(Main rotary Encoder).md",
+    "엘리베이터/CAR/기타 정보.md",
+    "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
+    "업무/업무일지/2025-05-13.md",
+    "업무/업무일지/2025-05-15(목).md",
+    "VAULT-PLM/수배로직/자동화율.md",
+    "엘리베이터/기계실/머신룸.md",
     "엘리베이터/CAR/CAR CAGE.md",
     "엘리베이터/CAR/Sub Weight.md",
     "엘리베이터/용어/기타용어.md",
     "독서노트/숫자로 일하는 법/0. 목차.md",
-    "VAULT_고도화/목차.md",
-    "업무/To Do List.md",
     "VAULT-PLM/PLM-함수/영업사양 쪽.md",
-    "VAULT-PLM/수배로직/수배로직 공부.md",
     "VAULT-PLM/PLM-함수",
-    "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
     "업무/📚시험일정.md",
-    "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
-    "VAULT-PLM/Query-정리/제품 관련 Query.md",
-    "VAULT-PLM/Query-정리/견적 연동 기록.md",
     "독서노트/📚 초압축 공부법.md",
-    "VAULT_고도화/ㅇㄴㅇㄴㅇ.md",
     "엘리베이터/CAR/SAFETY.md",
-    "엘리베이터/용어/조적작업.md",
-    "독서노트/숫자로 일하는 법/2. 집중해야 할 숫자를  파악한다..md",
-    "VAULT_고도화/도면뷰어.md",
-    "VAULT_고도화/설계복사.md",
-    "VAULT_고도화/설계복사 란.md",
-    "VAULT_고도화/완료보고서.md",
     "VAULT-PLM/MLB",
     "image/Pasted image 20250522091543.png",
     "image/Pasted image 20250522091321.png",
@@ -335,8 +306,6 @@
     "Pasted image 20250512084657.png",
     "독서노트/숫자로 일하는 법",
     "VAULT-PLM/수배로직",
-    "VAULT-PLM/Query-정리",
-    "업무/업무일지",
-    "엘리베이터/PIT"
+    "VAULT-PLM/Query-정리"
   ]
 }
