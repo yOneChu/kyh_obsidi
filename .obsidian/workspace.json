@@ -263,6 +263,7 @@
   },
   "active": "e23cdf47a60fbf51",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "English/영문장외우기/ㄷㄹㄷㄹ.md",
     "VAULT-PLM/수배로직/수배로직 공부.md",
     "업무/To Do List.md",
@@ -276,6 +277,12 @@
     "image/Pasted image 20250609144235.png",
     "VAULT_고도화/목차.md",
     "VAULT_고도화/ㅇㄴㅇㄴㅇ.md",
+=======
+    "VAULT-PLM/수배로직/자동화율.md",
+    "VAULT-PLM/수배로직/수배로직 공부.md",
+    "엘리베이터/기계실/메인 엔코더(Main rotary Encoder).md",
+    "엘리베이터/기계실/머신룸.md",
+>>>>>>> 1ff0afb88c931f89fc45df58f50c8e4ea5ceac09
     "엘리베이터/기계실/기계실.md",
     "엘리베이터/기계실/메인 엔코더(Main rotary Encoder).md",
     "엘리베이터/CAR/기타 정보.md",
