@@ -28,12 +28,12 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "VAULT-PLM/수배로직/수배로직 공부.md",
+                    "file": "English/영문장외우기/ㄷㄹㄷㄹ.md",
                     "mode": "source",
                     "source": false
                   },
                   "icon": "lucide-file",
-                  "title": "수배로직 공부"
+                  "title": "ㄷㄹㄷㄹ"
                 }
               }
             ],
@@ -76,7 +76,7 @@
                     "state": {
                       "type": "localgraph",
                       "state": {
-                        "file": "VAULT-PLM/수배로직/수배로직 공부.md",
+                        "file": "English/영문장외우기/ㄷㄹㄷㄹ.md",
                         "options": {
                           "collapse-filter": false,
                           "search": "",
@@ -104,7 +104,7 @@
                         }
                       },
                       "icon": "lucide-git-fork",
-                      "title": "Graph of 수배로직 공부"
+                      "title": "Graph of ㄷㄹㄷㄹ"
                     }
                   }
                 ]
@@ -261,14 +261,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e23cdf47a60fbf51",
+  "active": "96957718a89f04b9",
   "lastOpenFiles": [
+    "VAULT-PLM/수배로직/수배로직 공부.md",
     "English/영문장외우기/ㄷㄹㄷㄹ.md",
     "업무/To Do List.md",
     "VAULT-PLM/수배로직/✍️ 수배 정리.md",
     "English/영문장외우기",
     "English",
-    "VAULT-PLM/수배로직/수배로직 공부.md",
     "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
     "VAULT-PLM/수배로직/법인출장 관련(팀장) 요청 사항.md",
     "VAULT-PLM/Query-정리/견적 연동 기록.md",
