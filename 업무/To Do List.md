@@ -21,6 +21,8 @@
 - [ ] 자동수배율 프로세스 물어보기
 
 
+
+
 ### 🔗옵시디언 경로
 - C:\obsidiak_document\kyh_obsidi\
 
