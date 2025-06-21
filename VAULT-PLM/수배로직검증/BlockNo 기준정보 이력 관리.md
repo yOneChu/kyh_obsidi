@@ -12,7 +12,7 @@ tags:
 
 
 
-### 📝 <span style="color:rgb(194, 68, 0)">| PLM에서 BlockNo 기준정보 조회 Query</span>
+### 📝 <span style="color:rgb(194, 68, 0)"> PLM에서 BlockNo 기준정보 조회 Query</span>
 
 ```
 SELECT  
