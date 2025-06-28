@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VAULT-PLM/Query-정리/법인자재 쿼리(PLM).md",
+                "file": "VAULT-PLM/Query-정리/부품 조회.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "법인자재 쿼리(PLM)"
+              "title": "부품 조회"
             }
           }
         ]
@@ -171,13 +171,18 @@
   },
   "active": "28a01a8470088862",
   "lastOpenFiles": [
-    "업무/To Do List.md",
+    "VAULT-PLM/PLM-함수/영업사양 쪽.md",
+    "VAULT-PLM/Query-정리/견적 연동 기록.md",
     "VAULT-PLM/Query-정리/법인자재 쿼리(PLM).md",
+    "VAULT-PLM/Query-정리/부품 조회.md",
+    "VAULT-PLM/Query-정리/제품 관련 Query.md",
+    "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
+    "VAULT-PLM/MLB/이슈 모음집.md",
+    "업무/To Do List.md",
     "업무/📚시험일정.md",
     "VAULT-PLM/수배로직/수배로직 공부.md",
     "VAULT-PLM/MLB/00. 업무절차.md",
     "팀_업무/도면뷰어.md",
-    "VAULT-PLM/MLB/이슈 모음집.md",
     "VAULT-PLM/부품공용화/테이블 생성.md",
     "팀_업무/MLB/이슈들",
     "팀_업무/MLB",
@@ -199,11 +204,8 @@
     "Untitled.md",
     "수배로직",
     "VAULT-PLM/수배로직/✍️ 수배 정리.md",
-    "VAULT-PLM/Query-정리/부품 조회.md",
     "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
     "VAULT-PLM/수배로직검증/BOM추적.md",
-    "VAULT-PLM/MLB/중국 자재번호 규칙.md",
-    "VAULT-PLM/PLM-함수/영업사양 쪽.md",
-    "VAULT-PLM/Query-정리/견적 연동 기록.md"
+    "VAULT-PLM/MLB/중국 자재번호 규칙.md"
   ]
 }
