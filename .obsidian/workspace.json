@@ -13,27 +13,97 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
+                "file": "엘리베이터/용어/재질 관련.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BlockNo 기준정보 이력 관리"
+              "title": "재질 관련"
             }
           },
           {
-            "id": "fb9c18950cfdb9d6",
+            "id": "9c1e4123d053130f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VAULT-PLM/수배로직/❓ 물어볼 것.md",
+                "file": "엘리베이터/용어/기타용어.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "❓ 물어볼 것"
+              "title": "기타용어"
             }
+          },
+          {
+            "id": "30ee52b2a10ce2b9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "엘리베이터/승강로/오버로드 스위치.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "오버로드 스위치"
+            },
+            "group": "aa11b4c5ded5157f"
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "eb5ea46fbde23095",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fb9c18950cfdb9d6",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "4e1c6d00ef5e2380",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "엘리베이터/승강로/오버로드 스위치.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of 오버로드 스위치"
+            },
+            "group": "aa11b4c5ded5157f"
           }
         ],
         "currentTab": 1
@@ -184,35 +254,42 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fb9c18950cfdb9d6",
+  "active": "30ee52b2a10ce2b9",
   "lastOpenFiles": [
-    "VAULT-PLM/데이터브릭스/테이블 정보.md",
-    "VAULT-PLM/수배로직/❓ 물어볼 것.md",
-    "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
-    "VAULT-PLM/수배로직/수배로직 공부.md",
-    "VAULT-PLM/수배로직/법인출장 관련(팀장) 요청 사항.md",
-    "VAULT-PLM/수배로직/자동화율.md",
-    "VAULT-PLM/수배로직/✍️ 수배 공부 중.md",
-    "VAULT-PLM/Query-정리/BOM 수배율 쿼리.md",
-    "VAULT-PLM/수배로직검증/자재 대시보드 개발.md",
+    "image/Pasted image 20250715170851.png",
+    "image/Pasted image 20250715170825.png",
+    "엘리베이터/CAR/WB 기종 FLATFORM-SAFETY 체결 홀 간격.md",
+    "엘리베이터/승강로/오버로드 스위치.md",
+    "엘리베이터/CAR/SAFETY.md",
+    "엘리베이터/CAR/FLATFORM.md",
+    "엘리베이터/승강로/RGS-SGS 차이점.md",
+    "엘리베이터/승강로",
+    "엘리베이터/CAR/RSG.md",
+    "엘리베이터/CAR/기타 정보.md",
+    "엘리베이터/기계실/기계실.md",
+    "엘리베이터/기계실/메인 엔코더(Main rotary Encoder).md",
+    "엘리베이터/기계실/머신룸.md",
+    "엘리베이터/용어/재질 관련.md",
+    "image/Pasted image 20250715170239.png",
+    "엘리베이터/기계실/STATOR(스테이터).md",
+    "엘리베이터/기계실/머신베드.md",
+    "엘리베이터/용어/기타용어.md",
+    "엘리베이터/기계실/Untitled.md",
+    "엘리베이터/용어/볼트 종류.md",
+    "엘리베이터/기계실/방진 (Isolation Pad).md",
     "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
-    "VAULT-PLM/MLB/이슈 모음집.md",
-    "VAULT-PLM/MLB/00. 업무절차.md",
+    "엘리베이터/CAR/CAR CAGE.md",
+    "image/Pasted image 20250715152323.png",
+    "엘리베이터/엘리베이터 정보.md",
+    "엘리베이터.md",
+    "image/Pasted image 20250715140911.png",
+    "image/Pasted image 20250715140749.png",
+    "image/Pasted image 20250715140736.png",
+    "업무/업무일지/2025-07-15.md",
+    "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
+    "VAULT-PLM/수배로직검증/기능 개발.md",
+    "VAULT-PLM/수배로직검증/자재 대시보드 개발.md",
     "image/Pasted image 20250714084921.png",
-    "VAULT-PLM/MLB/중국 자재번호 규칙.md",
-    "VAULT-PLM/부품공용화/테이블 생성.md",
-    "English/영문장외우기/ㄷㄹㄷㄹ.md",
-    "English/룩룩잉글리시/Disney.md",
-    "팀_업무/설계복사 란.md",
-    "팀_업무/프로젝트 개요.md",
-    "팀_업무/도면뷰어.md",
-    "팀_업무/완료보고서.md",
-    "팀_업무/목차.md",
-    "팀_업무/설계복사.md",
-    "팀_업무/ㅇㄴㅇㄴㅇ.md",
-    "독서노트/📚 초압축 공부법.md",
-    "독서노트/숫자로 일하는 법/2. 집중해야 할 숫자를  파악한다..md",
-    "독서노트/숫자로 일하는 법/1. 먼저 문제가 무엇인지 정확히 알아야 한다..md",
     "VAULT-PLM/부품공용화/테이블구조.canvas",
     "과학공부/중학과학",
     "과학공부",
@@ -226,7 +303,6 @@
     "English/룩룩잉글리시",
     "Untitled.canvas",
     "🧪 수배로직/💻 개발",
-    "🧪 수배로직",
-    "수배로직/🧪ㄴ"
+    "🧪 수배로직"
   ]
 }
