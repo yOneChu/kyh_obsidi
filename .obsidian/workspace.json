@@ -6,6 +6,7 @@
       {
         "id": "9993c99493e1222a",
         "type": "tabs",
+        "dimension": 66.96551724137932,
         "children": [
           {
             "id": "28a01a8470088862",
@@ -56,6 +57,7 @@
       {
         "id": "eb5ea46fbde23095",
         "type": "tabs",
+        "dimension": 33.03448275862069,
         "children": [
           {
             "id": "fb9c18950cfdb9d6",
@@ -256,10 +258,15 @@
   },
   "active": "30ee52b2a10ce2b9",
   "lastOpenFiles": [
+    "VAULT-PLM/MLB/중국 자재번호 규칙.md",
+    "VAULT-PLM/수배로직검증/기능 개발.md",
+    "VAULT-PLM/수배로직검증/자재 대시보드 개발.md",
+    "팀_업무/설계복사 란.md",
+    "과학공부/중학과학/01. 과학탐구.md",
+    "엘리베이터/승강로/오버로드 스위치.md",
     "image/Pasted image 20250715170851.png",
     "image/Pasted image 20250715170825.png",
     "엘리베이터/CAR/WB 기종 FLATFORM-SAFETY 체결 홀 간격.md",
-    "엘리베이터/승강로/오버로드 스위치.md",
     "엘리베이터/CAR/SAFETY.md",
     "엘리베이터/CAR/FLATFORM.md",
     "엘리베이터/승강로/RGS-SGS 차이점.md",
@@ -285,17 +292,12 @@
     "image/Pasted image 20250715140911.png",
     "image/Pasted image 20250715140749.png",
     "image/Pasted image 20250715140736.png",
-    "업무/업무일지/2025-07-15.md",
-    "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
-    "VAULT-PLM/수배로직검증/기능 개발.md",
-    "VAULT-PLM/수배로직검증/자재 대시보드 개발.md",
     "image/Pasted image 20250714084921.png",
     "VAULT-PLM/부품공용화/테이블구조.canvas",
     "과학공부/중학과학",
     "과학공부",
     "image/Pasted image 20250707162421.png",
     "image/Pasted image 20250707162414.png",
-    "image/Pasted image 20250707101020.png",
     "팀_업무/MLB/이슈들",
     "팀_업무/MLB",
     "VAULT-PLM/부품공용화",
