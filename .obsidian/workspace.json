@@ -42,12 +42,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "엘리베이터/승강로/오버로드 스위치.md",
+                "file": "VAULT-PLM/Query-정리/영업사양 쿼리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "오버로드 스위치"
+              "title": "영업사양 쿼리"
             },
             "group": "aa11b4c5ded5157f"
           }
@@ -75,7 +75,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "엘리베이터/승강로/오버로드 스위치.md",
+                "file": "VAULT-PLM/Query-정리/영업사양 쿼리.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -98,12 +98,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1,
+                  "scale": 0.7132754626224428,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 오버로드 스위치"
+              "title": "Graph of 영업사양 쿼리"
             },
             "group": "aa11b4c5ded5157f"
           }
@@ -258,37 +258,37 @@
   },
   "active": "30ee52b2a10ce2b9",
   "lastOpenFiles": [
+    "VAULT-PLM/PLM-함수/영업사양 쪽.md",
+    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
+    "엘리베이터/CAR/Sub Weight.md",
+    "엘리베이터/엘리베이터 정보.md",
+    "엘리베이터/CAR/FLATFORM.md",
+    "엘리베이터/CAR/CAR CAGE.md",
+    "엘리베이터/CAR/CAR TOP BOX.md",
+    "엘리베이터/CAR/기타 정보.md",
+    "엘리베이터/CAR/레일브라켓 방진 라이너.md",
+    "엘리베이터/CAR/보상 체인(Compensation Chain) = Compen Hitch Plate.md",
+    "엘리베이터/승강로/RGS-SGS 차이점.md",
+    "엘리베이터/승강로/오버로드 스위치.md",
+    "엘리베이터/기계실/STATOR(스테이터).md",
+    "엘리베이터/기계실/메인 엔코더(Main rotary Encoder).md",
+    "엘리베이터/기계실/머신베드.md",
+    "엘리베이터/CAR/RSG.md",
     "VAULT-PLM/MLB/중국 자재번호 규칙.md",
     "VAULT-PLM/수배로직검증/기능 개발.md",
     "VAULT-PLM/수배로직검증/자재 대시보드 개발.md",
     "팀_업무/설계복사 란.md",
     "과학공부/중학과학/01. 과학탐구.md",
-    "엘리베이터/승강로/오버로드 스위치.md",
     "image/Pasted image 20250715170851.png",
     "image/Pasted image 20250715170825.png",
     "엘리베이터/CAR/WB 기종 FLATFORM-SAFETY 체결 홀 간격.md",
     "엘리베이터/CAR/SAFETY.md",
-    "엘리베이터/CAR/FLATFORM.md",
-    "엘리베이터/승강로/RGS-SGS 차이점.md",
     "엘리베이터/승강로",
-    "엘리베이터/CAR/RSG.md",
-    "엘리베이터/CAR/기타 정보.md",
     "엘리베이터/기계실/기계실.md",
-    "엘리베이터/기계실/메인 엔코더(Main rotary Encoder).md",
     "엘리베이터/기계실/머신룸.md",
     "엘리베이터/용어/재질 관련.md",
     "image/Pasted image 20250715170239.png",
-    "엘리베이터/기계실/STATOR(스테이터).md",
-    "엘리베이터/기계실/머신베드.md",
-    "엘리베이터/용어/기타용어.md",
-    "엘리베이터/기계실/Untitled.md",
-    "엘리베이터/용어/볼트 종류.md",
-    "엘리베이터/기계실/방진 (Isolation Pad).md",
-    "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
-    "엘리베이터/CAR/CAR CAGE.md",
     "image/Pasted image 20250715152323.png",
-    "엘리베이터/엘리베이터 정보.md",
-    "엘리베이터.md",
     "image/Pasted image 20250715140911.png",
     "image/Pasted image 20250715140749.png",
     "image/Pasted image 20250715140736.png",
