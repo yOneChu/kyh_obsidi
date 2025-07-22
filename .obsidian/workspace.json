@@ -42,12 +42,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VAULT-PLM/Query-정리/부품 조회.md",
+                "file": "VAULT-PLM/수배로직검증/자재 대시보드 개발.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "부품 조회"
+              "title": "자재 대시보드 개발"
             },
             "group": "aa11b4c5ded5157f"
           }
@@ -75,7 +75,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "VAULT-PLM/Query-정리/부품 조회.md",
+                "file": "VAULT-PLM/수배로직검증/자재 대시보드 개발.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -103,7 +103,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 부품 조회"
+              "title": "Graph of 자재 대시보드 개발"
             },
             "group": "aa11b4c5ded5157f"
           }
@@ -258,8 +258,8 @@
   },
   "active": "30ee52b2a10ce2b9",
   "lastOpenFiles": [
-    "VAULT-PLM/Query-정리/PID 조회.md",
     "VAULT-PLM/Query-정리/부품 조회.md",
+    "VAULT-PLM/Query-정리/PID 조회.md",
     "VAULT-PLM/Query-정리/제품 관련 Query.md",
     "VAULT-PLM/MLB/자재번호.md",
     "image/Pasted image 20250722133552.png",
