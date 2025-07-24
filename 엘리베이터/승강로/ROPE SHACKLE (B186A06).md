@@ -1,0 +1,5 @@
+
+
+### 영향도
+1.ROPE(BELT) SHACKE - [[B186A01]]
+2.COMPEN CHAIN 종류 - [[CAL_ETS_SPD1]]
