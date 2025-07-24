@@ -42,12 +42,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VAULT-PLM/수배로직검증/자재 대시보드 개발.md",
+                "file": "VAULT-PLM/Query-정리/부품 조회.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "자재 대시보드 개발"
+              "title": "부품 조회"
             },
             "group": "aa11b4c5ded5157f"
           }
@@ -75,7 +75,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "VAULT-PLM/수배로직검증/자재 대시보드 개발.md",
+                "file": "VAULT-PLM/Query-정리/부품 조회.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -103,7 +103,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 자재 대시보드 개발"
+              "title": "Graph of 부품 조회"
             },
             "group": "aa11b4c5ded5157f"
           }
@@ -258,7 +258,10 @@
   },
   "active": "30ee52b2a10ce2b9",
   "lastOpenFiles": [
+    "VAULT-PLM/Query-정리/부품의 하위 추출.md",
     "VAULT-PLM/Query-정리/부품 조회.md",
+    "엘리베이터/용어/기계 W1 이란.md",
+    "VAULT-PLM/수배로직검증/자재 대시보드 개발.md",
     "VAULT-PLM/Query-정리/PID 조회.md",
     "VAULT-PLM/Query-정리/제품 관련 Query.md",
     "VAULT-PLM/MLB/자재번호.md",
@@ -271,7 +274,6 @@
     "VAULT-PLM/수배로직/법인출장 관련(팀장) 요청 사항.md",
     "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
     "VAULT-PLM/수배로직검증/기능 개발.md",
-    "VAULT-PLM/수배로직검증/자재 대시보드 개발.md",
     "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
     "VAULT-PLM/수배로직검증/BOM추적.md",
     "VAULT-PLM/MLB/00. 업무절차.md",
@@ -287,8 +289,6 @@
     "업무/📚시험일정.md",
     "🧪 수배로직/💻 개발/로직에디터 변환.md",
     "VAULT-PLM/Query-정리/영업사양 쿼리.md",
-    "VAULT-PLM/Query-정리/전산작업요청 쿼리.md",
-    "VAULT-PLM/PLM-함수/영업사양 쪽.md",
     "image/Pasted image 20250715170851.png",
     "image/Pasted image 20250715170825.png",
     "엘리베이터/승강로",
