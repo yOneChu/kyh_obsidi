@@ -42,12 +42,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "엘리베이터/승강로/COMPEN ROPE 본수.md",
+                "file": "SAP/JQPR 정보.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "COMPEN ROPE 본수"
+              "title": "JQPR 정보"
             },
             "group": "aa11b4c5ded5157f"
           }
@@ -75,7 +75,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "엘리베이터/승강로/COMPEN ROPE 본수.md",
+                "file": "SAP/JQPR 정보.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -103,7 +103,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of COMPEN ROPE 본수"
+              "title": "Graph of JQPR 정보"
             },
             "group": "aa11b4c5ded5157f"
           }
@@ -140,7 +140,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "JQPR",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -161,7 +161,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -258,8 +259,13 @@
   },
   "active": "30ee52b2a10ce2b9",
   "lastOpenFiles": [
-    "엘리베이터/용어/재질 관련.md",
+    "VAULT-PLM/Query-정리/📢 데이터 분석용 쿼리.md",
+    "VAULT-PLM/Query-정리/도면 조회.md",
+    "VAULT-PLM/Query-정리/법인자재 쿼리(PLM).md",
+    "VAULT-PLM/Query-정리/부품 조회.md",
+    "VAULT-PLM/Query-정리/부품의 하위 추출.md",
     "엘리베이터/승강로/COMPEN ROPE 본수.md",
+    "엘리베이터/용어/재질 관련.md",
     "업무/엘베 학습.md",
     "엘리베이터/Untitled.md",
     "엘리베이터/승강로/ROPE SHACKLE (B186A06).md",
@@ -271,8 +277,6 @@
     "image/랩핑.jpg",
     "image/루핑.jpg",
     "VAULT-PLM/Query-정리/PID 조회.md",
-    "VAULT-PLM/Query-정리/부품 조회.md",
-    "VAULT-PLM/Query-정리/부품의 하위 추출.md",
     "VAULT-PLM/수배로직검증/자재 대시보드 개발.md",
     "VAULT-PLM/Query-정리/제품 관련 Query.md",
     "VAULT-PLM/MLB/자재번호.md",
@@ -285,9 +289,6 @@
     "VAULT-PLM/수배로직/법인출장 관련(팀장) 요청 사항.md",
     "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
     "VAULT-PLM/수배로직검증/기능 개발.md",
-    "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
-    "VAULT-PLM/수배로직검증/BOM추적.md",
-    "VAULT-PLM/MLB/00. 업무절차.md",
     "image/Pasted image 20250721131404.png",
     "image/Pasted image 20250721131327.png",
     "image/Pasted image 20250721103356.png",
