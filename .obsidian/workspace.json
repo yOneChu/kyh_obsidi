@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "엘리베이터/용어/재질 관련.md",
+                "file": "엘리베이터/승강로/Wood Plate.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "재질 관련"
+              "title": "Wood Plate"
             }
           },
           {
@@ -40,19 +40,14 @@
             "id": "30ee52b2a10ce2b9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SAP/JQPR 정보.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "JQPR 정보"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             },
             "group": "aa11b4c5ded5157f"
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "eb5ea46fbde23095",
@@ -140,7 +135,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "JQPR",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -161,8 +156,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -257,15 +251,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "30ee52b2a10ce2b9",
+  "active": "28a01a8470088862",
   "lastOpenFiles": [
+    "image/Pasted image 20250805143832.png",
+    "image/Pasted image 20250805143717.png",
+    "VAULT-PLM/수배로직/❓ 물어볼 것.md",
+    "엘리베이터/승강로/Wood Plate.md",
+    "VAULT-PLM/수배로직/법인출장 관련(팀장) 요청 사항.md",
+    "VAULT-PLM/수배로직/수배로직 공부.md",
+    "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
+    "VAULT-PLM/MLB/00. 업무절차.md",
+    "VAULT-PLM/MLB/이슈 모음집.md",
+    "VAULT-PLM/MLB/중국 자재번호 규칙.md",
+    "VAULT-PLM/MLB/자재번호.md",
+    "VAULT-PLM/수배로직/✍️ 수배 공부 중.md",
+    "엘리베이터/용어/재질 관련.md",
+    "SAP/JQPR 정보.md",
     "VAULT-PLM/Query-정리/📢 데이터 분석용 쿼리.md",
     "VAULT-PLM/Query-정리/도면 조회.md",
     "VAULT-PLM/Query-정리/법인자재 쿼리(PLM).md",
     "VAULT-PLM/Query-정리/부품 조회.md",
     "VAULT-PLM/Query-정리/부품의 하위 추출.md",
     "엘리베이터/승강로/COMPEN ROPE 본수.md",
-    "엘리베이터/용어/재질 관련.md",
     "업무/엘베 학습.md",
     "엘리베이터/Untitled.md",
     "엘리베이터/승강로/ROPE SHACKLE (B186A06).md",
@@ -273,22 +280,10 @@
     "엘리베이터/용어/기계 W1 이란.md",
     "엘리베이터/기계실/루핑-ROPING(ROPE,BELT) - EL_ERPR.md",
     "엘리베이터/기계실/Untitled 1.md",
-    "엘리베이터/기계실/랩핑.md",
     "image/랩핑.jpg",
     "image/루핑.jpg",
-    "VAULT-PLM/Query-정리/PID 조회.md",
-    "VAULT-PLM/수배로직검증/자재 대시보드 개발.md",
-    "VAULT-PLM/Query-정리/제품 관련 Query.md",
-    "VAULT-PLM/MLB/자재번호.md",
     "image/Pasted image 20250722133552.png",
-    "VAULT-PLM/수배로직/수배로직 공부.md",
-    "VAULT-PLM/부품공용화/테이블 생성.md",
     "VAULT-PLM/부품공용화/테이블구조.canvas",
-    "VAULT-PLM/수배로직/✍️ 수배 공부 중.md",
-    "VAULT-PLM/수배로직/❓ 물어볼 것.md",
-    "VAULT-PLM/수배로직/법인출장 관련(팀장) 요청 사항.md",
-    "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
-    "VAULT-PLM/수배로직검증/기능 개발.md",
     "image/Pasted image 20250721131404.png",
     "image/Pasted image 20250721131327.png",
     "image/Pasted image 20250721103356.png",
@@ -296,7 +291,6 @@
     "image/Pasted image 20250715170825.png",
     "엘리베이터/승강로",
     "image/Pasted image 20250715170239.png",
-    "image/Pasted image 20250715152323.png",
     "과학공부/중학과학",
     "과학공부",
     "팀_업무/MLB/이슈들",
