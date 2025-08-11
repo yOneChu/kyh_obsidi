@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "엘리베이터/승강로/Wood Plate.md",
+                "file": "엘리베이터/CAR/WB 기종 FLATFORM-SAFETY 체결 홀 간격.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Wood Plate"
+              "title": "WB 기종 FLATFORM-SAFETY 체결 홀 간격"
             }
           },
           {
@@ -40,10 +40,14 @@
             "id": "30ee52b2a10ce2b9",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "SAP/JQPR 정보.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "JQPR 정보"
             },
             "group": "aa11b4c5ded5157f"
           }
@@ -253,13 +257,18 @@
   },
   "active": "28a01a8470088862",
   "lastOpenFiles": [
+    "image/Pasted image 20250806131313.png",
+    "엘리베이터/CAR/기타 정보.md",
+    "엘리베이터/CAR/레일브라켓 방진 라이너.md",
+    "엘리베이터/승강로/Wood Plate.md",
+    "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
+    "엘리베이터/CAR/보상 체인(Compensation Chain) = Compen Hitch Plate.md",
+    "엘리베이터/기계실/랩핑.md",
     "image/Pasted image 20250805143832.png",
     "image/Pasted image 20250805143717.png",
     "VAULT-PLM/수배로직/❓ 물어볼 것.md",
-    "엘리베이터/승강로/Wood Plate.md",
     "VAULT-PLM/수배로직/법인출장 관련(팀장) 요청 사항.md",
     "VAULT-PLM/수배로직/수배로직 공부.md",
-    "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
     "VAULT-PLM/MLB/00. 업무절차.md",
     "VAULT-PLM/MLB/이슈 모음집.md",
     "VAULT-PLM/MLB/중국 자재번호 규칙.md",
@@ -276,10 +285,6 @@
     "업무/엘베 학습.md",
     "엘리베이터/Untitled.md",
     "엘리베이터/승강로/ROPE SHACKLE (B186A06).md",
-    "B186A01.md",
-    "엘리베이터/용어/기계 W1 이란.md",
-    "엘리베이터/기계실/루핑-ROPING(ROPE,BELT) - EL_ERPR.md",
-    "엘리베이터/기계실/Untitled 1.md",
     "image/랩핑.jpg",
     "image/루핑.jpg",
     "image/Pasted image 20250722133552.png",
@@ -290,7 +295,6 @@
     "image/Pasted image 20250715170851.png",
     "image/Pasted image 20250715170825.png",
     "엘리베이터/승강로",
-    "image/Pasted image 20250715170239.png",
     "과학공부/중학과학",
     "과학공부",
     "팀_업무/MLB/이슈들",

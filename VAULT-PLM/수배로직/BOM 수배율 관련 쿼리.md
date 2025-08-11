@@ -4,6 +4,8 @@ tags:
 ---
 ---
 
+BI의 설계일은 PLM의 "EAI_BOM_BLOCKOPT" 테이블에서 모든블럭 컬럼이 "X"되어 있는 "CODAT' 컬럼의 MIN값을 참고한다.
+
 
 ### 테이블 생성
 ```
