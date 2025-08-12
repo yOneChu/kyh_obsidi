@@ -14,12 +14,20 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "VAULT-PLM/Query-정리/PID 조회.md",
+=======
+                "file": "VAULT-PLM/Query-정리/부품에 연결된 ECO 조회.md",
+>>>>>>> origin/master
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "PID 조회"
+=======
+              "title": "부품에 연결된 ECO 조회"
+>>>>>>> origin/master
             }
           },
           {
@@ -42,16 +50,25 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "SAP/JQPR 정보.md",
+=======
+                "file": "VAULT-PLM/프로젝트_개발/01.승강기 설치 정보.md",
+>>>>>>> origin/master
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "JQPR 정보"
+=======
+              "title": "01.승강기 설치 정보"
+>>>>>>> origin/master
             },
             "group": "aa11b4c5ded5157f"
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "eb5ea46fbde23095",
@@ -74,7 +91,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "SAP/JQPR 정보.md",
+                "file": "VAULT-PLM/프로젝트_개발/01.승강기 설치 정보.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -102,7 +119,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of JQPR 정보"
+              "title": "Graph of 01.승강기 설치 정보"
             },
             "group": "aa11b4c5ded5157f"
           }
@@ -255,8 +272,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "28a01a8470088862",
+  "active": "30ee52b2a10ce2b9",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
     "VAULT-PLM/수배로직검증/기능 개발.md",
     "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
@@ -285,6 +303,38 @@
     "엘리베이터/Untitled.md",
     "엘리베이터/승강로/ROPE SHACKLE (B186A06).md",
     "B186A01.md",
+=======
+    "VAULT-PLM/프로젝트_개발/00. 프로젝트 개발.md",
+    "VAULT-PLM/프로젝트_개발/02.PID 검색 개선.md",
+    "VAULT-PLM/프로젝트_개발/01.승강기 설치 정보.md",
+    "VAULT-PLM/수배로직검증/기능 개발.md",
+    "VAULT-PLM/프로젝트_개발",
+    "엘리베이터/CAR/WB 기종 FLATFORM-SAFETY 체결 홀 간격.md",
+    "SAP/JQPR 정보.md",
+    "VAULT-PLM/Query-정리/부품에 연결된 ECO 조회.md",
+    "VAULT-PLM/MLB/00. 업무절차.md",
+    "VAULT-PLM/Query-정리/부품 조회.md",
+    "VAULT-PLM/Query-정리/PID 조회.md",
+    "VAULT-PLM/Query-정리/BOM 수배율 쿼리.md",
+    "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
+    "VAULT-PLM/Query-정리/제품 관련 Query.md",
+    "VAULT-PLM/Query-정리/법인자재 쿼리(PLM).md",
+    "VAULT-PLM/Query-정리/견적 연동 기록.md",
+    "VAULT-PLM/Query-정리/전산작업요청 쿼리.md",
+    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
+    "VAULT-PLM/Query-정리/블럭번호 별 최대 하위 레벨  개수.md",
+    "VAULT-PLM/Query-정리/부품의 하위 추출.md",
+    "VAULT-PLM/Query-정리/도면 조회.md",
+    "image/Pasted image 20250806131313.png",
+    "엘리베이터/CAR/기타 정보.md",
+    "엘리베이터/CAR/레일브라켓 방진 라이너.md",
+    "엘리베이터/승강로/Wood Plate.md",
+    "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
+    "엘리베이터/CAR/보상 체인(Compensation Chain) = Compen Hitch Plate.md",
+    "엘리베이터/기계실/랩핑.md",
+    "image/Pasted image 20250805143832.png",
+    "image/Pasted image 20250805143717.png",
+>>>>>>> origin/master
     "image/랩핑.jpg",
     "image/루핑.jpg",
     "image/Pasted image 20250722133552.png",
@@ -293,7 +343,6 @@
     "image/Pasted image 20250721131327.png",
     "image/Pasted image 20250721103356.png",
     "image/Pasted image 20250715170851.png",
-    "image/Pasted image 20250715170825.png",
     "엘리베이터/승강로",
     "과학공부/중학과학",
     "과학공부",
@@ -303,7 +352,6 @@
     "VAULT-PLM/데이터브릭스",
     "English/룩룩잉글리시",
     "Untitled.canvas",
-    "🧪 수배로직/💻 개발",
-    "🧪 수배로직"
+    "🧪 수배로직/💻 개발"
   ]
 }
