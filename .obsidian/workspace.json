@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VAULT-PLM/프로젝트_개발/00. 프로젝트 개발.md",
+                "file": "VAULT-PLM/PLM-개발정보/PidDesignService.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00. 프로젝트 개발"
+              "title": "PidDesignService"
             }
           }
         ],
@@ -175,7 +175,6 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
@@ -187,10 +186,14 @@
   },
   "active": "6955d058e6cc097e",
   "lastOpenFiles": [
+    "VAULT-PLM/PLM-개발정보/SubaeManagerPick.md",
+    "VAULT-PLM/PLM-개발정보/PidDesignService.md",
+    "VAULT-PLM/PLM-개발정보/VaultReportController.md",
+    "VAULT-PLM/프로젝트_개발/00. 프로젝트 개발.md",
+    "B186A01.md",
     "VAULT-PLM/프로젝트_개발/03. 로직 특성값 뷰어.md",
     "VAULT-PLM/프로젝트_개발/02. PID 검색 개선.md",
     "VAULT-PLM/프로젝트_개발/01. 승강기 설치 정보.md",
-    "VAULT-PLM/프로젝트_개발/00. 프로젝트 개발.md",
     "VAULT-PLM/데이터브릭스/테이블 정보.md",
     "VAULT-PLM/수배로직/✍️ 수배 공부 중.md"
   ]
