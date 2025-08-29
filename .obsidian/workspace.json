@@ -1,56 +1,14 @@
 {
   "main": {
-    "id": "0116b6cba3d9e732",
+    "id": "6d1d1c381c4e3607",
     "type": "split",
     "children": [
       {
-        "id": "0dc25d1ca67045e0",
+        "id": "6f0b30b9993b6f0f",
         "type": "tabs",
         "children": [
           {
-            "id": "200e0585ca17fa6c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "VAULT-PLM/프로젝트_개발/03. 로직 특성값 뷰어.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "03. 로직 특성값 뷰어"
-            }
-          },
-          {
-            "id": "6955d058e6cc097e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/💻 개발/로직에디터 변환.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "로직에디터 변환"
-            }
-          },
-          {
-            "id": "e619d304f1f72eb6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "VAULT-PLM/수배로직_Block/B189B01 - COMPEN FRAME ASSY.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "B189B01 - COMPEN FRAME ASSY"
-            }
-          },
-          {
-            "id": "9210791f75cabcfe",
+            "id": "586000ab63179720",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -62,41 +20,22 @@
               "icon": "lucide-file",
               "title": "로직에디터 CON 컬럼 오류 찾기 위한 쿼리"
             }
-          },
-          {
-            "id": "6dbbb3b8d5964e5b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "VAULT-PLM/Query-정리/부품 조회.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "부품 조회"
-            }
           }
-        ],
-<<<<<<< HEAD
-        "currentTab": 2
-=======
-        "currentTab": 3
->>>>>>> origin/master
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "904d4ef631ac7f4c",
+    "id": "290f37ba20765282",
     "type": "split",
     "children": [
       {
-        "id": "c789600c8cd1fe9c",
+        "id": "61e1305feea9bcd7",
         "type": "tabs",
         "children": [
           {
-            "id": "01865fcda0945a99",
+            "id": "90111e3d0d63faf6",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -109,7 +48,7 @@
             }
           },
           {
-            "id": "b01205f729c76d71",
+            "id": "be0c2e61bc02dd53",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -126,7 +65,7 @@
             }
           },
           {
-            "id": "676a811a42cf25b9",
+            "id": "f616aa83905023fc",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -142,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "98d3d0c76072bc9e",
+    "id": "86a88ed7cbf8ba7c",
     "type": "split",
     "children": [
       {
-        "id": "914bf4095984b801",
+        "id": "d0801a017ebc222a",
         "type": "tabs",
         "children": [
           {
-            "id": "7d2d1f33384efe03",
+            "id": "d3e267cdb53c8204",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VAULT-PLM/프로젝트_개발/03. 로직 특성값 뷰어.md",
+                "file": "VAULT-PLM/수배로직검증/로직에디터 CON 컬럼 오류 찾기 위한 쿼리.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 03. 로직 특성값 뷰어"
+              "title": "Backlinks for 로직에디터 CON 컬럼 오류 찾기 위한 쿼리"
             }
           },
           {
-            "id": "2336877231498bc9",
+            "id": "ebcd1396df067cda",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VAULT-PLM/프로젝트_개발/03. 로직 특성값 뷰어.md",
+                "file": "VAULT-PLM/수배로직검증/로직에디터 CON 컬럼 오류 찾기 위한 쿼리.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 03. 로직 특성값 뷰어"
+              "title": "Outgoing links from 로직에디터 CON 컬럼 오류 찾기 위한 쿼리"
             }
           },
           {
-            "id": "9ffaf1e3f09072d4",
+            "id": "e605658acfcc0f6e",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -198,18 +137,18 @@
             }
           },
           {
-            "id": "1290710b5e28961c",
+            "id": "da2bcf301134c75c",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "VAULT-PLM/프로젝트_개발/03. 로직 특성값 뷰어.md",
+                "file": "VAULT-PLM/수배로직검증/로직에디터 CON 컬럼 오류 찾기 위한 쿼리.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 03. 로직 특성값 뷰어"
+              "title": "Outline of 로직에디터 CON 컬럼 오류 찾기 위한 쿼리"
             }
           }
         ]
@@ -221,56 +160,24 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "obsidian-git:Open Git source control": false
     }
   },
-<<<<<<< HEAD
-  "active": "6dbbb3b8d5964e5b",
+  "active": "586000ab63179720",
   "lastOpenFiles": [
-    "VAULT-PLM/Query-정리/도면 조회.md",
-    "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
-    "VAULT-PLM/PLM-개발정보/SubaeManagerPick.md",
-=======
-  "active": "9210791f75cabcfe",
-  "lastOpenFiles": [
-    "VAULT-PLM/Query-정리/BOM 수배율 쿼리.md",
+    "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
     "VAULT-PLM/수배로직검증/로직에디터 CON 컬럼 오류 찾기 위한 쿼리.md",
-    "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
-    "VAULT-PLM/Query-정리/PID 조회.md",
-    "엘리베이터/승강로/B186A01 ROPE(BELT) SHACKLE (수량).md",
-    "VAULT-PLM/수배로직_Block/B189B01 - COMPEN FRAME ASSY.md",
-    "VAULT-PLM/수배로직_Block",
-    "엘리베이터/승강로/COMPEN ROPE 본수.md",
-    "VAULT-PLM/Query-정리/도면 조회.md",
-    "과학공부/중학과학/01. 과학탐구.md",
-    "독서노트/숫자로 일하는 법/2. 집중해야 할 숫자를  파악한다..md",
-    "독서노트/숫자로 일하는 법/1. 먼저 문제가 무엇인지 정확히 알아야 한다..md",
-    "독서노트/숫자로 일하는 법/0. 목차.md",
-    "VAULT-PLM/부품공용화/부품공용화 대시보드.md",
-    "VAULT-PLM/부품공용화/테이블 생성.md",
-    "팀_업무/도면뷰어.md",
-    "image/Pasted image 20250805143717.png",
-    "image/Pasted image 20250805143832.png",
-    "image/Pasted image 20250806131313.png",
-    "image/Pasted image 20250825082550.png",
-    "SAP/JQPR 정보.md",
-    "SAP/💡 SAP 계정.md",
-    "엘리베이터/기계실/랩핑.md",
-    "엘리베이터/기계실/루핑-ROPING(ROPE,BELT) - EL_ERPR.md",
-    "엘리베이터/기계실/기계실.md",
->>>>>>> origin/master
-    "VAULT-PLM/PLM-개발정보/PidDesignService.md",
-    "VAULT-PLM/PLM-개발정보/SubaeManagerPick.md",
-    "VAULT-PLM/PLM-개발정보/VaultReportController.md",
-    "VAULT-PLM/프로젝트_개발/00. 프로젝트 개발.md",
-    "B186A01.md",
-    "VAULT-PLM/프로젝트_개발/03. 로직 특성값 뷰어.md"
+    "VAULT-PLM/프로젝트_개발/04. 자재 대시보드 개발.md",
+    "VAULT-PLM/프로젝트_개발/03. 로직 특성값 뷰어.md",
+    "VAULT-PLM/프로젝트_개발/Untitled",
+    "VAULT-PLM/수배로직검증/기능 개발.md",
+    "VAULT-PLM/수배로직_Block/B189B01 - COMPEN FRAME ASSY.md"
   ]
 }
