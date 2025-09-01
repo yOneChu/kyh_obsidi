@@ -2,8 +2,10 @@
 aliases:
 ---
 ---
-COMPEN RAIL - EL_PB189B01_1
-BASE - EL_PB189B01_2
+### BLOCK 정보
 
-
+|    NAME     |     PICK      |
+| :---------: | :-----------: |
+| COMPEN RAIL | EL_PB189B01_1 |
+|    BASE     | EL_PB189B01_2 |
 
