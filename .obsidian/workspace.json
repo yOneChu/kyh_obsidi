@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VAULT-PLM/프로젝트_개발/05. PID 현황.md",
+                "file": "VAULT-PLM/프로젝트_개발/06. dfdf.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05. PID 현황"
+              "title": "06. dfdf"
             }
           }
         ],
@@ -215,10 +215,12 @@
   },
   "active": "9210791f75cabcfe",
   "lastOpenFiles": [
+    "image/Pasted image 20250918163209.png",
+    "VAULT-PLM/프로젝트_개발/05. PID 현황.md",
+    "VAULT-PLM/프로젝트_개발/06. dfdf.md",
     "VAULT-PLM/프로젝트_개발/04. 자재 대시보드 개발.md",
     "VAULT-PLM/프로젝트_개발/00. 프로젝트 개발.md",
     "VAULT-PLM/수배로직_Block/B189B01 - COMPEN FRAME ASSY.md",
-    "VAULT-PLM/프로젝트_개발/05. PID 현황.md",
     "VAULT-PLM/프로젝트_개발/01. 승강기 설치 정보.md",
     "VAULT-PLM/프로젝트_개발/02. PID 검색 개선.md",
     "VAULT-PLM/프로젝트_개발/03. 로직 특성값 뷰어.md",
@@ -241,8 +243,6 @@
     "엘리베이터/CAR/보상 체인(Compensation Chain) = Compen Hitch Plate.md",
     "엘리베이터/용어/기계 W1 이란.md",
     "엘리베이터/용어/기타용어.md",
-    "엘리베이터/용어/조적작업.md",
-    "VAULT-PLM/수배로직검증/로직에디터 CON 컬럼 오류 찾기 위한 쿼리.md",
     "VAULT-PLM/수배로직_Block",
     "image/Pasted image 20250805143717.png",
     "image/Pasted image 20250805143832.png",
