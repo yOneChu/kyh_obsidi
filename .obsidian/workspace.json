@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/💻 개발/로직에디터 변환.md",
+                "file": "엘리베이터/용어/조적작업.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "로직에디터 변환"
+              "title": "조적작업"
             }
           },
           {
@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VAULT-PLM/수배로직_Block/B189B01 - COMPEN FRAME ASSY.md",
+                "file": "VAULT-PLM/🔊 업무이력/COMPEN CHAIN 관리-김선태,최진영.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "B189B01 - COMPEN FRAME ASSY"
+              "title": "COMPEN CHAIN 관리-김선태,최진영"
             }
           },
           {
@@ -55,16 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VAULT-PLM/프로젝트_개발/06. dfdf.md",
+                "file": "VAULT-PLM/Query-정리/부품 조회.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06. dfdf"
+              "title": "부품 조회"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -213,36 +213,40 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9210791f75cabcfe",
+  "active": "e619d304f1f72eb6",
   "lastOpenFiles": [
-    "image/Pasted image 20250918163209.png",
-    "VAULT-PLM/프로젝트_개발/05. PID 현황.md",
-    "VAULT-PLM/프로젝트_개발/06. dfdf.md",
-    "VAULT-PLM/프로젝트_개발/04. 자재 대시보드 개발.md",
-    "VAULT-PLM/프로젝트_개발/00. 프로젝트 개발.md",
+    "VAULT-PLM/데이터브릭스/테이블 정보.md",
+    "VAULT-PLM/수배로직/궁금증❓.md",
+    "VAULT-PLM/🔊 업무이력/COMPEN CHAIN 관리-김선태,최진영.md",
+    "VAULT-PLM/수배로직/수배로직 공부.md",
     "VAULT-PLM/수배로직_Block/B189B01 - COMPEN FRAME ASSY.md",
-    "VAULT-PLM/프로젝트_개발/01. 승강기 설치 정보.md",
-    "VAULT-PLM/프로젝트_개발/02. PID 검색 개선.md",
+    "English/영문장외우기/ㄷㄹㄷㄹ.md",
+    "VAULT-PLM/수배로직/✍️ 수배 공부 중.md",
+    "VAULT-PLM/수배로직/법인출장 관련(팀장) 요청 사항.md",
     "VAULT-PLM/프로젝트_개발/03. 로직 특성값 뷰어.md",
-    "VAULT-PLM/수배로직검증/기능 개발.md",
-    "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
+    "image/Pasted image 20250922172116.png",
+    "image/Pasted image 20250922172057.png",
+    "VAULT-PLM/🔊 업무이력",
+    "엘리베이터/용어/조적작업.md",
+    "VAULT-PLM/Query-정리/부품 조회.md",
+    "엘리베이터/용어/재질 관련.md",
+    "엘리베이터/용어/기타용어.md",
+    "엘리베이터/용어/기계 W1 이란.md",
+    "엘리베이터/기계실/방진 (Isolation Pad).md",
+    "엘리베이터/기계실/STATOR(스테이터).md",
+    "엘리베이터/기계실/WIRE CLIP.md",
+    "엘리베이터/CAR/WB 기종 FLATFORM-SAFETY 체결 홀 간격.md",
+    "엘리베이터/CAR/Sub Weight.md",
+    "엘리베이터/CAR/SAFETY.md",
+    "엘리베이터/CAR/FLATFORM.md",
     "엘리베이터/CAR/Ceilling ASSY.md",
     "엘리베이터/CAR/CAR WALL ASSY.md",
-    "image/Pasted image 20250909172929.png",
-    "VAULT-PLM/수배로직/궁금증❓.md",
-    "VAULT-PLM/부품공용화/테이블 생성.md",
-    "VAULT-PLM/부품공용화/테이블구조.canvas",
-    "업무/To Do List.md",
-    "엘리베이터/기계실/기계실.md",
-    "엘리베이터/승강로/오버로드 스위치.md",
-    "업무/📚시험일정.md",
-    "업무/업무일지/2025-05-16(금).md",
-    "업무/업무일지/2025-07-15.md",
-    "엘리베이터/CAR/기타 정보.md",
+    "엘리베이터/CAR/CAR TOP BOX.md",
     "엘리베이터/CAR/CAR CAGE.md",
     "엘리베이터/CAR/보상 체인(Compensation Chain) = Compen Hitch Plate.md",
-    "엘리베이터/용어/기계 W1 이란.md",
-    "엘리베이터/용어/기타용어.md",
+    "image/Pasted image 20250918163209.png",
+    "image/Pasted image 20250909172929.png",
+    "VAULT-PLM/부품공용화/테이블구조.canvas",
     "VAULT-PLM/수배로직_Block",
     "image/Pasted image 20250805143717.png",
     "image/Pasted image 20250805143832.png",
