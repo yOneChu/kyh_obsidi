@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "엘리베이터/용어/ROH.md",
+                "file": "VAULT-PLM/PLM-개발정보/토큰 함수.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ROH"
+              "title": "토큰 함수"
             }
           },
           {
@@ -215,8 +215,18 @@
   },
   "active": "6955d058e6cc097e",
   "lastOpenFiles": [
-    "엘리베이터/용어/기타용어.md",
+    "VAULT-PLM/PLM-개발정보/도면출력.md",
+    "VAULT-PLM/PLM-개발정보/동일정보 만들기.md",
+    "VAULT-PLM/PLM-개발정보/공사정보 등록.md",
+    "VAULT-PLM/PLM-개발정보/블럭 시뮬레이터.md",
+    "VAULT-PLM/PLM-개발정보/토큰 함수.md",
+    "엘리베이터/CAR/보상 체인(Compensation Chain) = Compen Hitch Plate.md",
+    "엘리베이터/CAR/CAR CAGE.md",
+    "엘리베이터/CAR/레일브라켓 방진 라이너.md",
+    "엘리베이터/CAR/기타 정보.md",
+    "엘리베이터/PIT/균형추 스크린.md",
     "엘리베이터/용어/ROH.md",
+    "엘리베이터/용어/기타용어.md",
     "엘리베이터/엘리베이터 정보.md",
     "엘리베이터/용어/볼트 종류.md",
     "엘리베이터/용어/홈엘리베이터.md",
@@ -231,19 +241,9 @@
     "VAULT-PLM/수배로직_Block/B189B01 - COMPEN FRAME ASSY.md",
     "English/영문장외우기/ㄷㄹㄷㄹ.md",
     "VAULT-PLM/수배로직/✍️ 수배 공부 중.md",
-    "VAULT-PLM/수배로직/법인출장 관련(팀장) 요청 사항.md",
-    "VAULT-PLM/프로젝트_개발/03. 로직 특성값 뷰어.md",
     "image/Pasted image 20250922172116.png",
     "image/Pasted image 20250922172057.png",
     "VAULT-PLM/🔊 업무이력",
-    "VAULT-PLM/Query-정리/부품 조회.md",
-    "엘리베이터/용어/재질 관련.md",
-    "엘리베이터/용어/기계 W1 이란.md",
-    "엘리베이터/기계실/방진 (Isolation Pad).md",
-    "엘리베이터/기계실/STATOR(스테이터).md",
-    "엘리베이터/기계실/WIRE CLIP.md",
-    "엘리베이터/CAR/WB 기종 FLATFORM-SAFETY 체결 홀 간격.md",
-    "엘리베이터/CAR/Sub Weight.md",
     "image/Pasted image 20250918163209.png",
     "image/Pasted image 20250909172929.png",
     "VAULT-PLM/부품공용화/테이블구조.canvas",
