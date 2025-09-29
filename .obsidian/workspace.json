@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VAULT-PLM/PLM-개발정보/토큰 함수.md",
+                "file": "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "토큰 함수"
+              "title": "PID 검색 쿼리"
             }
           },
           {
@@ -215,11 +215,11 @@
   },
   "active": "6955d058e6cc097e",
   "lastOpenFiles": [
+    "VAULT-PLM/PLM-개발정보/토큰 함수.md",
     "VAULT-PLM/PLM-개발정보/도면출력.md",
     "VAULT-PLM/PLM-개발정보/동일정보 만들기.md",
     "VAULT-PLM/PLM-개발정보/공사정보 등록.md",
     "VAULT-PLM/PLM-개발정보/블럭 시뮬레이터.md",
-    "VAULT-PLM/PLM-개발정보/토큰 함수.md",
     "엘리베이터/CAR/보상 체인(Compensation Chain) = Compen Hitch Plate.md",
     "엘리베이터/CAR/CAR CAGE.md",
     "엘리베이터/CAR/레일브라켓 방진 라이너.md",
