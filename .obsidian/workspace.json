@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
+                "file": "엘리베이터/PIT/Buffer Blocking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PID 검색 쿼리"
+              "title": "Buffer Blocking"
             }
           },
           {
@@ -215,6 +215,9 @@
   },
   "active": "6955d058e6cc097e",
   "lastOpenFiles": [
+    "image/Pasted image 20250930164432.png",
+    "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
+    "엘리베이터/PIT/Buffer Blocking.md",
     "VAULT-PLM/PLM-개발정보/토큰 함수.md",
     "VAULT-PLM/PLM-개발정보/도면출력.md",
     "VAULT-PLM/PLM-개발정보/동일정보 만들기.md",
@@ -238,9 +241,6 @@
     "VAULT-PLM/데이터브릭스/테이블 정보.md",
     "VAULT-PLM/수배로직/궁금증❓.md",
     "VAULT-PLM/수배로직/수배로직 공부.md",
-    "VAULT-PLM/수배로직_Block/B189B01 - COMPEN FRAME ASSY.md",
-    "English/영문장외우기/ㄷㄹㄷㄹ.md",
-    "VAULT-PLM/수배로직/✍️ 수배 공부 중.md",
     "image/Pasted image 20250922172116.png",
     "image/Pasted image 20250922172057.png",
     "VAULT-PLM/🔊 업무이력",
