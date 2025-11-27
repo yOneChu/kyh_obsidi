@@ -1,5 +1,6 @@
 {
   "main": {
+<<<<<<< HEAD
     "id": "1cb838e13b549288",
     "type": "split",
     "children": [
@@ -18,11 +19,51 @@
             }
           }
         ]
+=======
+    "id": "3d08e92700cbdc8c",
+    "type": "split",
+    "children": [
+      {
+        "id": "e172041c3b0408cd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1840354153e733d3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "엘리베이터/CAR/Ceilling ASSY.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Ceilling ASSY"
+            }
+          },
+          {
+            "id": "6beeddf0aeb6ce4e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "VAULT-PLM/Query-정리/📢 데이터 분석용 쿼리.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "📢 데이터 분석용 쿼리"
+            }
+          }
+        ],
+        "currentTab": 1
+>>>>>>> ebacbf4552643da0071f0c1d151d2a8d314cbbb6
       }
     ],
     "direction": "vertical"
   },
   "left": {
+<<<<<<< HEAD
     "id": "0d4b1ca6c764ceb1",
     "type": "split",
     "children": [
@@ -32,6 +73,17 @@
         "children": [
           {
             "id": "1a898ddb75c79c8e",
+=======
+    "id": "4d7e1df7b843da6f",
+    "type": "split",
+    "children": [
+      {
+        "id": "57d3668620115247",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8363db03b3d66546",
+>>>>>>> ebacbf4552643da0071f0c1d151d2a8d314cbbb6
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -44,7 +96,11 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "d7e528768322ea2d",
+=======
+            "id": "a5faa675dfd4b1ae",
+>>>>>>> ebacbf4552643da0071f0c1d151d2a8d314cbbb6
             "type": "leaf",
             "state": {
               "type": "search",
@@ -61,7 +117,11 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "6200e51cfab89b61",
+=======
+            "id": "b07ebf7c76f3e217",
+>>>>>>> ebacbf4552643da0071f0c1d151d2a8d314cbbb6
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -74,6 +134,7 @@
       }
     ],
     "direction": "horizontal",
+<<<<<<< HEAD
     "width": 300
   },
   "right": {
@@ -86,10 +147,28 @@
         "children": [
           {
             "id": "0aef015ce410185f",
+=======
+    "width": 348.5
+  },
+  "right": {
+    "id": "445aaabb77820730",
+    "type": "split",
+    "children": [
+      {
+        "id": "3e6480d52d895fd5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b7b6e19033a66195",
+>>>>>>> ebacbf4552643da0071f0c1d151d2a8d314cbbb6
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
+=======
+                "file": "팀_업무/PLAN-C/K도면.md",
+>>>>>>> ebacbf4552643da0071f0c1d151d2a8d314cbbb6
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,24 +178,44 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
+<<<<<<< HEAD
               "title": "Backlinks"
             }
           },
           {
             "id": "06093b6271bbcc18",
+=======
+              "title": "Backlinks for K도면"
+            }
+          },
+          {
+            "id": "cfab136531c68d96",
+>>>>>>> ebacbf4552643da0071f0c1d151d2a8d314cbbb6
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+<<<<<<< HEAD
+=======
+                "file": "팀_업무/PLAN-C/K도면.md",
+>>>>>>> ebacbf4552643da0071f0c1d151d2a8d314cbbb6
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
+<<<<<<< HEAD
               "title": "Outgoing links"
             }
           },
           {
             "id": "f1827b32e5f62787",
+=======
+              "title": "Outgoing links from K도면"
+            }
+          },
+          {
+            "id": "feb14411c4a82380",
+>>>>>>> ebacbf4552643da0071f0c1d151d2a8d314cbbb6
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -131,17 +230,29 @@
             }
           },
           {
+<<<<<<< HEAD
             "id": "c875353830962f1e",
+=======
+            "id": "89eeae8e6b7a32ac",
+>>>>>>> ebacbf4552643da0071f0c1d151d2a8d314cbbb6
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+<<<<<<< HEAD
+=======
+                "file": "팀_업무/PLAN-C/K도면.md",
+>>>>>>> ebacbf4552643da0071f0c1d151d2a8d314cbbb6
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
+<<<<<<< HEAD
               "title": "Outline"
+=======
+              "title": "Outline of K도면"
+>>>>>>> ebacbf4552643da0071f0c1d151d2a8d314cbbb6
             }
           }
         ]
@@ -163,6 +274,32 @@
       "obsidian-git:Open Git source control": false
     }
   },
+<<<<<<< HEAD
   "active": "ee3133b9bfd47995",
   "lastOpenFiles": []
+=======
+  "active": "6beeddf0aeb6ce4e",
+  "lastOpenFiles": [
+    "VAULT-PLM/Query-정리/📢 쿼리 목록.md",
+    "VAULT-PLM/Query-정리/법인자재 쿼리(PLM).md",
+    "VAULT-PLM/Query-정리/📢 데이터 분석용 쿼리.md",
+    "VAULT-PLM/Query-정리/부품 조회.md",
+    "VAULT-PLM/Query-정리/부품의 하위 추출.md",
+    "VAULT-PLM/Query-정리/수량 PID 조회.md",
+    "VAULT-PLM/Query-정리/원가절감실적조회.md",
+    "VAULT-PLM/프로젝트_개발/00. 프로젝트 개발.md",
+    "VAULT-PLM/프로젝트_개발/01. 승강기 설치 정보.md",
+    "수배-PID/E321A-CEILING ASSY.md",
+    "VAULT-PLM/MLB/00. 업무절차.md",
+    "VAULT-PLM/MLB/이슈 모음집.md",
+    "VAULT-PLM/PLM-함수/종속사양 산출 버튼.md",
+    "수배-PID/A101A.md",
+    "엘리베이터/CAR/Ceilling ASSY.md",
+    "업무/📚시험일정.md",
+    "엘리베이터/엘리베이터 정보.md",
+    "수배-PID",
+    "팀_업무/PLAN-C/K도면.md",
+    "엘리베이터/수배로직-PID"
+  ]
+>>>>>>> ebacbf4552643da0071f0c1d151d2a8d314cbbb6
 }
