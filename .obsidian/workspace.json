@@ -1,84 +1,37 @@
 {
   "main": {
-    "id": "0116b6cba3d9e732",
+    "id": "1cb838e13b549288",
     "type": "split",
     "children": [
       {
-        "id": "0dc25d1ca67045e0",
+        "id": "0af35842695d1679",
         "type": "tabs",
         "children": [
           {
-            "id": "200e0585ca17fa6c",
+            "id": "ee3133b9bfd47995",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "VAULT-PLM/프로젝트_개발/03. 로직 특성값 뷰어.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "03. 로직 특성값 뷰어"
-            }
-          },
-          {
-            "id": "6955d058e6cc097e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "VAULT-PLM/PLM-개발정보/VaultReportController.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "VaultReportController"
-            }
-          },
-          {
-            "id": "e9e13e4c7e66d6cb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "팀_업무/PLAN-C/K도면.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "K도면"
-            }
-          },
-          {
-            "id": "23ab8e23fc7e5dbf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2025-11-20.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "2025-11-20"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "904d4ef631ac7f4c",
+    "id": "0d4b1ca6c764ceb1",
     "type": "split",
     "children": [
       {
-        "id": "c789600c8cd1fe9c",
+        "id": "20b27eecb986f4ac",
         "type": "tabs",
         "children": [
           {
-            "id": "01865fcda0945a99",
+            "id": "1a898ddb75c79c8e",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -91,7 +44,7 @@
             }
           },
           {
-            "id": "b01205f729c76d71",
+            "id": "d7e528768322ea2d",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -108,7 +61,7 @@
             }
           },
           {
-            "id": "676a811a42cf25b9",
+            "id": "6200e51cfab89b61",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -121,23 +74,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 312.5
+    "width": 300
   },
   "right": {
-    "id": "98d3d0c76072bc9e",
+    "id": "1370e962b223f81b",
     "type": "split",
     "children": [
       {
-        "id": "914bf4095984b801",
+        "id": "40cfee3e4c04a7de",
         "type": "tabs",
         "children": [
           {
-            "id": "7d2d1f33384efe03",
+            "id": "0aef015ce410185f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VAULT-PLM/프로젝트_개발/03. 로직 특성값 뷰어.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -147,25 +99,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 03. 로직 특성값 뷰어"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "2336877231498bc9",
+            "id": "06093b6271bbcc18",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "VAULT-PLM/프로젝트_개발/03. 로직 특성값 뷰어.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 03. 로직 특성값 뷰어"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "9ffaf1e3f09072d4",
+            "id": "f1827b32e5f62787",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -180,18 +131,17 @@
             }
           },
           {
-            "id": "1290710b5e28961c",
+            "id": "c875353830962f1e",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "VAULT-PLM/프로젝트_개발/03. 로직 특성값 뷰어.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 03. 로직 특성값 뷰어"
+              "title": "Outline"
             }
           }
         ]
@@ -203,88 +153,16 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:Create new base": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "23ab8e23fc7e5dbf",
-  "lastOpenFiles": [
-<<<<<<< HEAD
-    "엘리베이터/용어/기계 W1 이란.md",
-    "엘리베이터/CAR/계산식 모음.md",
-    "엘리베이터/CAR/기타 정보.md",
-    "SAP/💡 SAP 계정.md",
-    "SAP/JQPR 정보.md",
-    "VAULT-PLM/수배로직_Block/B189B01 - COMPEN FRAME ASSY.md",
-    "VAULT-PLM/MLB/00. 업무절차.md",
-    "VAULT-PLM/MLB/이슈 모음집.md",
-    "VAULT-PLM/MLB/자재번호.md",
-    "VAULT-PLM/Query-정리/PID 조회.md",
-    "VAULT-PLM/수배로직검증/BOM추적.md",
-    "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
-    "VAULT-PLM/수배로직검증/로직에디터 CON 컬럼 오류 찾기 위한 쿼리.md",
-    "VAULT-PLM/수배로직검증/기능 개발.md",
-    "팀_업무/PLAN-C/K도면.md",
-    "엘리베이터/승강로/COMPEN ROPE 본수.md",
-    "팀_업무/PLAN-C",
-    "VAULT-PLM/🔊 업무이력/COMPEN CHAIN 관리-김선태,최진영.md",
-    "VAULT-PLM/🔊 업무이력/현재 작업중.md",
-    "VAULT-PLM/Query-정리/수배로직 쿼리.md",
-    "VAULT-PLM/Query-정리/블럭번호 별 최대 하위 레벨  개수.md",
-    "VAULT-PLM/MLB/중국 자재번호 규칙.md",
-    "VAULT-PLM/프로젝트_개발/05. PID 현황.md",
-    "VAULT-PLM/프로젝트_개발/06. dfdf.md",
-    "VAULT-PLM/PLM-함수/영업사양 쪽.md",
-    "VAULT-PLM/Query-정리/부품 조회.md",
-    "VAULT-PLM/PLM-개발정보/동일정보 만들기.md",
-=======
-    "VAULT-PLM/🔊 업무이력/현재 작업중.md",
-    "2025-11-20.md",
-    "팀_업무/도면뷰어.md",
-    "팀_업무/설계복사 란.md",
-    "팀_업무/프로젝트 개요.md",
-    "엘리베이터/Untitled.md",
-    "엘리베이터/CAR/CAR WALL ASSY.md",
-    "엘리베이터/CAR/Ceilling ASSY.md",
-    "엘리베이터/CAR/CAR CAGE.md",
-    "엘리베이터/CAR/계산식 모음.md",
-    "엘리베이터/CAR/기타 정보.md",
-    "엘리베이터/CAR/레일브라켓 방진 라이너.md",
-    "엘리베이터/용어/기타용어.md",
-    "엘리베이터/용어/단면계수.md",
-    "엘리베이터/용어/ROH.md",
-    "엘리베이터/용어/BG-CA ....md",
-    "엘리베이터/용어/홈엘리베이터.md",
-    "팀_업무/설계복사.md",
-    "VAULT-PLM/PLM-함수/종속사양 산출 버튼.md",
-    "엘리베이터.md",
-    "업무/To Do List.md",
-    "업무/엘베 학습.md",
-    "업무/📚시험일정.md",
-    "VAULT-PLM/Query-정리/수배로직 쿼리.md",
-    "VAULT-PLM/Query-정리/블럭번호 별 최대 하위 레벨  개수.md",
-    "VAULT-PLM/MLB/중국 자재번호 규칙.md",
->>>>>>> 1255e3b5324ccc341014ffcfa9bd8407f9ef6dc0
-    "VAULT-PLM/부품공용화/Untitled.base",
-    "VAULT-PLM/부품공용화/테이블구조.canvas",
-    "image/Pasted image 20251028095302.png",
-    "image/Pasted image 20251013204153.png",
-    "VAULT-PLM/프로젝트_개발/07. JQPR 대시보드",
-    "image/Pasted image 20250930164432.png",
-    "image/Pasted image 20250922172116.png",
-    "image/Pasted image 20250922172057.png",
-    "VAULT-PLM/🔊 업무이력",
-    "image/Pasted image 20250918163209.png",
-    "image/Pasted image 20250909172929.png",
-    "VAULT-PLM/수배로직_Block",
-    "image/Pasted image 20250805143717.png",
-    "image/Pasted image 20250805143832.png",
-    "image/Pasted image 20250806131313.png"
-  ]
+  "active": "ee3133b9bfd47995",
+  "lastOpenFiles": []
 }
