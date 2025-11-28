@@ -6,9 +6,8 @@ aliases:
 
 
 | 일반과 이중이 있다.
-차이점은 이중에는 아래와 같이 SOUNDFROOF, SPONGE가 있다.
-
-SOUNDFROOF, SPONGE는 소음을 방지하기 위해 자재들 사이에 끼워놓는다.
+- 차이점은 이중에는 아래와 같이 SOUNDFROOF, SPONGE가 있다.
+- SOUNDFROOF, SPONGE는 소음을 방지하기 위해 자재들 사이에 끼워놓는다.
 
 
 ![[Pasted image 20250909172929.png]]
@@ -21,13 +20,13 @@ SOUNDFROOF, SPONGE는 소음을 방지하기 위해 자재들 사이에 끼워�
 
 
 
-기밀구조는 '솔'과 관련이 있다.
+- 기밀구조는 '솔'과 관련이 있다.
 
 
-SUBCESILING가 CEILING 사이의 간격을 구하는 이유는 그 길이로 인하여 카 안의 OPB가 가려지는 경우가 있기 때문이다.
+- SUBCESILING가 CEILING 사이의 간격을 구하는 이유는 그 길이로 인하여 카 안의 OPB가 가려지는 경우가 있기 때문이다.
 
 
-| FAN LOUVER
+### | FAN LOUVER
 - 환풍구이다.
 - 통풍을 위해 공기가 드나드는 그릴 형태의 덮개
 - 필요 이유
