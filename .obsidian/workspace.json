@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "B186A01-ROPE(BELT) SHACKLE (수량)"
             }
+          },
+          {
+            "id": "34a23d39bded298c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/수배-PID/B189D02-LADDER CASE.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "B189D02-LADDER CASE"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,13 +185,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c42f3db152a65166",
+  "active": "34a23d39bded298c",
   "lastOpenFiles": [
+    "🧪 수배로직/수배-PID/B183B01-BUFFER BLOCKING.md",
+    "🧪 수배로직/수배-PID/B189B01 - COMPEN FRAME ASSY.md",
     "🧪 수배로직/수배-PID/E321A-CEILING ASSY.md",
     "🧪 수배로직/수배-PID/B189D02-LADDER CASE.md",
-    "2025-11-12.md",
-    "🧪 수배로직/수배-PID/B183B01-Buffer Blocking.md",
     "🧪 수배로직/수배-PID/B186A01-ROPE(BELT) SHACKLE (수량).md",
+    "2025-11-12.md",
     "Untitled 1.canvas",
     "엘리베이터/PIT/균형추 스크린.md",
     "엘리베이터/CAR/보상 체인(Compensation Chain) = Compen Hitch Plate.md",
@@ -200,7 +216,6 @@
     "엘리베이터/엘리베이터 정보.md",
     "Untitled 1.base",
     "Untitled.base",
-    "🧪 수배로직/수배-PID/레이아웃 참조.md",
     "image/Pasted image 20251128110715.png",
     "image/Pasted image 20251128110707.png",
     "VAULT-PLM/부품공용화/테이블구조.canvas",
