@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/📌 추후작업/북미전산화.md",
+                "file": "🧪 수배로직/🙋‍♀️ 작업_진행중/북미전산화.md",
                 "mode": "source",
                 "source": false
               },
@@ -26,14 +26,10 @@
             "id": "2d185467a82e4982",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/작동법.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "작동법"
+              "title": "New tab"
             }
           }
         ]
@@ -49,7 +45,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/📌 추후작업/북미전산화.md",
+                "file": "🧪 수배로직/🙋‍♀️ 작업_진행중/북미전산화.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -232,24 +228,34 @@
   "active": "c42f3db152a65166",
   "lastOpenFiles": [
     "🧪 수배로직/📌 추후작업/버퍼오일 단종 인증 관련 작업.md",
-    "🧪 수배로직/📌 추후작업/북미전산화.md",
+    "🧪 수배로직/🙋‍♀️ 작업_진행중/북미전산화.md",
+    "엘리베이터/용어/SEISMIC ZONE (US).md",
+    "업무/MLB/넥스플랜 공부.md",
+    "엘리베이터.md",
+    "🧪 수배로직/🙋‍♀️ 작업_진행중",
+    "🧪 수배로직/수배-PID/B121A02-SAFETY_GUARD/용도.md",
+    "🧪 수배로직/수배-PID/레이아웃 참조.md",
     "🧪 수배로직/옵시디언 작동법.md",
+    "팀_업무/PLAN-C/K도면.md",
+    "팀_업무/도면뷰어.md",
+    "팀_업무/설계복사.md",
+    "팀_업무/설계복사 란.md",
+    "image/Pasted image 20251205094756.png",
+    "업무/MLB/도면 생성 방법(초도).md",
+    "업무/MLB/중국자재번호 정의.md",
+    "업무/📚시험일정.md",
+    "업무/엘베 학습.md",
+    "업무/MLB",
     "image/Pasted image 20251204112142.png",
     "🧪 수배로직/💻 개발/BOM 이력관리.md",
     "🧪 수배로직/📌 추후작업",
     "🧪 수배로직/수배-PID/B183A01 - OIL BUFFER.md",
     "VAULT-PLM/Query-정리/원가절감실적조회.md",
-    "🧪 수배로직/수배-PID/레이아웃 참조.md",
     "🧪 수배로직/수배-PID/A101A.md",
-    "업무/엘베 학습.md",
-    "업무/📚시험일정.md",
     "🧪 수배로직/💻 개발/로직에디터 변환.md",
     "image/Pasted image 20251203170414.png",
     "image/Pasted image 20251203170207.png",
     "image/Pasted image 20251203170016.png",
-    "팀_업무/도면뷰어.md",
-    "팀_업무/설계복사.md",
-    "팀_업무/설계복사 란.md",
     "팀_업무/프로젝트 개요.md",
     "VAULT-PLM/부품공용화/테이블 생성.md",
     "VAULT-PLM/부품공용화/Untitled.base",
@@ -257,14 +263,7 @@
     "VAULT-PLM/부품공용화/부품공용화 대시보드.md",
     "VAULT-PLM/데이터브릭스/테이블 정보.md",
     "VAULT-PLM/PLM-함수/종속사양 산출 버튼.md",
-    "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
-    "VAULT-PLM/수배로직검증/기능 개발.md",
-    "VAULT-PLM/수배로직검증/로직에디터 CON 컬럼 오류 찾기 위한 쿼리.md",
-    "🧪 수배로직/수배-PID/B121A02-SAFETY_GUARD/용도.md",
-    "SAP/💡 SAP 계정.md",
-    "🧪 수배로직/수배-PID/B186A01-ROPE(BELT) SHACKLE (수량).md",
     "🧪 수배로직/수배-PID/B121A02-SAFETY_GUARD",
-    "🧪 수배로직/수배-PID/B183C01 - BUFFER SUPPORT.md",
     "image/Pasted image 20251201213023.png",
     "image/Pasted image 20251201130638.png",
     "Untitled 1.canvas",
