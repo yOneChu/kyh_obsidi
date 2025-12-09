@@ -1,79 +1,24 @@
 {
   "main": {
-    "id": "17dda7ca02196ec5",
+    "id": "4e68c09e40022c69",
     "type": "split",
     "children": [
       {
-        "id": "eadc0fb3bd00a992",
+        "id": "d649e3d7a15714da",
         "type": "tabs",
-        "dimension": 60.520094562647756,
         "children": [
           {
-            "id": "c42f3db152a65166",
+            "id": "e4fe6db74ba31998",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🙋‍♀️ 작업_진행중/북미전산화.md",
+                "file": "🧪 수배로직/수배-PID/레이아웃 참조.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "북미전산화"
-            }
-          },
-          {
-            "id": "2d185467a82e4982",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "New tab"
-            }
-          }
-        ]
-      },
-      {
-        "id": "70d60129069756cf",
-        "type": "tabs",
-        "dimension": 39.479905437352244,
-        "children": [
-          {
-            "id": "344a5caae3b8fd21",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "🧪 수배로직/🙋‍♀️ 작업_진행중/북미전산화.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.5087618855792587,
-                  "close": true
-                }
-              },
-              "icon": "lucide-git-fork",
-              "title": "Graph of 북미전산화"
+              "title": "레이아웃 참조"
             }
           }
         ]
@@ -82,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "9ced15c80cf82fc3",
+    "id": "a41858b3918d378b",
     "type": "split",
     "children": [
       {
-        "id": "38666d1ecb371e73",
+        "id": "55713dc22dd5c719",
         "type": "tabs",
         "children": [
           {
-            "id": "2ccf9ddd21fdff59",
+            "id": "7943b532b43da356",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -103,7 +48,7 @@
             }
           },
           {
-            "id": "8d77381009a08630",
+            "id": "a55d1b15c819db52",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -120,7 +65,7 @@
             }
           },
           {
-            "id": "2bfdcdb5c86d8570",
+            "id": "3235a3814bb5d87c",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -136,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "11d335091f73e774",
+    "id": "1134aa22233e94ee",
     "type": "split",
     "children": [
       {
-        "id": "124961e902bdd720",
+        "id": "77f5507d8894d476",
         "type": "tabs",
         "children": [
           {
-            "id": "0f2e3ae0d87d669e",
+            "id": "700dc37c2a51c72a",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B186A01-ROPE(BELT) SHACKLE (수량).md",
+                "file": "🧪 수배로직/수배-PID/레이아웃 참조.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -159,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for B186A01-ROPE(BELT) SHACKLE (수량)"
+              "title": "Backlinks for 레이아웃 참조"
             }
           },
           {
-            "id": "07810827045599df",
+            "id": "230b1417cb44a0ea",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B186A01-ROPE(BELT) SHACKLE (수량).md",
+                "file": "🧪 수배로직/수배-PID/레이아웃 참조.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from B186A01-ROPE(BELT) SHACKLE (수량)"
+              "title": "Outgoing links from 레이아웃 참조"
             }
           },
           {
-            "id": "27b5360828e526c7",
+            "id": "91d8f52b89ce64d8",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -192,18 +137,18 @@
             }
           },
           {
-            "id": "39d6547e47bb14c8",
+            "id": "3161fd01e620306d",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B186A01-ROPE(BELT) SHACKLE (수량).md",
+                "file": "🧪 수배로직/수배-PID/레이아웃 참조.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of B186A01-ROPE(BELT) SHACKLE (수량)"
+              "title": "Outline of 레이아웃 참조"
             }
           }
         ]
@@ -225,68 +170,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c42f3db152a65166",
+  "active": "e4fe6db74ba31998",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "🧪 수배로직/📌 추후작업/버퍼오일 단종 인증 관련 작업.md",
-    "🧪 수배로직/🙋‍♀️ 작업_진행중/북미전산화.md",
-    "엘리베이터/용어/SEISMIC ZONE (US).md",
-    "업무/MLB/넥스플랜 공부.md",
-    "엘리베이터.md",
-    "🧪 수배로직/🙋‍♀️ 작업_진행중",
-    "🧪 수배로직/수배-PID/B121A02-SAFETY_GUARD/용도.md",
-    "🧪 수배로직/수배-PID/레이아웃 참조.md",
-=======
-    "🧪 수배로직/수배-PID/A103B02-HITCH_BEAM/PID.md",
-    "🧪 수배로직/📌 추후작업/북미전산화.md",
-    "🧪 수배로직/수배-PID/A103B02-HITCH_BEAM",
-    "🧪 수배로직/수배-PID/A103C-ISOLATION_PAD/ISOLATION-PAD.md",
-    "🧪 수배로직/수배-PID/B121A02-SAFETY_GUARD/용도.md",
-    "🧪 수배로직/수배-PID/A103C-ISOLATION_PAD",
-    "🧪 수배로직/📌 추후작업/버퍼오일 단종 인증 관련 작업.md",
->>>>>>> 1fccbe853df360c62bd840f16ab464cd8eb0c63d
-    "🧪 수배로직/옵시디언 작동법.md",
-    "팀_업무/PLAN-C/K도면.md",
-    "팀_업무/도면뷰어.md",
-    "팀_업무/설계복사.md",
-    "팀_업무/설계복사 란.md",
-    "image/Pasted image 20251205094756.png",
-    "업무/MLB/도면 생성 방법(초도).md",
-    "업무/MLB/중국자재번호 정의.md",
-    "업무/📚시험일정.md",
-    "업무/엘베 학습.md",
-    "업무/MLB",
-    "image/Pasted image 20251204112142.png",
+    "🧪 수배로직/시스템/SUB-WEIGHT_계산식.md",
+    "🧪 수배로직/🙋‍♀️ 작업_진행중/02. SUBWEIGHT 전산화.md",
+    "🧪 수배로직/시스템/JAVA PID 작동원리.md",
     "🧪 수배로직/💻 개발/BOM 이력관리.md",
-    "🧪 수배로직/📌 추후작업",
-    "🧪 수배로직/수배-PID/B183A01 - OIL BUFFER.md",
-    "VAULT-PLM/Query-정리/원가절감실적조회.md",
-    "🧪 수배로직/수배-PID/A101A.md",
+    "🧪 수배로직/시스템",
     "🧪 수배로직/💻 개발/로직에디터 변환.md",
-    "image/Pasted image 20251203170414.png",
-    "image/Pasted image 20251203170207.png",
-    "image/Pasted image 20251203170016.png",
-    "팀_업무/프로젝트 개요.md",
-    "VAULT-PLM/부품공용화/테이블 생성.md",
-    "VAULT-PLM/부품공용화/Untitled.base",
-    "VAULT-PLM/부품공용화/테이블구조.canvas",
-    "VAULT-PLM/부품공용화/부품공용화 대시보드.md",
-    "VAULT-PLM/데이터브릭스/테이블 정보.md",
-    "VAULT-PLM/PLM-함수/종속사양 산출 버튼.md",
-<<<<<<< HEAD
-=======
-    "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
-    "VAULT-PLM/수배로직검증/기능 개발.md",
-    "VAULT-PLM/수배로직검증/로직에디터 CON 컬럼 오류 찾기 위한 쿼리.md",
+    "🧪 수배로직/🙋‍♀️ 작업_진행중/01.북미전산화.md",
+    "🧪 수배로직/수배-PID/A103B02-HITCH_BEAM/PID.md",
+    "image/Pasted image 20251209112101.png",
+    "SAP/JQPR 정보.md",
     "SAP/💡 SAP 계정.md",
->>>>>>> 1fccbe853df360c62bd840f16ab464cd8eb0c63d
-    "🧪 수배로직/수배-PID/B121A02-SAFETY_GUARD",
-    "image/Pasted image 20251201213023.png",
-    "image/Pasted image 20251201130638.png",
-    "Untitled 1.canvas",
-    "Untitled 1.base",
-    "Untitled.base",
-    "image/Pasted image 20251128110715.png",
-    "image/Pasted image 20251128110707.png"
+    "2025-11-20.md",
+    "2025-11-12.md",
+    "🧪 수배로직/수배-PID/E321A-CEILING ASSY.md",
+    "🧪 수배로직/수배-PID/B189B01 - COMPEN FRAME ASSY.md",
+    "🧪 수배로직/수배-PID/B189D02-LADDER CASE.md",
+    "🧪 수배로직/수배-PID/A103C-ISOLATION_PAD/ISOLATION-PAD.md"
   ]
 }
