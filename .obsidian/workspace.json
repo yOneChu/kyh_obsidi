@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/팀_업무/PLAN-C/PLAN-C 정의.md",
+                "file": "🧪 수배로직/🙋‍♀️ 작업_진행중/03. 직상부_MRL_전산화/내용.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PLAN-C 정의"
+              "title": "내용"
             }
           }
         ]
@@ -35,7 +35,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/팀_업무/PLAN-C/PLAN-C 정의.md",
+                "file": "🧪 수배로직/🙋‍♀️ 작업_진행중/03. 직상부_MRL_전산화/내용.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -63,7 +63,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of PLAN-C 정의"
+              "title": "Graph of 내용"
             }
           }
         ]
@@ -217,16 +217,17 @@
   },
   "active": "e4fe6db74ba31998",
   "lastOpenFiles": [
+    "🧪 수배로직/🙋‍♀️ 작업_진행중/02. SUBWEIGHT 전산화.md",
+    "🧪 수배로직/🙋‍♀️ 작업_진행중/03. 직상부_MRL_전산화/내용.md",
+    "🧪 수배로직/팀_업무/PLAN-C/PLAN-C 정의.md",
     "image/Pasted image 20251211162335.png",
     "🧪 수배로직/팀_업무/PLAN-C/K도면.md",
-    "🧪 수배로직/팀_업무/PLAN-C/PLAN-C 정의.md",
     "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/EL_PB181B.md",
     "🧪 수배로직/🙋‍♀️ 작업_진행중/03. 직상부_MRL_전산화",
     "🧪 수배로직/수배-PID/A103C-ISOLATION_PAD/ISOLATION-PAD.md",
     "🧪 수배로직/수배-PID/B181B_SUBWEIGHT",
     "🧪 수배로직/수배-PID/B183C01 - BUFFER SUPPORT.md",
     "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md",
-    "🧪 수배로직/🙋‍♀️ 작업_진행중/02. SUBWEIGHT 전산화.md",
     "🧪 수배로직/수배-PID/A103B02-HITCH_BEAM/PID.md",
     "🧪 수배로직/시스템/SUB-WEIGHT_계산식.md",
     "🧪 수배로직/팀_업무/도면뷰어.md",
