@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🙋‍♀️ 작업_진행중/02. SUBWEIGHT 전산화.md",
+                "file": "🧪 수배로직/🙋‍♀️ 작업_진행중/업무하며 알아야할 기타 상식.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02. SUBWEIGHT 전산화"
+              "title": "업무하며 알아야할 기타 상식"
             }
           }
         ]
@@ -35,7 +35,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/🙋‍♀️ 작업_진행중/02. SUBWEIGHT 전산화.md",
+                "file": "🧪 수배로직/🙋‍♀️ 작업_진행중/업무하며 알아야할 기타 상식.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -63,7 +63,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 02. SUBWEIGHT 전산화"
+              "title": "Graph of 업무하며 알아야할 기타 상식"
             }
           }
         ]
@@ -217,36 +217,37 @@
   },
   "active": "e4fe6db74ba31998",
   "lastOpenFiles": [
-    "🧪 수배로직/🙋‍♀️ 작업_진행중/03. 직상부_MRL_전산화/내용.md",
-    "🧪 수배로직/🙋‍♀️ 작업_진행중/03. 직상부_MRL_전산화",
-    "🧪 수배로직/🙋‍♀️ 작업_진행중/01.북미전산화.md",
-    "🧪 수배로직/시스템/JAVA PID 작동원리.md",
-    "🧪 수배로직/시스템/SUB-WEIGHT_계산식.md",
-    "🧪 수배로직/🙋‍♀️ 작업_진행중/02. SUBWEIGHT 전산화.md",
-    "🧪 수배로직/팀_업무/PLAN-C/PLAN-C 정의.md",
-    "image/Pasted image 20251211162335.png",
+    "🧪 수배로직/🙋‍♀️ 작업_진행중/03. 직상부_구동형_MRL_전산화/개요-직상부_구동형_MRL_전산화(리모델링).md",
+    "🧪 수배로직/🙋‍♀️ 작업_진행중/01. 북미전산화.md",
     "🧪 수배로직/팀_업무/PLAN-C/K도면.md",
+    "🧪 수배로직/팀_업무/도면뷰어.md",
+    "🧪 수배로직/팀_업무/설계복사.md",
+    "🧪 수배로직/팀_업무/설계복사 란.md",
+    "🧪 수배로직/팀_업무/PLAN-C/PLAN-C 정의.md",
+    "🧪 수배로직/🙋‍♀️ 작업_진행중/02. SUBWEIGHT 전산화.md",
+    "🧪 수배로직/🙋‍♀️ 작업_진행중/업무하며 알아야할 기타 상식.md",
+    "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
+    "🧪 수배로직/시스템/SUB-WEIGHT_계산식.md",
+    "VAULT-PLM/Query-정리/원가절감실적조회.md",
+    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
     "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/EL_PB181B.md",
+    "🧪 수배로직/수배-PID/레이아웃 참조.md",
+    "image/Pasted image 20251212124316.png",
+    "🧪 수배로직/수배-PID/A103B02-HITCH_BEAM/EL_PA103B02.md",
+    "🧪 수배로직/🙋‍♀️ 작업_진행중/03. 직상부_구동형_MRL_전산화",
+    "🧪 수배로직/시스템/JAVA PID 작동원리.md",
+    "image/Pasted image 20251211162335.png",
     "🧪 수배로직/수배-PID/A103C-ISOLATION_PAD/ISOLATION-PAD.md",
     "🧪 수배로직/수배-PID/B181B_SUBWEIGHT",
     "🧪 수배로직/수배-PID/B183C01 - BUFFER SUPPORT.md",
     "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md",
-    "🧪 수배로직/수배-PID/A103B02-HITCH_BEAM/PID.md",
-    "🧪 수배로직/팀_업무/도면뷰어.md",
-    "🧪 수배로직/팀_업무/설계복사.md",
-    "🧪 수배로직/팀_업무/설계복사 란.md",
     "🧪 수배로직/팀_업무/프로젝트 개요.md",
     "🧪 수배로직/💻 개발/BOM 이력관리.md",
     "🧪 수배로직/💻 개발/로직에디터 변환.md",
     "엘리베이터/용어/BG-CA ....md",
     "엘리베이터/용어/4면절곡.md",
     "업무/엘베 학습.md",
-    "업무/To Do List.md",
-    "업무/MLB/넥스플랜 공부.md",
-    "업무/📚시험일정.md",
     "🧪 수배로직/Untitled",
-    "VAULT-PLM/🔊 업무이력/COMPEN CHAIN 관리-김선태,최진영.md",
-    "VAULT-PLM/🔊 업무이력/현재 작업중.md",
     "🧪 수배로직/시스템",
     "image/Pasted image 20251209112101.png"
   ]
