@@ -6,7 +6,7 @@
       {
         "id": "d649e3d7a15714da",
         "type": "tabs",
-        "dimension": 62.90780141843971,
+        "dimension": 59.96192893401015,
         "children": [
           {
             "id": "e4fe6db74ba31998",
@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/정합성검증/BOM_LENGTH.md",
+                "file": "🧪 수배로직/수배-PID/E321A-CEILING ASSY.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BOM_LENGTH"
+              "title": "E321A-CEILING ASSY"
             }
           }
         ]
@@ -27,7 +27,7 @@
       {
         "id": "849c11dfa932e6a5",
         "type": "tabs",
-        "dimension": 37.09219858156028,
+        "dimension": 40.03807106598985,
         "children": [
           {
             "id": "0300f03e8f3cd75a",
@@ -35,9 +35,9 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/수배-PID/정합성검증/BOM_LENGTH.md",
+                "file": "🧪 수배로직/수배-PID/E321A-CEILING ASSY.md",
                 "options": {
-                  "collapse-filter": true,
+                  "collapse-filter": false,
                   "search": "",
                   "localJumps": 1,
                   "localBacklinks": true,
@@ -48,22 +48,22 @@
                   "hideUnresolved": false,
                   "collapse-color-groups": true,
                   "colorGroups": [],
-                  "collapse-display": true,
+                  "collapse-display": false,
                   "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
+                  "textFadeMultiplier": -1.5,
+                  "nodeSizeMultiplier": 0.814583333333333,
+                  "lineSizeMultiplier": 0.865625,
                   "collapse-forces": true,
                   "centerStrength": 0.518713248970312,
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.3628873693012117,
-                  "close": false
+                  "scale": 0.7132754626224428,
+                  "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of BOM_LENGTH"
+              "title": "Graph of E321A-CEILING ASSY"
             }
           }
         ]
@@ -217,11 +217,28 @@
   },
   "active": "e4fe6db74ba31998",
   "lastOpenFiles": [
+    "🧪 수배로직/수배-PID/B189D02-LADDER CASE.md",
+    "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md",
+    "🧪 수배로직/수배-PID/B183C01 - BUFFER SUPPORT.md",
+    "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT/SH_B181B.md",
+    "🧪 수배로직/🙋‍♀️ 작업_진행중/01. 북미전산화.md",
     "🧪 수배로직/수배-PID/정합성검증/BOM_CHECK.md",
-    "🧪 수배로직/수배-PID/정합성검증/BOM_LENGTH.md",
-    "🧪 수배로직/팀_업무/🔊 업무이력/현재 작업중.md",
-    "🧪 수배로직/수배-PID/정합성검증",
+    "엘리베이터/용어/SEISMIC ZONE (US).md",
+    "VAULT-PLM/수배로직검증/로직에디터 CON 컬럼 오류 찾기 위한 쿼리.md",
+    "VAULT-PLM/수배로직검증/기능 개발.md",
+    "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
+    "VAULT-PLM/Query-정리/블럭번호 별 최대 하위 레벨  개수.md",
+    "VAULT-PLM/Query-정리/수량 PID 조회.md",
+    "🧪 수배로직/팀_업무/PLAN-C/K도면.md",
+    "🧪 수배로직/팀_업무/PLAN-C/PLAN-C 정의.md",
     "🧪 수배로직/팀_업무/🔊 업무이력/COMPEN CHAIN 관리-김선태,최진영.md",
+    "🧪 수배로직/팀_업무/🔊 업무이력/현재 작업중.md",
+    "🧪 수배로직/🙋‍♀️ 작업_진행중/03. 직상부_구동형_MRL_전산화/개요-직상부_구동형_MRL_전산화(리모델링).md",
+    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/EL_PB181B.md",
+    "🧪 수배로직/수배-PID/정합성검증/BOM_LENGTH.md",
+    "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT",
+    "🧪 수배로직/수배-PID(SHIP)",
+    "🧪 수배로직/수배-PID/정합성검증",
     "VAULT-PLM/MLB/00. 업무절차.md",
     "VAULT-PLM/Query-정리/견적 연동 기록.md",
     "업무/엘베 학습.md",
@@ -229,27 +246,11 @@
     "🧪 수배로직/🙋‍♀️ 작업_진행중/업무하며 알아야할 기타 상식.md",
     "🧪 수배로직/팀_업무/설계복사 란.md",
     "🧪 수배로직/팀_업무/프로젝트 개요.md",
-    "🧪 수배로직/옵시디언 작동법.md",
-    "🧪 수배로직/팀_업무/PLAN-C/PLAN-C 정의.md",
-    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/EL_PB181B.md",
-    "엘리베이터/업무용어/Ordering_Manual.md",
     "엘리베이터/업무용어",
-    "🧪 수배로직/🙋‍♀️ 작업_진행중/03. 직상부_구동형_MRL_전산화/개요-직상부_구동형_MRL_전산화(리모델링).md",
-    "🧪 수배로직/💻 개발/BOM 이력관리.md",
-    "🧪 수배로직/수배-PID/B183D01 - BUFFER FOOTING.md",
-    "🧪 수배로직/수배-PID/B186A01-ROPE(BELT) SHACKLE (수량).md",
-    "🧪 수배로직/수배-PID/B183A01 - OIL BUFFER.md",
-    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
-    "🧪 수배로직/🙋‍♀️ 작업_진행중/01. 북미전산화.md",
-    "🧪 수배로직/팀_업무/PLAN-C/K도면.md",
-    "🧪 수배로직/팀_업무/도면뷰어.md",
-    "🧪 수배로직/팀_업무/설계복사.md",
-    "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
     "image/Pasted image 20251212124316.png",
     "🧪 수배로직/🙋‍♀️ 작업_진행중/03. 직상부_구동형_MRL_전산화",
     "image/Pasted image 20251211162335.png",
     "🧪 수배로직/수배-PID/B181B_SUBWEIGHT",
-    "🧪 수배로직/Untitled",
     "🧪 수배로직/시스템",
     "image/Pasted image 20251209112101.png"
   ]
