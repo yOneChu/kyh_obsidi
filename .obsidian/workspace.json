@@ -6,7 +6,7 @@
       {
         "id": "d649e3d7a15714da",
         "type": "tabs",
-        "dimension": 59.96192893401015,
+        "dimension": 59.96192893401016,
         "children": [
           {
             "id": "e4fe6db74ba31998",
@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/E321A-CEILING ASSY.md",
+                "file": "🧪 수배로직/🙋‍♀️ 작업_진행중/업무하며 알아야할 기타 상식.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "E321A-CEILING ASSY"
+              "title": "업무하며 알아야할 기타 상식"
             }
           }
         ]
@@ -35,7 +35,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/수배-PID/E321A-CEILING ASSY.md",
+                "file": "🧪 수배로직/🙋‍♀️ 작업_진행중/업무하며 알아야할 기타 상식.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -63,7 +63,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of E321A-CEILING ASSY"
+              "title": "Graph of 업무하며 알아야할 기타 상식"
             }
           }
         ]
@@ -217,6 +217,11 @@
   },
   "active": "e4fe6db74ba31998",
   "lastOpenFiles": [
+    "🧪 수배로직/수배-PID/E321A06_FAN/EL_PE321A-FAN.md",
+    "image/Pasted image 20251218134611.png",
+    "🧪 수배로직/수배-PID/A103C-ISOLATION_PAD/ISOLATION-PAD.md",
+    "🧪 수배로직/수배-PID/E321A06_FAN",
+    "🧪 수배로직/수배-PID/E321A-CEILING ASSY.md",
     "🧪 수배로직/수배-PID/B189D02-LADDER CASE.md",
     "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md",
     "🧪 수배로직/수배-PID/B183C01 - BUFFER SUPPORT.md",
@@ -242,10 +247,6 @@
     "VAULT-PLM/MLB/00. 업무절차.md",
     "VAULT-PLM/Query-정리/견적 연동 기록.md",
     "업무/엘베 학습.md",
-    "🧪 수배로직/🙋‍♀️ 작업_진행중/02. SUBWEIGHT 전산화.md",
-    "🧪 수배로직/🙋‍♀️ 작업_진행중/업무하며 알아야할 기타 상식.md",
-    "🧪 수배로직/팀_업무/설계복사 란.md",
-    "🧪 수배로직/팀_업무/프로젝트 개요.md",
     "엘리베이터/업무용어",
     "image/Pasted image 20251212124316.png",
     "🧪 수배로직/🙋‍♀️ 작업_진행중/03. 직상부_구동형_MRL_전산화",
