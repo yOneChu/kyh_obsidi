@@ -6,7 +6,7 @@
       {
         "id": "d649e3d7a15714da",
         "type": "tabs",
-        "dimension": 59.96192893401016,
+        "dimension": 60.03989361702128,
         "children": [
           {
             "id": "e4fe6db74ba31998",
@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🙋‍♀️ 작업_진행중/업무하며 알아야할 기타 상식.md",
+                "file": "🧪 수배로직/수배-PID/E321A06_FAN/EL_PE321A-FAN.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "업무하며 알아야할 기타 상식"
+              "title": "EL_PE321A-FAN"
             }
           }
         ]
@@ -27,7 +27,7 @@
       {
         "id": "849c11dfa932e6a5",
         "type": "tabs",
-        "dimension": 40.03807106598985,
+        "dimension": 39.96010638297872,
         "children": [
           {
             "id": "0300f03e8f3cd75a",
@@ -35,7 +35,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/🙋‍♀️ 작업_진행중/업무하며 알아야할 기타 상식.md",
+                "file": "🧪 수배로직/수배-PID/E321A06_FAN/EL_PE321A-FAN.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -58,12 +58,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7132754626224428,
+                  "scale": 0.258838656218163,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 업무하며 알아야할 기타 상식"
+              "title": "Graph of EL_PE321A-FAN"
             }
           }
         ]
@@ -217,11 +217,16 @@
   },
   "active": "e4fe6db74ba31998",
   "lastOpenFiles": [
+    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/CEILING ASSY_정보.md",
     "🧪 수배로직/수배-PID/E321A06_FAN/EL_PE321A-FAN.md",
+    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/EL_PE321A.md",
+    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/EL_PB181B.md",
+    "🧪 수배로직/수배-PID/레이아웃 참조.md",
+    "🧪 수배로직/수배-PID/E321A - CEILING ASSY",
+    "🧪 수배로직/수배-PID/A103C-ISOLATION_PAD/EL_PA103C.md",
+    "🧪 수배로직/🙋‍♀️ 작업_진행중/업무하며 알아야할 기타 상식.md",
     "image/Pasted image 20251218134611.png",
-    "🧪 수배로직/수배-PID/A103C-ISOLATION_PAD/ISOLATION-PAD.md",
     "🧪 수배로직/수배-PID/E321A06_FAN",
-    "🧪 수배로직/수배-PID/E321A-CEILING ASSY.md",
     "🧪 수배로직/수배-PID/B189D02-LADDER CASE.md",
     "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md",
     "🧪 수배로직/수배-PID/B183C01 - BUFFER SUPPORT.md",
@@ -239,14 +244,11 @@
     "🧪 수배로직/팀_업무/🔊 업무이력/COMPEN CHAIN 관리-김선태,최진영.md",
     "🧪 수배로직/팀_업무/🔊 업무이력/현재 작업중.md",
     "🧪 수배로직/🙋‍♀️ 작업_진행중/03. 직상부_구동형_MRL_전산화/개요-직상부_구동형_MRL_전산화(리모델링).md",
-    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/EL_PB181B.md",
     "🧪 수배로직/수배-PID/정합성검증/BOM_LENGTH.md",
     "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT",
     "🧪 수배로직/수배-PID(SHIP)",
     "🧪 수배로직/수배-PID/정합성검증",
     "VAULT-PLM/MLB/00. 업무절차.md",
-    "VAULT-PLM/Query-정리/견적 연동 기록.md",
-    "업무/엘베 학습.md",
     "엘리베이터/업무용어",
     "image/Pasted image 20251212124316.png",
     "🧪 수배로직/🙋‍♀️ 작업_진행중/03. 직상부_구동형_MRL_전산화",
