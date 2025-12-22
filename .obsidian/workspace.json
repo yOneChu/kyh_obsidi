@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/02. 로직 이관 데이터 분석.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02. 로직 이관 데이터 분석"
+              "title": "업무 Knowledge"
             }
           },
           {
@@ -28,16 +28,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "엘리베이터/용어/루핑-ROPING(ROPE,BELT) - EL_ERPR.md",
+                "file": "VAULT-PLM/Query-정리/원가절감실적조회.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "루핑-ROPING(ROPE,BELT) - EL_ERPR"
+              "title": "원가절감실적조회"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "849c11dfa932e6a5",
@@ -50,7 +49,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "엘리베이터/용어/루핑-ROPING(ROPE,BELT) - EL_ERPR.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -73,12 +72,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7132754626224429,
+                  "scale": 0.04778763710962465,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 루핑-ROPING(ROPE,BELT) - EL_ERPR"
+              "title": "Graph of 업무 Knowledge"
             }
           }
         ]
@@ -230,10 +229,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b632bc4bdc5a6642",
+  "active": "e4fe6db74ba31998",
   "lastOpenFiles": [
-    "엘리베이터/용어/랩핑.md",
+    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/EL_PB181B.md",
+    "🧪 수배로직/수배-PID/B121A02-SAFETY_GUARD/용도.md",
+    "🧪 수배로직/🟡 작업_진행중/02. 로직 이관 데이터 분석.md",
+    "VAULT-PLM/Query-정리/원가절감실적조회.md",
+    "VAULT-PLM/Query-정리/📢 쿼리 목록.md",
+    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
     "엘리베이터/용어/루핑-ROPING(ROPE,BELT) - EL_ERPR.md",
+    "엘리베이터/용어/랩핑.md",
     "엘리베이터/용어/STROKE(스트로크).md",
     "엘리베이터/용어/SEISMIC ZONE (US).md",
     "엘리베이터/용어/ROH.md",
@@ -242,8 +247,6 @@
     "엘리베이터/용어/BG-CA ....md",
     "엘리베이터/용어/카자중.md",
     "엘리베이터/용어/조적작업.md",
-    "🧪 수배로직/🟡 작업_진행중/업무하며 알아야할 기타 상식.md",
-    "🧪 수배로직/🟡 작업_진행중/02. 로직 이관 데이터 분석.md",
     "VAULT-PLM/Query-정리/부품 조회.md",
     "VAULT-PLM/Query-정리/법인/법인_로직이관 관련 QUERY.md",
     "VAULT-PLM/Query-정리/법인자재 쿼리(PLM).md",
@@ -256,10 +259,6 @@
     "VAULT-PLM/수배로직검증/로직에디터 CON 컬럼 오류 찾기 위한 쿼리.md",
     "🧪 수배로직/🟡 작업_진행중/01. 북미전산화.md",
     "🧪 수배로직/수배-PID/E321A06_FAN/EL_PE321A06-FAN.md",
-    "🧪 수배로직/⚪ 추후작업/버퍼오일 단종 인증 관련 작업.md",
-    "🧪 수배로직/팀_주요업무/🔊 업무이력/현재 작업중.md",
-    "🧪 수배로직/🟢 작업_완료/03. 직상부_구동형_MRL_전산화/개요-직상부_구동형_MRL_전산화(리모델링).md",
-    "🧪 수배로직/🟢 작업_완료/02. SUBWEIGHT 전산화.md",
     "🧪 수배로직/🟢 작업_완료",
     "🧪 수배로직/수배-PID/E321A - CEILING ASSY",
     "image/Pasted image 20251218134611.png",

@@ -20,4 +20,6 @@ CWT_FRAME_LT_H : 적재 높이
 | PICK_B181B_KC01
 - LT_SPARE : 여유치공간 (=여유치수, FIXING BRKT 여유치수)
 - T-ER : 두께에 대한 오차범위 (중국께 안좋아서 오차범위가 있는 것이다.)
-- 
+
+
+
