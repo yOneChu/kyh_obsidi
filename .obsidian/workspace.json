@@ -14,15 +14,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/E321A06_FAN/EL_PE321A06-FAN.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/02. 로직 이관 데이터 분석.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EL_PE321A06-FAN"
+              "title": "02. 로직 이관 데이터 분석"
+            }
+          },
+          {
+            "id": "b632bc4bdc5a6642",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "엘리베이터/용어/루핑-ROPING(ROPE,BELT) - EL_ERPR.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "루핑-ROPING(ROPE,BELT) - EL_ERPR"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "849c11dfa932e6a5",
@@ -35,7 +50,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/수배-PID/E321A06_FAN/EL_PE321A06-FAN.md",
+                "file": "엘리베이터/용어/루핑-ROPING(ROPE,BELT) - EL_ERPR.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -63,7 +78,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of EL_PE321A06-FAN"
+              "title": "Graph of 루핑-ROPING(ROPE,BELT) - EL_ERPR"
             }
           }
         ]
@@ -215,38 +230,40 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e4fe6db74ba31998",
+  "active": "b632bc4bdc5a6642",
   "lastOpenFiles": [
-    "🧪 수배로직/⚪ 추후작업/버퍼오일 단종 인증 관련 작업.md",
-    "🧪 수배로직/팀_업무/🔊 업무이력/현재 작업중.md",
-    "🧪 수배로직/팀_업무/🔊 업무이력/COMPEN CHAIN 관리-김선태,최진영.md",
+    "엘리베이터/용어/랩핑.md",
+    "엘리베이터/용어/루핑-ROPING(ROPE,BELT) - EL_ERPR.md",
+    "엘리베이터/용어/STROKE(스트로크).md",
+    "엘리베이터/용어/SEISMIC ZONE (US).md",
+    "엘리베이터/용어/ROH.md",
+    "엘리베이터/용어/ETS (Emergency Terminal Stopping device).md",
+    "엘리베이터/용어/홈엘리베이터.md",
+    "엘리베이터/용어/BG-CA ....md",
+    "엘리베이터/용어/카자중.md",
+    "엘리베이터/용어/조적작업.md",
+    "🧪 수배로직/🟡 작업_진행중/업무하며 알아야할 기타 상식.md",
+    "🧪 수배로직/🟡 작업_진행중/02. 로직 이관 데이터 분석.md",
+    "VAULT-PLM/Query-정리/부품 조회.md",
+    "VAULT-PLM/Query-정리/법인/법인_로직이관 관련 QUERY.md",
+    "VAULT-PLM/Query-정리/법인자재 쿼리(PLM).md",
+    "VAULT-PLM/Query-정리/법인",
+    "🧪 수배로직/팀_주요업무/PLAN-C/01. 로직 이관.md",
+    "🧪 수배로직/팀_주요업무/🔊 업무이력/COMPEN CHAIN 관리-김선태,최진영.md",
+    "🧪 수배로직/팀_주요업무/Untitled",
+    "🧪 수배로직/시스템/SUB-WEIGHT_계산식.md",
+    "🧪 수배로직/시스템/JAVA PID 작동원리.md",
+    "VAULT-PLM/수배로직검증/로직에디터 CON 컬럼 오류 찾기 위한 쿼리.md",
     "🧪 수배로직/🟡 작업_진행중/01. 북미전산화.md",
+    "🧪 수배로직/수배-PID/E321A06_FAN/EL_PE321A06-FAN.md",
+    "🧪 수배로직/⚪ 추후작업/버퍼오일 단종 인증 관련 작업.md",
+    "🧪 수배로직/팀_주요업무/🔊 업무이력/현재 작업중.md",
     "🧪 수배로직/🟢 작업_완료/03. 직상부_구동형_MRL_전산화/개요-직상부_구동형_MRL_전산화(리모델링).md",
     "🧪 수배로직/🟢 작업_완료/02. SUBWEIGHT 전산화.md",
-    "🧪 수배로직/수배-PID/E321A06_FAN/EL_PE321A06-FAN.md",
     "🧪 수배로직/🟢 작업_완료",
-    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/CEILING ASSY_정보.md",
-    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/EL_PE321A.md",
-    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/EL_PB181B.md",
-    "🧪 수배로직/수배-PID/레이아웃 참조.md",
     "🧪 수배로직/수배-PID/E321A - CEILING ASSY",
-    "🧪 수배로직/수배-PID/A103C-ISOLATION_PAD/EL_PA103C.md",
-    "🧪 수배로직/🟡 작업_진행중/업무하며 알아야할 기타 상식.md",
     "image/Pasted image 20251218134611.png",
     "🧪 수배로직/수배-PID/E321A06_FAN",
-    "🧪 수배로직/수배-PID/B189D02-LADDER CASE.md",
-    "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md",
-    "🧪 수배로직/수배-PID/B183C01 - BUFFER SUPPORT.md",
-    "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT/SH_B181B.md",
-    "🧪 수배로직/수배-PID/정합성검증/BOM_CHECK.md",
-    "엘리베이터/용어/SEISMIC ZONE (US).md",
-    "VAULT-PLM/수배로직검증/로직에디터 CON 컬럼 오류 찾기 위한 쿼리.md",
-    "VAULT-PLM/수배로직검증/기능 개발.md",
-    "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
-    "VAULT-PLM/Query-정리/블럭번호 별 최대 하위 레벨  개수.md",
-    "VAULT-PLM/Query-정리/수량 PID 조회.md",
-    "🧪 수배로직/팀_업무/PLAN-C/K도면.md",
-    "🧪 수배로직/팀_업무/PLAN-C/PLAN-C 정의.md",
     "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT",
     "🧪 수배로직/수배-PID(SHIP)",
     "🧪 수배로직/수배-PID/정합성검증",
@@ -254,8 +271,6 @@
     "image/Pasted image 20251212124316.png",
     "🧪 수배로직/🟢 작업_완료/03. 직상부_구동형_MRL_전산화",
     "image/Pasted image 20251211162335.png",
-    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT",
-    "🧪 수배로직/시스템",
     "image/Pasted image 20251209112101.png"
   ]
 }
