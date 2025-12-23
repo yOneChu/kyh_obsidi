@@ -33,6 +33,7 @@ with ouid as
                   WHERE A.VF$OUID IN (SELECT * FROM OUID)  
                   --AND SUBSTR(A.BLOCKNO_NUMBER, 2,1) != '6'  
                   --AND SUBSTR(A.BLOCKNO_NUMBER, 2,1) != '5'                  --AND SUBSTR(A.BLOCKNO_NUMBER, 2,1) IN ('1','2','3');
+                  ;
 ```
 
 

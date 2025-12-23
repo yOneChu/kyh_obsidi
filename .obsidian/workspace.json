@@ -23,6 +23,34 @@
             }
           },
           {
+            "id": "d1d4586b48e6d029",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/🟢 작업_완료/02. SUBWEIGHT 전산화.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02. SUBWEIGHT 전산화"
+            }
+          },
+          {
+            "id": "bbc0c1089d46ac1e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02. SUBWEIGHT 전산화"
+            }
+          },
+          {
             "id": "b632bc4bdc5a6642",
             "type": "leaf",
             "state": {
@@ -36,7 +64,8 @@
               "title": "원가절감실적조회"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "849c11dfa932e6a5",
@@ -49,7 +78,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -72,12 +101,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.04778763710962465,
+                  "scale": 0.7132754626224442,
                   "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 업무 Knowledge"
+              "title": "Graph of 02. SUBWEIGHT 전산화"
             }
           }
         ]
@@ -229,11 +258,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e4fe6db74ba31998",
+  "active": "bbc0c1089d46ac1e",
   "lastOpenFiles": [
+    "🧪 수배로직/시스템/SUB-WEIGHT_계산식.md",
+    "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
+    "🧪 수배로직/🟡 작업_진행중/02. 로직 이관 데이터 분석.md",
+    "VAULT-PLM/Query-정리/법인/법인_로직이관 관련 QUERY.md",
     "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/EL_PB181B.md",
     "🧪 수배로직/수배-PID/B121A02-SAFETY_GUARD/용도.md",
-    "🧪 수배로직/🟡 작업_진행중/02. 로직 이관 데이터 분석.md",
     "VAULT-PLM/Query-정리/원가절감실적조회.md",
     "VAULT-PLM/Query-정리/📢 쿼리 목록.md",
     "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
@@ -248,17 +280,14 @@
     "엘리베이터/용어/카자중.md",
     "엘리베이터/용어/조적작업.md",
     "VAULT-PLM/Query-정리/부품 조회.md",
-    "VAULT-PLM/Query-정리/법인/법인_로직이관 관련 QUERY.md",
     "VAULT-PLM/Query-정리/법인자재 쿼리(PLM).md",
     "VAULT-PLM/Query-정리/법인",
     "🧪 수배로직/팀_주요업무/PLAN-C/01. 로직 이관.md",
     "🧪 수배로직/팀_주요업무/🔊 업무이력/COMPEN CHAIN 관리-김선태,최진영.md",
     "🧪 수배로직/팀_주요업무/Untitled",
-    "🧪 수배로직/시스템/SUB-WEIGHT_계산식.md",
     "🧪 수배로직/시스템/JAVA PID 작동원리.md",
     "VAULT-PLM/수배로직검증/로직에디터 CON 컬럼 오류 찾기 위한 쿼리.md",
     "🧪 수배로직/🟡 작업_진행중/01. 북미전산화.md",
-    "🧪 수배로직/수배-PID/E321A06_FAN/EL_PE321A06-FAN.md",
     "🧪 수배로직/🟢 작업_완료",
     "🧪 수배로직/수배-PID/E321A - CEILING ASSY",
     "image/Pasted image 20251218134611.png",
