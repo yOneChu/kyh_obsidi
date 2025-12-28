@@ -1,0 +1,12 @@
+
+
+
+---
+
+[[FLATFORM]]
+
+---
+
+
+CAR SILL 아래에 SILL BLOCK가 붙어있다
+CAR SILL의 BRACKET은 FLATFORM에 붙는다.
