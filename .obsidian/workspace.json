@@ -23,35 +23,21 @@
             }
           },
           {
-            "id": "d1d4586b48e6d029",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/🟢 작업_완료/02. SUBWEIGHT 전산화.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "02. SUBWEIGHT 전산화"
-            }
-          },
-          {
             "id": "b632bc4bdc5a6642",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "엘리베이터/CAR/FLATFORM/FLATFORM.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FLATFORM"
+              "title": "업무 Knowledge"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       },
       {
         "id": "849c11dfa932e6a5",
@@ -64,7 +50,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "엘리베이터/CAR/FLATFORM/FLATFORM.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -92,7 +78,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of FLATFORM"
+              "title": "Graph of 업무 Knowledge"
             }
           }
         ]
@@ -246,6 +232,25 @@
   },
   "active": "b632bc4bdc5a6642",
   "lastOpenFiles": [
+    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
+    "🧪 수배로직/수배-PID/B124B_CWT_SUSPEN-SHEAVE/EL_PB124B.md",
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/문의사항.md",
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화",
+    "🧪 수배로직/수배-PID/B124A-CAR_SUSPEN_SHEAVE/B124A.md",
+    "🧪 수배로직/수배-PID/B124A-CAR_SUSPEN_SHEAVE/EL_PB124A.md",
+    "🧪 수배로직/수배-PID/B124B_CWT_SUSPEN-SHEAVE",
+    "엘리베이터/기계실/ROPE HITCH ASSY.md",
+    "🧪 수배로직/수배-PID/B124A-CAR_SUSPEN_SHEAVE",
+    "🧪 수배로직/수배-PID/A103B02-ROPE HITCH ASSY.md",
+    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+    "🧪 수배로직/수배-PID/A103B02-HITCH_BEAM/EL_PA103B02.md",
+    "image/Pasted image 20251229111839.png",
+    "엘리베이터/승강로/Wood Plate.md",
+    "🧪 수배로직/수배-PID/A103C-ISOLATION_PAD/EL_PA103C.md",
+    "엘리베이터/기계실/기계실.md",
+    "엘리베이터/CAR/FLATFORM/FLATFORM.md",
+    "엘리베이터/CAR/WB 기종 FLATFORM-SAFETY 체결 홀 간격.md",
     "엘리베이터/CAR/CAR CAGE.md",
     "엘리베이터/CAR/CAR SILL ASSY.md",
     "엘리베이터/CAR/CAR_WALL/CENTER_FRAME.md",
@@ -255,24 +260,10 @@
     "엘리베이터/CAR/레일브라켓 방진 라이너.md",
     "엘리베이터/CAR/CAR_WALL",
     "엘리베이터/CAR/REINFORCE.md",
-    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
     "엘리베이터/엘리베이터 정보.md",
     "엘리베이터/CAR/GUIDE SHOE ADAPTOR.md",
     "엘리베이터/CAR/CEILING ASSY.md",
     "엘리베이터/업무용어/Ordering_Manual.md",
-    "엘리베이터/CAR/CAR TOP BOX.md",
-    "엘리베이터/CAR/RGS ASSY.md",
-    "엘리베이터/승강로/RGS-SGS 차이점.md",
-    "엘리베이터/CAR/FLATFORM/STOPPER.md",
-    "엘리베이터/CAR/FLATFORM/SUPPORT FRAME ASSY.md",
-    "엘리베이터/CAR/GUSSET(거셋).md",
-    "엘리베이터/기계실/머신베드.md",
-    "엘리베이터/기계실/메인 엔코더(Main rotary Encoder).md",
-    "엘리베이터/기계실/방진 (Isolation Pad).md",
-    "SAP/JQPR 정보.md",
-    "VAULT-PLM/MLB/이슈 모음집.md",
-    "VAULT-PLM/MLB/00. 업무절차.md",
     "image/Pasted image 20251224092534.png",
     "VAULT-PLM/Query-정리/법인",
     "🧪 수배로직/팀_주요업무/Untitled",
@@ -280,9 +271,6 @@
     "🧪 수배로직/수배-PID/E321A - CEILING ASSY",
     "image/Pasted image 20251218134611.png",
     "🧪 수배로직/수배-PID/E321A06_FAN",
-    "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT",
-    "🧪 수배로직/수배-PID(SHIP)",
-    "🧪 수배로직/수배-PID/정합성검증",
     "image/Pasted image 20251212124316.png",
     "image/Pasted image 20251211162335.png",
     "image/Pasted image 20251209112101.png"
