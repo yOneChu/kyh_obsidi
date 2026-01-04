@@ -1,9 +1,9 @@
 {
   "collapse-filter": false,
-  "search": "buffer",
+  "search": "path: 엘리베이터/CAR/CAR_WALL  ",
   "showTags": false,
   "showAttachments": false,
-  "hideUnresolved": false,
+  "hideUnresolved": true,
   "showOrphans": false,
   "collapse-color-groups": false,
   "colorGroups": [],

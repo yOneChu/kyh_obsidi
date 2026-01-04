@@ -6,7 +6,7 @@
       {
         "id": "d649e3d7a15714da",
         "type": "tabs",
-        "dimension": 60.03989361702128,
+        "dimension": 54.36974789915966,
         "children": [
           {
             "id": "e4fe6db74ba31998",
@@ -14,35 +14,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+                "file": "🧪 수배로직/업무일지/2026.01.05.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "업무 Knowledge"
-            }
-          },
-          {
-            "id": "b632bc4bdc5a6642",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "업무 Knowledge"
+              "title": "2026.01.05"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "849c11dfa932e6a5",
         "type": "tabs",
-        "dimension": 39.96010638297872,
+        "dimension": 45.63025210084034,
         "children": [
           {
             "id": "0300f03e8f3cd75a",
@@ -50,7 +35,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+                "file": "🧪 수배로직/업무일지/2026.01.05.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -78,7 +63,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 업무 Knowledge"
+              "title": "Graph of 2026.01.05"
             }
           }
         ]
@@ -230,12 +215,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b632bc4bdc5a6642",
+  "active": "e4fe6db74ba31998",
   "lastOpenFiles": [
+    "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
+    "🧪 수배로직/업무일지/2026.01.05.md",
+    "🧪 수배로직/업무일지",
     "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
-    "🧪 수배로직/수배-PID/B124B_CWT_SUSPEN-SHEAVE/EL_PB124B.md",
+    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
     "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/문의사항.md",
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
+    "독서노트/숫자로 일하는 법/2. 집중해야 할 숫자를  파악한다..md",
+    "독서노트/숫자로 일하는 법/1. 먼저 문제가 무엇인지 정확히 알아야 한다..md",
+    "독서노트/숫자로 일하는 법/0. 목차.md",
+    "독서노트/📚 초압축 공부법.md",
+    "엘리베이터/CAR/CAR_WALL/CENTER_FRAME.md",
+    "🧪 수배로직/⚪ 추후작업/버퍼오일 단종 인증 관련 작업.md",
+    "Untitled 1.base",
+    "Untitled.base",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "ASDASD.md",
+    "엘리베이터/CAR/CAR_WALL/ASTRAGAL.md",
+    "엘리베이터/CAR/CAR_WALL/CAR WALL ASSY.md",
+    "엘리베이터/CAR/CAR_WALL/CAR_WALL.md",
+    "엘리베이터/CAR/FLATFORM/STOPPER.md",
+    "업무/MLB/중국자재번호 정의.md",
+    "🧪 수배로직/수배-PID/A103C-ISOLATION_PAD/EL_PA103C.md",
+    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/EL_PB181B.md",
+    "🧪 수배로직/시스템/SUB-WEIGHT_계산식.md",
+    "🧪 수배로직/수배-PID/B124B_CWT_SUSPEN-SHEAVE/EL_PB124B.md",
     "🧪 수배로직/🟡 작업_진행중/01. 북미전산화",
     "🧪 수배로직/수배-PID/B124A-CAR_SUSPEN_SHEAVE/B124A.md",
     "🧪 수배로직/수배-PID/B124A-CAR_SUSPEN_SHEAVE/EL_PB124A.md",
@@ -243,34 +251,13 @@
     "엘리베이터/기계실/ROPE HITCH ASSY.md",
     "🧪 수배로직/수배-PID/B124A-CAR_SUSPEN_SHEAVE",
     "🧪 수배로직/수배-PID/A103B02-ROPE HITCH ASSY.md",
-    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "🧪 수배로직/수배-PID/A103B02-HITCH_BEAM/EL_PA103B02.md",
     "image/Pasted image 20251229111839.png",
-    "엘리베이터/승강로/Wood Plate.md",
-    "🧪 수배로직/수배-PID/A103C-ISOLATION_PAD/EL_PA103C.md",
-    "엘리베이터/기계실/기계실.md",
-    "엘리베이터/CAR/FLATFORM/FLATFORM.md",
-    "엘리베이터/CAR/WB 기종 FLATFORM-SAFETY 체결 홀 간격.md",
-    "엘리베이터/CAR/CAR CAGE.md",
-    "엘리베이터/CAR/CAR SILL ASSY.md",
-    "엘리베이터/CAR/CAR_WALL/CENTER_FRAME.md",
     "엘리베이터/CAR/FLATFORM",
-    "엘리베이터/CAR/CAR_WALL/ASTRAGAL.md",
-    "엘리베이터/CAR/CAR_WALL/CAR WALL ASSY.md",
-    "엘리베이터/CAR/레일브라켓 방진 라이너.md",
     "엘리베이터/CAR/CAR_WALL",
-    "엘리베이터/CAR/REINFORCE.md",
-    "엘리베이터/엘리베이터 정보.md",
-    "엘리베이터/CAR/GUIDE SHOE ADAPTOR.md",
-    "엘리베이터/CAR/CEILING ASSY.md",
-    "엘리베이터/업무용어/Ordering_Manual.md",
     "image/Pasted image 20251224092534.png",
     "VAULT-PLM/Query-정리/법인",
     "🧪 수배로직/팀_주요업무/Untitled",
-    "🧪 수배로직/🟢 작업_완료",
-    "🧪 수배로직/수배-PID/E321A - CEILING ASSY",
     "image/Pasted image 20251218134611.png",
-    "🧪 수배로직/수배-PID/E321A06_FAN",
     "image/Pasted image 20251212124316.png",
     "image/Pasted image 20251211162335.png",
     "image/Pasted image 20251209112101.png"

@@ -1,0 +1,9 @@
+{
+  "types": {
+    "23": "multitext",
+    "aliases": "aliases",
+    "cssclasses": "multitext",
+    "tags": "tags",
+    "작성일": "date"
+  }
+}
