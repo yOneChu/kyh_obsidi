@@ -5,17 +5,32 @@
 ### | CALL
 CAL_BUFON_EL - CAR BUFFER 신구형 적용
 CAL_BUFWT - BUFFER 적용하중
+- EL_ECSL: ◎ 적용하중 (CAR)
+CAL_BUFQT : MRL BUFFER 수량 체크
+- CAL_DURTB : 우레탄 버퍼 적용 조건 
+AUTO_EL_ECSL - 적용하중 계산
+- EL_ECW : CAR자중
+- EL_ACAPA : 용량
 
+EL_AUSE : 용도
 
-### 연관 PID
+### | 연관 PID
 - CERTI_B183A01 - 완충기 부품인증
 - EL_PB183B01 - BUFFER BLOCKING
-- 
-
 
 ### | CAL_BUFWT
 - NN : 인승
 - EL_ECSL : ◎ 적용하중 (CAR)
+
+---
+
+  
+| SPEC    |            | CON        | 내용              |
+| ------- | ---------- | ---------- | --------------- |
+| EL_AUSE | 용도         | !(?N?,?O?) | 전만,장애,누드가 아닐 경우 |
+| EL_ASPC | 시방서        | N          |                 |
+| EL_ECSL | 적용하중 (CAR) |            |                 |
+| EL_ZFDA | 기계구조 최초설계  |            |                 |
 
 ---
 
