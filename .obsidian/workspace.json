@@ -28,12 +28,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B183A01 - BUFFER.md",
+                "file": "🧪 수배로직/🌈 업무일지/2026.01.05.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "B183A01 - BUFFER"
+              "title": "2026.01.05"
             }
           }
         ],
@@ -50,7 +50,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B183A01 - BUFFER.md",
+                "file": "🧪 수배로직/🌈 업무일지/2026.01.05.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -78,7 +78,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of B183A01 - BUFFER"
+              "title": "Graph of 2026.01.05"
             }
           }
         ]
@@ -232,6 +232,7 @@
   },
   "active": "4da7d52d8ce8bb8b",
   "lastOpenFiles": [
+    "🧪 수배로직/수배-PID/B183A01 - BUFFER.md",
     "🧪 수배로직/⚪ 추후작업/버퍼오일 단종 인증 관련 작업.md",
     "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/EL_PB181B.md",
     "🧪 수배로직/수배-PID/B124B_CWT_SUSPEN-SHEAVE/EL_PB124B.md",
@@ -239,7 +240,6 @@
     "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
     "🧪 수배로직/수배-PID/정합성검증/BOM_LENGTH.md",
     "🧪 수배로직/🌈 업무일지/2026.01.05.md",
-    "🧪 수배로직/수배-PID/B183A01 - BUFFER.md",
     "🧪 수배로직/수배-PID/E321A - CEILING ASSY/E312A16_ISOATION ASSY.md",
     "🧪 수배로직/수배-PID/A103C-ISOLATION_PAD/EL_PA103C.md",
     "🧪 수배로직/수배-PID/E321A - CEILING ASSY/EL_PE321A.md",
