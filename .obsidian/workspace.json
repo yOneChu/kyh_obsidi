@@ -1,88 +1,24 @@
 {
   "main": {
-    "id": "4e68c09e40022c69",
+    "id": "eaf4fbf09f6ab22a",
     "type": "split",
     "children": [
       {
-        "id": "d649e3d7a15714da",
+        "id": "6e0aa9783f5f78de",
         "type": "tabs",
-        "dimension": 54.36974789915966,
         "children": [
           {
-            "id": "e4fe6db74ba31998",
+            "id": "b7c06dbb3b46cf05",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+                "file": "🧪 수배로직/🌈 업무일지/2026.01월.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "업무 Knowledge"
-            }
-          },
-          {
-            "id": "4da7d52d8ce8bb8b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/PICK_B181B_NEX.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PICK_B181B_NEX"
-            }
-          }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "849c11dfa932e6a5",
-        "type": "tabs",
-        "dimension": 45.63025210084034,
-        "children": [
-          {
-            "id": "0300f03e8f3cd75a",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/PICK_B181B_NEX.md",
-                "options": {
-                  "collapse-filter": false,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": false,
-                  "showArrow": false,
-                  "textFadeMultiplier": -1.5,
-                  "nodeSizeMultiplier": 0.814583333333333,
-                  "lineSizeMultiplier": 0.865625,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-<<<<<<< HEAD
-                  "scale": 0.50876188557926,
-=======
-                  "scale": 1.0000000000000067,
->>>>>>> f6d944f22a0f6a974002247bdcb4c9293c4488f2
-                  "close": true
-                }
-              },
-              "icon": "lucide-git-fork",
-              "title": "Graph of PICK_B181B_NEX"
+              "title": "2026.01월"
             }
           }
         ]
@@ -91,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "a41858b3918d378b",
+    "id": "1b527861821555f0",
     "type": "split",
     "children": [
       {
-        "id": "55713dc22dd5c719",
+        "id": "52fc5d573960fa77",
         "type": "tabs",
         "children": [
           {
-            "id": "7943b532b43da356",
+            "id": "dabcee1fd47919aa",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -112,7 +48,7 @@
             }
           },
           {
-            "id": "a55d1b15c819db52",
+            "id": "50fd685d1f559de7",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -129,7 +65,7 @@
             }
           },
           {
-            "id": "3235a3814bb5d87c",
+            "id": "11fdb2cb19fff995",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -145,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "1134aa22233e94ee",
+    "id": "16d11317d65058eb",
     "type": "split",
     "children": [
       {
-        "id": "77f5507d8894d476",
+        "id": "0a64b7fb15a0d533",
         "type": "tabs",
         "children": [
           {
-            "id": "700dc37c2a51c72a",
+            "id": "ff077270ee5843d5",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "업무/엘베 학습.md",
+                "file": "VAULT-PLM/Query-정리/제품 관련 Query.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -168,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 엘베 학습"
+              "title": "Backlinks for 제품 관련 Query"
             }
           },
           {
-            "id": "230b1417cb44a0ea",
+            "id": "7ae14383be13505e",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "업무/엘베 학습.md",
+                "file": "VAULT-PLM/Query-정리/제품 관련 Query.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 엘베 학습"
+              "title": "Outgoing links from 제품 관련 Query"
             }
           },
           {
-            "id": "91d8f52b89ce64d8",
+            "id": "60fd1432b6fe7ff5",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -201,18 +137,18 @@
             }
           },
           {
-            "id": "3161fd01e620306d",
+            "id": "906d952f8b6a4c92",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "업무/엘베 학습.md",
+                "file": "VAULT-PLM/Query-정리/제품 관련 Query.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 엘베 학습"
+              "title": "Outline of 제품 관련 Query"
             }
           }
         ]
@@ -234,53 +170,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4da7d52d8ce8bb8b",
+  "active": "b7c06dbb3b46cf05",
   "lastOpenFiles": [
-    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/EL_PB181B.md",
-    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/PICK_B181B_NEX.md",
-    "🧪 수배로직/🌈 업무일지/2026.01월.md",
+    "🧪 수배로직/수배-PID/B183A01 - BUFFER.md",
+    "VAULT-PLM/Query-정리/제품 관련 Query.md",
+    "VAULT-PLM/Query-정리/부품의 하위 추출.md",
     "VAULT-PLM/Query-정리/영업사양 쿼리.md",
-    "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
+    "🧪 수배로직/🌈 업무일지/2026.01월.md",
+    "🧪 수배로직/수배-PID/A103B02-HITCH_BEAM/EL_PA103B02.md",
     "🧪 수배로직/수배-PID/정합성검증/BOM_LENGTH.md",
     "🧪 수배로직/수배-PID/정합성검증/BOM_CHECK.md",
-    "🧪 수배로직/수배-PID/B186A01 - ROPE(BELT) SHACKLE (수량).md",
-    "독서노트/숫자로 일하는 법/2. 집중해야 할 숫자를  파악한다..md",
-    "독서노트/숫자로 일하는 법/1. 먼저 문제가 무엇인지 정확히 알아야 한다..md",
-    "🧪 수배로직/수배-PID/B183A01 - BUFFER.md",
-    "🧪 수배로직/⚪ 추후작업/버퍼오일 단종 인증 관련 작업.md",
-    "🧪 수배로직/수배-PID/B124B_CWT_SUSPEN-SHEAVE/EL_PB124B.md",
-    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/E312A16_ISOATION ASSY.md",
-    "🧪 수배로직/수배-PID/A103C-ISOLATION_PAD/EL_PA103C.md",
-    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/EL_PE321A.md",
-    "image/Pasted image 20260105133954.png",
-    "image/Pasted image 20260105133912.png",
-    "🧪 수배로직/🌈 업무일지",
-    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/문의사항.md",
-    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
-    "독서노트/숫자로 일하는 법/0. 목차.md",
-    "독서노트/📚 초압축 공부법.md",
-    "엘리베이터/CAR/CAR_WALL/CENTER_FRAME.md",
-    "Untitled 1.base",
-    "Untitled.base",
-    "Untitled.canvas",
-    "Untitled 1.canvas",
-    "ASDASD.md",
-    "엘리베이터/CAR/CAR_WALL/ASTRAGAL.md",
-    "엘리베이터/CAR/CAR_WALL/CAR WALL ASSY.md",
-    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화",
-    "🧪 수배로직/수배-PID/B124B_CWT_SUSPEN-SHEAVE",
-    "🧪 수배로직/수배-PID/B124A-CAR_SUSPEN_SHEAVE",
-    "image/Pasted image 20251229111839.png",
-    "엘리베이터/CAR/FLATFORM",
-    "엘리베이터/CAR/CAR_WALL",
-    "image/Pasted image 20251224092534.png",
-    "VAULT-PLM/Query-정리/법인",
-    "🧪 수배로직/팀_주요업무/Untitled",
-    "image/Pasted image 20251218134611.png",
-    "image/Pasted image 20251212124316.png",
-    "image/Pasted image 20251211162335.png",
-    "image/Pasted image 20251209112101.png"
+    "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
+    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/EL_PB181B.md",
+    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/PICK_B181B_NEX.md"
   ]
 }
