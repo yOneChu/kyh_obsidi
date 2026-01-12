@@ -2,6 +2,17 @@
 ---
 
 
+[[CAL_MRLTMP]]
+[[CAL_APPLICATION_INNOVER_NEO]]
+[[CAL_RB_AG]]
+[[CAL_LUXEN_G_ECSL]]
+[[CAL_NEX_PLANB_ECSL]]
+
+
+
+---
+
+
 | 관련 사양값
 EL_ECSD : ◎ CAR;SHEAVE DIA
 EL_ERPD : ROPE/BELT; 직경

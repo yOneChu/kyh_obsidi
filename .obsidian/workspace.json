@@ -6,6 +6,7 @@
       {
         "id": "6e0aa9783f5f78de",
         "type": "tabs",
+        "dimension": 61.99238578680203,
         "children": [
           {
             "id": "b7c06dbb3b46cf05",
@@ -19,6 +20,50 @@
               },
               "icon": "lucide-file",
               "title": "2026.01월"
+            }
+          }
+        ]
+      },
+      {
+        "id": "2ab2ba143b739945",
+        "type": "tabs",
+        "dimension": 38.00761421319797,
+        "children": [
+          {
+            "id": "e6d8cdb580bdff4e",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "🧪 수배로직/🌈 업무일지/2026.01월.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 0.7132754626224422,
+                  "close": true
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of 2026.01월"
             }
           }
         ]
@@ -94,7 +139,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "VAULT-PLM/Query-정리/제품 관련 Query.md",
+                "file": "🧪 수배로직/🌈 업무일지/2026.01월.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +149,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 제품 관련 Query"
+              "title": "Backlinks for 2026.01월"
             }
           },
           {
@@ -172,16 +217,34 @@
   },
   "active": "b7c06dbb3b46cf05",
   "lastOpenFiles": [
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
+    "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE/EL_PA116A.md",
+    "🧪 수배로직/수배-PID/B124B_CWT_SUSPEN-SHEAVE/EL_PB124B.md",
+    "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE",
+    "🧪 수배로직/수배-PID/B124A-CAR_SUSPEN_SHEAVE/EL_PB124A.md",
+    "🧪 수배로직/수배-PID/B124A-CAR_SUSPEN_SHEAVE/B124A.md",
+    "🧪 수배로직/수배-PID/A103C-ISOLATION_PAD/EL_PA103C.md",
+    "🧪 수배로직/수배-PID/A103B02-HITCH_BEAM/EL_PA103B02.md",
+    "🧪 수배로직/🌈 업무일지/2026.01월.md",
+    "🧪 수배로직/수배-PID/CAL-로직/AUTO_EL_BWALLT.md",
+    "🧪 수배로직/수배-PID/A101A - TM_ASSY/EL_PA101A.md",
+    "🧪 수배로직/수배-PID/CAL-로직/CAL_ETS_SPD1.md",
+    "🧪 수배로직/수배-PID/A101A.md",
+    "🧪 수배로직/수배-PID/CAL-로직/CAL_ENCODE.md",
+    "🧪 수배로직/수배-PID/CAL-로직/CAL_APPLICATION_INNOVER_NEO.md",
+    "🧪 수배로직/수배-PID/CAL-로직/CAL_TYPE.md",
+    "🧪 수배로직/수배-PID/CAL-로직/CAL_MC_BEAM_SIZE.md",
+    "🧪 수배로직/수배-PID/CAL-로직",
+    "CAL_APPLICATION_INNOVER_NEO.md",
+    "CAL_ETS_SPD1.md",
+    "🧪 수배로직/수배-PID/A101A - TM_ASSY",
     "🧪 수배로직/수배-PID/B183A01 - BUFFER.md",
     "VAULT-PLM/Query-정리/제품 관련 Query.md",
     "VAULT-PLM/Query-정리/부품의 하위 추출.md",
     "VAULT-PLM/Query-정리/영업사양 쿼리.md",
-    "🧪 수배로직/🌈 업무일지/2026.01월.md",
-    "🧪 수배로직/수배-PID/A103B02-HITCH_BEAM/EL_PA103B02.md",
     "🧪 수배로직/수배-PID/정합성검증/BOM_LENGTH.md",
     "🧪 수배로직/수배-PID/정합성검증/BOM_CHECK.md",
     "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
-    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/EL_PB181B.md",
-    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/PICK_B181B_NEX.md"
+    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/EL_PB181B.md"
   ]
 }
