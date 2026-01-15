@@ -13,12 +13,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/A101A - TM_ASSY/EL_PA101A.md",
-                "mode": "preview",
+                "file": "🧪 수배로직/수배-PID/CAL-로직/CAL_B182A01_RAIL.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EL_PA101A"
+              "title": "CAL_B182A01_RAIL"
+            }
+          },
+          {
+            "id": "8a939a6c2fd5817d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/🌈 업무일지/2026.01월.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026.01월"
+            }
+          },
+          {
+            "id": "bdc7b48fb4ae3156",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/수배-PID/CAL-로직/CAL_ETS_SPD1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CAL_ETS_SPD1"
             }
           },
           {
@@ -45,7 +73,8 @@
               "title": "New tab"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "52aa1bc8779f74e4",
@@ -57,7 +86,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/수배-PID/A101A - TM_ASSY/EL_PA101A.md",
+                "file": "🧪 수배로직/🌈 업무일지/2026.01월.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -80,12 +109,12 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7132754626224431,
+                  "scale": 1.0000000000000036,
                   "close": false
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of EL_PA101A"
+              "title": "Graph of 2026.01월"
             }
           }
         ]
@@ -237,21 +266,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "88e0055df9ab7134",
+  "active": "8a939a6c2fd5817d",
   "lastOpenFiles": [
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
+    "🧪 수배로직/수배-PID/B182A01 - GUIDE RAIL/EL_PB182A01.md",
+    "🧪 수배로직/수배-PID/B120A - FLATFORM",
+    "🧪 수배로직/수배-PID/EL_PB183D01 - BUFFER FOOTING/EL_PB183D01.md",
+    "🧪 수배로직/수배-PID/EL_PB183D01 - BUFFER FOOTING",
+    "🧪 수배로직/수배-PID/CAL-로직/CAL_B182A01_RAIL.md",
+    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+    "🧪 수배로직/수배-PID/B182A01 - GUIDE RAIL",
+    "🧪 수배로직/🌈 업무일지/2026.01월.md",
+    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
+    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/PICK_B181B_SU.md",
+    "🧪 수배로직/수배-PID/CAL-로직/CAL_ETS_SPD1.md",
+    "🧪 수배로직/수배-PID/A101A - TM_ASSY/EL_PA101A.md",
     "🧪 수배로직/수배-PID/A115A - GOVERNER/용도.md",
     "🧪 수배로직/수배-PID/A103C-ISOLATION_PAD/EL_PA103C.md",
-    "🧪 수배로직/수배-PID/A101A - TM_ASSY/EL_PA101A.md",
     "🧪 수배로직/수배-PID/A103B02-HITCH_BEAM/EL_PA103B02.md",
     "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE/EL_PA116A.md",
-    "🧪 수배로직/🌈 업무일지/2026.01월.md",
     "🧪 수배로직/🟡 작업_진행중/PLAN-C 할일(동기M 조언).md",
     "🧪 수배로직/수배-PID/B121A - CAR FRAME/EL_PB121A.md",
-    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
     "image/Pasted image 20260114164716.png",
     "image/Pasted image 20260114164705.png",
     "image/Pasted image 20260114164654.png",
-    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
     "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
     "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/문의사항.md",
     "image/Pasted image 20260114164640.png",
@@ -261,7 +299,6 @@
     "🧪 수배로직/수배-PID/CAL-로직/CAL_ENCODE.md",
     "🧪 수배로직/수배-PID/CAL-로직/CAL_APPLICATION_INNOVER_NEO.md",
     "🧪 수배로직/🟡 작업_진행중/02. 로직 이관 데이터 분석.md",
-    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
     "🧪 수배로직/💻 개발/로직에디터 변환.md",
     "🧪 수배로직/🟢 작업_완료/03. 직상부_구동형_MRL_전산화/개요-직상부_구동형_MRL_전산화(리모델링).md",
     "🧪 수배로직/수배-PID/C371C01 - FASCIA PLATE/C371C01.md",
