@@ -6,34 +6,20 @@
       {
         "id": "47e2d4ea4bf42560",
         "type": "tabs",
-        "dimension": 80.76923076923077,
+        "dimension": 65.92178770949721,
         "children": [
-          {
-            "id": "933ee127677075ad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/재질 용어.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "재질 용어"
-            }
-          },
           {
             "id": "8a939a6c2fd5817d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
+                "file": "🧪 수배로직/🌈 업무일지/2026.01월.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01. 북미전산화"
+              "title": "2026.01월"
             }
           },
           {
@@ -55,7 +41,7 @@
       {
         "id": "52aa1bc8779f74e4",
         "type": "tabs",
-        "dimension": 19.230769230769234,
+        "dimension": 34.07821229050279,
         "children": [
           {
             "id": "88e0055df9ab7134",
@@ -63,7 +49,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/재질 용어.md",
+                "file": "🧪 수배로직/🌈 업무일지/2026.01월.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -91,7 +77,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 재질 용어"
+              "title": "Graph of 2026.01월"
             }
           }
         ]
@@ -126,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "guss",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -243,45 +229,45 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "933ee127677075ad",
+  "active": "8a939a6c2fd5817d",
   "lastOpenFiles": [
-    "🧪 수배로직/🌈 업무일지/2026.01월.md",
-    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
-    "🧪 수배로직/수배-PID/CAL-로직/CAL_B182A01_RAIL.md",
-    "VAULT-PLM/Query-정리/PLM에 등록된 14자리 부품-제품.md",
-    "🧪 수배로직/💻 개발/BOM 이력관리.md",
-    "VAULT-PLM/Query-정리/부품의 하위 2레벨 추출.md",
-    "VAULT-PLM/Query-정리/부품 조회.md",
-    "🧪 수배로직/수배-PID/B125A - SAFETY DEVICE/EL_PB125A.md",
+    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
+    "🧪 수배로직/수배-PID/B121A - CAR FRAME/EL_PB121A.md",
+    "🧪 수배로직/수배-PID/레이아웃 참조.md",
+    "🧪 수배로직/수배-PID/로직 참고사항.md",
+    "🧪 수배로직/팀_주요업무/PLAN-C/K도면.md",
     "🧪 수배로직/수배-PID/Untitled.canvas",
-    "🧪 수배로직/수배-PID/B125A - SAFETY DEVICE",
+    "🧪 수배로직/팀_주요업무/PLAN-C/PLAN-C 정의.md",
+    "🧪 수배로직/팀_주요업무/도면뷰어.md",
+    "엘리베이터/승강로/오버로드 스위치.md",
+    "엘리베이터/승강로/COMPEN ROPE 본수.md",
+    "엘리베이터/업무용어/Ordering_Manual.md",
+    "엘리베이터/용어/조적작업.md",
+    "엘리베이터/용어/카자중.md",
+    "엘리베이터/CAR/FLATFORM/SUPPORT FRAME ASSY.md",
+    "엘리베이터/CAR/FLATFORM/STOPPER.md",
+    "엘리베이터/CAR/FLATFORM/FLATFORM.md",
+    "엘리베이터/CAR/Sub Weight.md",
+    "엘리베이터/CAR/SAFETY.md",
     "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "🧪 수배로직/수배-PID/B120B03 - BALANCE WEIGHT/EL_PB120B03.md",
-    "🧪 수배로직/수배-PID/B120B02 - CAR SILL ASSY/EL_PB120B02.md",
-    "🧪 수배로직/수배-PID/B120B03 - BALANCE WEIGHT",
-    "🧪 수배로직/수배-PID/B120B01 - APPRON/EL_PB120B01.md",
-    "🧪 수배로직/수배-PID/B120B02 - CAR SILL ASSY",
-    "🧪 수배로직/수배-PID/B120A01 - KICK PLATE HOLE/EL_PB120A01.md",
-    "🧪 수배로직/수배-PID/B120B01 - APPRON",
-    "🧪 수배로직/수배-PID/B121B - TOP BEAM/EL_PB121B.md",
-    "🧪 수배로직/수배-PID/B120A01 - KICK PLATE HOLE",
-    "업무/엘베 학습.md",
-    "🧪 수배로직/수배-PID/B121B - TOP BEAM",
-    "🧪 수배로직/수배-PID/B121A02 - SAFETY_GUARD/EL_PB121A02.md",
-    "Untitled.md",
-    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/문의사항.md",
-    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/EL_PB181B.md",
-    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/PICK_B181B_NEX.md",
-    "🧪 수배로직/수배-PID/CAL-로직/CAL_SUBWT_SG.md",
-    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/PICK_B181B_SU.md",
-    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/Untitled.md",
     "🧪 수배로직/🟡 작업_진행중/재질 용어.md",
+    "🧪 수배로직/🟡 작업_진행중/PLAN-C 할일(동기M 조언).md",
+    "🧪 수배로직/수배-PID/CAL-로직/AUTO_EL_ECWSL-적용하중(CWT).md",
+    "🧪 수배로직/수배-PID/B182F -  SEPARATING BEAM/용도.md",
+    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/PICK_B181A_LUXEN_G.md",
+    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/PICK_B181B_KC01.md",
+    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/EL_PB181B.md",
     "🧪 수배로직/수배-PID/B120A - FLATFORM/EL_PB120A.md",
-    "🧪 수배로직/수배-PID/PB121B - TOP BEAM/EL_PB121B.md",
+    "🧪 수배로직/수배-PID/B182F -  SEPARATING BEAM",
+    "🧪 수배로직/수배-PID/B125A - SAFETY DEVICE",
+    "🧪 수배로직/수배-PID/B120B03 - BALANCE WEIGHT",
+    "🧪 수배로직/수배-PID/B120B02 - CAR SILL ASSY",
+    "🧪 수배로직/수배-PID/B120B01 - APPRON",
+    "🧪 수배로직/수배-PID/B120A01 - KICK PLATE HOLE",
+    "🧪 수배로직/수배-PID/B121B - TOP BEAM",
     "🧪 수배로직/수배-PID/B120A - FLATFORM",
     "🧪 수배로직/수배-PID/PB121B - TOP BEAM",
     "🧪 수배로직/수배-PID/EL_PB121A02 - SAFETY GUARD",
-    "🧪 수배로직/수배-PID/B120A - FLATFORM",
     "image/Pasted image 20260114164716.png",
     "image/Pasted image 20260114164705.png",
     "image/Pasted image 20260114164654.png",

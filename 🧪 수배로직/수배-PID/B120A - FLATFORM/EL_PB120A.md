@@ -3,6 +3,9 @@
 
 
 
+
+플랫폼 밑에 SUPPORT FRAME ASSY가 장착되어 있다.
+
 ---
 
 
