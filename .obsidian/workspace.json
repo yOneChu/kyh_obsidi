@@ -6,7 +6,7 @@
       {
         "id": "47e2d4ea4bf42560",
         "type": "tabs",
-        "dimension": 65.92178770949721,
+        "dimension": 53.99746192893401,
         "children": [
           {
             "id": "8a939a6c2fd5817d",
@@ -14,26 +14,40 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🌈 업무일지/2026.01월.md",
+                "file": "🧪 수배로직/수배-PID/B121A - CAR FRAME/EL_PB121A.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026.01월"
+              "title": "EL_PB121A"
             }
           },
           {
-            "id": "88380dde04d24104",
+            "id": "d592875bec9a4258",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VAULT-PLM/Query-정리/PLM에 등록된 14자리 부품-제품.md",
+                "file": "🧪 수배로직/수배-PID/CAL-로직/CAL_SUBWT_SG.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PLM에 등록된 14자리 부품-제품"
+              "title": "CAL_SUBWT_SG"
+            }
+          },
+          {
+            "id": "dfc49422317e9969",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/수배-PID/E321A - CEILING ASSY/CEILING ASSY_정보.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CEILING ASSY_정보"
             }
           }
         ]
@@ -41,7 +55,7 @@
       {
         "id": "52aa1bc8779f74e4",
         "type": "tabs",
-        "dimension": 34.07821229050279,
+        "dimension": 46.00253807106599,
         "children": [
           {
             "id": "88e0055df9ab7134",
@@ -49,11 +63,11 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/🌈 업무일지/2026.01월.md",
+                "file": "🧪 수배로직/수배-PID/B121A - CAR FRAME/EL_PB121A.md",
                 "options": {
-                  "collapse-filter": true,
+                  "collapse-filter": false,
                   "search": "",
-                  "localJumps": 1,
+                  "localJumps": 2,
                   "localBacklinks": true,
                   "localForelinks": true,
                   "localInterlinks": false,
@@ -62,22 +76,22 @@
                   "hideUnresolved": false,
                   "collapse-color-groups": true,
                   "colorGroups": [],
-                  "collapse-display": true,
+                  "collapse-display": false,
                   "showArrow": false,
                   "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
+                  "nodeSizeMultiplier": 1.14635416666667,
+                  "lineSizeMultiplier": 1.01875,
                   "collapse-forces": true,
                   "centerStrength": 0.518713248970312,
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.7132754626224439,
-                  "close": false
+                  "scale": 0.7132754626224441,
+                  "close": true
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 2026.01월"
+              "title": "Graph of EL_PB121A"
             }
           }
         ]
@@ -112,7 +126,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "guss",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -231,8 +245,20 @@
   },
   "active": "8a939a6c2fd5817d",
   "lastOpenFiles": [
-    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
+    "🧪 수배로직/수배-PID/B181A - CWT FRAME/EL_PB181B.md",
     "🧪 수배로직/수배-PID/B121A - CAR FRAME/EL_PB121A.md",
+    "🧪 수배로직/수배-PID/B181A - CWT FRAME",
+    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/PICK_B181B_SU.md",
+    "🧪 수배로직/수배-PID/CAL-로직/CAL_SUBWT_SG.md",
+    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/CEILING ASSY_정보.md",
+    "VAULT-PLM/Query-정리/PLM에 등록된 14자리 부품-제품.md",
+    "🧪 수배로직/수배-PID/CAL-로직/CAL_ETS_SPD1.md",
+    "🧪 수배로직/수배-PID/CAL-로직/CAL_SUBWT_LT.md",
+    "🧪 수배로직/수배-PID/B121A02 - SAFETY_GUARD/용도.md",
+    "🧪 수배로직/수배-PID/B121A02 - SAFETY_GUARD/EL_PB121A02.md",
+    "🧪 수배로직/🌈 업무일지/2026.01월.md",
+    "🧪 수배로직/수배-PID/B121A02 - SAFETY GUARD",
+    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
     "🧪 수배로직/수배-PID/레이아웃 참조.md",
     "🧪 수배로직/수배-PID/로직 참고사항.md",
     "🧪 수배로직/팀_주요업무/PLAN-C/K도면.md",
@@ -248,16 +274,6 @@
     "엘리베이터/CAR/FLATFORM/STOPPER.md",
     "엘리베이터/CAR/FLATFORM/FLATFORM.md",
     "엘리베이터/CAR/Sub Weight.md",
-    "엘리베이터/CAR/SAFETY.md",
-    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/재질 용어.md",
-    "🧪 수배로직/🟡 작업_진행중/PLAN-C 할일(동기M 조언).md",
-    "🧪 수배로직/수배-PID/CAL-로직/AUTO_EL_ECWSL-적용하중(CWT).md",
-    "🧪 수배로직/수배-PID/B182F -  SEPARATING BEAM/용도.md",
-    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/PICK_B181A_LUXEN_G.md",
-    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/PICK_B181B_KC01.md",
-    "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/EL_PB181B.md",
-    "🧪 수배로직/수배-PID/B120A - FLATFORM/EL_PB120A.md",
     "🧪 수배로직/수배-PID/B182F -  SEPARATING BEAM",
     "🧪 수배로직/수배-PID/B125A - SAFETY DEVICE",
     "🧪 수배로직/수배-PID/B120B03 - BALANCE WEIGHT",
@@ -266,8 +282,6 @@
     "🧪 수배로직/수배-PID/B120A01 - KICK PLATE HOLE",
     "🧪 수배로직/수배-PID/B121B - TOP BEAM",
     "🧪 수배로직/수배-PID/B120A - FLATFORM",
-    "🧪 수배로직/수배-PID/PB121B - TOP BEAM",
-    "🧪 수배로직/수배-PID/EL_PB121A02 - SAFETY GUARD",
     "image/Pasted image 20260114164716.png",
     "image/Pasted image 20260114164705.png",
     "image/Pasted image 20260114164654.png",

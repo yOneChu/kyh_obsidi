@@ -3,3 +3,10 @@
 SUBWEIGHT 비중(Z107,Z108),수량(Z109,Z110)
 
 ---
+
+
+[[CAL_SUBWT_EA]] : 구 CODE : EL_Z105 SUBWEIGHT 수량
+[[CAL_SUBWT_LT]] : SUBWEIGHT 적재 높이
+
+
+---

@@ -8,4 +8,5 @@
 
 ---
 
-`CWT EXTENTION` 은 법규 때문에 있는 것이다.
+
+관통여부 N 이면 REAR GUARD 포함이다.

@@ -8,7 +8,7 @@
 
 
 [[CAL_SUBWT_SG]]
-[[CAL_ETS_SPD1]]
+[[CAL_ETS_SPD1]] - COMPEN CHAIN 종류
 
 ---
 
