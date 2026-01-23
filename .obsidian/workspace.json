@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B121A - CAR FRAME/EL_PB121A.md",
+                "file": "VAULT-PLM/프로젝트_개발/06. dfdf.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EL_PB121A"
+              "title": "06. dfdf"
             }
           },
           {
@@ -63,7 +63,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B121A - CAR FRAME/EL_PB121A.md",
+                "file": "VAULT-PLM/프로젝트_개발/06. dfdf.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -91,7 +91,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of EL_PB121A"
+              "title": "Graph of 06. dfdf"
             }
           }
         ]
@@ -243,10 +243,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8a939a6c2fd5817d",
+  "active": "fd873def24da31cb",
   "lastOpenFiles": [
-    "🧪 수배로직/수배-PID/B181A - CWT FRAME/EL_PB181B.md",
+    "VAULT-PLM/Query-정리/BOM 수배율 쿼리.md",
+    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
+    "VAULT-PLM/Query-정리/원가절감실적조회.md",
+    "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
+    "VAULT-PLM/Query-정리/PID 조회.md",
+    "VAULT-PLM/Query-정리/📢 데이터 분석용 쿼리.md",
+    "VAULT-PLM/Query-정리/📢 쿼리 목록.md",
+    "VAULT-PLM/Query-정리/부품에 연결된 ECO 조회.md",
+    "VAULT-PLM/Query-정리/수배로직 쿼리.md",
+    "VAULT-PLM/Query-정리/수량 PID 조회.md",
     "🧪 수배로직/수배-PID/B121A - CAR FRAME/EL_PB121A.md",
+    "🧪 수배로직/수배-PID/B181A - CWT FRAME/EL_PB181B.md",
     "🧪 수배로직/수배-PID/B181A - CWT FRAME",
     "🧪 수배로직/수배-PID/B181B_SUBWEIGHT/PICK_B181B_SU.md",
     "🧪 수배로직/수배-PID/CAL-로직/CAL_SUBWT_SG.md",
@@ -264,16 +274,6 @@
     "🧪 수배로직/팀_주요업무/PLAN-C/K도면.md",
     "🧪 수배로직/수배-PID/Untitled.canvas",
     "🧪 수배로직/팀_주요업무/PLAN-C/PLAN-C 정의.md",
-    "🧪 수배로직/팀_주요업무/도면뷰어.md",
-    "엘리베이터/승강로/오버로드 스위치.md",
-    "엘리베이터/승강로/COMPEN ROPE 본수.md",
-    "엘리베이터/업무용어/Ordering_Manual.md",
-    "엘리베이터/용어/조적작업.md",
-    "엘리베이터/용어/카자중.md",
-    "엘리베이터/CAR/FLATFORM/SUPPORT FRAME ASSY.md",
-    "엘리베이터/CAR/FLATFORM/STOPPER.md",
-    "엘리베이터/CAR/FLATFORM/FLATFORM.md",
-    "엘리베이터/CAR/Sub Weight.md",
     "🧪 수배로직/수배-PID/B182F -  SEPARATING BEAM",
     "🧪 수배로직/수배-PID/B125A - SAFETY DEVICE",
     "🧪 수배로직/수배-PID/B120B03 - BALANCE WEIGHT",
