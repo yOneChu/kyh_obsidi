@@ -49,8 +49,21 @@
               "icon": "lucide-file",
               "title": "CEILING ASSY_정보"
             }
+          },
+          {
+            "id": "0720d06c81bb95e3",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.11.5"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.11.5"
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       },
       {
         "id": "52aa1bc8779f74e4",
@@ -63,7 +76,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "VAULT-PLM/프로젝트_개발/06. dfdf.md",
                 "options": {
                   "collapse-filter": false,
                   "search": "",
@@ -91,7 +103,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 06. dfdf"
+              "title": "Graph view"
             }
           }
         ]
@@ -243,7 +255,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fd873def24da31cb",
+  "active": "0720d06c81bb95e3",
   "lastOpenFiles": [
     "VAULT-PLM/Query-정리/BOM 수배율 쿼리.md",
     "VAULT-PLM/Query-정리/영업사양 쿼리.md",
