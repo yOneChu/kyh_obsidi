@@ -1,117 +1,24 @@
 {
   "main": {
-    "id": "bb47c75236a8742b",
+    "id": "a7ed3913a652130f",
     "type": "split",
     "children": [
       {
-        "id": "47e2d4ea4bf42560",
+        "id": "47c77daa10eacc2e",
         "type": "tabs",
-        "dimension": 53.99746192893401,
         "children": [
           {
-            "id": "8a939a6c2fd5817d",
+            "id": "f767af7bdbfa280a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/AI_디지털기획_개발/공사현장추출.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MLB Knowledge"
-            }
-          },
-          {
-            "id": "d592875bec9a4258",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/수배-PID/CAL-로직/CAL_SUBWT_SG.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CAL_SUBWT_SG"
-            }
-          },
-          {
-            "id": "dfc49422317e9969",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/수배-PID/E321A - CEILING ASSY/CEILING ASSY_정보.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CEILING ASSY_정보"
-            }
-          },
-          {
-            "id": "0720d06c81bb95e3",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.11.5"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.11.5"
-            }
-          }
-        ],
-        "currentTab": 3
-      },
-      {
-        "id": "52aa1bc8779f74e4",
-        "type": "tabs",
-        "dimension": 46.00253807106599,
-        "children": [
-          {
-            "id": "88e0055df9ab7134",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-<<<<<<< HEAD
-=======
-                "file": "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
->>>>>>> 3d0d4c88de2eafe922637a31bbc907e9d5df13d5
-                "options": {
-                  "collapse-filter": false,
-                  "search": "",
-                  "localJumps": 2,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": false,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1.14635416666667,
-                  "lineSizeMultiplier": 1.01875,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.7132754626224442,
-                  "close": true
-                }
-              },
-              "icon": "lucide-git-fork",
-<<<<<<< HEAD
-              "title": "Graph view"
-=======
-              "title": "Graph of MLB Knowledge"
->>>>>>> 3d0d4c88de2eafe922637a31bbc907e9d5df13d5
+              "title": "공사현장추출"
             }
           }
         ]
@@ -120,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "7fe31badfb2618e7",
+    "id": "706ab9bd772281db",
     "type": "split",
     "children": [
       {
-        "id": "fe5ad4d1b0e7f236",
+        "id": "38538527966eba24",
         "type": "tabs",
         "children": [
           {
-            "id": "fd873def24da31cb",
+            "id": "0f5220608123e9a1",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -141,7 +48,7 @@
             }
           },
           {
-            "id": "5d976633cc961ae5",
+            "id": "e026f872ad56c80c",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -158,7 +65,7 @@
             }
           },
           {
-            "id": "4c4636e269e876e5",
+            "id": "a7261fa4d20cc412",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -174,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "b78c3357a24af4f6",
+    "id": "8e2dd07a2100f505",
     "type": "split",
     "children": [
       {
-        "id": "da5b5524b341291b",
+        "id": "d84d1873b43701da",
         "type": "tabs",
         "children": [
           {
-            "id": "41d20017e4d8078a",
+            "id": "4bc884239ae3d3cc",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🧪 수배로직/🌈 업무일지/2026.01월.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/AI_디지털기획_개발/공사현장추출.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for 2026.01월"
+              "title": "Backlinks for 공사현장추출"
             }
           },
           {
-            "id": "a7dd10e37506923e",
+            "id": "4fd184e79788fc62",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🧪 수배로직/🌈 업무일지/2026.01월.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/AI_디지털기획_개발/공사현장추출.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from 2026.01월"
+              "title": "Outgoing links from 공사현장추출"
             }
           },
           {
-            "id": "9be17865be968d95",
+            "id": "8c6d9b6bbaa18355",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -230,18 +137,18 @@
             }
           },
           {
-            "id": "7f3024507798e57c",
+            "id": "804001c6afe6ae32",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "🧪 수배로직/🌈 업무일지/2026.01월.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/AI_디지털기획_개발/공사현장추출.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 2026.01월"
+              "title": "Outline of 공사현장추출"
             }
           }
         ]
@@ -263,52 +170,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-<<<<<<< HEAD
-  "active": "0720d06c81bb95e3",
-=======
-  "active": "8a939a6c2fd5817d",
->>>>>>> 3d0d4c88de2eafe922637a31bbc907e9d5df13d5
+  "active": "f767af7bdbfa280a",
   "lastOpenFiles": [
-    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
-    "🧪 수배로직/팀_주요업무/PLAN-C/K도면.md",
-    "🧪 수배로직/팀_주요업무/PLAN-C/PLAN-C 정의.md",
-    "엘리베이터/용어/단위 정리.md",
-    "엘리베이터/용어/랩핑.md",
-    "엘리베이터/용어/홈엘리베이터.md",
-    "VAULT-PLM/Query-정리/제품 관련 Query.md",
-    "VAULT-PLM/Query-정리/부품 조회.md",
-    "VAULT-PLM/Query-정리/수배로직 쿼리.md",
-    "VAULT-PLM/Query-정리/원가절감실적조회.md",
-    "VAULT-PLM/Query-정리/전산작업요청 쿼리.md",
-    "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
-    "VAULT-PLM/Query-정리/블럭번호 별 최대 하위 레벨  개수.md",
-    "🧪 수배로직/수배-PID/B124B_CWT_SUSPEN-SHEAVE/EL_PB124B.md",
-    "🧪 수배로직/🌈 업무일지/2026.01월.md",
-    "🧪 수배로직/수배-PID/CAL-로직/CAL_APPLICATION_INNOVER_NEO.md",
-    "🧪 수배로직/💻 개발/BOM 이력관리.md",
-    "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
-    "VAULT-PLM/프로젝트_개발/06. dfdf.md",
-    "VAULT-PLM/Query-정리/BOM 수배율 쿼리.md",
-    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
-    "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
-    "VAULT-PLM/Query-정리/PID 조회.md",
-    "VAULT-PLM/Query-정리/📢 데이터 분석용 쿼리.md",
-    "VAULT-PLM/Query-정리/📢 쿼리 목록.md",
-    "🧪 수배로직/수배-PID/B181A - CWT FRAME",
-    "🧪 수배로직/수배-PID/B121A02 - SAFETY GUARD",
-    "🧪 수배로직/수배-PID/Untitled.canvas",
-    "🧪 수배로직/수배-PID/B182F -  SEPARATING BEAM",
-    "🧪 수배로직/수배-PID/B125A - SAFETY DEVICE",
-    "🧪 수배로직/수배-PID/B120B03 - BALANCE WEIGHT",
-    "🧪 수배로직/수배-PID/B120B02 - CAR SILL ASSY",
-    "🧪 수배로직/수배-PID/B120B01 - APPRON",
-    "🧪 수배로직/수배-PID/B120A01 - KICK PLATE HOLE",
-    "🧪 수배로직/수배-PID/B121B - TOP BEAM",
-    "🧪 수배로직/수배-PID/B120A - FLATFORM",
-    "image/Pasted image 20260114164716.png",
-    "image/Pasted image 20260114164705.png",
-    "image/Pasted image 20260114164654.png",
-    "image/Pasted image 20260114164640.png"
+    "🧪 수배로직/🟡 작업_진행중/AI_디지털기획_개발/공사현장추출.md",
+    "🧪 수배로직/🟡 작업_진행중/AI_디지털기획_개발"
   ]
 }
