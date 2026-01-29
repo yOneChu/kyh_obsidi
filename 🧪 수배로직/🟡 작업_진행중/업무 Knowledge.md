@@ -59,4 +59,63 @@ ex) wall 개발 시 관계된 영업사양 알려줘
 
 그래서 자재마다 블럭이 잇다. E321A가 있으면 E321A01~~ 등 블럭에 대한 로직을 분석해서 유관 영업사양을 가져오는 기능이 필요하다.
 
-| 
+| NEX MR
+- GTLX, ◎ GTLX_E
+
+| NEX MRL
+- GTSS, GTSS_E
+
+| LUXEN_1
+- ◎ GTLX_R
+- LXVF
+- WBLX_US
+- ◎ WBLX1_(LXVF) 
+
+| LUXEN_2
+- ◎ GTLX_R
+- LXVF
+- HYD
+- WBLX_US
+- ◎ WBLX1_(LXVF) 
+
+| NEWYZER
+>◎ WBSS1_(SSVF)
+  ◎ WBSS2_(SSVF) 
+  WBSS
+  ◎ WBHS_(SSVF)
+  WBSS_US
+  ◎ GTSS_R
+
+| THEEL
+- SUVF
+
+
+
+| NOBRAND
+WBSS_SE (중소기업 판매용)
+WBST_SE (중소기업 판매용)
+HSVF
+STVF5 (단종)
+◎ WBSS1_(SSVF)
+LXVF1 (단종)
+WBLX_SE (중소기업 판매용)
+LXVF
+◎ WBSS2_(SSVF)
+LXVF7 (단종)
+WBSS
+SUVF
+WBST1_(STVF)
+FI4GL (단종)
+SSVF1 (단종)
+STVF1 (단종)
+
+SSVF5 (단종)
+SSVF7 (단종)
+STVF7 (단종)
+◎ WBLX1_(LXVF) 
+GTLX
+GTSS
+WBST1 (단종)
+◎ WBHS_(HSVF)
+STVF (단종)
+SSVF

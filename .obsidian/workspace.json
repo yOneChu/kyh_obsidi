@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/AI_디지털기획_개발/공사현장추출.md",
+                "file": "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "공사현장추출"
+              "title": "B183B01 - BUFFER BLOCKING"
             }
           }
         ]
@@ -172,7 +172,30 @@
   },
   "active": "f767af7bdbfa280a",
   "lastOpenFiles": [
+    "🧪 수배로직/수배-PID/B189D02-LADDER CASE.md",
+    "🧪 수배로직/수배-PID/B186A01 - ROPE(BELT) SHACKLE (수량).md",
+    "🧪 수배로직/수배-PID/B189B01 - COMPEN FRAME ASSY.md",
+    "🧪 수배로직/수배-PID/B183D01 - BUFFER FOOTING.md",
+    "🧪 수배로직/수배-PID/B183C01 - BUFFER SUPPORT.md",
+    "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md",
+    "🧪 수배로직/수배-PID/B183A01 - BUFFER.md",
+    "🧪 수배로직/수배-PID/A103B02-ROPE HITCH ASSY.md",
+    "🧪 수배로직/🟡 작업_진행중/PLAN-C/PLAN-C 정의.md",
+    "🧪 수배로직/팀_주요업무/도면뷰어.md",
+    "엘리베이터/용어/로핑-ROPING(ROPE,BELT) - EL_ERPR.md",
+    "엘리베이터/용어/랩핑.md",
+    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+    "엘리베이터/용어/재질 관련.md",
+    "🧪 수배로직/수배-PID/B120A01 - KICK PLATE HOLE/EL_PB120A01.md",
+    "엘리베이터/CAR/CAR_WALL/ASTRAGAL.md",
+    "엘리베이터/엘리베이터 정보.md",
+    "🧪 수배로직/🟡 작업_진행중/PLAN-C/PLAN-C 할일(동기M 조언).md",
+    "🧪 수배로직/🟡 작업_진행중/PLAN-C/K도면.md",
+    "🧪 수배로직/🟡 작업_진행중/02. 로직 이관 데이터 분석.md",
+    "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
     "🧪 수배로직/🟡 작업_진행중/AI_디지털기획_개발/공사현장추출.md",
+    "🧪 수배로직/💻 개발/BOM 이력관리.md",
+    "🧪 수배로직/수배-PID/정합성검증/BOM_CHECK.md",
     "🧪 수배로직/🟡 작업_진행중/AI_디지털기획_개발"
   ]
 }
