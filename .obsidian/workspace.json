@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md",
+                "file": "VAULT-PLM/Query-정리/전산작업요청 쿼리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "B183B01 - BUFFER BLOCKING"
+              "title": "전산작업요청 쿼리"
             }
           }
         ]
@@ -172,12 +172,15 @@
   },
   "active": "f767af7bdbfa280a",
   "lastOpenFiles": [
+    "🧪 수배로직/💻 개발/로직에디터 변환.md",
+    "🧪 수배로직/💻 개발/BOM 이력관리.md",
+    "🧪 수배로직/🌈 업무일지/2026.01월.md",
+    "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md",
     "🧪 수배로직/수배-PID/B189D02-LADDER CASE.md",
     "🧪 수배로직/수배-PID/B186A01 - ROPE(BELT) SHACKLE (수량).md",
     "🧪 수배로직/수배-PID/B189B01 - COMPEN FRAME ASSY.md",
     "🧪 수배로직/수배-PID/B183D01 - BUFFER FOOTING.md",
     "🧪 수배로직/수배-PID/B183C01 - BUFFER SUPPORT.md",
-    "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md",
     "🧪 수배로직/수배-PID/B183A01 - BUFFER.md",
     "🧪 수배로직/수배-PID/A103B02-ROPE HITCH ASSY.md",
     "🧪 수배로직/🟡 작업_진행중/PLAN-C/PLAN-C 정의.md",
@@ -194,7 +197,6 @@
     "🧪 수배로직/🟡 작업_진행중/02. 로직 이관 데이터 분석.md",
     "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
     "🧪 수배로직/🟡 작업_진행중/AI_디지털기획_개발/공사현장추출.md",
-    "🧪 수배로직/💻 개발/BOM 이력관리.md",
     "🧪 수배로직/수배-PID/정합성검증/BOM_CHECK.md",
     "🧪 수배로직/🟡 작업_진행중/AI_디지털기획_개발"
   ]
