@@ -42,6 +42,10 @@ F : 사용하는 BLOCK 없음 / PDM 이관용
 2 : 의장품(HPB, HIP, OPB, CPI, HPI 등)  
 3 : 케이블류
 
+### | 호기번호
+![[Pasted image 20250714084921.png]]
+
+
 ---
 
 
