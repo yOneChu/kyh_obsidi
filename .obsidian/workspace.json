@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/PLAN-C/전산작업.md",
+                "file": "🧪 수배로직/⚪ 추후작업/버퍼오일 단종 인증 관련 작업.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "전산작업"
+              "title": "버퍼오일 단종 인증 관련 작업"
             }
           }
         ],
@@ -187,13 +187,15 @@
   },
   "active": "4d47ff3d509b73a1",
   "lastOpenFiles": [
-    "🧪 수배로직/🟡 작업_진행중/PLAN-C/PLAN-C 대시보드.md",
-    "🧪 수배로직/🟡 작업_진행중/PLAN-C/전산작업.md",
+    "🧪 수배로직/수배-PID/B183A01 - BUFFER.md",
+    "🧪 수배로직/🟡 작업_진행중/PLAN-C/PLAN-C 정의.md",
+    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+    "🧪 수배로직/🟡 작업_진행중/PLAN-C/PLAN_C 전산작업.md",
+    "🧪 수배로직/🟡 작업_진행중/현재 진행 중인 작업 리스트.md",
     "🧪 수배로직/🟡 작업_진행중/박코치.md",
+    "🧪 수배로직/🟡 작업_진행중/PLAN-C/PLAN-C 대시보드.md",
     "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
     "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/PLAN-C/PLAN-C 정의.md",
     "🧪 수배로직/수배-PID/B184A - PIT SCREEN/EL_PB184A.md",
     "엘리베이터/PIT/PIT SCREEN.md",
     "🧪 수배로직/수배-PID/B184A - PIT SCREEN",
@@ -212,8 +214,6 @@
     "엘리베이터/CAR/RGS ASSY.md",
     "엘리베이터/CAR/SAFETY.md",
     "VAULT-PLM/데이터브릭스/테이블 정보.md",
-    "VAULT-PLM/프로젝트_개발/05. PID 현황.md",
-    "VAULT-PLM/프로젝트_개발/06. dfdf.md",
     "Pasted image 20250508210813.png",
     "Pasted image 20250512084657.png",
     "Pasted image 20250513083010.png"
