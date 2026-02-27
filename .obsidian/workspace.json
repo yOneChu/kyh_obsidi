@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/PLAN-C/PLAN-C 제외조건.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/PLAN-C/PLAN_C 전산작업.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PLAN-C 제외조건"
+              "title": "PLAN_C 전산작업"
             }
           }
         ],
@@ -201,16 +201,24 @@
   },
   "active": "4d47ff3d509b73a1",
   "lastOpenFiles": [
+    "🧪 수배로직/💻 개발/로직에디터 변환.md",
+    "🧪 수배로직/💻 개발/BOM 이력관리.md",
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/문의사항.md",
+    "🧪 수배로직/🟡 작업_진행중/PLAN-C/쿼리(C14자리).md",
+    "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
+    "VAULT-PLM/Query-정리/수량 PID 조회.md",
+    "VAULT-PLM/프로젝트_개발/01. 승강기 설치 정보.md",
     "🧪 수배로직/🟡 작업_진행중/PLAN-C/PLAN_C 전산작업.md",
-    "🧪 수배로직/🟡 작업_진행중/PLAN-C/PLAN-C 제외조건.md",
+    "🧪 수배로직/🟡 작업_진행중/PLAN-C/K도면.md",
     "🧪 수배로직/🟡 작업_진행중/PLAN-C/PLAN-C 정의.md",
+    "🧪 수배로직/🟡 작업_진행중/ㅁㅁㅁㅁ.md",
+    "🧪 수배로직/🟡 작업_진행중/PLAN-C/PLAN-C 제외조건.md",
     "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
     "🧪 수배로직/🟡 작업_진행중/AI_디지털기획_개발/공사현장추출.md",
     "🧪 수배로직/🟡 작업_진행중/현재 진행 중인 작업 리스트.md",
     "🧪 수배로직/🟡 작업_진행중/재질 용어.md",
     "🧪 수배로직/🟡 작업_진행중/PLM ECO 결재 시 검증 로직.md",
-    "🧪 수배로직/🟡 작업_진행중/PLAN-C/K도면.md",
-    "🧪 수배로직/🟡 작업_진행중/ㅁㅁㅁㅁ.md",
     "image/Pasted image 20260225191236.png",
     "엘리베이터/CAR/RAIL LINEAR (레일 라이너).md",
     "엘리베이터/CAR/레일브라켓 방진 라이너.md",
@@ -220,15 +228,7 @@
     "VAULT-PLM/Query-정리/전산작업요청 쿼리.md",
     "🧪 수배로직/⚪ 추후작업/버퍼오일 단종 인증 관련 작업.md",
     "🧪 수배로직/수배-PID/B183A01 - BUFFER.md",
-    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/박코치.md",
-    "🧪 수배로직/🟡 작업_진행중/PLAN-C/PLAN-C 대시보드.md",
-    "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
-    "🧪 수배로직/수배-PID/B184A - PIT SCREEN/EL_PB184A.md",
-    "엘리베이터/PIT/PIT SCREEN.md",
     "🧪 수배로직/수배-PID/B184A - PIT SCREEN",
-    "🧪 수배로직/🟡 작업_진행중/PLAN-C/PLAN-C 할일(동기M 조언).md",
-    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/문의사항.md",
     "Pasted image 20250508210813.png",
     "Pasted image 20250512084657.png",
     "Pasted image 20250513083010.png"
