@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/팀_주요업무/도면뷰어.md",
-                "mode": "source",
+                "file": "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "도면뷰어"
+              "title": "01. 북미전산화"
             }
           },
           {
@@ -67,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "isir",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,8 +88,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -185,8 +184,19 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5bd2d9908c0db690",
+  "active": "4d47ff3d509b73a1",
   "lastOpenFiles": [
+    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
+    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
+    "🧪 수배로직/💻 개발/BOM 이력관리.md",
+    "🧪 수배로직/수배-PID/E131A-CAR HEADER ARM/EL_PE131A.md",
+    "🧪 수배로직/수배-PID/E131A-CAR HEADER ARM",
+    "🧪 수배로직/🟡 작업_진행중/면담.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 대시보드.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/쿼리(C14자리).md",
+    "🧪 수배로직/팀_주요업무/도면뷰어.md",
     "🧪 수배로직/시스템/SUB-WEIGHT_계산식.md",
     "🧪 수배로직/시스템/JAVA PID 작동원리.md",
     "🧪 수배로직/팀_주요업무/🔊 업무이력/현재 작업중.md",
@@ -205,16 +215,6 @@
     "VAULT-PLM/Query-정리/BOM 수배율 쿼리.md",
     "VAULT-PLM/프로젝트_개발/03. 로직 특성값 뷰어.md",
     "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/전산화 작업 Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/AI_디지털기획_개발/공사현장추출.md",
-    "VAULT-PLM/수배로직/수배로직 공부.md",
-    "VAULT-PLM/수배로직/궁금증❓.md",
-    "🧪 수배로직/수배-PID/레이아웃 참조.md",
-    "🧪 수배로직/수배-PID/로직 참고사항.md",
-    "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
-    "🧪 수배로직/🟡 작업_진행중/박코치.md",
-    "🧪 수배로직/🟡 작업_진행중/재질 용어.md",
-    "🧪 수배로직/🟡 작업_진행중/PLM ECO 결재 시 검증 로직.md",
     "image/Pasted image 20260305172607.png",
     "image/Pasted image 20260305172536.png",
     "image/Pasted image 20260225191236.png",
