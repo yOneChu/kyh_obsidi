@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
-                "mode": "preview",
+                "file": "🧪 수배로직/🟡 작업_진행중/CRM 관련.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01. 북미전산화"
+              "title": "CRM 관련"
             }
           },
           {
@@ -186,16 +186,18 @@
   },
   "active": "4d47ff3d509b73a1",
   "lastOpenFiles": [
+    "🧪 수배로직/🟡 작업_진행중/면담.md",
+    "🧪 수배로직/🟡 작업_진행중/CRM 관련.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/쿼리(C14자리).md",
     "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
-    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
     "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
+    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
     "🧪 수배로직/💻 개발/BOM 이력관리.md",
     "🧪 수배로직/수배-PID/E131A-CAR HEADER ARM/EL_PE131A.md",
     "🧪 수배로직/수배-PID/E131A-CAR HEADER ARM",
-    "🧪 수배로직/🟡 작업_진행중/면담.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
     "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 대시보드.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/쿼리(C14자리).md",
     "🧪 수배로직/팀_주요업무/도면뷰어.md",
     "🧪 수배로직/시스템/SUB-WEIGHT_계산식.md",
     "🧪 수배로직/시스템/JAVA PID 작동원리.md",
@@ -213,8 +215,6 @@
     "VAULT-PLM/부품공용화/테이블 생성.md",
     "엘리베이터.md",
     "VAULT-PLM/Query-정리/BOM 수배율 쿼리.md",
-    "VAULT-PLM/프로젝트_개발/03. 로직 특성값 뷰어.md",
-    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
     "image/Pasted image 20260305172607.png",
     "image/Pasted image 20260305172536.png",
     "image/Pasted image 20260225191236.png",
