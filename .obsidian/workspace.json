@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "2c8590ab528efef3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "VAULT-PLM/데이터브릭스/테이블 정보.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "테이블 정보"
+            }
+          },
+          {
             "id": "c407dd1a4b76489f",
             "type": "leaf",
             "state": {
@@ -35,7 +49,8 @@
               "title": "수배로직 공부"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -67,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "SAP",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +103,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -184,8 +200,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4d47ff3d509b73a1",
+  "active": "2c8590ab528efef3",
   "lastOpenFiles": [
+    "VAULT-PLM/Query-정리/전산작업요청 쿼리.md",
+    "🧪 수배로직/🟡 작업_진행중/재질 용어.md",
     "🧪 수배로직/🟡 작업_진행중/면담.md",
     "🧪 수배로직/🟡 작업_진행중/CRM 관련.md",
     "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
@@ -213,8 +231,6 @@
     "VAULT-PLM/부품공용화/테이블구조.canvas",
     "VAULT-PLM/부품공용화/부품공용화 대시보드.md",
     "VAULT-PLM/부품공용화/테이블 생성.md",
-    "엘리베이터.md",
-    "VAULT-PLM/Query-정리/BOM 수배율 쿼리.md",
     "image/Pasted image 20260305172607.png",
     "image/Pasted image 20260305172536.png",
     "image/Pasted image 20260225191236.png",
