@@ -1,70 +1,41 @@
 {
   "main": {
-    "id": "45e6f3b7f5f7a54c",
+    "id": "055644c2ca4bc31f",
     "type": "split",
     "children": [
       {
-        "id": "21243ac83152d4d9",
+        "id": "d10a81fa55af860d",
         "type": "tabs",
         "children": [
           {
-            "id": "4d47ff3d509b73a1",
+            "id": "6b3148de8563dd7f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/C14자리 부품 조회.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "C14자리 부품 조회"
-            }
-          },
-          {
-            "id": "2c8590ab528efef3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "VAULT-PLM/데이터브릭스/테이블 정보.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "테이블 정보"
-            }
-          },
-          {
-            "id": "c407dd1a4b76489f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "VAULT-PLM/수배로직/수배로직 공부.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "수배로직 공부"
+              "title": "업무 Knowledge"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "292214e856675620",
+    "id": "d0c441e4456afebe",
     "type": "split",
     "children": [
       {
-        "id": "33658a080e9e2ad8",
+        "id": "eb7123720300f14f",
         "type": "tabs",
         "children": [
           {
-            "id": "ccb2e9ff23eccfe5",
+            "id": "408730a51e759a70",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -77,12 +48,12 @@
             }
           },
           {
-            "id": "5bd2d9908c0db690",
+            "id": "cbafaafda60721ea",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "SAP",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -94,37 +65,36 @@
             }
           },
           {
-            "id": "67f7bcf74c34d1be",
+            "id": "67542c428b4d4fdc",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "북마크"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
   "right": {
-    "id": "115981f6b53bef80",
+    "id": "677aa3ebe3255257",
     "type": "split",
     "children": [
       {
-        "id": "165cdba6ea5f6c8a",
+        "id": "6d8235811a642fc3",
         "type": "tabs",
         "children": [
           {
-            "id": "ba43e642cc7c2900",
+            "id": "fa6882cb976ee93b",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🧪 수배로직/💻 개발/BOM 이력관리.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for BOM 이력관리"
+              "title": "업무 Knowledge 의 백링크"
             }
           },
           {
-            "id": "a15382b9dbd4728d",
+            "id": "0d4924a1a0d5dc9b",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🧪 수배로직/💻 개발/BOM 이력관리.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from BOM 이력관리"
+              "title": "업무 Knowledge 의 나가는 링크"
             }
           },
           {
-            "id": "5bf552b37a98d716",
+            "id": "f77dd5cdac4a6152",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -163,22 +133,22 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "Tags"
+              "title": "태그"
             }
           },
           {
-            "id": "870f19ce6acce912",
+            "id": "8f2db987959479b6",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "🧪 수배로직/💻 개발/BOM 이력관리.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of BOM 이력관리"
+              "title": "업무 Knowledge 의 개요"
             }
           }
         ]
@@ -200,57 +170,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2c8590ab528efef3",
+  "active": "6b3148de8563dd7f",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "VAULT-PLM/Query-정리/전산작업요청 쿼리.md",
-    "🧪 수배로직/🟡 작업_진행중/재질 용어.md",
-    "🧪 수배로직/🟡 작업_진행중/면담.md",
-    "🧪 수배로직/🟡 작업_진행중/CRM 관련.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
-=======
->>>>>>> edf3d6b7a36a62b846e1774c78089e93bcbf20ac
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/쿼리(C14자리).md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/C14자리 부품 조회.md",
-    "VAULT-PLM/Query-정리/PLM에 등록된 14자리 부품-제품.md",
     "🧪 수배로직/🟡 작업_진행중/설변 통제.md",
-    "🧪 수배로직/💻 개발/로직에디터 변환.md",
-    "🧪 수배로직/💻 개발/BOM 이력관리.md",
-    "🧪 수배로직/🟡 작업_진행중/ASDASD.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
+    "🧪 수배로직/🟡 작업_진행중/박코치.md",
     "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/재질 용어.md",
     "🧪 수배로직/🟡 작업_진행중/전산화 작업 Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/CRM 관련.md",
+    "🧪 수배로직/🟡 작업_진행중/PLM ECO 결재 시 검증 로직.md",
     "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/면담.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
+    "🧪 수배로직/수배-PID/레이아웃 참조.md",
+    "🧪 수배로직/수배-PID/로직 참고사항.md",
+    "🧪 수배로직/🌈 업무일지/2026.01월.md",
     "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
-    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
-    "🧪 수배로직/수배-PID/E131A-CAR HEADER ARM/EL_PE131A.md",
-    "🧪 수배로직/수배-PID/E131A-CAR HEADER ARM",
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/문의사항.md",
+    "🧪 수배로직/🟡 작업_진행중/02. 로직 이관 데이터 분석.md",
+    "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
+    "🧪 수배로직/🟡 작업_진행중/면담.md",
+    "🧪 수배로직/🟡 작업_진행중/CRM 관련.md",
+    "🧪 수배로직/🟡 작업_진행중/ASDASD.md",
+    "🧪 수배로직/🟡 작업_진행중/재질 용어.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/C14자리 부품 조회.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/쿼리(C14자리).md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
     "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 대시보드.md",
-    "🧪 수배로직/팀_주요업무/도면뷰어.md",
-    "🧪 수배로직/시스템/SUB-WEIGHT_계산식.md",
-    "🧪 수배로직/시스템/JAVA PID 작동원리.md",
-    "🧪 수배로직/팀_주요업무/🔊 업무이력/현재 작업중.md",
-    "엘리베이터/엘리베이터 정보.md",
-    "SAP/JQPR 정보.md",
-    "SAP/💡 SAP 계정.md",
-    "VAULT-PLM/부품공용화/Untitled.base",
-    "VAULT-PLM/부품공용화/테이블구조.canvas",
-<<<<<<< HEAD
-    "VAULT-PLM/부품공용화/부품공용화 대시보드.md",
-    "VAULT-PLM/부품공용화/테이블 생성.md",
-=======
->>>>>>> edf3d6b7a36a62b846e1774c78089e93bcbf20ac
-    "image/Pasted image 20260305172607.png",
-    "image/Pasted image 20260305172536.png",
-    "image/Pasted image 20260225191236.png",
-    "🧪 수배로직/수배-PID/B184A - PIT SCREEN",
-    "Pasted image 20250508210813.png",
-    "Pasted image 20250512084657.png",
-    "Pasted image 20250513083010.png"
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/K도면.md"
   ]
 }
