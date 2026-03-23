@@ -13,12 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "🧪 수배로직/🟡 작업_진행중/🌈 하고있는 일.md",
+=======
+                "file": "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
+>>>>>>> 7d5ff735d9cd50dbffec97e59a77c7de0294efb1
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "🌈 하고있는 일"
+=======
+              "title": "🌈 하고있는일-ING"
+>>>>>>> 7d5ff735d9cd50dbffec97e59a77c7de0294efb1
             }
           },
           {
@@ -188,23 +196,39 @@
   "active": "e81924e9b05c3f8a",
   "lastOpenFiles": [
     "🧪 수배로직/🟡 작업_진행중/🌈 하고있는 일.md",
+<<<<<<< HEAD
     "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
     "VAULT-PLM/Query-정리/PID_에러로그 조회.md",
     "VAULT-PLM/Query-정리/영업사양 쿼리.md",
+=======
+    "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
+    "VAULT-PLM/수배로직검증/기능 개발.md",
+    "VAULT-PLM/Query-정리/제품 관련 Query.md",
+    "VAULT-PLM/Query-정리/전산작업요청 쿼리.md",
+>>>>>>> 7d5ff735d9cd50dbffec97e59a77c7de0294efb1
     "VAULT-PLM/Query-정리/원가절감실적조회.md",
+    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
+    "VAULT-PLM/Query-정리/법인자재 쿼리(PLM).md",
+    "VAULT-PLM/Query-정리/견적 연동 기록.md",
+    "VAULT-PLM/Query-정리/도면 조회.md",
+    "VAULT-PLM/Query-정리/수량 PID 조회.md",
     "VAULT-PLM/Query-정리/수배로직 쿼리.md",
+    "Untitled.base",
+    "Untitled 1.base",
+    "Untitled.md",
+    "🧪 수배로직/🟡 작업_진행중/설변 통제.md",
+    "🧪 수배로직/🟡 작업_진행중/AI_디지털기획_개발/공사현장추출.md",
     "🧪 수배로직/🟢 작업_완료/03. 직상부_구동형_MRL_전산화/개요-직상부_구동형_MRL_전산화(리모델링).md",
     "🧪 수배로직/시스템/JAVA PID 작동원리.md",
     "VAULT-PLM/데이터브릭스/테이블 정보.md",
     "🧪 수배로직/🟡 작업_진행중/전산화 작업 Knowledge.md",
     "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
-    "VAULT-PLM/Query-정리/수량 PID 조회.md",
     "VAULT-PLM/수배로직검증/로직에디터 CON 컬럼 오류 찾기 위한 쿼리.md",
     "🧪 수배로직/🟡 작업_진행중/BOM 수배율 프로세스.md",
     "🧪 수배로직/🟡 작업_진행중/ASDASD.md",
-    "VAULT-PLM/수배로직검증/기능 개발.md",
     "VAULT-PLM/Query-정리/BOM 수배율 쿼리.md",
     "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
+<<<<<<< HEAD
     "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md",
     "🧪 수배로직/🌈 업무일지/2026.01월.md",
     "🧪 수배로직/🟡 작업_진행중/설변 통제.md",
@@ -213,5 +237,8 @@
     "🧪 수배로직/💻 개발/BOM 이력관리.md",
     "🧪 수배로직/💻 개발/로직에디터 변환.md",
     "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 제외조건.md"
+=======
+    "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md"
+>>>>>>> 7d5ff735d9cd50dbffec97e59a77c7de0294efb1
   ]
 }
