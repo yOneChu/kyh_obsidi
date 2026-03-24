@@ -1,64 +1,41 @@
 {
   "main": {
-    "id": "055644c2ca4bc31f",
+    "id": "2745d74af1ec620b",
     "type": "split",
     "children": [
       {
-        "id": "d10a81fa55af860d",
+        "id": "390b0cffa36e7323",
         "type": "tabs",
         "children": [
           {
-            "id": "6b3148de8563dd7f",
+            "id": "231cdcd3d6bbbe08",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-<<<<<<< HEAD
-                "file": "🧪 수배로직/🟡 작업_진행중/🌈 하고있는 일.md",
-=======
-                "file": "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
->>>>>>> 7d5ff735d9cd50dbffec97e59a77c7de0294efb1
+                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-<<<<<<< HEAD
-              "title": "🌈 하고있는 일"
-=======
-              "title": "🌈 하고있는일-ING"
->>>>>>> 7d5ff735d9cd50dbffec97e59a77c7de0294efb1
-            }
-          },
-          {
-            "id": "e81924e9b05c3f8a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "MLB Knowledge"
+              "title": "BOM이력관리"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "d0c441e4456afebe",
+    "id": "b9a62a45f7c266a8",
     "type": "split",
     "children": [
       {
-        "id": "eb7123720300f14f",
+        "id": "03111c17e81167f8",
         "type": "tabs",
         "children": [
           {
-            "id": "408730a51e759a70",
+            "id": "63513f434b5c5be0",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -71,12 +48,12 @@
             }
           },
           {
-            "id": "cbafaafda60721ea",
+            "id": "97ab7a83742b841c",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "영업사양",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -88,7 +65,7 @@
             }
           },
           {
-            "id": "67542c428b4d4fdc",
+            "id": "7746da20121dad2a",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -101,23 +78,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 329.5
+    "width": 300
   },
   "right": {
-    "id": "677aa3ebe3255257",
+    "id": "01218867a7363cc6",
     "type": "split",
     "children": [
       {
-        "id": "6d8235811a642fc3",
+        "id": "f1cc211ceefae63e",
         "type": "tabs",
         "children": [
           {
-            "id": "fa6882cb976ee93b",
+            "id": "f65ce7fe05ab260f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "업무 Knowledge 의 백링크"
+              "title": "BOM이력관리 의 백링크"
             }
           },
           {
-            "id": "0d4924a1a0d5dc9b",
+            "id": "55d9cd2caba40ac7",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "업무 Knowledge 의 나가는 링크"
+              "title": "BOM이력관리 의 나가는 링크"
             }
           },
           {
-            "id": "f77dd5cdac4a6152",
+            "id": "cb81426a79d73b39",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -160,18 +137,18 @@
             }
           },
           {
-            "id": "8f2db987959479b6",
+            "id": "f7ad8b40dd8292ee",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "업무 Knowledge 의 개요"
+              "title": "BOM이력관리 의 개요"
             }
           }
         ]
@@ -193,52 +170,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e81924e9b05c3f8a",
+  "active": "231cdcd3d6bbbe08",
   "lastOpenFiles": [
-    "🧪 수배로직/🟡 작업_진행중/🌈 하고있는 일.md",
-<<<<<<< HEAD
-    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
-    "VAULT-PLM/Query-정리/PID_에러로그 조회.md",
-    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
-=======
     "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
-    "VAULT-PLM/수배로직검증/기능 개발.md",
-    "VAULT-PLM/Query-정리/제품 관련 Query.md",
-    "VAULT-PLM/Query-정리/전산작업요청 쿼리.md",
->>>>>>> 7d5ff735d9cd50dbffec97e59a77c7de0294efb1
-    "VAULT-PLM/Query-정리/원가절감실적조회.md",
-    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
-    "VAULT-PLM/Query-정리/법인자재 쿼리(PLM).md",
-    "VAULT-PLM/Query-정리/견적 연동 기록.md",
-    "VAULT-PLM/Query-정리/도면 조회.md",
-    "VAULT-PLM/Query-정리/수량 PID 조회.md",
-    "VAULT-PLM/Query-정리/수배로직 쿼리.md",
-    "Untitled.base",
-    "Untitled 1.base",
-    "Untitled.md",
-    "🧪 수배로직/🟡 작업_진행중/설변 통제.md",
-    "🧪 수배로직/🟡 작업_진행중/AI_디지털기획_개발/공사현장추출.md",
-    "🧪 수배로직/🟢 작업_완료/03. 직상부_구동형_MRL_전산화/개요-직상부_구동형_MRL_전산화(리모델링).md",
-    "🧪 수배로직/시스템/JAVA PID 작동원리.md",
-    "VAULT-PLM/데이터브릭스/테이블 정보.md",
-    "🧪 수배로직/🟡 작업_진행중/전산화 작업 Knowledge.md",
-    "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
-    "VAULT-PLM/수배로직검증/로직에디터 CON 컬럼 오류 찾기 위한 쿼리.md",
-    "🧪 수배로직/🟡 작업_진행중/BOM 수배율 프로세스.md",
-    "🧪 수배로직/🟡 작업_진행중/ASDASD.md",
-    "VAULT-PLM/Query-정리/BOM 수배율 쿼리.md",
-    "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
-<<<<<<< HEAD
-    "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md",
-    "🧪 수배로직/🌈 업무일지/2026.01월.md",
-    "🧪 수배로직/🟡 작업_진행중/설변 통제.md",
-    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/재질 용어.md",
-    "🧪 수배로직/💻 개발/BOM 이력관리.md",
-    "🧪 수배로직/💻 개발/로직에디터 변환.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 제외조건.md"
-=======
-    "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md"
->>>>>>> 7d5ff735d9cd50dbffec97e59a77c7de0294efb1
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
+    "🧪 수배로직/🟡 작업_진행중/🌈 하고있는 일.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 제외조건.md",
+    "엘리베이터/CAR/CAR FRAME.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 할일(동기M 조언).md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/쿼리(C14자리).md"
   ]
 }
