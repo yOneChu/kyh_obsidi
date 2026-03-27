@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VAULT-PLM/Query-정리/영업사양 쿼리.md",
-                "mode": "preview",
+                "file": "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "영업사양 쿼리"
+              "title": "🌈 하고있는일-ING"
             }
           }
         ],
@@ -187,10 +187,18 @@
   },
   "active": "701b76355dda49d5",
   "lastOpenFiles": [
-    "VAULT-PLM/데이터브릭스/테이블 정보.md",
-    "SAP/💡 SAP 계정.md",
-    "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
     "🧪 수배로직/🟡 작업_진행중/🌈 하고있는 일.md",
+    "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
+    "VAULT-PLM/Query-정리/원가절감실적조회_공통DB.md",
+    "VAULT-PLM/Query-정리/원가절감실적조회.md",
+    "🧪 수배로직/🟢 작업_완료/03. 직상부_구동형_MRL_전산화/개요-직상부_구동형_MRL_전산화(리모델링).md",
+    "🧪 수배로직/🟢 작업_완료/COMPEN CHAIN 관리-김선태,최진영.md",
+    "🧪 수배로직/🟡 작업_진행중/PLM ECO 결재 시 검증 로직.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/공사현장추출.md",
+    "🧪 수배로직/🟡 작업_진행중/면담.md",
+    "VAULT-PLM/데이터브릭스/테이블 정보.md",
+    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
+    "SAP/💡 SAP 계정.md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
     "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 제외조건.md",
     "엘리베이터/CAR/CAR FRAME.md",
