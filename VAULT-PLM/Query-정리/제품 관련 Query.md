@@ -1,6 +1,6 @@
 
 ### 💡 제품의 1레벨
-```
+```sql
 with ouid as
  ( select vf$ouid AS VFOID from product$vf, product$id
   	where vf$identity = id$ouid and vf$ouid = id$wip
@@ -71,7 +71,7 @@ SELECT
 
 
 ### 💡 제품의 1레벨의 하위 전체 (부품OID)
-```
+```sql
 SELECT  
           (ROWNUM-1) idx,  
           (LEVEL+1)  LEV,  
