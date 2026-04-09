@@ -4,7 +4,15 @@
 
 **| 기종 정보**
 - GTSS, GTSS_E -> NEX MRL
-- 
+- NEX MR, NEX ECO MR -> GTLX
+- NEX G -> GTLX
+- NEX MRL, NEX ECO MRL -> GTSS
+- LUXEN_G -> GTLX-R
+- LUXEN -> WBLX, GTLX
+- New Yzer(중저속) -> WBSS, GTSS, 
+- New Yzer(고속) -> WBHSS
+- I-XEL -> WBHS
+- THE-EL -> THE EL
 
 
 NEX-G 는 쨋든 리모델링용이에요
