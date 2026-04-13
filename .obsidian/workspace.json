@@ -28,16 +28,17 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/A103B11-MC-ROOM STEP.md",
+                "file": "VAULT-PLM/Query-정리/영업사양 쿼리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "A103B11-MC-ROOM STEP"
+              "title": "영업사양 쿼리"
             },
             "group": "dafc882517ffb907"
           }
-        ]
+        ],
+        "currentTab": 1
       },
       {
         "id": "369a7f98ea1f8e78",
@@ -64,7 +65,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/수배-PID/A103B11-MC-ROOM STEP.md",
+                "file": "VAULT-PLM/Query-정리/영업사양 쿼리.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -92,7 +93,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of A103B11-MC-ROOM STEP"
+              "title": "영업사양 쿼리 그래프"
             },
             "group": "dafc882517ffb907"
           }
@@ -120,7 +121,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "파일 탐색기"
             }
           },
           {
@@ -247,19 +248,32 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "701b76355dda49d5",
+  "active": "57570aae7d436438",
   "lastOpenFiles": [
+<<<<<<< HEAD
     "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
+=======
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/공사현장추출.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/C14자리 부품 조회.md",
+    "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
+    "🧪 수배로직/🟡 작업_진행중/설변 통제.md",
+    "🧪 수배로직/🟡 작업_진행중/ASDASD.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PID_시뮬레이터.md",
+    "🧪 수배로직/수배-PID/A103B11-MC-ROOM STEP.md",
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
+>>>>>>> 06ad0d33698bc8d02484561bb7fe60a91933adf1
     "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
     "🧪 수배로직/🟡 작업_진행중/설변 통제.md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
@@ -280,7 +294,6 @@
     "🧪 수배로직/🟡 작업_진행중/CRM 관련.md",
     "🧪 수배로직/수배-PID/A103B02-HITCH_BEAM/EL_PA103B02.md",
     "Untitled.canvas",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/C14자리 부품 조회.md",
     "🧪 수배로직/수배-PID/정합성검증/BOM_CHECK.md",
     "🧪 수배로직/수배-PID/A101A - TM_ASSY/EL_PA101A.md",
     "무제 3.base",
@@ -288,8 +301,12 @@
     "무제 1.base",
     "무제.base",
     "🧪 수배로직/수배-PID/레이아웃 참조.md",
+<<<<<<< HEAD
     "무제.md",
     "엘리베이터/CAR/CAR_WALL/CAR WALL ASSY.md",
     "VAULT-PLM/Query-정리/PID 조회.md"
+=======
+    "무제.md"
+>>>>>>> 06ad0d33698bc8d02484561bb7fe60a91933adf1
   ]
 }
