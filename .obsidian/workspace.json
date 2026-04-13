@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01. 북미전산화"
+              "title": "BOM이력관리"
             }
           },
           {
@@ -259,10 +259,14 @@
   },
   "active": "701b76355dda49d5",
   "lastOpenFiles": [
-    "🧪 수배로직/수배-PID/A103B11-MC-ROOM STEP.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/공사현장추출.md",
+    "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
     "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+    "🧪 수배로직/🟡 작업_진행중/설변 통제.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
+    "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
+    "🧪 수배로직/수배-PID/A103B11-MC-ROOM STEP.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/공사현장추출.md",
     "🧪 수배로직/🟡 작업_진행중/BOM 수배율 프로세스.md",
     "🧪 수배로직/🟡 작업_진행중/전산화 작업 Knowledge.md",
     "image/Pasted image 20260409094109.png",
@@ -286,10 +290,6 @@
     "🧪 수배로직/수배-PID/레이아웃 참조.md",
     "무제.md",
     "엘리베이터/CAR/CAR_WALL/CAR WALL ASSY.md",
-    "VAULT-PLM/Query-정리/PID 조회.md",
-    "🧪 수배로직/수배-PID/B186A01 - ROPE(BELT) SHACKLE (수량).md",
-    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
-    "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/쿼리(C14자리).md"
+    "VAULT-PLM/Query-정리/PID 조회.md"
   ]
 }
