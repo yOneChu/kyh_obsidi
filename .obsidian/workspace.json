@@ -1,118 +1,41 @@
 {
   "main": {
-    "id": "2745d74af1ec620b",
+    "id": "0a0aa914a13ba90b",
     "type": "split",
     "children": [
       {
-        "id": "390b0cffa36e7323",
+        "id": "422a3ee9cc3d4926",
         "type": "tabs",
-        "dimension": 69.3000693000693,
         "children": [
           {
-            "id": "701b76355dda49d5",
+            "id": "08977200b148db26",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BOM이력관리"
+              "title": "영업사양 분석을 위한 추출 쿼리"
             }
-          },
-          {
-            "id": "57570aae7d436438",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "VAULT-PLM/Query-정리/영업사양 쿼리.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "영업사양 쿼리"
-            },
-            "group": "dafc882517ffb907"
           }
-        ],
-        "currentTab": 1
-      },
-      {
-        "id": "369a7f98ea1f8e78",
-        "type": "tabs",
-        "dimension": 30.6999306999307,
-        "children": [
-          {
-            "id": "3a46eb6199131f0d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "업무 Knowledge"
-            }
-          },
-          {
-            "id": "4da8bd5d9f68bdf2",
-            "type": "leaf",
-            "state": {
-              "type": "localgraph",
-              "state": {
-                "file": "VAULT-PLM/Query-정리/영업사양 쿼리.md",
-                "options": {
-                  "collapse-filter": true,
-                  "search": "",
-                  "localJumps": 1,
-                  "localBacklinks": true,
-                  "localForelinks": true,
-                  "localInterlinks": false,
-                  "showTags": false,
-                  "showAttachments": false,
-                  "hideUnresolved": false,
-                  "collapse-color-groups": true,
-                  "colorGroups": [],
-                  "collapse-display": true,
-                  "showArrow": false,
-                  "textFadeMultiplier": 0,
-                  "nodeSizeMultiplier": 1,
-                  "lineSizeMultiplier": 1,
-                  "collapse-forces": true,
-                  "centerStrength": 0.518713248970312,
-                  "repelStrength": 10,
-                  "linkStrength": 1,
-                  "linkDistance": 250,
-                  "scale": 0.01734152991583259,
-                  "close": false
-                }
-              },
-              "icon": "lucide-git-fork",
-              "title": "영업사양 쿼리 그래프"
-            },
-            "group": "dafc882517ffb907"
-          }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "b9a62a45f7c266a8",
+    "id": "db473615b8471c3f",
     "type": "split",
     "children": [
       {
-        "id": "03111c17e81167f8",
+        "id": "6922050a4a668f25",
         "type": "tabs",
         "children": [
           {
-            "id": "63513f434b5c5be0",
+            "id": "4305b66db64f05f4",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -121,11 +44,11 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "파일 탐색기"
+              "title": "Files"
             }
           },
           {
-            "id": "97ab7a83742b841c",
+            "id": "5ddb7e604a21282a",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -142,13 +65,13 @@
             }
           },
           {
-            "id": "7746da20121dad2a",
+            "id": "50d95efb468b8cd3",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "북마크"
+              "title": "Bookmarks"
             }
           }
         ]
@@ -158,20 +81,20 @@
     "width": 300
   },
   "right": {
-    "id": "01218867a7363cc6",
+    "id": "9552043e8c9b79cf",
     "type": "split",
     "children": [
       {
-        "id": "f1cc211ceefae63e",
+        "id": "baacb9889fe8bc2f",
         "type": "tabs",
         "children": [
           {
-            "id": "f65ce7fe05ab260f",
+            "id": "726cb75d9dfbdc81",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "BOM이력관리 의 백링크"
+              "title": "Backlinks for 영업사양 분석을 위한 추출 쿼리"
             }
           },
           {
-            "id": "55d9cd2caba40ac7",
+            "id": "8b8c0e15c7a52a4a",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "BOM이력관리 의 나가는 링크"
+              "title": "Outgoing links from 영업사양 분석을 위한 추출 쿼리"
             }
           },
           {
-            "id": "cb81426a79d73b39",
+            "id": "fcb8ae1738d575be",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -210,36 +133,25 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "태그"
+              "title": "Tags"
             }
           },
           {
-            "id": "f7ad8b40dd8292ee",
+            "id": "68360bae4e5058b4",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 업무 Knowledge"
-            }
-          },
-          {
-            "id": "ca25df3505cdb5d7",
-            "type": "leaf",
-            "state": {
-              "type": "git-view",
-              "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "title": "Outline of 영업사양 분석을 위한 추출 쿼리"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -248,65 +160,33 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:빠른 전환기 열기": false,
-      "graph:그래프 뷰 열기": false,
-      "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 일일 노트 열기": false,
-      "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false,
-      "bases:새 베이스 생성하기": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "57570aae7d436438",
+  "active": "08977200b148db26",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
-=======
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/공사현장추출.md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/C14자리 부품 조회.md",
-    "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
-    "🧪 수배로직/🟡 작업_진행중/설변 통제.md",
-    "🧪 수배로직/🟡 작업_진행중/ASDASD.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PID_시뮬레이터.md",
-    "🧪 수배로직/수배-PID/A103B11-MC-ROOM STEP.md",
-    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
->>>>>>> 06ad0d33698bc8d02484561bb7fe60a91933adf1
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
     "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/설변 통제.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
-    "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
-    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
-    "🧪 수배로직/수배-PID/A103B11-MC-ROOM STEP.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/공사현장추출.md",
-    "🧪 수배로직/🟡 작업_진행중/BOM 수배율 프로세스.md",
     "🧪 수배로직/🟡 작업_진행중/전산화 작업 Knowledge.md",
-    "image/Pasted image 20260409094109.png",
-    "🧪 수배로직/수배-PID/B183A01 - BUFFER.md",
-    "🧪 수배로직/수배-PID/B183D01 - BUFFER FOOTING.md",
-    "🧪 수배로직/수배-PID/B120B03 - BALANCE WEIGHT/EL_PB120B03.md",
+    "🧪 수배로직/수배-PID/B121A02 - SAFETY_GUARD/용도.md",
     "🧪 수배로직/수배-PID/B121A02 - SAFETY_GUARD/EL_PB121A02.md",
-    "🧪 수배로직/수배-PID/B121A - CAR FRAME/EL_PB121A.md",
-    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
-    "엘리베이터/용어/ROH.md",
-    "🧪 수배로직/🟡 작업_진행중/CRM 관련.md",
-    "🧪 수배로직/수배-PID/A103B02-HITCH_BEAM/EL_PA103B02.md",
-    "Untitled.canvas",
-    "🧪 수배로직/수배-PID/정합성검증/BOM_CHECK.md",
-    "🧪 수배로직/수배-PID/A101A - TM_ASSY/EL_PA101A.md",
-    "무제 3.base",
-    "무제 2.base",
-    "무제 1.base",
-    "무제.base",
-    "🧪 수배로직/수배-PID/레이아웃 참조.md",
-<<<<<<< HEAD
-    "무제.md",
-    "엘리베이터/CAR/CAR_WALL/CAR WALL ASSY.md",
-    "VAULT-PLM/Query-정리/PID 조회.md"
-=======
-    "무제.md"
->>>>>>> 06ad0d33698bc8d02484561bb7fe60a91933adf1
+    "🧪 수배로직/수배-PID/D161A - HATCH DOOR OPER/EL_PD161A.md",
+    "🧪 수배로직/수배-PID/Untitled 1.md",
+    "🧪 수배로직/수배-PID/D161A - HATCH DOOR OPER",
+    "image/Pasted image 20260414105256.png",
+    "image/Pasted image 20260414105236.png",
+    "🧪 수배로직/수배-PID/B125B  - CWT SAFETY/CWT SAFETY.md",
+    "🧪 수배로직/수배-PID/B125B  - CWT SAFETY/EL_PB125B.md",
+    "🧪 수배로직/수배-PID/Untitled.md",
+    "🧪 수배로직/수배-PID/B125B  - CWT SAFETY",
+    "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md"
   ]
 }
