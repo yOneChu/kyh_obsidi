@@ -27,12 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/설변 통제.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "설변 통제"
+              "title": "🌈 하고있는일-ING"
+            }
+          },
+          {
+            "id": "1fbdae06db3d4b9e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "BOM이력관리"
             }
           }
         ],
@@ -59,7 +73,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "파일 탐색기"
+              "title": "Files"
             }
           },
           {
@@ -89,7 +103,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -175,18 +190,33 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:빠른 전환기 열기": false,
-      "graph:그래프 뷰 열기": false,
-      "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 일일 노트 열기": false,
-      "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false,
-      "bases:새 베이스 생성하기": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "obsidian-git:Open Git source control": false
     }
   },
   "active": "668880d3fe828ec0",
   "lastOpenFiles": [
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
+    "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/K도면.md",
+    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+    "엘리베이터/CAR/CAR STOPPING DEVICE.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 할일(동기M 조언).md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 제외조건.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/쿼리(C14자리).md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/C14자리 부품 조회.md",
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/공사현장추출.md",
+    "🧪 수배로직/🟡 작업_진행중/02. 로직 이관 데이터 분석.md",
+    "🧪 수배로직/🟡 작업_진행중/설변 통제.md",
     "🧪 수배로직/🟡 작업_진행중/박코치.md",
     "🧪 수배로직/🟡 작업_진행중/면담.md",
     "🧪 수배로직/🟡 작업_진행중/BOM 수배율 프로세스.md",
@@ -194,25 +224,10 @@
     "🧪 수배로직/🟡 작업_진행중/PLM ECO 결재 시 검증 로직.md",
     "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
     "🧪 수배로직/🟡 작업_진행중/전산화 작업 Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
     "🧪 수배로직/수배-PID/B125B  - CWT SAFETY/CWT SAFETY.md",
     "🧪 수배로직/수배-PID/B125B  - CWT SAFETY/EL_PB125B.md",
     "🧪 수배로직/🟢 작업_완료/COMPEN CHAIN 관리-김선태,최진영.md",
     "🧪 수배로직/🟢 작업_완료/03. 직상부_구동형_MRL_전산화/개요-직상부_구동형_MRL_전산화(리모델링).md",
-    "🧪 수배로직/🟡 작업_진행중/설변 통제.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/K도면.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 제외조건.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
-    "🧪 수배로직/🟡 작업_진행중/02. 로직 이관 데이터 분석.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PID_시뮬레이터.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/C14자리 부품 조회.md",
-    "🧪 수배로직/수배-PID/B121A02 - SAFETY_GUARD/용도.md",
-    "🧪 수배로직/수배-PID/B121A02 - SAFETY_GUARD/EL_PB121A02.md",
-    "🧪 수배로직/수배-PID/D161A - HATCH DOOR OPER/EL_PD161A.md",
-    "🧪 수배로직/수배-PID/Untitled 1.md",
     "🧪 수배로직/수배-PID/D161A - HATCH DOOR OPER",
     "image/Pasted image 20260414105256.png",
     "image/Pasted image 20260414105236.png",
