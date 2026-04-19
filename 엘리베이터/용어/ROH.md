@@ -1,7 +1,8 @@
 ---
-aliases:
+수정일: 2026.04.19
 ---
 ---
+
 
 좋은 질문이에요 👍  
 PLM(제품수명주기관리, Product Lifecycle Management)에서 **ROH**라는 용어는 주로 **원자재(Raw Material)** 를 의미합니다.

@@ -5,7 +5,7 @@ with ouid as
  ( select vf$ouid AS VFOID from product$vf, product$id
   	where vf$identity = id$ouid and vf$ouid = id$wip
   	and (
-     	  md$number in ( '204201L11' )
+     	  md$number in ( '호기번호' )
      	)
  )
 SELECT
