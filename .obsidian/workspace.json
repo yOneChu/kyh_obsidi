@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+                "file": "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "업무 Knowledge"
+              "title": "BOM 수배율 관련 쿼리"
             }
           },
           {
@@ -27,12 +27,20 @@
             "state": {
               "type": "markdown",
               "state": {
+<<<<<<< HEAD
                 "file": "VAULT-PLM/Query-정리/제품 관련 Query.md",
+=======
+                "file": "VAULT-PLM/Query-정리/BOM 수배율 쿼리.md",
+>>>>>>> 0e54e5199174f85933dbc49581fa83e71cfb2a69
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
+<<<<<<< HEAD
               "title": "제품 관련 Query"
+=======
+              "title": "BOM 수배율 쿼리"
+>>>>>>> 0e54e5199174f85933dbc49581fa83e71cfb2a69
             }
           },
           {
@@ -49,8 +57,7 @@
               "title": "부품의 하위 2레벨 추출"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -73,7 +80,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "파일 탐색기"
+              "title": "Files"
             }
           },
           {
@@ -82,7 +89,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "수배율",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +97,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "검색"
+              "title": "Search"
             }
           },
           {
@@ -103,7 +110,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -189,18 +197,29 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:빠른 전환기 열기": false,
-      "graph:그래프 뷰 열기": false,
-      "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 일일 노트 열기": false,
-      "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false,
-      "bases:새 베이스 생성하기": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1fbdae06db3d4b9e",
+  "active": "08977200b148db26",
   "lastOpenFiles": [
+<<<<<<< HEAD
+=======
+    "VAULT-PLM/Query-정리/BOM 수배율 쿼리.md",
+    "🧪 수배로직/🟡 작업_진행중/BOM 수배율 프로세스.md",
+    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+    "VAULT-PLM/Query-정리/부품의 하위 2레벨 추출.md",
+    "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
+    "VAULT-PLM/수배로직검증/기능 개발.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/K도면.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
+>>>>>>> 0e54e5199174f85933dbc49581fa83e71cfb2a69
     "독서노트/숫자로 일하는 법/2. 집중해야 할 숫자를  파악한다..md",
     "독서노트/숫자로 일하는 법/0. 목차.md",
     "독서노트/숫자로 일하는 법/1. 먼저 문제가 무엇인지 정확히 알아야 한다..md",
@@ -214,19 +233,20 @@
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
     "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
     "VAULT-PLM/Query-정리/제품 관련 Query.md",
-    "VAULT-PLM/Query-정리/부품의 하위 2레벨 추출.md",
     "VAULT-PLM/Query-정리/부품 조회.md",
-    "VAULT-PLM/Query-정리/BOM 수배율 쿼리.md",
     "VAULT-PLM/Query-정리/부품에 연결된 ECO 조회.md",
     "VAULT-PLM/Query-정리/원가절감실적조회_공통DB.md",
     "VAULT-PLM/Query-정리/영업사양 쿼리.md",
     "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
+<<<<<<< HEAD
     "VAULT-PLM/Query-정리/PID_에러로그 조회.md",
     "엘리베이터/용어/행정.md",
     "업무/엘베 학습.md",
     "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
     "VAULT-PLM/수배로직/수배로직 공부.md",
     "VAULT-PLM/수배로직/궁금증❓.md",
+=======
+>>>>>>> 0e54e5199174f85933dbc49581fa83e71cfb2a69
     "무제.base",
     "Untitled.base",
     "Pasted image 20250512084657.png",
