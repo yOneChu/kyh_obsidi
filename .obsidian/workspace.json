@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
+                "file": "🧪 수배로직/수배-PID/E100B - 수출용 가조립 BOM/EL_PE100B.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PLAN_C 전산작업"
+              "title": "EL_PE100B"
             }
           }
         ]
@@ -172,7 +172,9 @@
   },
   "active": "649ef498d09935bb",
   "lastOpenFiles": [
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md"
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
+    "🧪 수배로직/수배-PID/E100B - 수출용 가조립 BOM/EL_PE100B.md",
+    "🧪 수배로직/수배-PID/E100B - 수출용 가조립 BOM",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md"
   ]
 }
