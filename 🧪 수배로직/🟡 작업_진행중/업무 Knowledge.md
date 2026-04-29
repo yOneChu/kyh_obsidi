@@ -9,11 +9,16 @@
 - NEX MRL, NEX ECO MRL -> GTSS
 - LUXEN_G -> GTLX-R
 - LUXEN -> WBLX, GTLX
-- New Yzer(중저속) -> WBSS, GTSS, 
+- New Yzer(중저속) -> WBSS, GTSS_R,
 - New Yzer(고속) -> WBHSS
 - I-XEL -> WBHS
 - THE-EL -> THE EL
 
+GTLX_R -> LUXEN(2:1, 1:1, G)
+GTSS_E -> NEX_MRL
+
+
+해외는 왠만하면 시리즈가 없을거다. 왜냐하면 선박으로 한번에 가기 때문에.
 
 NEX-G 는 쨋든 리모델링용이에요
 
