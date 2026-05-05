@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+                "file": "VAULT-PLM/Query-정리/수배로직 쿼리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "업무 Knowledge"
+              "title": "수배로직 쿼리"
             }
           },
           {
@@ -58,7 +58,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "파일 탐색기"
             }
           },
           {
@@ -174,23 +174,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false,
       "obsidian-git:Open Git source control": false
     }
   },
   "active": "649ef498d09935bb",
   "lastOpenFiles": [
+    "VAULT-PLM/Query-정리/수량 PID 조회.md",
+    "VAULT-PLM/Query-정리/수배로직 쿼리.md",
+    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
     "🧪 수배로직/수배-PID/EL_PB189D - ◆ B189D EXTERNAL LADDER.md",
     "image/Pasted image 20260428172206.png",
     "image/Pasted image 20260428172155.png",
     "🧪 수배로직/수배-PID/Untitled",
-    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
     "🧪 수배로직/수배-PID/CAL-로직/CAL_CWT_SHOE_TYPE (CWT측 GUIDE SHOE TYPE).md",
     "🧪 수배로직/수배-PID/Untitled 1.md",
     "VAULT-PLM/Query-정리/최초설계완료BOM.md",
