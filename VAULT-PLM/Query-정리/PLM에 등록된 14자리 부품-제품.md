@@ -5,7 +5,7 @@
 
 | PLM에 등록된 14자리 부품-제품
 
-```
+```sql
 with ouid as  
          (select A.vf$ouid AS VFOID  
           from product$vf A,  

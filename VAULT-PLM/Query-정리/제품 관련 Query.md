@@ -124,3 +124,83 @@ SELECT
           CONNECT BY PRIOR AS$END2 = AS$END1  
           ORDER SIBLINGS BY CAST(MD$SEQUENCE AS NUMBER DEFAULT 0 ON CONVERSION ERROR)
 ```
+
+
+| 특정날짜 이후의 호기번호 및 C14자리의 자재번호 조회
+- 기종, 국가코드 출력
+```sql
+with ouid as  
+ ( select vf$ouid AS VFOID from product$vf V, product$id  
+    where V.vf$identity = id$ouid and V.vf$ouid = id$wip  
+    --and (md$number in ( '호기번호' ))  
+     AND V.MD$CDATE >= '20260429173000'  
+     AND V.MD$NUMBER NOT LIKE 'TEST%'  
+ )  
+SELECT  
+           PE.ASSOOUID ASSOOUID  
+           , PE.PRODUCTOUID END1 -- 제품OID  
+           , PE.PARTOUID END2 --WORK_QTY 테이블 연계 부품OID  
+           , PE.SEQ  
+           , LOWER(CONCAT('PRODUCT$VF@', DECTOHEX(PE.PRODUCTOUID))) END1HEX  
+           , LOWER(CONCAT('NORMALPART$VF@', DECTOHEX(PE.PARTOUID))) END2HEX  
+           , (SELECT MD$NUMBER FROM PRODUCT$VF WHERE VF$OUID = PE.PRODUCTOUID) PARENTNO  
+             , (SELECT F.MD$CDATE FROM PRODUCT$VF F WHERE F.VF$OUID = PE.PRODUCTOUID) AS PARENTNO_CREDATE  
+             , (SELECT F.MD$STATUS FROM PRODUCT$VF F WHERE F.VF$OUID = PE.PRODUCTOUID) AS PARENTNO_STATUS  
+             , (SELECT COD(E.EL_ASPSCD) FROM ELV_INFO$ID A, ELV_INFO$VF E  
+                        WHERE A.ID$OUID = E.VF$IDENTITY AND E.vf$ouid = A.id$wip  
+                        AND E.MD$NUMBER = (SELECT F.MD$NUMBER FROM PRODUCT$VF F WHERE F.VF$OUID = PE.PRODUCTOUID) ) AS ASPSCD  
+             ,  (SELECT COD(E.EL_ATYP) FROM ELV_INFO$ID A, ELV_INFO$VF E  
+                        WHERE A.ID$OUID = E.VF$IDENTITY AND E.vf$ouid = A.id$wip  
+                        AND E.MD$NUMBER = (SELECT F.MD$NUMBER FROM PRODUCT$VF F WHERE F.VF$OUID = PE.PRODUCTOUID) ) AS GISONG  
+           , NP.MD$NUMBER PARTNO  
+           , cod(NP.NATION) NATION  
+           , NP.compen_part COMPEN_PART  
+           , NP.MD$DESC PARTNAME  
+           , NP.VF$VERSION VERSION  
+           , NVL(NP.G_L_CODE, '') GLCODE  
+           , NVL(NP.SPEC, '') SPEC  
+           , NVL(NP.PART_SIZE, '') PART_SIZE  
+           , (SELECT MD$NUMBER FROM BLOCKNO$SF WHERE SF$OUID =  DECODE(NP.BLOCKNO, NULL, NULL, HEXTODEC(UPPER(SUBSTR(NP.BLOCKNO, 12))))) BLOCKNO  
+           , (SELECT NVL(LOSSRATE, '') FROM BLOCKNO$SF WHERE SF$OUID =  DECODE(NP.BLOCKNO, NULL, NULL, HEXTODEC(UPPER(SUBSTR(NP.BLOCKNO, 12))))) LOSSRATE  
+           , (SELECT COD(BLOCK_OPT) FROM BLOCKNO$SF WHERE SF$OUID =  DECODE(NP.BLOCKNO, NULL, NULL, HEXTODEC(UPPER(SUBSTR(NP.BLOCKNO, 12))))) BLOCK_OPT  
+           , (SELECT MD$NUMBER FROM BLOCKNO$SF WHERE SF$OUID =  DECODE(NP.UPPERBLOCKNO, NULL, NULL, HEXTODEC(UPPER(SUBSTR(NP.UPPERBLOCKNO, 12))))) UPPERBLOCKNO  
+           , NVL(COD(NP.UOM), '') UOM  
+           , PE.QTY  
+           , VP.WORK_QTY  
+           , PE.CMT  
+           , VP.WORK_CMT  
+           , PE.COLOR  
+           , VP.WORK_COLOR  
+           , NVL(COD(NP.ORIGIN_DIV), '') DIV  
+           , NVL(PE.MBOM, '') MBOM  
+           , NVL(COD(NP.PART_MBOM), '') PART_MBOM  
+           , (SELECT MD$DESC FROM FUSER$SF WHERE MD$NUMBER = NP.MD$USER) USERNAME  
+           , NP.MD$USER USERID  
+           , NP.OLD_CODE  
+           , NP.OLD_CODE2  
+           , NP.OLD_CODE3  
+           , COD(NP.SPT) SPT  
+           , COD(NP.PARTMPCHECK) PARTMPCHECK  
+           , (SELECT MD$DESC FROM FUSER$SF WHERE MD$NUMBER = PE.CUSER) CUSERNAME  
+           , PE.CUSER CUSERID  
+           , 1 LEV  
+           , 'F' ISLEAF  
+           , VP.UCHECK -- 수정여부  
+           , VP.MCHECK  
+           , NVL(COD(NP.PART_DIVISION), '') PART_DIVISION  
+           , PE.CDATE  
+           , VP.MDATE  
+          -- , DATEFORMAT(VP.MDATE, 'YYYYMMDDHH24MISS', 'YYYY-MM-DD HH24:MI:SS') AS 등록일  
+           , VP.user5  
+           , (SELECT COUNT(1) FROM PARTOFPART$AC WHERE AS$END1=NP.VF$OUID AND ROWNUM=1) HASCHILD -- 하위BOM 존재여부  
+          FROM  
+           PARTOFEBOM PE  
+          INNER JOIN NORMALPART$VF NP ON PE.PARTOUID = NP.VF$OUID  
+          LEFT OUTER JOIN VARIABLEPART_NEW VP ON VP.PRODUCTOUID = PE.PRODUCTOUID AND VP.ASSOOUID = PE.ASSOOUID  
+          WHERE  
+           -- PE.PRODUCTOUID = 제품의OID  
+            PE.PRODUCTOUID IN (SELECT VFOID FROM ouid)  
+          AND NP.MD$NUMBER LIKE 'C%'  
+          AND LENGTH(NP.MD$NUMBER) >=14  
+          ORDER BY TO_NUMBER(PE.SEQ)
+```
