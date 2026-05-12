@@ -10,7 +10,7 @@ tags:
 
 
 ### | 📝 JQPR 정보
-```
+```sql
 SELECT  
        B.JQPRNUM, -- 관리번호  
        B.JQPRNO,  
