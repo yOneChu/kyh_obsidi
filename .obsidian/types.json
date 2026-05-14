@@ -4,6 +4,8 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
-    "작성일": "date"
+    "작성일": "date",
+    "cs": "date",
+    "수정일": "date"
   }
 }

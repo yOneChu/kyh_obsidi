@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B121B01 - ROPE END/EL_PB121B01.md",
+                "file": "🧪 수배로직/수배-PID/B121B01 - ROPE END/EL_PB121B01 - ROPE END.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EL_PB121B01"
+              "title": "EL_PB121B01 - ROPE END"
             }
           },
           {
@@ -81,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "속도",
+                "query": "ROPE END",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -198,17 +198,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "649ef498d09935bb",
+  "active": "fa7b0055c57eedc8",
   "lastOpenFiles": [
+    "🧪 수배로직/수배-PID/B181A03 - CWT ROPE END",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
+    "🧪 수배로직/수배-PID/B121B01 - ROPE END/EL_PB121B01 - ROPE END.md",
+    "🧪 수배로직/수배-PID/로직 참고사항.md",
+    "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
+    "VAULT-PLM/수배로직/✍️ 수배 공부 중.md",
+    "VAULT-PLM/수배로직/수배로직 공부.md",
+    "VAULT-PLM/수배로직/궁금증❓.md",
+    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+    "🧪 수배로직/🟡 작업_진행중/전산화 작업 Knowledge.md",
+    "🧪 수배로직/수배-PID/E321A06 - FAN/EL_PE321A06 - FAN.md",
+    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/CEILING ASSY_정보.md",
+    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
+    "image/Pasted image 20260514093614.png",
     "🧪 수배로직/수배-PID/B184A - PIT SCREEN/EL_PB184A.md",
     "VAULT-PLM/Query-정리/PID_에러로그 조회.md",
-    "🧪 수배로직/수배-PID/B121B01 - ROPE END/EL_PB121B01.md",
     "🧪 수배로직/수배-PID/B121B01 - ROPE END",
     "독서노트/📚 초압축 공부법.md",
     "엘리베이터/CAR/기타 정보.md",
     "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/03. PIT 사다리 (PIT LADDER).md",
-    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/CEILING ASSY_정보.md",
-    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
     "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
     "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 대시보드.md",
     "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 제외조건.md",
@@ -217,19 +228,9 @@
     "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
     "🧪 수배로직/수배-PID/B120B03 - BALANCE WEIGHT/EL_PB120B03.md",
     "🧪 수배로직/💻 개발/BOM 이력관리.md",
-    "🧪 수배로직/🟡 작업_진행중/BOM 수배율 프로세스.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
-    "SAP/JQPR 정보.md",
-    "VAULT-PLM/Query-정리/제품 관련 Query.md",
     "image/Pasted image 20260511171753.png",
-    "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/02. 비상용 승강로 사다리(B189C01).md",
-    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "🧪 수배로직/수배-PID/E131A - CAR DOOR OPER/EL_PE131A.md",
-    "🧪 수배로직/수배-PID/D161A - HATCH DOOR OPER/EL_PD161A.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
     "image/Pasted image 20260511133033.png",
     "image/Pasted image 20260511133026.png",
-    "🧪 수배로직/수배-PID/B189D02-LADDER CASE.md",
     "image/Pasted image 20260508185642.png",
     "image/Pasted image 20260508182649.png",
     "image/Pasted image 20260508182639.png",
@@ -237,7 +238,6 @@
     "image/Pasted image 20260508182616.png",
     "🧪 수배로직/수배-PID/B182G01 - ANCHOR BOLT",
     "image/Pasted image 20260507084943.png",
-    "image/Pasted image 20260507084933.png",
     "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER",
     "🧪 수배로직/수배-PID/Untitled",
     "🧪 수배로직/수배-PID/E131A - CAR DOOR OPER",
