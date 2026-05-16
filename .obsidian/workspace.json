@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B121B01 - ROPE END/EL_PB121B01 - ROPE END.md",
+                "file": "🧪 수배로직/수배-PID/B182E05 - SUPPORT ANGLE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EL_PB121B01 - ROPE END"
+              "title": "B182E05 - SUPPORT ANGLE"
             }
           },
           {
@@ -72,7 +72,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "파일 탐색기"
             }
           },
           {
@@ -188,21 +188,25 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fa7b0055c57eedc8",
+  "active": "649ef498d09935bb",
   "lastOpenFiles": [
+    "image/Pasted image 20260516133703.png",
+    "image/Pasted image 20260516133644.png",
+    "image/Pasted image 20260516133632.png",
+    "🧪 수배로직/수배-PID/B121B01 - ROPE END/EL_PB121B01 - ROPE END.md",
+    "🧪 수배로직/수배-PID/B182E05 - SUPPORT ANGLE.md",
     "🧪 수배로직/수배-PID/B181A03 - CWT ROPE END",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
-    "🧪 수배로직/수배-PID/B121B01 - ROPE END/EL_PB121B01 - ROPE END.md",
     "🧪 수배로직/수배-PID/로직 참고사항.md",
     "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
     "VAULT-PLM/수배로직/✍️ 수배 공부 중.md",
@@ -227,7 +231,6 @@
     "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/K도면.md",
     "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
     "🧪 수배로직/수배-PID/B120B03 - BALANCE WEIGHT/EL_PB120B03.md",
-    "🧪 수배로직/💻 개발/BOM 이력관리.md",
     "image/Pasted image 20260511171753.png",
     "image/Pasted image 20260511133033.png",
     "image/Pasted image 20260511133026.png",
@@ -235,9 +238,7 @@
     "image/Pasted image 20260508182649.png",
     "image/Pasted image 20260508182639.png",
     "image/Pasted image 20260508182630.png",
-    "image/Pasted image 20260508182616.png",
     "🧪 수배로직/수배-PID/B182G01 - ANCHOR BOLT",
-    "image/Pasted image 20260507084943.png",
     "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER",
     "🧪 수배로직/수배-PID/Untitled",
     "🧪 수배로직/수배-PID/E131A - CAR DOOR OPER",
