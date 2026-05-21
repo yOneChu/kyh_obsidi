@@ -22,31 +22,17 @@
             }
           },
           {
-            "id": "38ef750057ef503c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "VAULT-PLM/Query-정리/PID_에러로그 조회.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PID_에러로그 조회"
-            }
-          },
-          {
             "id": "65ddfa9331a744a0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B184A - PIT SCREEN/EL_PB184A.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/도면 용어 정리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EL_PB184A"
+              "title": "도면 용어 정리"
             }
           },
           {
@@ -55,12 +41,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B182G01 - ANCHOR BOLT/ANCHOR BOLT (B182G01-G04).md",
+                "file": "VAULT-PLM/Query-정리/특정 문구 어느 PID에 걸려있는 조회(모든 버전 및 PID).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ANCHOR BOLT (B182G01-G04)"
+              "title": "특정 문구 어느 PID에 걸려있는 조회(모든 버전 및 PID)"
+            }
+          },
+          {
+            "id": "d56d9904aa34da4c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/수배-PID/B184A - PIT SCREEN/EL_PB184A.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "EL_PB184A"
             }
           }
         ],
@@ -87,7 +87,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "파일 탐색기"
+              "title": "Files"
             }
           },
           {
@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ANCHOR",
+                "query": "PIT  SCREEN",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -104,7 +104,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "검색"
+              "title": "Search"
             }
           },
           {
@@ -117,7 +117,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -203,25 +204,37 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:빠른 전환기 열기": false,
-      "graph:그래프 뷰 열기": false,
-      "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 일일 노트 열기": false,
-      "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false,
-      "bases:새 베이스 생성하기": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0bfd87356386f817",
+  "active": "d56d9904aa34da4c",
   "lastOpenFiles": [
+    "🧪 수배로직/수배-PID/B182E05 - SUPPORT ANGLE.md",
+    "🧪 수배로직/🟡 작업_진행중/설변 통제.md",
+    "🧪 수배로직/🟡 작업_진행중/박코치.md",
+    "🧪 수배로직/🟡 작업_진행중/면담.md",
+    "🧪 수배로직/🟡 작업_진행중/도면 용어 정리.md",
+    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/EL_PE321A.md",
+    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/CEILING ASSY_정보.md",
+    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/E312A16_ISOATION ASSY.md",
+    "VAULT-PLM/Query-정리/특정 문구 어느 PID에 걸려있는 조회(모든 버전 및 PID).md",
+    "VAULT-PLM/Query-정리/PID 검색 쿼리.md",
+    "🧪 수배로직/수배-PID/B182G01 - ANCHOR BOLT/ANCHOR BOLT (B182G01-G04).md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/K도면.md",
+    "🧪 수배로직/수배-PID/B184A - PIT SCREEN/EL_PB184A.md",
+    "image/Pasted image 20260520145646.png",
     "🧪 수배로직/수배-PID/B182G01 - ANCHOR BOLT/B182G99 - ANCHOR BOLT COMPONENT.md",
     "image/Pasted image 20260519172947.png",
-    "🧪 수배로직/수배-PID/B182G01 - ANCHOR BOLT/ANCHOR BOLT (B182G01-G04).md",
     "image/Pasted image 20260519172415.png",
     "image/Pasted image 20260519172412.png",
     "🧪 수배로직/수배-PID/B182G01 - ANCHOR BOLT/EL_PB182G0.md",
-    "🧪 수배로직/수배-PID/B184A - PIT SCREEN/EL_PB184A.md",
     "엘리베이터/PIT/PIT SCREEN.md",
     "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
     "VAULT-PLM/Query-정리/제품 관련 Query.md",
@@ -238,20 +251,9 @@
     "VAULT-PLM/Query-정리/영업사양 쿼리.md",
     "독서노트/숫자로 일하는 법/2. 집중해야 할 숫자를  파악한다..md",
     "독서노트/springBoot",
-    "독서노트/숫자로 일하는 법/1. 먼저 문제가 무엇인지 정확히 알아야 한다..md",
-    "독서노트/숫자로 일하는 법/0. 목차.md",
-    "엘리베이터.md",
-    "🧪 수배로직/수배-PID/B182E05 - SUPPORT ANGLE.md",
     "image/Pasted image 20260516133703.png",
     "image/Pasted image 20260516133644.png",
-    "image/Pasted image 20260516133632.png",
-    "🧪 수배로직/수배-PID/B121B01 - ROPE END/EL_PB121B01 - ROPE END.md",
     "🧪 수배로직/수배-PID/B181A03 - CWT ROPE END",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
-    "🧪 수배로직/수배-PID/로직 참고사항.md",
-    "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
-    "VAULT-PLM/수배로직/✍️ 수배 공부 중.md",
-    "VAULT-PLM/수배로직/수배로직 공부.md",
     "🧪 수배로직/수배-PID/B121B01 - ROPE END",
     "🧪 수배로직/수배-PID/B182G01 - ANCHOR BOLT",
     "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER",
