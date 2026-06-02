@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B185B - GOVERNOR ROPE.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/데이터분석.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "B185B - GOVERNOR ROPE"
+              "title": "데이터분석"
             }
           },
           {
@@ -115,7 +115,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "파일 탐색기"
             }
           },
           {
@@ -231,20 +231,21 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false,
       "obsidian-git:Open Git source control": false
     }
   },
   "active": "ac7a1b39f4af1d9d",
   "lastOpenFiles": [
-    "Untitled.md",
     "🧪 수배로직/수배-PID/B185B - GOVERNOR ROPE.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/데이터분석.md",
+    "Untitled.md",
     "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
     "엘리베이터/CAR/CAR STOPPING DEVICE.md",
     "VAULT-PLM/Query-정리/부품 조회.md",
@@ -269,7 +270,6 @@
     "🧪 수배로직/수배-PID/B183D01 - BUFFER FOOTING.md",
     "🧪 수배로직/🟡 작업_진행중/JQPR.md",
     "🧪 수배로직/수배-PID/B183A01 - BUFFER.md",
-    "🧪 수배로직/수배-PID/B184A - PIT SCREEN/EL_PB184A.md",
     "image/Pasted image 20260522171343.png",
     "image/Pasted image 20260522171317.png",
     "image/Pasted image 20260522165831.png",
