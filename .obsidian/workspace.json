@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/경력개발 메일.md",
+                "file": "VAULT-PLM/Query-정리/특정 PID에 도면번호 등록된 일자 조회.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "경력개발 메일"
+              "title": "특정 PID에 도면번호 등록된 일자 조회"
             }
           },
           {
@@ -115,7 +115,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "파일 탐색기"
+              "title": "Files"
             }
           },
           {
@@ -124,7 +124,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "GOV ROPE",
+                "query": "ROPE SHACKLE",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -231,20 +231,27 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:빠른 전환기 열기": false,
-      "graph:그래프 뷰 열기": false,
-      "canvas:새 캔버스 만들기": false,
-      "daily-notes:오늘의 일일 노트 열기": false,
-      "templates:템플릿 삽입": false,
-      "command-palette:명령어 팔레트 열기": false,
-      "bases:새 베이스 생성하기": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
       "obsidian-git:Open Git source control": false
     }
   },
   "active": "ac7a1b39f4af1d9d",
   "lastOpenFiles": [
+    "VAULT-PLM/Query-정리/특정 문구 어느 PID에 걸려있는 조회(모든 버전 및 PID).md",
+    "🧪 수배로직/🟡 작업_진행중/메.md",
     "🧪 수배로직/🟡 작업_진행중/면담.md",
-    "🧪 수배로직/🟡 작업_진행중/경력개발 메일.md",
+    "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md",
+    "🧪 수배로직/수배-PID/Untitled.md",
+    "🧪 수배로직/수배-PID/B186A01 - ROPE SHACKLE/B186A01 - ROPE(BELT) SHACKLE (수량).md",
+    "🧪 수배로직/수배-PID/B186A01 - ROPE SHACKLE",
+    "엘리베이터/승강로/ROPE SHACKLE (B186A06).md",
+    "🧪 수배로직/🟡 작업_진행중/도면 용어 정리.md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/데이터분석.md",
     "🧪 수배로직/수배-PID/B185B - GOVERNOR ROPE.md",
     "Untitled.md",
@@ -263,13 +270,7 @@
     "VAULT-PLM/Query-정리/특정 PID에 도면번호 등록된 일자 조회.md",
     "VAULT-PLM/Query-정리/PID 조회.md",
     "VAULT-PLM/Query-정리/수배로직 쿼리.md",
-    "VAULT-PLM/Query-정리/특정 문구 어느 PID에 걸려있는 조회(모든 버전 및 PID).md",
     "VAULT-PLM/Query-정리/PLM에 등록된 14자리 부품-제품.md",
-    "VAULT-PLM/Query-정리/도면 조회.md",
-    "🧪 수배로직/수배-PID/B186A01 - ROPE(BELT) SHACKLE (수량).md",
-    "엘리베이터/CAR/CEILING ASSY.md",
-    "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md",
-    "🧪 수배로직/수배-PID/B183D01 - BUFFER FOOTING.md",
     "image/Pasted image 20260522171343.png",
     "image/Pasted image 20260522171317.png",
     "image/Pasted image 20260522165831.png",
@@ -285,7 +286,6 @@
     "🧪 수배로직/수배-PID/B121B01 - ROPE END",
     "🧪 수배로직/수배-PID/B182G01 - ANCHOR BOLT",
     "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER",
-    "🧪 수배로직/수배-PID/Untitled",
     "🧪 수배로직/수배-PID/E131A - CAR DOOR OPER",
     "🧪 수배로직/수배-PID/E100B - 수출용 가조립 BOM"
   ]

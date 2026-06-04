@@ -1,7 +1,13 @@
-
-
+---
+작성일: 2026-06-04
+---
 
 ---
+
+## 01. ROPE SHACKLE
+- 만약 ROPE SHACKLE을 바꾸면 FOUNDATION, WIRE CLIP을 바꿔야 한다.
+- 
+
 
 고속은 "ROPE_TYPE" 조건으로 수량 계산한다.
 

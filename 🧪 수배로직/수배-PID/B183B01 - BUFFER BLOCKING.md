@@ -30,8 +30,10 @@
 | CWT | 1   | 1   | 2   | 2   | 2/2 |
 | CAR | 1   | 2   | 2   | 4   | 4   |
 
-### | 길이 계산(기본)
+### | CAR BUFFER BLOCKING 길이 계산(기본) - AUTO_EL_ECBUFBH : CAR BUFFER BLOCKING 높이
 ```
+
+AUTO_EL_ECBUFBH : CAR BUFFER BLOCKING 높이
 
 
 EL_ECBUFBH = [$ round( {EL_EHP}-{P_TH}-{S_TH}-{B_TH}-{CAR_RB}-{B183AA_BH}-{FOOTING_TH}+{HS_TH}, -1) $]
@@ -44,8 +46,10 @@ EL_ECBUFBH = [$ round( {EL_EHP}-{P_TH}-{S_TH}-{B_TH}-{CAR_RB}-{B183AA_BH}-{FOOTI
 5) B183AA_BH
 6) FOOTING_TH
    
-
 ```
 
 
+2500(승강로 PIT높이) - 213(플랫폼 높이) - 230(세이프티 높이) - 240(CAR RUN BY)  + 90(고속기종 여유치수)
 
+
+## | AUTO_EL_ECWBUFBH : CWT BUFFER BLOCKING 높이
