@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VAULT-PLM/Query-정리/특정 PID에 도면번호 등록된 일자 조회.md",
-                "mode": "source",
+                "file": "🧪 수배로직/수배-PID/B120B01 - APPRON/EL_PB120B01.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "특정 PID에 도면번호 등록된 일자 조회"
+              "title": "EL_PB120B01"
             }
           },
           {
@@ -83,16 +83,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE/EL_PA116A.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PID_시뮬레이터 개발 중 (버전 선택).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EL_PA116A"
+              "title": "PID_시뮬레이터 개발 중 (버전 선택)"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -115,7 +115,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "파일 탐색기"
             }
           },
           {
@@ -231,20 +231,30 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ac7a1b39f4af1d9d",
+  "active": "8446e1590741a594",
   "lastOpenFiles": [
-    "VAULT-PLM/Query-정리/특정 문구 어느 PID에 걸려있는 조회(모든 버전 및 PID).md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PID_시뮬레이터 개발 중 (버전 선택).md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PLM API 정리.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/AI 테스트.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/공사현장추출.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/데이터분석.md",
     "🧪 수배로직/🟡 작업_진행중/메.md",
+    "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE/EL_PA116A.md",
+    "CAL_GOV_DISTANCE.md",
+    "🧪 수배로직/수배-PID/B120B01 - APPRON/EL_PB120B01.md",
+    "VAULT-PLM/Query-정리/특정 PID에 도면번호 등록된 일자 조회.md",
+    "VAULT-PLM/Query-정리/특정 문구 어느 PID에 걸려있는 조회(모든 버전 및 PID).md",
     "🧪 수배로직/🟡 작업_진행중/면담.md",
     "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md",
     "🧪 수배로직/수배-PID/Untitled.md",
@@ -252,25 +262,15 @@
     "🧪 수배로직/수배-PID/B186A01 - ROPE SHACKLE",
     "엘리베이터/승강로/ROPE SHACKLE (B186A06).md",
     "🧪 수배로직/🟡 작업_진행중/도면 용어 정리.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/데이터분석.md",
     "🧪 수배로직/수배-PID/B185B - GOVERNOR ROPE.md",
     "Untitled.md",
     "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
     "엘리베이터/CAR/CAR STOPPING DEVICE.md",
     "VAULT-PLM/Query-정리/부품 조회.md",
-    "CAL_GOV_DISTANCE.md",
-    "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE/EL_PA116A.md",
     "🧪 수배로직/수배-PID/A260A05 - PIT SWITCH.md",
     "🧪 수배로직/수배-PID/A115A - GOVERNER/Governer 용도.md",
     "SAP/💡 SAP 계정.md",
     "image/Pasted image 20260601102827.png",
-    "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE.md",
-    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/CEILING ASSY_정보.md",
-    "VAULT-PLM/Query-정리/PLM - 수주테이블.md",
-    "VAULT-PLM/Query-정리/특정 PID에 도면번호 등록된 일자 조회.md",
-    "VAULT-PLM/Query-정리/PID 조회.md",
-    "VAULT-PLM/Query-정리/수배로직 쿼리.md",
-    "VAULT-PLM/Query-정리/PLM에 등록된 14자리 부품-제품.md",
     "image/Pasted image 20260522171343.png",
     "image/Pasted image 20260522171317.png",
     "image/Pasted image 20260522165831.png",
