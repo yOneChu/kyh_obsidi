@@ -55,44 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "업무 Knowledge"
-            }
-          },
-          {
-            "id": "ac7a1b39f4af1d9d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/수배-PID/B120B01 - APPRON/EL_PB120B01.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/메.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EL_PB120B01"
-            }
-          },
-          {
-            "id": "8446e1590741a594",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PID_시뮬레이터 개발 중 (버전 선택).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PID_시뮬레이터 개발 중 (버전 선택)"
+              "title": "메"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -241,35 +213,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8446e1590741a594",
+  "active": "4efb23a702af8e5e",
   "lastOpenFiles": [
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PID_시뮬레이터 개발 중 (버전 선택).md",
+    "🧪 수배로직/🟡 작업_진행중/면담.md",
+    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+    "🧪 수배로직/🟡 작업_진행중/재질 용어.md",
+    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
+    "🧪 수배로직/🟡 작업_진행중/JQPR.md",
+    "🧪 수배로직/🟡 작업_진행중/CRM 관련.md",
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/문의사항.md",
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PLM API 정리.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/AI 테스트.md",
+    "🧪 수배로직/수배-PID/B120B01 - APPRON/EL_PB120B01.md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/공사현장추출.md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/데이터분석.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/AI 테스트.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PID_시뮬레이터 개발 중 (버전 선택).md",
     "🧪 수배로직/🟡 작업_진행중/메.md",
     "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE/EL_PA116A.md",
     "CAL_GOV_DISTANCE.md",
-    "🧪 수배로직/수배-PID/B120B01 - APPRON/EL_PB120B01.md",
     "VAULT-PLM/Query-정리/특정 PID에 도면번호 등록된 일자 조회.md",
     "VAULT-PLM/Query-정리/특정 문구 어느 PID에 걸려있는 조회(모든 버전 및 PID).md",
-    "🧪 수배로직/🟡 작업_진행중/면담.md",
     "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md",
     "🧪 수배로직/수배-PID/Untitled.md",
     "🧪 수배로직/수배-PID/B186A01 - ROPE SHACKLE/B186A01 - ROPE(BELT) SHACKLE (수량).md",
     "🧪 수배로직/수배-PID/B186A01 - ROPE SHACKLE",
     "엘리베이터/승강로/ROPE SHACKLE (B186A06).md",
     "🧪 수배로직/🟡 작업_진행중/도면 용어 정리.md",
-    "🧪 수배로직/수배-PID/B185B - GOVERNOR ROPE.md",
-    "Untitled.md",
-    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "엘리베이터/CAR/CAR STOPPING DEVICE.md",
-    "VAULT-PLM/Query-정리/부품 조회.md",
-    "🧪 수배로직/수배-PID/A260A05 - PIT SWITCH.md",
-    "🧪 수배로직/수배-PID/A115A - GOVERNER/Governer 용도.md",
-    "SAP/💡 SAP 계정.md",
     "image/Pasted image 20260601102827.png",
     "image/Pasted image 20260522171343.png",
     "image/Pasted image 20260522171317.png",
