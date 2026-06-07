@@ -4,7 +4,7 @@
 ---
 
 
-### 특정 도면번호가 수배된 PID 조회
+### 특정 도면번호가 최초 수배된 PID 조회
 ```SQL
 SELECT H.*  
 FROM variant_d d,  
