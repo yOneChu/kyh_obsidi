@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/디지털기획팀 메일 답변하기.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "업무 Knowledge"
+              "title": "디지털기획팀 메일 답변하기"
             }
           }
         ],
@@ -59,7 +59,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "파일 탐색기"
             }
           },
           {
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "STO",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -76,7 +76,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "검색"
             }
           },
           {
@@ -89,8 +89,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -176,18 +175,21 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false,
       "obsidian-git:Open Git source control": false
     }
   },
   "active": "837bb6264f6cd0cb",
   "lastOpenFiles": [
+    "🧪 수배로직/🟡 작업_진행중/메.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/디지털기획팀 메일 답변하기.md",
+    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
     "🧪 수배로직/수배-PID/B182E01 - RAIL BRACKET/EL_PB182E01.md",
     "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/03. PIT 사다리 (PIT LADDER).md",
     "엘리베이터/CAR/레일브라켓 방진 라이너.md",
@@ -197,7 +199,6 @@
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PLM API 정리.md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/제미나이 api 연동.md",
     "🧪 수배로직/🟡 작업_진행중/도면 용어 정리.md",
-    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
     "🧪 수배로직/🟡 작업_진행중/설변 통제.md",
     "🧪 수배로직/🟡 작업_진행중/재질 용어.md",
     "🧪 수배로직/🟡 작업_진행중/02. 로직 이관 데이터 분석.md",
