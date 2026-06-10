@@ -31,7 +31,6 @@ https://vault-in.hdel.co.kr:8070/api/findPartOneWithPartNo?key=subae&partNo=3261
 ### 제품 1레벨 조회
 ```
 
-  
 [API 설명]
 - 제품(현장,호기)의 BOM
 
@@ -39,6 +38,21 @@ https://vault-in.hdel.co.kr:8070/api/findPartOneWithPartNo?key=subae&partNo=3261
 - https://vault-in.hdel.co.kr:8070/api/findProductInfo?key=subae&productNo=N28431L01
 
 [파라미터 정보]
-productNo : 현장(호기번호)
+- productNo : 현장(호기) 번호
+
+```
+
+
+### 영업사양 정보
+```
+[API 설명]
+- 제품(현장,호기)의 영업사양
+
+[API URL]
+https://vault-in.hdel.co.kr:8070/api/findElvSearch?key=subae&productNo=TEST-624822
+
+[파라미터 정보]
+- productNo : 현장(호기) 번호
+
 
 ```
