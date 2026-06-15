@@ -9,6 +9,11 @@
 
 ---
 
+## | 정보
+- GOV 텐션시브는 REMOTE CONTROLLER, CABLE ASSY 연결 된다.
+
+---
+
 
 ## 01.차세대 루젠
 - Global 모델에 gov tension 스위치 2개 로 변경된다.
