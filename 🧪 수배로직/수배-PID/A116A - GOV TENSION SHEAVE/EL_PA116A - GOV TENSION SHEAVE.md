@@ -11,6 +11,7 @@
 
 ## | 정보
 - GOV 텐션시브는 REMOTE CONTROLLER, CABLE ASSY 연결 된다.
+- GOV 텐션시브는 `GOV ROPE PROTECTOR, GOV TENSION SHEAVE COVER` 과 세트이다.
 
 ---
 

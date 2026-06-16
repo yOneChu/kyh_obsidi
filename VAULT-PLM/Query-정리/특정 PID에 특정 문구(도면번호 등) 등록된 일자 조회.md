@@ -1,0 +1,25 @@
+---
+작성일: 2026-06-16
+---
+---
+
+
+### 특정 문구(도면번호 등)가 최초 수배된 PID 조회
+```SQL
+SELECT d.NO, H.*  
+FROM variant_d d,  
+     variant_h h  
+WHERE h.HOUID = d.HOUID  
+  AND h.PID = 'EL_PB186A01'  
+  AND h.REG_DATE > TO_DATE('20250101', 'YYYYMMDD')  
+  AND (D.VAL1 LIKE '%18600209%' 
+  OR D.VAL2 LIKE '%18600209%' 
+  OR D.VAL3 LIKE '%18600209%' 
+  OR D.VAL4 LIKE '%18600209%'  
+  OR D.VAL5 LIKE '%18600209%' 
+  OR D.VAL6 LIKE '%18600209%'  
+  OR D.VAL7 LIKE '%18600209%' 
+  OR D.VAL8 LIKE '%18600209%' 
+  OR D.VAL9 LIKE '%18600209%')  
+  AND H.VERSION != '-1'
+```
