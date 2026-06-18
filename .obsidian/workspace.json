@@ -8,34 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "837bb6264f6cd0cb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE/EL_PA116A - GOV TENSION SHEAVE.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "EL_PA116A - GOV TENSION SHEAVE"
-            }
-          },
-          {
-            "id": "3272324e0187478d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PLM API 정리.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PLM API 정리"
-            }
-          },
-          {
             "id": "61335ec0db296868",
             "type": "leaf",
             "state": {
@@ -69,15 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "엘리베이터/용어/ETS (Emergency Terminal Stopping device).md",
+                "file": "Daily/01.주간/2026-W25.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ETS (Emergency Terminal Stopping device)"
+              "title": "2026-W25"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -130,8 +103,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -144,6 +116,7 @@
       {
         "id": "e81b6a7a6211bedb",
         "type": "tabs",
+        "dimension": 42.59259259259259,
         "children": [
           {
             "id": "f71614a3fd3382b1",
@@ -151,17 +124,17 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/VAULT API.md",
+                "file": "🧪 수배로직/수배-PID/B183C01 - BUFFER SUPPORT.md",
                 "collapseAll": false,
-                "extraContext": false,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for VAULT API"
+              "title": "Backlinks for B183C01 - BUFFER SUPPORT"
             }
           },
           {
@@ -199,21 +172,75 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/VAULT API.md",
+                "file": "🧪 수배로직/수배-PID/B183C01 - BUFFER SUPPORT.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of VAULT API"
+              "title": "Outline of B183C01 - BUFFER SUPPORT"
+            }
+          },
+          {
+            "id": "022331365bee34eb",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ],
+        "currentTab": 4
+      },
+      {
+        "id": "08dbaff24bf622c3",
+        "type": "tabs",
+        "dimension": 57.40740740740741,
+        "children": [
+          {
+            "id": "7297900616454134",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "🧪 수배로직/수배-PID/B183C01 - BUFFER SUPPORT.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": false
+                }
+              },
+              "icon": "lucide-git-fork",
+              "title": "Graph of B183C01 - BUFFER SUPPORT"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 450.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -227,9 +254,27 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "837bb6264f6cd0cb",
+  "active": "7297900616454134",
   "lastOpenFiles": [
+    "Daily/01.주간/2026-W25.md",
+    "Daily/02.일간/2026-06-19.md",
+    "Daily/02.일간/2026-06-18.md",
+    "Daily/01.일간/2026-06-18.md",
+    "Daily/01.일간",
+    "2026-06-18.md",
+    "Daily/02.일간",
+    "2026-06-19.md",
+    "Daily/2026-W25.md",
     "엘리베이터/용어/ETS (Emergency Terminal Stopping device).md",
+    "Daily/01.주간",
+    "Untitled 1.md",
+    "2026-W25.md",
+    "2026-06-23.md",
+    "Daily",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/VAULT API.md",
+    "🧪 수배로직/💻 개발/로직에디터 변환.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PLM API 정리.md",
+    "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE/EL_PA116A - GOV TENSION SHEAVE.md",
     "🧪 수배로직/수배-PID/A103C-ISOLATION_PAD/EL_PA103C.md",
     "🧪 수배로직/수배-PID/B186A01 - ROPE SHACKLE/B186A01 - ROPE(BELT) SHACKLE (수량).md",
     "VAULT-PLM/Query-정리/특정 PID에 특정 문구(도면번호 등) 등록된 일자 조회.md",
@@ -241,20 +286,6 @@
     "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
     "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
     "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/C14자리 부품 조회.md",
-    "🧪 수배로직/🟡 작업_진행중/02. 로직 이관 데이터 분석.md",
-    "🧪 수배로직/🟡 작업_진행중/메일 경력(인사팀 발송).md",
-    "🧪 수배로직/수배-PID/B183A01 - BUFFER.md",
-    "🧪 수배로직/수배-PID/B182E01 - RAIL BRACKET/EL_PB182E01 - RAIL BRACKET.md",
-    "엘리베이터/CAR/레일브라켓 방진 라이너.md",
-    "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE/EL_PA116A - GOV TENSION SHEAVE.md",
-    "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE/A116A - GOV TENSION SHEAVE.md",
-    "🧪 수배로직/수배-PID/A103B02-ROPE HITCH ASSY.md",
-    "🧪 수배로직/수배-PID/B183D01 - BUFFER FOOTING.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PLM API 정리.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/VAULT API.md",
-    "🧪 수배로직/🟡 작업_진행중/면담.md",
-    "🧪 수배로직/🟡 작업_진행중/PLM ECO 결재 시 검증 로직.md",
-    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
     "image/Pasted image 20260609172359.png",
     "🧪 수배로직/수배-PID/B182E01 - RAIL BRACKET"
   ]

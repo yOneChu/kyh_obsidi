@@ -7,11 +7,13 @@
 
 [[CAL_GOV_DISTANCE]]
 
+
 ---
 
 ## | 정보
 - GOV 텐션시브는 REMOTE CONTROLLER, CABLE ASSY 연결 된다.
 - GOV 텐션시브는 `GOV ROPE PROTECTOR, GOV TENSION SHEAVE COVER` 과 세트이다.
+- 즉, 3개는 CC값의 범위가 동일해야 됨.
 
 ---
 
@@ -21,6 +23,7 @@
 	- **사유** : 갇힘 예방을 위해 문열고 대기 추가(ccs 로 연결)
 - 기존 자재에 CABLE(11510210G08)이 추가되었다.
 
+---
 
 
 ## 01. 로직 참고사항

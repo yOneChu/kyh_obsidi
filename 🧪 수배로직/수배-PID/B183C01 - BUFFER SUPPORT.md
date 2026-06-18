@@ -3,6 +3,9 @@
 ---
 ---
 
+[[B183C01 - BUFFER SUPPORT]]
+
+---
 
 - 승강로가 길 경우 버퍼가 기울어지는 것을 방지하기 위해 CAR 쪽에 BUFFER SUPPORT를 설치한다.
 - 고속일 경우 CWT쪽에 BUFFER SUPPORT를 설치하고 그외에는 구지 설치하지 않는다.
