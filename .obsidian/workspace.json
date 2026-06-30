@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B182E01 - RAIL BRACKET/EL_PB182E01 - RAIL BRACKET.md",
+                "file": "🧪 수배로직/수배-PID/A200A01 - ENCODER/EL_PA200A01 - ENCODER.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EL_PB182E01 - RAIL BRACKET"
+              "title": "EL_PA200A01 - ENCODER"
             }
           }
         ],
@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "RAIL BRACKET",
+                "query": "ENCO",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,7 +117,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -229,7 +230,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B182E01 - RAIL BRACKET/EL_PB182E01 - RAIL BRACKET.md",
+                "file": "🧪 수배로직/수배-PID/A200A01 - ENCODER/EL_PA200A01 - ENCODER.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -257,7 +258,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of EL_PB182E01 - RAIL BRACKET"
+              "title": "Graph of EL_PA200A01 - ENCODER"
             }
           }
         ]
@@ -278,14 +279,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1913bafbaa1334b2",
+  "active": "45d0d43e0a3bf904",
   "lastOpenFiles": [
+    "🧪 수배로직/수배-PID/B182E01 - RAIL BRACKET/EL_PB182E01 - RAIL BRACKET.md",
     "🧪 수배로직/수배-PID/A200A01 - ENCODER/EL_PA200A01 - ENCODER.md",
     "Daily/01.주간/2026-W27-06-5주차.md",
     "🧪 수배로직/수배-PID/CAL-로직/AUTO_EL_ECWSL-적용하중(CWT).md",
     "Daily/01.주간/2026-06-4주차.md",
     "Daily/01.주간/2026-06-3주차.md",
-    "🧪 수배로직/수배-PID/B182E01 - RAIL BRACKET/EL_PB182E01 - RAIL BRACKET.md",
     "🧪 수배로직/수배-PID/A200A01 - ENCODER",
     "엘리베이터/CAR/CAR_WALL/CENTER_FRAME.md",
     "엘리베이터.md",
