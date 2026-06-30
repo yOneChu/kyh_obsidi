@@ -8,48 +8,63 @@
         "type": "tabs",
         "children": [
           {
-            "id": "61335ec0db296868",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/도면 용어 정리.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "도면 용어 정리"
-            }
-          },
-          {
             "id": "b0384b23095a1249",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B183C01 - BUFFER SUPPORT.md",
+                "file": "🧪 수배로직/수배-PID/CAL-로직/AUTO_EL_ECWSL-적용하중(CWT).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "B183C01 - BUFFER SUPPORT"
+              "title": "AUTO_EL_ECWSL-적용하중(CWT)"
             }
           },
           {
-            "id": "6d4d5d87145daa15",
+            "id": "6fd9c659a033a213",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Daily/01.주간/2026-W25.md",
+                "file": "Daily/01.주간/2026-W27-06-5주차.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-W25"
+              "title": "2026-W27-06-5주차"
+            }
+          },
+          {
+            "id": "799ff07c566f6161",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/수배-PID/A200A01 - ENCODER/EL_PA200A01 - ENCODER.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "EL_PA200A01 - ENCODER"
+            }
+          },
+          {
+            "id": "45d0d43e0a3bf904",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/수배-PID/B182E01 - RAIL BRACKET/EL_PB182E01 - RAIL BRACKET.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "EL_PB182E01 - RAIL BRACKET"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -81,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "RAG",
+                "query": "RAIL BRACKET",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -189,6 +204,16 @@
               "icon": "calendar-with-checkmark",
               "title": "Calendar"
             }
+          },
+          {
+            "id": "44b9f8f0a6758b56",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
         ],
         "currentTab": 4
@@ -204,7 +229,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/도면 용어 정리.md",
+                "file": "🧪 수배로직/수배-PID/B182E01 - RAIL BRACKET/EL_PB182E01 - RAIL BRACKET.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -227,19 +252,19 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 1,
+                  "scale": 0.5087618855792584,
                   "close": false
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 도면 용어 정리"
+              "title": "Graph of EL_PB182E01 - RAIL BRACKET"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 450.5
+    "width": 503.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -253,37 +278,41 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "61335ec0db296868",
+  "active": "1913bafbaa1334b2",
   "lastOpenFiles": [
-    "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
-    "🧪 수배로직/🟡 작업_진행중/02. 로직 이관 데이터 분석.md",
-    "🧪 수배로직/🟡 작업_진행중/도면 용어 정리.md",
-    "🧪 수배로직/🟡 작업_진행중/면담.md",
-    "🧪 수배로직/🟡 작업_진행중/박코치.md",
-    "🧪 수배로직/🟡 작업_진행중/설변 통제.md",
-    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/ASDASD.md",
-    "업무/AI활용/AI업무 활용을 위한 기초 교육.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
-    "VAULT-PLM/Query-정리/비표준 사양검토.md",
-    "VAULT-PLM/Query-정리/📢 데이터 분석용 쿼리.md",
-    "VAULT-PLM/Query-정리/📢 쿼리 목록.md",
+    "🧪 수배로직/수배-PID/A200A01 - ENCODER/EL_PA200A01 - ENCODER.md",
+    "Daily/01.주간/2026-W27-06-5주차.md",
+    "🧪 수배로직/수배-PID/CAL-로직/AUTO_EL_ECWSL-적용하중(CWT).md",
+    "Daily/01.주간/2026-06-4주차.md",
+    "Daily/01.주간/2026-06-3주차.md",
+    "🧪 수배로직/수배-PID/B182E01 - RAIL BRACKET/EL_PB182E01 - RAIL BRACKET.md",
+    "🧪 수배로직/수배-PID/A200A01 - ENCODER",
+    "엘리베이터/CAR/CAR_WALL/CENTER_FRAME.md",
+    "엘리베이터.md",
+    "🧪 수배로직/수배-PID/B121A02 - SAFETY GUARD/용도.md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/VAULT API.md",
+    "엘리베이터/CAR/레일브라켓 방진 라이너.md",
+    "엘리베이터/CAR/CAR SILL ASSY.md",
+    "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
+    "🧪 수배로직/수배-PID/BUFFER/B195A02 - BUFFER OIL.md",
+    "🧪 수배로직/수배-PID/BUFFER/버퍼 오일 이슈 - 단위 관련.md",
+    "🧪 수배로직/수배-PID/A103C-ISOLATION_PAD/EL_PA103C.md",
+    "🧪 수배로직/수배-PID/BUFFER",
+    "Untitled",
+    "🧪 수배로직/수배-PID/CAL-로직/CAL_ETS_SPD1.md",
+    "🧪 수배로직/수배-PID/A101A - TM_ASSY/EL_PA101A - TM ASSY.md",
+    "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE/EL_PA116A - GOV TENSION SHEAVE.md",
+    "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE/A116A - GOV TENSION SHEAVE.md",
+    "🧪 수배로직/수배-PID/A115A - GOVERNER/Governer 용도.md",
+    "🧪 수배로직/수배-PID/B120A - FLATFORM/EL_PB120A - FLATFORM.md",
+    "🧪 수배로직/수배-PID/B120B03 - BALANCE WEIGHT/EL_PB120B03 - BALANCE WEIGHT.md",
+    "🧪 수배로직/수배-PID/정합성검증/BOM_CHECK.md",
+    "🧪 수배로직/수배-PID/B124B CWT SUSPEN SHEAVE/EL_PB124B.md",
+    "Untitled.canvas",
     "🧪 수배로직/수배-PID/B183C01 - BUFFER SUPPORT.md",
-    "Daily/01.주간/2026-W25.md",
-    "Daily/02.일간/2026-06-19.md",
-    "Daily/02.일간/2026-06-18.md",
-    "Daily/01.일간/2026-06-18.md",
     "Daily/01.일간",
-    "2026-06-18.md",
     "Daily/02.일간",
-    "2026-06-19.md",
-    "Daily/2026-W25.md",
-    "엘리베이터/용어/ETS (Emergency Terminal Stopping device).md",
     "Daily/01.주간",
-    "Untitled 1.md",
-    "2026-W25.md",
     "Daily",
     "image/Pasted image 20260609172359.png",
     "🧪 수배로직/수배-PID/B182E01 - RAIL BRACKET"
