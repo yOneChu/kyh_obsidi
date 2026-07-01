@@ -3,7 +3,7 @@
 
 
 ### | 한 행에 두개의 조건이 있는거 검색
-```
+```sql
 AND (  
 		D.SPEC1 LIKE '%EL_ASPD%' OR D.SPEC2 LIKE '%EL_ASPD%'  
 		OR D.SPEC3 LIKE '%EL_ASPD%' OR D.SPEC4 LIKE '%EL_ASPD%'  

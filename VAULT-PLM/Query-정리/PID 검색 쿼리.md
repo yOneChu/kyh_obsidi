@@ -6,7 +6,7 @@ tags:
 ---
 
 ### ✍️ PID 조회
-```
+```sql
 ## SPEC 조건  
 SELECT h.pid, D.NO, NVL(D.REMARKS, '-') AS REMARKS,  
 		 NVL(D.SPEC1, '-') AS SPEC1, NVL(D.CON1, '-') AS CON1,  
