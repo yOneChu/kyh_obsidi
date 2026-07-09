@@ -19,7 +19,7 @@ GTSS_E -> NEX_MRL
 GTSS -> NEX MRL, NEX ECO MRL 
 GTLX -> NEX MR, NEX ECO MR, NEX-G
 GTLX_R -> LUXEN(2:1, 1:1, G)
-GTSS_R -> New Yzer(중저속)
+GTSS_R -> New Yzer(중저속), NEO MRL
 
 해외는 왠만하면 시리즈가 없을거다. 왜냐하면 선박으로 한번에 가기 때문에.
 
