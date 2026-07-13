@@ -1,9 +1,6 @@
+
 ---
-cssclasses:
-  - ㅇ
-  - compensation chain
----
----
+
 ### 보상 체인(Compensation Chain) = Compen Hitch Plate
 
 
