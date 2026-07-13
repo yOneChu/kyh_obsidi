@@ -36,6 +36,10 @@ BLOCK 구분 3자리 중 첫 번째 자리
 - MOB : MRL 이라고보면됨
 - MOB 형상
 	![[Pasted image 20260713163952.png]]
+- MOR형상.
+-![[Pasted image 20260713164348.png]]
+
+
 
 
 **| 열림방식**
