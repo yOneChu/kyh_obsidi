@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/도면 용어 정리-3 (총).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MLB Knowledge"
+              "title": "도면 용어 정리-3 (총)"
             }
           },
           {
@@ -267,12 +267,18 @@
   },
   "active": "7d079ccac535c639",
   "lastOpenFiles": [
+    "🧪 수배로직/🟡 작업_진행중/도면 용어 정리-2.md",
+    "🧪 수배로직/🟡 작업_진행중/도면 용어 정리.md",
+    "🧪 수배로직/🟡 작업_진행중/도면 용어 정리-3 (총).md",
+    "🧪 수배로직/🟡 작업_진행중/면담.md",
+    "🧪 수배로직/🟡 작업_진행중/메일 경력(인사팀 발송).md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
+    "🧪 수배로직/수배-PID/B183A01 - BUFFER.md",
+    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
     "image/Pasted image 20260713164348.png",
     "image/Pasted image 20260713164341.png",
     "image/Pasted image 20260713163952.png",
     "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/도면 용어 정리.md",
-    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
     "🧪 수배로직/수배-PID/B126A99 - GUIDE SHOE COMPONENT.md",
     "엘리베이터/CAR/ABD(ANTI-BOUNCING DEVICE).md",
     "🧪 수배로직/수배-PID/B182E01 - RAIL BRACKET/EL_PB182E01 - RAIL BRACKET.md",
@@ -290,11 +296,6 @@
     "엘리베이터/CAR/RGS ASSY.md",
     "🧪 수배로직/수배-PID/C371C01 - FASCIA PLATE/EL_PC371C01 - FASCIA PLATE.md",
     "엘리베이터/승강로/RGS-SGS 차이점.md",
-    "엘리베이터/CAR/Car Door Clutch.md",
-    "VAULT-PLM/프로젝트_개발/01. 승강기 설치 정보.md",
-    "VAULT-PLM/프로젝트_개발/03. 로직 특성값 뷰어.md",
-    "VAULT-PLM/프로젝트_개발/04. 자재 대시보드 개발.md",
-    "엘리베이터/CAR/REINFORCE.md",
     "image/Pasted image 20260713115859.png",
     "image/Pasted image 20260713115635.png",
     "Pasted image 20250508210813.png",
@@ -312,7 +313,6 @@
     "Untitled.canvas",
     "Daily/01.일간",
     "Daily/02.일간",
-    "Daily/01.주간",
-    "image/Pasted image 20260609172359.png"
+    "Daily/01.주간"
   ]
 }
