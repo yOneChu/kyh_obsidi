@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "엘리베이터/승강로/ANTI HAND PINCHING DEVICE.md",
+                "file": "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT/SH_B181B.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ANTI HAND PINCHING DEVICE"
+              "title": "SH_B181B"
             }
           },
           {
@@ -41,16 +41,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "엘리베이터/CAR/보상 체인(Compensation Chain) = Compen Hitch Plate.md",
+                "file": "🧪 수배로직/수배-PID/B126A99 - GUIDE SHOE COMPONENT.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "보상 체인(Compensation Chain) = Compen Hitch Plate"
+              "title": "B126A99 - GUIDE SHOE COMPONENT"
+            }
+          },
+          {
+            "id": "95cf6698e12b672a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT/이슈사항-2026.07.20.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "이슈사항-2026.07.20"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -82,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "ABD",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -215,7 +229,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
+                "file": "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT/이슈사항-2026.07.20.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -243,15 +257,14 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of PLAN-C 정의"
+              "title": "Graph of 이슈사항-2026.07.20"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 503.5,
-    "collapsed": true
+    "width": 503.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -265,10 +278,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7d079ccac535c639",
+  "active": "95cf6698e12b672a",
   "lastOpenFiles": [
-    "엘리베이터/엘리베이터 정보.md",
+    "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT/SH_B181B.md",
+    "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT/이슈사항-2026.07.20.md",
+    "Daily/01.주간/2026-W30.md",
+    "Daily/01.주간/2026-W27-06-5주차.md",
+    "Daily/02.일간/2026-06-19.md",
+    "🧪 수배로직/수배-PID/B184A - PIT SCREEN/EL_PB184A - PIT SCREEN.md",
+    "엘리베이터/PIT/PIT SCREEN.md",
+    "🧪 수배로직/수배-PID/B126A99 - GUIDE SHOE COMPONENT.md",
+    "🧪 수배로직/수배-PID/AUTO_로직 도는 순서.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
+    "엘리베이터/CAR/보상 체인(Compensation Chain) = Compen Hitch Plate.md",
+    "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
     "엘리베이터/승강로/ANTI HAND PINCHING DEVICE.md",
+    "엘리베이터/엘리베이터 정보.md",
     "🧪 수배로직/🟡 작업_진행중/도면 용어 정리-3 (총).md",
     "🧪 수배로직/🟡 작업_진행중/도면 용어 정리-2.md",
     "🧪 수배로직/🟡 작업_진행중/도면 용어 정리.md",
@@ -281,21 +306,9 @@
     "image/Pasted image 20260713164341.png",
     "image/Pasted image 20260713163952.png",
     "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "🧪 수배로직/수배-PID/B126A99 - GUIDE SHOE COMPONENT.md",
     "엘리베이터/CAR/ABD(ANTI-BOUNCING DEVICE).md",
     "🧪 수배로직/수배-PID/B182E01 - RAIL BRACKET/EL_PB182E01 - RAIL BRACKET.md",
     "엘리베이터/CAR/레일브라켓 방진 라이너.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
-    "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
-    "VAULT-PLM/Query-정리/비표준 사양검토.md",
-    "🧪 수배로직/🟢 작업_완료/COMPEN CHAIN 관리-김선태,최진영.md",
-    "엘리베이터/CAR/보상 체인(Compensation Chain) = Compen Hitch Plate.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/데이터분석.md",
-    "🧪 수배로직/💻 개발/로직에디터 변환.md",
-    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
-    "VAULT-PLM/Query-정리/원가절감실적조회.md",
-    "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE/EL_PA116A - GOV TENSION SHEAVE.md",
-    "엘리베이터/CAR/RGS ASSY.md",
     "image/Pasted image 20260713115859.png",
     "image/Pasted image 20260713115635.png",
     "Pasted image 20250508210813.png",
