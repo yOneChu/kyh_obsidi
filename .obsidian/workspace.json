@@ -8,34 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b0384b23095a1249",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/수배-PID/C371C01 - FASCIA PLATE/EL_PC371C01 - FASCIA PLATE.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "EL_PC371C01 - FASCIA PLATE"
-            }
-          },
-          {
-            "id": "7d079ccac535c639",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT/SH_B181B.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "SH_B181B"
-            }
-          },
-          {
             "id": "be0c777f73c4dc1e",
             "type": "leaf",
             "state": {
@@ -55,12 +27,54 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT/이슈사항-2026.07.20.md",
+                "file": "🧪 수배로직/수배-PID/B185A - MAIN ROPE(BELT).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "이슈사항-2026.07.20"
+              "title": "B185A - MAIN ROPE(BELT)"
+            }
+          },
+          {
+            "id": "1af95877d89ec526",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01. 북미전산화"
+            }
+          },
+          {
+            "id": "0784ca5ffb6180d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "엘리베이터/용어/로핑-ROPING(ROPE,BELT) - EL_ERPR.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "로핑-ROPING(ROPE,BELT) - EL_ERPR"
+            }
+          },
+          {
+            "id": "973471cf2e25462b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/수배-PID/B189B04 - INSTALLATION KIT.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "B189B04 - INSTALLATION KIT"
             }
           }
         ],
@@ -96,7 +110,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ABD",
+                "query": "로핑",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -229,7 +243,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT/이슈사항-2026.07.20.md",
+                "file": "엘리베이터/용어/로핑-ROPING(ROPE,BELT) - EL_ERPR.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -252,19 +266,19 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.5087618855792584,
+                  "scale": 0.7132754626224416,
                   "close": false
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 이슈사항-2026.07.20"
+              "title": "Graph of 로핑-ROPING(ROPE,BELT) - EL_ERPR"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 503.5
+    "width": 410.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -278,48 +292,48 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "95cf6698e12b672a",
+  "active": "0784ca5ffb6180d7",
   "lastOpenFiles": [
+    "image/Pasted image 20260721171808.png",
+    "🧪 수배로직/수배-PID/B189B04 - INSTALLATION KIT.md",
+    "image/Pasted image 20260721170307.png",
+    "엘리베이터/용어/로핑-ROPING(ROPE,BELT) - EL_ERPR.md",
+    "🧪 수배로직/수배-PID/B121B01 - ROPE END/EL_PB121B01 - ROPE END.md",
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
+    "🧪 수배로직/수배-PID/B126A99 - GUIDE SHOE COMPONENT.md",
     "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT/SH_B181B.md",
+    "🧪 수배로직/수배-PID/B186A03 - SHACKLE TIE.md",
+    "image/Pasted image 20260721152208.png",
+    "🧪 수배로직/수배-PID/B186A04 - ROPE FIXING.md",
+    "🧪 수배로직/수배-PID/B185A - MAIN ROPE(BELT).md",
+    "image/Pasted image 20260721152121.png",
+    "🧪 수배로직/수배-PID/B186A01 - ROPE SHACKLE/EL_PB186A01 - ROPE SHACKLE.md",
+    "image/Pasted image 20260721144831.png",
+    "🧪 수배로직/수배-PID/B186A01 - ROPE SHACKLE/B186A01 - ROPE(BELT) SHACKLE (수량).md",
+    "엘리베이터/승강로/Wood Plate.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PLM API 정리.md",
+    "B185B01 - WIRE CLIP.md",
+    "image/Pasted image 20260721142147.png",
+    "image/Pasted image 20260721141658.png",
+    "image/Pasted image 20260721135857.png",
     "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT/이슈사항-2026.07.20.md",
     "Daily/01.주간/2026-W30.md",
     "Daily/01.주간/2026-W27-06-5주차.md",
     "Daily/02.일간/2026-06-19.md",
     "🧪 수배로직/수배-PID/B184A - PIT SCREEN/EL_PB184A - PIT SCREEN.md",
     "엘리베이터/PIT/PIT SCREEN.md",
-    "🧪 수배로직/수배-PID/B126A99 - GUIDE SHOE COMPONENT.md",
     "🧪 수배로직/수배-PID/AUTO_로직 도는 순서.md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
     "엘리베이터/CAR/보상 체인(Compensation Chain) = Compen Hitch Plate.md",
     "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
     "엘리베이터/승강로/ANTI HAND PINCHING DEVICE.md",
-    "엘리베이터/엘리베이터 정보.md",
-    "🧪 수배로직/🟡 작업_진행중/도면 용어 정리-3 (총).md",
-    "🧪 수배로직/🟡 작업_진행중/도면 용어 정리-2.md",
-    "🧪 수배로직/🟡 작업_진행중/도면 용어 정리.md",
-    "🧪 수배로직/🟡 작업_진행중/면담.md",
-    "🧪 수배로직/🟡 작업_진행중/메일 경력(인사팀 발송).md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
-    "🧪 수배로직/수배-PID/B183A01 - BUFFER.md",
-    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
     "image/Pasted image 20260713164348.png",
     "image/Pasted image 20260713164341.png",
     "image/Pasted image 20260713163952.png",
-    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "엘리베이터/CAR/ABD(ANTI-BOUNCING DEVICE).md",
-    "🧪 수배로직/수배-PID/B182E01 - RAIL BRACKET/EL_PB182E01 - RAIL BRACKET.md",
-    "엘리베이터/CAR/레일브라켓 방진 라이너.md",
-    "image/Pasted image 20260713115859.png",
-    "image/Pasted image 20260713115635.png",
-    "Pasted image 20250508210813.png",
     "무제.base",
-    "image/Pasted image 20260709134919.png",
-    "image/Pasted image 20260709134851.png",
     "🧪 수배로직/수배-PID/B128A01 - CAR CABLE HANGER",
-    "image/Pasted image 20260709132825.png",
     "🧪 수배로직/수배-PID/B127A - OILER",
     "Untitled 1",
-    "image/Pasted image 20260709104154.png",
     "🧪 수배로직/수배-PID/A200A01 - ENCODER",
     "🧪 수배로직/수배-PID/BUFFER",
     "Untitled",

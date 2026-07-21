@@ -24,3 +24,8 @@
 | **주요 목적** | 속도/하중 효율 최적화    | 로프 미끄러짐(Slip) 방지         |
 | **대표 유형** | 1:1, 2:1, 4:1 등 | Single Wrap, Double Wrap |
 | **결정 요인** | 모터 용량 및 카 중량    | 권상기의 견인력(Traction)       |
+
+
+<다른사진>
+- https://blog.naver.com/sky_foto/222322662972
+![[Pasted image 20260721171808.png]]
