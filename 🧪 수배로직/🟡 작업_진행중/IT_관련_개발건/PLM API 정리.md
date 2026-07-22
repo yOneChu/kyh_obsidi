@@ -77,7 +77,11 @@ https://plmpro.hdel.co.kr/plmetc/vault/findModParts?productNo=N26185L01
 ```
 
 
-
+## 03. 최초설계완료 호기 조회
+```
+- https://plmpro.hdel.co.kr/jsp/help/gethogilistByBlockopt.jsp?searchdate=타겟일자
+  
+```
 
 
 | BOM 1레벨 추출

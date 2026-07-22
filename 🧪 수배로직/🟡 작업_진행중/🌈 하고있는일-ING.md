@@ -87,7 +87,7 @@ SELECT V.MD$DESC,
        V.EL_AEXP,  
        V.EL_AFF,  
        V.EL_AFFQ,  
-       V.EL_AFFT0, EL_AFFT1,EL_AFFT2, EL_AFFT3, EL_AFFT4, EL_AFFT5, EL_AFFT6, EL_AFFT7,  
+       V.EL_AFFT0, EL_AFFT1,EL_AFFT2, EL_AFFT3, EL_AFFT4, EL_AFFT5, EL_AFFT6, EL_AFFT7, 
        V.EL_AFQ, --층수  
        COD(V.EL_AOPEN) AS EL_AOPEN, -- 열림방식  
        CODN(v.EL_AUSE) AS EL_AUSE, --용도  
