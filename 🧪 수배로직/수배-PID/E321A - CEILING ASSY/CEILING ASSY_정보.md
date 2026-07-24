@@ -1,5 +1,5 @@
 ---
-aliases:
+수정일: 2026-07-24
 ---
 ----
 ### 참고도면 3D
@@ -24,6 +24,12 @@ aliases:
 - SUBCESILING가 CEILING 사이의 간격을 구하는 이유는 그 길이로 인하여 카 안의 OPB가 가려지는 경우가 있기 때문이다.
 - NEX MRL의 경우, 본수에 따라 CEILING ASSY의 TAP PLTE가 변경된다.
 
+| T19, T30
+```
+신규현장의 기준 표준
+T19, T19_EX : BG-AA=40
+T30 : BG-AA=58
+```
 
 ### | FAN LOUVER
 - 환풍구이다.

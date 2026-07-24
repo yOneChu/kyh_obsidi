@@ -74,11 +74,12 @@ ORIGIN_DIV : 최초구분
 [API URL]
 - https://vault-in.hdel.co.kr:8070/api/getCodeList
 
-  
+
 [결과 컬럼]
 code : 사양  
 codeName : 사양명  
 typeName : 특성명  
 typeVal : 특성값  
-name
+name : name
 ```
+

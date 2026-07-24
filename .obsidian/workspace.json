@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PLM API 정리(공유).md",
+                "file": "🧪 수배로직/수배-PID/E321A - CEILING ASSY/CEILING ASSY_정보.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PLM API 정리(공유)"
+              "title": "CEILING ASSY_정보"
             }
           }
         ],
@@ -243,7 +243,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PLM API 정리(공유).md",
+                "file": "🧪 수배로직/수배-PID/E321A - CEILING ASSY/CEILING ASSY_정보.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -271,7 +271,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of PLM API 정리(공유)"
+              "title": "Graph of CEILING ASSY_정보"
             }
           }
         ]
@@ -294,10 +294,16 @@
   },
   "active": "973471cf2e25462b",
   "lastOpenFiles": [
+    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/EL_PE321A.md",
+    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PLM API 정리(공유).md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/공사현장추출.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/AI 테스트.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PID_시뮬레이터 개발 중 (버전 선택).md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/데이터분석.md",
     "🧪 수배로직/수배-PID/BUFFER/B195A02 - OIL BUFFER.md",
     "VAULT-PLM/Query-정리/특성값 조회 쿼리.md",
     "🧪 수배로직/수배-PID/B182B01 - FISH PLATE.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PLM API 정리(공유).md",
     "VAULT-PLM/프로젝트_개발/03. 로직 특성값 뷰어.md",
     "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
     "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
@@ -306,9 +312,6 @@
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PLM API 정리.md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/VAULT API.md",
     "🧪 수배로직/수배-PID/B189B04 - INSTALLATION KIT.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/데이터분석.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/공사현장추출.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PID_시뮬레이터 개발 중 (버전 선택).md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/제미나이 api 연동.md",
     "🧪 수배로직/🟡 작업_진행중/BOM 수배율 프로세스.md",
     "VAULT-PLM/Query-정리/특정 PID에 특정 문구(도면번호 등) 등록된 일자 조회.md",
@@ -317,11 +320,8 @@
     "🧪 수배로직/💻 개발/BOM 이력관리.md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
     "엘리베이터/용어/ROH.md",
-    "엘리베이터/용어/로핑-ROPING(ROPE,BELT) - EL_ERPR.md",
     "image/Pasted image 20260721171808.png",
     "image/Pasted image 20260721170307.png",
-    "🧪 수배로직/수배-PID/B121B01 - ROPE END/EL_PB121B01 - ROPE END.md",
-    "🧪 수배로직/수배-PID/B126A99 - GUIDE SHOE COMPONENT.md",
     "image/Pasted image 20260721152208.png",
     "image/Pasted image 20260721152121.png",
     "image/Pasted image 20260721144831.png",
