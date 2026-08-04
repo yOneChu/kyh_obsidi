@@ -69,11 +69,13 @@ ORIGIN_DIV : 최초구분
   
 ```
 
-## 05. 특성코드 리스트 추출
+## 05. 특성코드 리스트 추출 (엘베)
 ```
 [API URL]
-- https://vault-in.hdel.co.kr:8070/api/getCodeList
+- https://vault-in.hdel.co.kr:8070/api/getCodeList?key=subae
 
+[파라미터 정보]
+- key : subae
 
 [결과 컬럼]
 code : 사양  
@@ -84,3 +86,33 @@ name : name
 ```
 
 
+
+## 06. 특성코드 리스트 추출 (선박)
+```
+[API URL]
+- https://vault-in.hdel.co.kr:8070/api/ship/getShipCode?key=subae
+
+[파라미터 정보]
+- key : subae
+
+
+[결과 컬럼]
+code : 사양  
+codeName : 사양명  
+typeName : 특성명  
+typeVal : 특성값  
+name : name
+```
+
+## 07. 공사정보 필드 리스트 - 선박
+```
+[API URL]
+- https://vault-in.hdel.co.kr:8070/api/ship/getShipField?key=subae
+
+[파라미터 정보]
+- key : subae
+
+[결과 컬럼]
+code : 사양  
+codeName : 사양명  
+```
