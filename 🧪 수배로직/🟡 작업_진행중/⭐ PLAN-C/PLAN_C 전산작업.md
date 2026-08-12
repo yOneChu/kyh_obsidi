@@ -13,6 +13,8 @@
 -PLAN-C 4-3-5-1 RGS COVER
 -EL_PB126A99
 -이석규M
+-롤백함. 단 NEX-G, LUXEN-G는 유지
+
 
 3. **[지연] 요청번호: 03429 (~4/1)**
 -PLAN-C 4-3-1-1 SGS

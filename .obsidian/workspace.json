@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VAULT-PLM/Query-정리/영업사양 쿼리.md",
+                "file": "🧪 수배로직/수배-PID/A103A - MACHINE FOUNDATION/EL_PA103A - MC FOUNDATION.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "영업사양 쿼리"
+              "title": "EL_PA103A - MC FOUNDATION"
             }
           },
           {
@@ -112,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "영업사양",
+                "query": "정횡락",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -136,7 +136,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -244,6 +245,8 @@
   },
   "active": "04afeefec4d8ff08",
   "lastOpenFiles": [
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
+    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/VAULT API.md",
     "🧪 수배로직/수배-PID/B183A01 - BUFFER.md",
     "VAULT-PLM/데이터브릭스/테이블 정보.md",
@@ -263,13 +266,11 @@
     "VAULT-PLM/Query-정리/전산작업요청 쿼리.md",
     "VAULT-PLM/Query-정리/원가절감실적조회_공통DB.md",
     "VAULT-PLM/Query-정리/원가절감실적조회.md",
-    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
     "VAULT-PLM/Query-정리/수배로직 쿼리.md",
     "VAULT-PLM/Query-정리/도면 조회.md",
     "VAULT-PLM/Query-정리/견적 연동 기록.md",
     "VAULT-PLM/Query-정리/PLM - 수주테이블.md",
     "VAULT-PLM/Query-정리/PID_에러로그 조회.md",
-    "VAULT-PLM/Query-정리/PID 조회.md",
     "🧪 수배로직/🟡 작업_진행중/PLM_DB_API_명세서",
     "image/Pasted image 20260807174710.png",
     "image/Pasted image 20260807174607.png"
