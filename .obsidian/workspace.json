@@ -50,6 +50,18 @@
             }
           },
           {
+            "id": "7569d86d166a600b",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.13.6"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.13.6"
+            }
+          },
+          {
             "id": "1c2010fa5c0a6d10",
             "type": "leaf",
             "state": {
@@ -76,9 +88,23 @@
               "icon": "lucide-file",
               "title": "ECO (설계변경) 쿼리"
             }
+          },
+          {
+            "id": "a3268034ee784f74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/⚪ 추후작업/버퍼오일 단종 인증 관련 작업.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "버퍼오일 단종 인증 관련 작업"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -112,7 +138,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "정횡락",
+                "query": "설계변경",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -243,34 +269,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "04afeefec4d8ff08",
+  "active": "4e55e44c6926135e",
   "lastOpenFiles": [
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
-    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/VAULT API.md",
-    "🧪 수배로직/수배-PID/B183A01 - BUFFER.md",
-    "VAULT-PLM/데이터브릭스/테이블 정보.md",
-    "🧪 수배로직/🟡 작업_진행중/PLM_DB_API_명세서/AI-DB 연계 사용 기준 메일 (중요).md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PLM API 정리.md",
-    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/PLM API 정리(공유).md",
-    "🧪 수배로직/🟡 작업_진행중/PLM_DB_API_명세서/영업사양 DB 정의서.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 정보 메타정보.md",
-    "🧪 수배로직/수배-PID/D375A_99 - STICKER(450J).md",
     "VAULT-PLM/Query-정리/ECO (설계변경) 쿼리.md",
-    "VAULT-PLM/Query-정리/특정 PID에 특정 문구(도면번호 등) 등록된 일자 조회.md",
-    "VAULT-PLM/Query-정리/BOM 수배율 쿼리.md",
-    "VAULT-PLM/Query-정리/특정 문구 어느 PID에 걸려있는 조회(모든 버전 및 PID).md",
-    "VAULT-PLM/Query-정리/특성값 조회 쿼리.md",
-    "VAULT-PLM/Query-정리/최초설계완료BOM.md",
-    "VAULT-PLM/Query-정리/제품 관련 Query.md",
-    "VAULT-PLM/Query-정리/전산작업요청 쿼리.md",
-    "VAULT-PLM/Query-정리/원가절감실적조회_공통DB.md",
-    "VAULT-PLM/Query-정리/원가절감실적조회.md",
-    "VAULT-PLM/Query-정리/수배로직 쿼리.md",
-    "VAULT-PLM/Query-정리/도면 조회.md",
-    "VAULT-PLM/Query-정리/견적 연동 기록.md",
-    "VAULT-PLM/Query-정리/PLM - 수주테이블.md",
-    "VAULT-PLM/Query-정리/PID_에러로그 조회.md",
+    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/DB-명세서 - 쿼리 및 정리.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/데이터분석.md",
+    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/수배 로직 PID 분석 에이전트(제출완료).md",
+    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/자재현장 추적 (제출완료).md",
+    "🧪 수배로직/🟡 작업_진행중/PLM_DB_API_명세서/Untitled 1.md",
+    "🧪 수배로직/🟡 작업_진행중/PLM_DB_API_명세서/AI-DB 연계 사용 기준 메일 (중요).md",
+    "🧪 수배로직/🟡 작업_진행중/PLM_DB_API_명세서/비표준사양 DB 정의서.md",
+    "🧪 수배로직/🟡 작업_진행중/PLM_DB_API_명세서/영업사양 DB 정의서.md",
+    "🧪 수배로직/🟡 작업_진행중/PLM_DB_API_명세서/PID DB 정의서.md",
+    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/AI 에이전트 기반 설계 BOM 검증.md",
+    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/PLM 데이터 분석 AI 에이전트(제출완료).md",
+    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/PLM API 정리(공유).md",
+    "🧪 수배로직/🟡 작업_진행중/직무_COP/BOM 사전 검증 자동화.md",
+    "🧪 수배로직/🟡 작업_진행중/직무_COP",
+    "🧪 수배로직/⚪ 추후작업/버퍼오일 단종 인증 관련 작업.md",
+    "🧪 수배로직/시스템/SUB-WEIGHT_계산식.md",
+    "🧪 수배로직/시스템/JAVA PID 작동원리.md",
+    "🧪 수배로직/팀_주요업무/도면뷰어.md",
+    "🧪 수배로직/옵시디언 작동법.md",
+    "IT_정리/엘베 학습.md",
+    "IT_정리/📚시험일정.md",
+    "IT_정리/MLB/넥스플랜 공부.md",
+    "IT_정리/MLB/도면 생성 방법(초도).md",
+    "IT_정리/MLB/중국자재번호 정의.md",
+    "IT_정리/AI활용/AX vs DX(디지털 전환) 핵심 차이점 완벽 정리.md",
     "🧪 수배로직/🟡 작업_진행중/PLM_DB_API_명세서",
     "image/Pasted image 20260807174710.png",
     "image/Pasted image 20260807174607.png"
