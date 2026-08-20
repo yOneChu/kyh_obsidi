@@ -78,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -112,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "RGS COVER",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -136,8 +136,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -243,15 +242,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3a7258c78fce3924",
+  "active": "74e4ab7f9ea43f04",
   "lastOpenFiles": [
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
     "🧪 수배로직/수배-PID/B126A99 - GUIDE SHOE COMPONENT.md",
     "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
     "VAULT-PLM/Query-정리/영업사양 쿼리.md",
     "🧪 수배로직/⚪ 추후작업/버퍼오일 단종 인증 관련 작업.md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PLM API 정리.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
     "엘리베이터/승강로/RGS-SGS 차이점.md",
     "VAULT-PLM/Query-정리/비표준 사양검토.md",
     "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/북미 GU 70.md",
