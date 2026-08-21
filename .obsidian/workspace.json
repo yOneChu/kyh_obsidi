@@ -1,98 +1,56 @@
 {
   "main": {
-    "id": "cc3fe1484168f9f3",
+    "id": "91584c8b704e0ad7",
     "type": "split",
     "children": [
       {
-        "id": "fd5e7e6ef973a1d9",
+        "id": "c958f93d09ac1995",
         "type": "tabs",
         "children": [
           {
-            "id": "04afeefec4d8ff08",
+            "id": "2f936c643d5d0334",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/A103A - MACHINE FOUNDATION/EL_PA103A - MC FOUNDATION.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/북미 GU 70.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "EL_PA103A - MC FOUNDATION"
+              "title": "북미 GU 70"
             }
           },
           {
-            "id": "1c2010fa5c0a6d10",
+            "id": "eae25ff2a855900b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
+                "file": "E280A - MAIN OPB.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PLAN_C 전산작업"
-            }
-          },
-          {
-            "id": "4e55e44c6926135e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PLM API 정리.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PLM API 정리"
-            }
-          },
-          {
-            "id": "a3268034ee784f74",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/⚪ 추후작업/버퍼오일 단종 인증 관련 작업.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "버퍼오일 단종 인증 관련 작업"
-            }
-          },
-          {
-            "id": "3a7258c78fce3924",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/도면 용어 정리-3 (총).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "도면 용어 정리-3 (총)"
+              "title": "E280A - MAIN OPB"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "8f611e16d6e3a92c",
+    "id": "b359e3c1b516aa80",
     "type": "split",
     "children": [
       {
-        "id": "40ef6fb761ac86b9",
+        "id": "659ec235dea9c2af",
         "type": "tabs",
         "children": [
           {
-            "id": "74e4ab7f9ea43f04",
+            "id": "14bac03ef96bac8d",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -107,12 +65,12 @@
             }
           },
           {
-            "id": "073c8f26e1ced86b",
+            "id": "fb22feaf76d8dfaa",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "MAIN OPB",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -124,7 +82,7 @@
             }
           },
           {
-            "id": "7d2141a409909326",
+            "id": "89d4e41fa342d872",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -143,20 +101,20 @@
     "width": 300
   },
   "right": {
-    "id": "fab56eda50f995f6",
+    "id": "02eb3208cfdb27bf",
     "type": "split",
     "children": [
       {
-        "id": "0c7efabcd4ce5b1d",
+        "id": "5bb3f17acb2e624a",
         "type": "tabs",
         "children": [
           {
-            "id": "a75f564875092648",
+            "id": "57db36264d5b471f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "🧪 수배로직/수배-PID/E321A - CEILING ASSY/CEILING ASSY_정보.md",
+                "file": "E280A - MAIN OPB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,12 +128,12 @@
             }
           },
           {
-            "id": "ace6b157d87e5f1f",
+            "id": "5e55538da458afdd",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "🧪 수배로직/수배-PID/E321A - CEILING ASSY/CEILING ASSY_정보.md",
+                "file": "E280A - MAIN OPB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -184,7 +142,7 @@
             }
           },
           {
-            "id": "5b3564c51eeaa915",
+            "id": "f93fa38def86f20f",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -199,12 +157,12 @@
             }
           },
           {
-            "id": "b21fbae4d388cf05",
+            "id": "9735d466ac85cb1e",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "🧪 수배로직/수배-PID/E321A - CEILING ASSY/CEILING ASSY_정보.md",
+                "file": "E280A - MAIN OPB.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -214,7 +172,7 @@
             }
           },
           {
-            "id": "9870230f63269814",
+            "id": "6adcae0c9ffd326a",
             "type": "leaf",
             "state": {
               "type": "calendar",
@@ -242,42 +200,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "74e4ab7f9ea43f04",
+  "active": "eae25ff2a855900b",
   "lastOpenFiles": [
-<<<<<<< HEAD
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
-=======
-    "🧪 수배로직/🟡 작업_진행중/면담.md",
-    "🧪 수배로직/🟡 작업_진행중/메일 경력(인사팀 발송).md",
-    "🧪 수배로직/🟡 작업_진행중/박코치.md",
-    "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
-    "🧪 수배로직/🟡 작업_진행중/02_AI_안티그래비티_업무_도입/[MAIL] BOM 검증-로직 작성 검증 명세 중앙화 안내.md",
-    "🧪 수배로직/🟡 작업_진행중/직무_COP/BOM 사전 검증 자동화.md",
+    "image/Pasted image 20260821162839.png",
+    "E280A - MAIN OPB.md",
     "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/북미 GU 70.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
-    "🧪 수배로직/🟡 작업_진행중/02_AI_안티그래비티_업무_도입",
->>>>>>> 4b1b670955603c90f8ad400f0b70bfb2abec01b0
-    "🧪 수배로직/수배-PID/B126A99 - GUIDE SHOE COMPONENT.md",
-    "🧪 수배로직/🟡 작업_진행중/업무 Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
-    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
-    "🧪 수배로직/⚪ 추후작업/버퍼오일 단종 인증 관련 작업.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PLM API 정리.md",
-    "엘리베이터/승강로/RGS-SGS 차이점.md",
-    "VAULT-PLM/Query-정리/비표준 사양검토.md",
-    "🧪 수배로직/수배-PID/A103A - MACHINE FOUNDATION/EL_PA103A - MC FOUNDATION.md",
-    "🧪 수배로직/수배-PID/A103C - ISOLATION_PAD/EL_PA103C - ISOLATION PAD.md",
-    "🧪 수배로직/🟡 작업_진행중/AI활용사례-제출-CTO/PID 데이터 분석.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
-    "🧪 수배로직/🟡 작업_진행중/BOM 수배율 프로세스.md",
-    "🧪 수배로직/수배-PID/B120A - FLATFORM/EL_PB120A - FLATFORM.md",
-    "🧪 수배로직/수배-PID/A103A - MACHINE FOUNDATION/A103A - MACHINE FOUNDATION.md",
-    "VAULT-PLM/Query-정리/ECO (설계변경) 쿼리.md",
-    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/DB-명세서 - 쿼리 및 정리.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/데이터분석.md",
-    "🧪 수배로직/🟡 작업_진행중/직무_COP",
-    "🧪 수배로직/🟡 작업_진행중/PLM_DB_API_명세서",
-    "image/Pasted image 20260807174710.png",
-    "image/Pasted image 20260807174607.png"
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01. 북미전산화.md",
+    "VAULT-PLM/PLM-함수/종속사양 산출 버튼.md",
+    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/BOM 사전 검증 자동화.md",
+    "🧪 수배로직/🟡 작업_진행중/02_AI_안티그래비티_업무_도입/[MAIL] BOM 검증-로직 작성 검증 명세 중앙화 안내.md"
   ]
 }
