@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/02_북미 GU 70.md",
+                "file": "🧪 수배로직/수배-PID/B182G01 - ANCHOR BOLT/ANCHOR BOLT (B182G01-G04).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02_북미 GU 70"
+              "title": "ANCHOR BOLT (B182G01-G04)"
             }
           },
           {
@@ -215,8 +215,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f9891c5a2bdaeb0e",
+  "active": "14bac03ef96bac8d",
   "lastOpenFiles": [
+    "🧪 수배로직/수배-PID/E131A - CAR DOOR OPER/EL_PE131A - CAR DOOR OPER.md",
+    "image/Pasted image 20260828125754.png",
+    "image/Pasted image 20260828125738.png",
+    "image/Pasted image 20260828125730.png",
+    "🧪 수배로직/수배-PID/B182G01 - ANCHOR BOLT/ANCHOR BOLT (B182G01-G04).md",
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/02_북미 GU 70.md",
     "🧪 수배로직/🟡 작업_진행중/04_ODS_작업/ㄷㄹㄷ.md",
     "🧪 수배로직/🟡 작업_진행중/04_ODS_작업",
     "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE/EL_PA116A - GOV TENSION SHEAVE.md",
@@ -224,7 +230,6 @@
     "🧪 수배로직/수배-PID/PB121B - TOP BEAM/EL_PB121B.md",
     "🧪 수배로직/수배-PID/B121B01 - ROPE END/EL_PB121B01 - ROPE END.md",
     "🧪 수배로직/🟡 작업_진행중/03_전산화요청/문의 건.md",
-    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/02_북미 GU 70.md",
     "🧪 수배로직/🟡 작업_진행중/03_전산화요청",
     "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01_북미전산화.md",
     "엘리베이터/02_기계공학/후크의 법칙.md",

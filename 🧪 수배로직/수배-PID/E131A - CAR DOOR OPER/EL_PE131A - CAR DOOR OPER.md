@@ -15,12 +15,10 @@ HH : ENTRANCE HEIGHT
 
 ## P2
 ### P2 천장 및 카도어오퍼 조립된 사진
-![[Pasted image 20260622134638.png|633]]DSF
-
+![[Pasted image 20260828125730.png]]
 
 ### P2와 조립되는 천장
-![[Pasted image 20260622134659.png|495]]
-
+![[Pasted image 20260828125738.png]]
 
 ### P2 도면
-![[Pasted image 20260622134726.png]]
+![[Pasted image 20260828125754.png]]
