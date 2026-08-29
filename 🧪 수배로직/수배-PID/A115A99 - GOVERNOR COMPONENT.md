@@ -33,4 +33,5 @@
 
 
 - CWT SAFETY가 수배될 때 CWT 쪽 GOVERNOR가 수배 된다.
-- 
+- LOG03B_240(CAR)는 화물용 ODS 범위
+- LOG03B_200 는 MRL만 / LOG03_200 는 MR에만 사용된다.
