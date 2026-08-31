@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/북미 GU 70.md",
+                "file": "VAULT-PLM/PLM-함수/종속사양 산출 버튼.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "북미 GU 70"
+              "title": "종속사양 산출 버튼"
             }
           },
           {
@@ -27,12 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/03_전산화요청/문의 건.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/05_직무_COP/BOM 이상감지 개발 프로세스.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "문의 건"
+              "title": "BOM 이상감지 개발 프로세스"
+            }
+          },
+          {
+            "id": "af7a75365eaa63b3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "VAULT-PLM/Query-정리/PLM - 수주테이블.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PLM - 수주테이블"
             }
           }
         ],
@@ -70,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "사용자",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -203,38 +217,38 @@
   },
   "active": "eae25ff2a855900b",
   "lastOpenFiles": [
-    "🧪 수배로직/🟡 작업_진행중/04_ODS_작업/ODS - 08.12.md",
-    "🧪 수배로직/🟡 작업_진행중/03_전산화요청/문의 건.md",
-    "🧪 수배로직/🟡 작업_진행중/06_PLM_DB_API_명세서/PID DB 정의서.md",
-    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/PLM 데이터 분석 AI 에이전트(제출완료).md",
-    "독서노트/springBoot/웹 서버란.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 정보 메타정보.md",
-    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/수배 로직 PID 분석 에이전트(제출완료).md",
-    "🧪 수배로직/🟡 작업_진행중/02_AI_안티그래비티_업무_도입/[MAIL] BOM 검증-로직 작성 검증 명세 중앙화 안내.md",
-    "🧪 수배로직/수배-PID/A115A99 - GOVERNOR COMPONENT.md",
-    "🧪 수배로직/수배-PID/CAL-로직/CAL_BOM_SUPPLIER_DESIGN.md",
-    "image/Pasted image 20260828170726.png",
-    "🧪 수배로직/수배-PID/로직 참고사항.md",
-    "🧪 수배로직/수배-PID/레이아웃 참조.md",
-    "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE/EL_PA116A - GOV TENSION SHEAVE.md",
+    "VAULT-PLM/Query-정리/원가절감실적조회_공통DB.md",
+    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/BOM 이상감지 개발 프로세스.md",
+    "VAULT-PLM/Query-정리/전산작업요청 쿼리.md",
+    "VAULT-PLM/Query-정리/수량 PID 조회.md",
+    "VAULT-PLM/Query-정리/블럭번호 별 최대 하위 레벨  개수.md",
+    "VAULT-PLM/Query-정리/비표준 사양검토.md",
+    "🧪 수배로직/🟡 작업_진행중/06_PLM_DB_API_명세서/비표준사양 DB 정의서.md",
+    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/BOM 사전 검증 자동화.md",
+    "🧪 수배로직/🟡 작업_진행중/CRM 관련.md",
     "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
-    "🧪 수배로직/🟡 작업_진행중/02. 로직 이관 데이터 분석.md",
-    "🧪 수배로직/수배-PID/B182E01 - RAIL BRACKET/RAIL BRACKET 이미지.md",
-    "🧪 수배로직/수배-PID/B182E01 - RAIL BRACKET/EL_PB182E01 - RAIL BRACKET.md",
-    "🧪 수배로직/수배-PID/B182G01 - ANCHOR BOLT/ANCHOR BOLT (B182G01-G04).md",
-    "🧪 수배로직/수배-PID/E131A - CAR DOOR OPER/EL_PE131A - CAR DOOR OPER.md",
+    "🧪 수배로직/🟡 작업_진행중/06_PLM_DB_API_명세서/영업사양 DB 정의서.md",
+    "🧪 수배로직/🟡 작업_진행중/06_PLM_DB_API_명세서/PID DB 정의서.md",
+    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/수배 로직 PID 분석 에이전트(제출완료).md",
+    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/자재현장 추적 (제출완료).md",
+    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/AI 에이전트 기반 설계 BOM 검증.md",
+    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/DB-명세서 - 쿼리 및 정리.md",
+    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/PLM 데이터 분석 AI 에이전트(제출완료).md",
+    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/PLM API 정리(공유).md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/공사현장추출.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/데이터분석.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 정보 메타정보.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/제미나이 api 연동.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/AI 테스트.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/BOM이력관리.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/PID_시뮬레이터 개발 중 (버전 선택).md",
+    "image/Pasted image 20260828170726.png",
     "image/Pasted image 20260828125754.png",
     "image/Pasted image 20260828125738.png",
     "image/Pasted image 20260828125730.png",
-    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/02_북미 GU 70.md",
     "🧪 수배로직/🟡 작업_진행중/04_ODS_작업",
-    "🧪 수배로직/수배-PID/B121B - TOP BEAM/EL_PB121B - TOP BEAM.md",
-    "🧪 수배로직/수배-PID/PB121B - TOP BEAM/EL_PB121B.md",
-    "🧪 수배로직/수배-PID/B121B01 - ROPE END/EL_PB121B01 - ROPE END.md",
     "🧪 수배로직/🟡 작업_진행중/03_전산화요청",
-    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01_북미전산화.md",
-    "엘리베이터/02_기계공학/후크의 법칙.md",
-    "엘리베이터/02_기계공학/용어 정리.md",
     "image/Pasted image 20260824091557.png",
     "image/Pasted image 20260824091131.png",
     "엘리베이터/02_기계공학",
