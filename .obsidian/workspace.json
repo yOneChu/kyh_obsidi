@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B186A01 - ROPE SHACKLE/B186A01 - ROPE(BELT) SHACKLE (수량).md",
+                "file": "VAULT-PLM/Query-정리/특정 PID에 특정 문구(도면번호 등) 등록된 일자 조회.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "B186A01 - ROPE(BELT) SHACKLE (수량)"
+              "title": "특정 PID에 특정 문구(도면번호 등) 등록된 일자 조회"
             }
           },
           {
@@ -84,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "최초등록",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -218,6 +218,14 @@
   },
   "active": "fb22feaf76d8dfaa",
   "lastOpenFiles": [
+    "🧪 수배로직/수배-PID/B182B01 - FISH PLATE.md",
+    "image/Pasted image 20260902141232.png",
+    "🧪 수배로직/🟡 작업_진행중/03_전산화요청/AI - 04773.md",
+    "🧪 수배로직/💻 개발/BOM 이력관리.md",
+    "VAULT-PLM/Query-정리/특정 PID에 특정 문구(도면번호 등) 등록된 일자 조회.md",
+    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/수배 로직 PID 분석 에이전트(제출완료).md",
+    "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
+    "🧪 수배로직/수배-PID/B186A01 - ROPE SHACKLE/B186A01 - ROPE(BELT) SHACKLE (수량).md",
     "엘리베이터/승강로/HATCH SILL - DIVIDER.md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
     "B185B01 - WIRE CLIP.md",
@@ -230,20 +238,13 @@
     "🧪 수배로직/🟡 작업_진행중/06_PLM_DB_API_명세서/비표준사양 DB 정의서.md",
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/BOM 사전 검증 자동화.md",
     "🧪 수배로직/🟡 작업_진행중/CRM 관련.md",
-    "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
     "🧪 수배로직/🟡 작업_진행중/06_PLM_DB_API_명세서/영업사양 DB 정의서.md",
     "🧪 수배로직/🟡 작업_진행중/06_PLM_DB_API_명세서/PID DB 정의서.md",
-    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/수배 로직 PID 분석 에이전트(제출완료).md",
     "🧪 수배로직/🟡 작업_진행중/AI_작업현황/자재현장 추적 (제출완료).md",
     "🧪 수배로직/🟡 작업_진행중/AI_작업현황/AI 에이전트 기반 설계 BOM 검증.md",
     "🧪 수배로직/🟡 작업_진행중/AI_작업현황/DB-명세서 - 쿼리 및 정리.md",
     "🧪 수배로직/🟡 작업_진행중/AI_작업현황/PLM 데이터 분석 AI 에이전트(제출완료).md",
     "🧪 수배로직/🟡 작업_진행중/AI_작업현황/PLM API 정리(공유).md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/공사현장추출.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/데이터분석.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 정보 메타정보.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/제미나이 api 연동.md",
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/AI 테스트.md",
     "image/Pasted image 20260828170726.png",
     "image/Pasted image 20260828125754.png",
     "image/Pasted image 20260828125738.png",
