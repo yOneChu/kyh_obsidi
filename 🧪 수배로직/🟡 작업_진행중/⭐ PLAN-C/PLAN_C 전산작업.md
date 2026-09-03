@@ -2,7 +2,24 @@
 
 ---
 
+PLAN-C 취소된 품목들은 결국 글로벌자재 C14자리를 국내에 도입할 예정이었으나 취소된 것이기 때문에 
+이미 적용된 C 14자리를 취소한다는거다.
 
+## PLAN-C 취소
+
+1. TM BED ASSY - EL_PA103B01
+2. RGS COVER - EL_PB126A99 - 글로벌 호기는 기존 유지 (완료)
+3. SGS - EL_PB126A01 - 해당 x
+4. GUIDE ADAPTOR - EL_PB126C01 (완료 재훈이가함)
+5. PIT SCREEN - B184A - 완료
+
+
+
+![[Pasted image 20260903105745.png]]
+
+
+
+---
 
 1. **[완료] 요청번호: 03441 (미정)**
 -PLAN-C 7-2-2-3 NEX-MRL TM BED ASSY - EL_PA103B01
