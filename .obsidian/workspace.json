@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
+                "file": "VAULT-PLM/Query-정리/특정 PID에 특정 문구(도면번호 등) 등록된 일자 조회.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "PLAN_C 전산작업"
+              "title": "특정 PID에 특정 문구(도면번호 등) 등록된 일자 조회"
             }
           },
           {
@@ -97,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "최초 등록",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -121,7 +121,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -230,10 +231,10 @@
   },
   "active": "2f936c643d5d0334",
   "lastOpenFiles": [
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
     "image/Pasted image 20260903105745.png",
     "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 제외조건.md",
     "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN_C 전산작업.md",
     "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
     "🧪 수배로직/수배-PID/B183B01 - BUFFER BLOCKING.md",
     "🧪 수배로직/수배-PID/B182B01 - FISH PLATE.md",
@@ -268,7 +269,6 @@
     "엘리베이터/02_기계공학",
     "image/Pasted image 20260823091052.png",
     "image/Pasted image 20260823091006.png",
-    "엘리베이터/01_승강기개론",
-    "image/Pasted image 20260821162839.png"
+    "엘리베이터/01_승강기개론"
   ]
 }
