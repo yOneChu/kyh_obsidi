@@ -7,10 +7,22 @@
 
 [[PIT SCREEN]]
 
+
+| PIT SCREEN       | EL_PB184A_1 |
+| ---------------- | ----------- |
+| PIT SCREEN(ADD)  | EL_PB184A_2 |
+| PIT SCREEN(SHIP) | SH_PB184A_1 |
+
+
+
 ---
 
 
 PIT SCREEN은 CWT RAIL에 체결된다.
+
+
+
+
 
 
 

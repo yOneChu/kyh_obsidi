@@ -1,6 +1,6 @@
 {
   "collapse-filter": false,
-  "search": "path: 엘리베이터/CAR/CAR_WALL  ",
+  "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
@@ -17,6 +17,6 @@
   "repelStrength": 10,
   "linkStrength": 1,
   "linkDistance": 250,
-  "scale": 1.0000000000000049,
+  "scale": 0.713275462622445,
   "close": true
 }
