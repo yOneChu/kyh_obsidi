@@ -28,3 +28,14 @@
 | EL_PA103C_2 | CAR ROPE HITCH |     |
 | EL_PA103C_3 | CWT ROPE HITCH |     |
 
+
+
+## 이론
+- MC FOUNDATION 에는 단일방진, 이중방진이 있다.
+- 이중방진의 경우 A, B 타입이 있다.
+
+#### 단일방진
+
+
+#### 이중방진
+![[Pasted image 20260909095709.png]]
