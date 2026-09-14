@@ -1,10 +1,15 @@
 ---
 작성일: 2026-08-06
+수정일: 2026-09-14
+tags:
+  - PLM
+  - Query
+  - ECO
 ---
 
 ---
 
-#### | 정리중 설계변경 쿼리
+#### | 설계변경 쿼리
 ```SQL
 SELECT
     A.ISTRANSFERED,  
@@ -40,6 +45,18 @@ A.MD$NUMBER = 'ECO2608-0877'
 
 파트연계 -> ECOANDPART$AS
 도면연계 -> ECOANDDRAW$AS
+
+SELECT P.*  
+FROM ECOANDPART$AS P  
+WHERE P.AS$END1 = '2888224354'
+
+----
+
+## ECOANDPART$AS
+-AS$END1 : ECO OID
+-AS$END1 : PART or PRODUCT OID
+-END1_HEXOUID : ECO (changeorder$sf@ac5894d3)
+-END2_HEXOUID : normalpart$vf@ac589115(부품) OR product$vf@ac26cbe1(제품)
 
 ```
 
