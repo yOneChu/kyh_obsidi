@@ -12,4 +12,8 @@ EL_EMFD : ◎ MC FOUND;방향
 - TM기종 별로 MC BEAM or MC FOUNDATION 방향으로 후락, 정횡락, 사선횡락 기준을 정한다.
 
 
+<CWT 위치>
+![[Pasted image 20260917170535.png]]
 
+<정횡락 LAYOUT>
+![[Pasted image 20260917170505.png]]

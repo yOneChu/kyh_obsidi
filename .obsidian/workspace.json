@@ -83,12 +83,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B189A - COMPEN CHAIN.md",
+                "file": "🧪 수배로직/수배-PID/A103A - MACHINE FOUNDATION/EL_PA103A - MC FOUNDATION.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "B189A - COMPEN CHAIN"
+              "title": "EL_PA103A - MC FOUNDATION"
             }
           }
         ],
@@ -126,7 +126,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "횡락",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -150,7 +150,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -259,6 +260,9 @@
   },
   "active": "fac54b8d98497179",
   "lastOpenFiles": [
+    "image/Pasted image 20260917170535.png",
+    "image/Pasted image 20260917170505.png",
+    "🧪 수배로직/수배-PID/B189A - COMPEN CHAIN.md",
     "🧪 수배로직/🟢 작업_완료/COMPEN CHAIN 관리-김선태,최진영.md",
     "🧪 수배로직/🟡 작업_진행중/02. SUBWEIGHT 전산화.md",
     "🧪 수배로직/🟡 작업_진행중/02_AI_안티그래비티_업무_도입/AI 도입 PT 대본.md",
@@ -287,14 +291,11 @@
     "🧪 수배로직/수배-PID/B182E05 - SUPPORT ANGLE.md",
     "🧪 수배로직/수배-PID/E321A - CEILING ASSY/E312A16 - ISOATION BRACKET.md",
     "image/Pasted image 20260914121838.png",
-    "image/Pasted image 20260914121532.png",
     "엘리베이터/CAR/ISOLATION PAD BRACKET.md",
     "엘리베이터/CAR/레일브라켓 방진 라이너.md",
     "🧪 수배로직/수배-PID/E322A - CAR WALL ASSY.md",
     "엘리베이터/CAR/CAR_WALL/CAR WALL ASSY.md",
     "🧪 수배로직/🟡 작업_진행중/04_ODS_작업/ODS - 08.12.md",
-    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/CEILING 천장 이미지.md",
-    "엘리베이터/CAR/CAR SILL ASSY.md",
     "🧪 수배로직/🟡 작업_진행중/07_JQPR 정리",
     "🧪 수배로직/🟡 작업_진행중/04_ODS_작업",
     "🧪 수배로직/🟡 작업_진행중/03_전산화요청",
