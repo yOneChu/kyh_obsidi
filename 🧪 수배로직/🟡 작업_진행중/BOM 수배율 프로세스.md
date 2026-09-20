@@ -8,13 +8,14 @@
 **1. 정보기술팀에서 개발한 해당 날짜의 API 호출**
 1) 금일(타겟일자) 최초설계된 호기 검색
 - https://plmpro.hdel.co.kr/jsp/help/gethogilistByBlockopt.jsp?searchdate=타겟일자
+- https://plmpro.hdel.co.kr/jsp/help/gethogilistByBlockopt.jsp?searchdate=20260917
 - gethogilistByBlockopt.jsp
 - 최초설계된 호기 검색의 기준조건
 	- `eai_bom_blockopt` DB테이블에 ECO가 승인될때마다 모든 품목이 있는지 체크하여, 체크되어 있다면 최초 설계 완료된 것으로 간주.
 
 1) 위 링크로 검색된 해당날자의 각 호기들에 대한 최초설계 BOM검색
 - https://plmpro.hdel.co.kr/jsp/help/getBomByBlockoptList.jsp?proNo=타겟호기
-
+- https://plmpro.hdel.co.kr/jsp/help/getBomByBlockoptList.jsp?proNo=N29536L01
 
 
 **2. 데이터팀에서 해당 API호출하여 데이터브릭스에 데이터 정제하여 적재**

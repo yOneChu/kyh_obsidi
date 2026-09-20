@@ -1,0 +1,58 @@
+---
+작성일: 2026-09-18
+---
+---
+
+
+
+```SQL
+  
+--생산-BOM수신  
+SELECT A.*  
+FROM ZPPAT1010 A  
+WHERE  
+    A.CRDAT = '20260327'  
+;  
+  
+--생산-BOM수신2 -  
+SELECT  
+    A.MATNR, A.IDNRK,  
+    A.*  
+FROM ZPPAT1011 A  
+--WHERE TO_CHAR(A.CRDAT, 'YYYYMMDD') = '20260327'  
+WHERE  
+    A.CRDAT = '20260327'  
+  --AND A.MATNR = '10110300G090A'  
+--AND A.WOKNUM = 'M20623NC200-M20623L02'  
+AND A.IDNRK = '10110300G090A' --자재번호  
+;  
+  
+--생산-BOM수신2 - 2레벨 이하 조회  
+SELECT  
+    A.WOKNUM, --제품번호  
+    A.WOKVER, --제품버전  
+    A.MATNR, --모품번  
+    A.ITEM_SEQ,  
+    A.IDNRK, --자품번  
+    A.BOM_LEVEL,  
+    A.MENGE,  
+    A.MATKL,  
+    A.ZPART, --품목  
+    A.*  
+FROM ZPPAT1011 A  
+--WHERE TO_CHAR(A.CRDAT, 'YYYYMMDD') = '20260327'  
+WHERE  
+    A.CRDAT = '20260327'  
+    AND A.MATNR = '10110300G090A' --모품목코드  
+    AND A.WOKNUM = 'M20623NC200-M20623L02'  
+    --AND A.MATKL = 'R31'  
+;  
+  
+--생산-BOM주석수신  
+SELECT A.* FROM COMPRD.ZPPAT1012 A  
+WHERE  
+    A.CRDAT = '20260327'  
+  AND A.WOKNUM = 'M20623NC200-M20623L02'  
+AND A.IDNRK = '10110300G090A'  
+;
+```
