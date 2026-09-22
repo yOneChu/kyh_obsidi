@@ -8,77 +8,48 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c161bbbbec9710f7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "VAULT-PLM/Query-정리/ECO (설계변경) 쿼리.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "ECO (설계변경) 쿼리"
-            }
-          },
-          {
-            "id": "419d7f1a3212797b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "엘리베이터/CAR/FLATFORM/FLATFORM.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "FLATFORM"
-            }
-          },
-          {
             "id": "1d1386bb0c0cdae1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/E331A - CAR DOOR.md",
+                "file": "🧪 수배로직/수배-PID/B125A - CAR SAFETY/EL_PB125A - CAR SAFETY.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "E331A - CAR DOOR"
+              "title": "EL_PB125A - CAR SAFETY"
             }
           },
           {
-            "id": "a465d0157488524e",
+            "id": "c87cb458fc4648dc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B126A01 - CAR GUIDE SHOE.md",
+                "file": "🧪 수배로직/수배-PID/B181A - CWT FRAME.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "B126A01 - CAR GUIDE SHOE"
+              "title": "B181A - CWT FRAME"
             }
           },
           {
-            "id": "fac54b8d98497179",
+            "id": "dd487b7acba0c62e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "VAULT-PLM/Query-정리/제품 관련 Query.md",
+                "file": "엘리베이터/CAR/ABD(ANTI-BOUNCING DEVICE).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "제품 관련 Query"
+              "title": "ABD(ANTI-BOUNCING DEVICE)"
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -112,7 +83,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "bom 수배",
+                "query": "safet",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -243,45 +214,46 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "fac54b8d98497179",
+  "active": "14bac03ef96bac8d",
   "lastOpenFiles": [
-    "🧪 수배로직/🟡 작업_진행중/MLB Knowledge.md",
-    "VAULT-PLM/Query-정리/제품 관련 Query.md",
-    "VAULT-PLM/Query-정리/ECO (설계변경) 쿼리.md",
-    "🧪 수배로직/🟡 작업_진행중/02_AI_안티그래비티_업무_도입/AI 도입 PT 대본.md",
-    "VAULT-PLM/Query-정리/수배로직 쿼리.md",
-    "VAULT-PLM/Query-정리/PLM에 등록된 14자리 부품-제품.md",
-    "VAULT-PLM/Query-정리/BOM 수배율 쿼리.md",
-    "VAULT-PLM/Query-정리/수량 PID 조회.md",
-    "VAULT-PLM/Query-정리/비표준 사양검토.md",
-    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
-    "VAULT-PLM/MLB/이슈 모음집.md",
-    "VAULT-PLM/PLM-함수/종속사양 산출 버튼.md",
-    "🧪 수배로직/🟡 작업_진행중/BOM 수배율 프로세스.md",
-    "VAULT-PLM/수배로직/BOM 수배율 관련 쿼리.md",
-    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/AI 에이전트 기반 설계 BOM 검증.md",
-    "🧪 수배로직/🟡 작업_진행중/06_PLM_DB_API_명세서/PID DB 정의서.md",
-    "🧪 수배로직/🟡 작업_진행중/06_PLM_DB_API_명세서/API-정의서.md",
-    "🧪 수배로직/🟡 작업_진행중/06_PLM_DB_API_명세서/AI-DB 연계 사용 기준 메일 (중요).md",
-    "🧪 수배로직/🟡 작업_진행중/06_PLM_DB_API_명세서/영업사양 DB 정의서.md",
-    "🧪 수배로직/🟡 작업_진행중/06_PLM_DB_API_명세서/서버 부하 방지 프롬프트.md",
-    "🧪 수배로직/🟡 작업_진행중/06_PLM_DB_API_명세서/비표준사양 DB 정의서.md",
-    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/수배 로직 PID 분석 에이전트(제출완료).md",
-    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/자재현장 추적 (제출완료).md",
-    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/DB-명세서 - 쿼리 및 정리.md",
-    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/PLM 데이터 분석 AI 에이전트(제출완료).md",
-    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/PLM API 정리(공유).md",
+    "엘리베이터/CAR/SAFETY.md",
+    "엘리베이터/CAR/GUIDE SHOE ADAPTOR.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_잡학지식/팀-법카.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_잡학지식/02. SUBWEIGHT 전산화.md",
+    "🧪 수배로직/수배-PID/B181A - CWT FRAME.md",
+    "엘리베이터/CAR/ABD(ANTI-BOUNCING DEVICE).md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_잡학지식/재질 용어.md",
+    "🧪 수배로직/수배-PID/B181B - SUBWEIGHT/EL_PB181B.md",
+    "🧪 수배로직/수배-PID/B121B01 - ROPE END/EL_PB121B01 - ROPE END.md",
+    "🧪 수배로직/수배-PID/B181B - SUBWEIGHT/PICK_B181B_KC01.md",
+    "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT/SH_B181B.md",
+    "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT/이슈사항-2026.07.20.md",
+    "🧪 수배로직/수배-PID/B181B - SUBWEIGHT/PICK_B181B_NEX.md",
+    "🧪 수배로직/수배-PID/B181B - SUBWEIGHT/PICK_B181A_LUXEN_G.md",
+    "🧪 수배로직/수배-PID/E331A - CAR DOOR.md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 분석을 위한 추출 쿼리.md",
+    "🧪 수배로직/수배-PID/B128A01 - CAR CABLE HANGER/EL_PB128A01 - CAR CABLE HANGER.md",
+    "image/Pasted image 20260922091330.png",
+    "🧪 수배로직/수배-PID/B126A01 - CAR GUIDE SHOE.md",
+    "🧪 수배로직/옵시디언 작동법.md",
+    "🧪 수배로직/팀_주요업무/도면뷰어.md",
+    "🧪 수배로직/⚪ 추후작업/이모지 모음.md",
+    "🧪 수배로직/⚪ 추후작업/버퍼오일 단종 인증 관련 작업.md",
+    "🧪 수배로직/💻 개발/BOM 이력관리.md",
+    "🧪 수배로직/💻 개발/로직에디터 변환.md",
+    "🧪 수배로직/🟢 작업_완료/COMPEN CHAIN 관리-김선태,최진영.md",
+    "🧪 수배로직/수배-PID/B126A99 - GUIDE SHOE COMPONENT.md",
+    "image/Pasted image 20260922073122.png",
+    "🧪 수배로직/🟡 작업_진행중/엘베_잡학지식",
+    "image/Pasted image 20260921161436.png",
+    "image/Pasted image 20260921152705.png",
+    "image/Pasted image 20260921152651.png",
     "VAULT-PLM/Query-정리/SAP",
     "image/Pasted image 20260918121319.png",
     "image/Pasted image 20260917170535.png",
     "image/Pasted image 20260917170505.png",
     "image/Pasted image 20260916162924.png",
     "image/Pasted image 20260916162900.png",
-    "image/Pasted image 20260916162801.png",
-    "image/Pasted image 20260916162721.png",
-    "image/Pasted image 20260915101421.png",
-    "image/Pasted image 20260915101352.png",
-    "image/Pasted image 20260914173652.png",
     "🧪 수배로직/🟡 작업_진행중/07_JQPR 정리",
     "🧪 수배로직/🟡 작업_진행중/04_ODS_작업",
     "🧪 수배로직/🟡 작업_진행중/03_전산화요청",

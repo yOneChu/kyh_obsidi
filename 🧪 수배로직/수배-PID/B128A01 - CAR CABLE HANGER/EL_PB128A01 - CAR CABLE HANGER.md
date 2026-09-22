@@ -15,3 +15,8 @@
 <쐐기 타입>
 ![[Pasted image 20260709134919.png]]
 
+
+
+![[Pasted image 20260922091330.png]]
+
+CAR CABLE HANGER 타입에 `PIPE` 타입도 있다.

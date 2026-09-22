@@ -14,10 +14,9 @@ cs:
 | RESTRAINT PLATE (CWT,북미)    | EL_PB126A99_5 |
 | DUMMY GUIDE SHOE (CAR 상부)   | EL_PB126A99_6 |
 | DUMMY GUIDE SHOE (CAR 하부)   | EL_PB126A99_7 |
-| DUMMY GUIDE SHOE (CWT)      | EL_PB126A99_8 |
+| GUIDE SHOE JIG              | EL_PB126A99_8 |
 
 ---
-
 
 
 ## DUMMY GUIDE SHOE
@@ -27,4 +26,14 @@ cs:
 ### AS-IS -> TO-BE
 ![[Pasted image 20260713115859.png]]
 
-SD
+
+
+## RESTRAINT PLATE
+- ASME 코드에 따르면 GUIDE SHOE 이탈 방지가 있어야 한다.
+- ADAPTOR와 GUIDE SHOE 사이에 취부하는 것이다.
+
+
+
+RESTRAINT PLATE
+- ASME 코드에 따르면 GUIDE SHOE 이탈 방지가 있어야 한다.
+- ADAPTOR와 GUIDE SHOE 사이에 취부하는 용도.
