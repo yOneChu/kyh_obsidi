@@ -5,7 +5,7 @@
 
 **| 연계 PID**
 - [[E322A - CAR WALL ASSY]]
-- [[CEILING ASSY_정보]]
+- [[E321A - CEILING ASSY_정보]]
 ---
 
 **| 정보**
