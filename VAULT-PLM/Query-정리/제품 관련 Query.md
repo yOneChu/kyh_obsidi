@@ -3,13 +3,14 @@
 AND SUBSTR(MD$CDATE, 0, 8) >= '2026'
 ```
 
-### 💡 제품의 1레벨
+### 💡 제품 1레벨
 ```sql
 with ouid as
- ( select vf$ouid AS VFOID from product$vf, product$id
-  	where vf$identity = id$ouid and vf$ouid = id$wip
+ ( selectselect A.vf$ouid AS VFOID from product$vf A, product$id B  
+    where A.vf$identity = B.id$ouid and A.vf$ouid = B.id$wip
+    AND SUBSTR(A.MD$CDATE, 0, 6) = '202609'
   	and (
-     	  md$number in ( '호기번호' )
+     	  A.md$number in ( '호기번호' )
      	)
  )
 SELECT
@@ -22,7 +23,7 @@ SELECT
 			 , (SELECT MD$NUMBER FROM PRODUCT$VF WHERE VF$OUID = PE.PRODUCTOUID) PARENTNO
 			 , (SELECT COUNT(*) FROM PARTANDCAD$AS WHERE AS$END1 = PE.PARTOUID) CADCNT
 			 , NP.MD$NUMBER PARTNO
-			 , cod(NP.NATION) NATION --자재코드(Ownership)
+			 , CODN(NP.NATION) NATION --자재코드(Ownership)
 			 , NP.compen_part COMPEN_PART
 			 , NP.MD$DESC PARTNAME
 			 , NP.VF$VERSION VERSION
@@ -57,6 +58,12 @@ SELECT
 			 , VP.UCHECK -- 수정여부
 			 , VP.MCHECK
 			 , NVL(COD(NP.PART_DIVISION), '') PART_DIVISION
+			 , (SELECT COD(E.EL_BCDAD) FROM ELV_INFO$ID A, ELV_INFO$VF E  
+	           WHERE A.ID$OUID = E.VF$IDENTITY AND E.vf$ouid = A.id$wip  
+	           AND E.MD$NUMBER = (SELECT F.MD$NUMBER FROM PRODUCT$VF F WHERE F.VF$OUID = PE.PRODUCTOUID) ) AS EL_BCDAD_이중구조  
+			, (SELECT COD(E.EL_BCL) FROM ELV_INFO$ID A, ELV_INFO$VF E  
+	           WHERE A.ID$OUID = E.VF$IDENTITY AND E.vf$ouid = A.id$wip  
+	           AND E.MD$NUMBER = (SELECT F.MD$NUMBER FROM PRODUCT$VF F WHERE F.VF$OUID = PE.PRODUCTOUID) ) AS EL_BCL_천장종류
 			 --, PE.CDATE
 			 --, VP.MDATE
 			-- , DATEFORMAT(VP.MDATE, 'YYYYMMDDHH24MISS', 'YYYY-MM-DD HH24:MI:SS') AS 등록일
@@ -70,7 +77,7 @@ SELECT
 			LEFT OUTER JOIN VARIABLEPART_NEW VP ON VP.PRODUCTOUID = PE.PRODUCTOUID AND VP.ASSOOUID = PE.ASSOOUID
 			WHERE
 			 -- PE.PRODUCTOUID = 제품의OID
-            PE.PRODUCTOUID = (SELECT VFOID FROM ouid)
+            PE.PRODUCTOUID IN (SELECT VFOID FROM ouid)
             AND SUBSTR(PE.CDATE, 0, 4) = '2026' -- [수정됨] 자재 등록일 2026년 이후 데이터만 조회
 			ORDER BY TO_NUMBER(PE.SEQ)
 ;
