@@ -3,18 +3,22 @@
 
 
 
+| 천장 사진
+![[Pasted image 20261001153200.png]]
 
+
+| 천장(공장)
 ![[Pasted image 20260928162712.png]]
 
 
 
-AS
+| 천장(공장)
 ![[Pasted image 20260928162722.png]]
 
-ASD
+| 천장(공장)
 ![[Pasted image 20260928162733.png]]
 
-ASDAS
+| 천장(공장)
 ![[Pasted image 20260928162746.png]]
 
 

@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B182A01 - GUIDE RAIL/GUIDE RAIL.md",
+                "file": "🧪 수배로직/수배-PID/E321A - CEILING ASSY/E321A - CEILING 천장 이미지.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "GUIDE RAIL"
+              "title": "E321A - CEILING 천장 이미지"
             }
           }
         ],
@@ -98,8 +98,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "EL_PB182A01",
-                "matchingCase": false,
+                "query": "천장",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
                 "extraContext": false,
@@ -122,7 +122,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -231,18 +232,23 @@
   },
   "active": "0ffddb1de543d8b7",
   "lastOpenFiles": [
+    "image/Pasted image 20261001153200.png",
+    "🧪 수배로직/🟡 작업_진행중/엘베_잡학지식/도면 용어 정리.md",
+    "🧪 수배로직/수배-PID/E321A99 - CEILING COMPONENT/E312A99 - SUPPORT BRACKET(T-CABLE).md",
+    "🧪 수배로직/수배-PID/E321A99 - CEILING COMPONENT/E321A99.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/K도면.md",
+    "VAULT-PLM/수배로직/궁금증❓.md",
+    "VAULT-PLM/Query-정리/영업사양 쿼리.md",
+    "VAULT-PLM/Query-정리/제품 관련 Query.md",
+    "🧪 수배로직/수배-PID/B182A01 - GUIDE RAIL/B182A01 - GUIDE RAIL.md",
+    "🧪 수배로직/수배-PID/B182A01 - GUIDE RAIL/GUIDE RAIL 특이사항.md",
     "image/Pasted image 20260929172430.png",
     "image/Pasted image 20260929170454.png",
     "image/Pasted image 20260929165508.png",
-    "🧪 수배로직/수배-PID/B182A01 - GUIDE RAIL/B182A01 - GUIDE RAIL.md",
-    "🧪 수배로직/수배-PID/B182A01 - GUIDE RAIL/GUIDE RAIL.md",
     "🧪 수배로직/수배-PID/B128A01 - CAR CABLE HANGER/EL_PB128A01 - CAR CABLE HANGER.md",
-    "🧪 수배로직/수배-PID/E321A99 - CEILING COMPONENT/E312A99 - SUPPORT BRACKET(T-CABLE).md",
     "image/Pasted image 20260929140914.png",
     "image/Pasted image 20260929140901.png",
     "image/Pasted image 20260929140737.png",
-    "🧪 수배로직/수배-PID/E321A99 - CEILING COMPONENT/E321A99.md",
-    "VAULT-PLM/Query-정리/제품 관련 Query.md",
     "🧪 수배로직/수배-PID/E321A99 - CEILING COMPONENT",
     "🧪 수배로직/수배-PID/E321A - CEILING ASSY/E321A - CEILING 천장 이미지.md",
     "🧪 수배로직/수배-PID/E321A - CEILING ASSY/E321A - 천장 관련 도면.md",
@@ -259,15 +265,10 @@
     "VAULT-PLM/Query-정리/ECO (설계변경) 쿼리.md",
     "VAULT-PLM/Query-정리/특정 PID에 특정 문구(도면번호 등) 등록된 일자 조회.md",
     "VAULT-PLM/Query-정리/특정 문구 어느 PID에 걸려있는 조회(모든 버전 및 PID).md",
-    "🧪 수배로직/💻 개발/BOM 이력관리.md",
-    "🧪 수배로직/💻 개발/로직에디터 변환.md",
     "image/Pasted image 20260928163710.png",
     "image/Pasted image 20260928162746.png",
     "image/Pasted image 20260928162733.png",
     "image/Pasted image 20260928162722.png",
-    "image/Pasted image 20260928162712.png",
-    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/E312A16 - ISOATION BRACKET.md",
-    "🧪 수배로직/🟡 작업_진행중/엘베_잡학지식/업무 Knowledge.md",
     "🧪 수배로직/🟡 작업_진행중/엘베_잡학지식",
     "VAULT-PLM/Query-정리/SAP",
     "🧪 수배로직/🟡 작업_진행중/07_JQPR 정리",

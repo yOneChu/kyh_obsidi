@@ -6,7 +6,7 @@ AND SUBSTR(MD$CDATE, 0, 8) >= '2026'
 ### 💡 제품 1레벨
 ```sql
 with ouid as
- ( selectselect A.vf$ouid AS VFOID from product$vf A, product$id B  
+ ( select A.vf$ouid AS VFOID from product$vf A, product$id B  
     where A.vf$identity = B.id$ouid and A.vf$ouid = B.id$wip
     AND SUBSTR(A.MD$CDATE, 0, 6) = '202609'
   	and (
