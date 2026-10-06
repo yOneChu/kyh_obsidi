@@ -8,6 +8,10 @@
 
 플랫폼 밑에 SUPPORT FRAME ASSY가 장착되어 있다.
 
+3D 참고 링크 (도면번호 : 12010257)
+- [3D View](http://10.225.80.35/vaultview/viewdesign.html?filename=12010257)
+
+
 ---
 
 
