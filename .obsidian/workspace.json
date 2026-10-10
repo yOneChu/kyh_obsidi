@@ -13,12 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B181A - CWT FRAME.md",
+                "file": "🧪 수배로직/수배-PID/BUFFER/런 바이(RUN BY) 기준.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "B181A - CWT FRAME"
+              "title": "런 바이(RUN BY) 기준"
+            }
+          },
+          {
+            "id": "7b678ba621cb9260",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/수배-PID/B120A - PLATFORM/플랫폼 이미지.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "플랫폼 이미지"
             }
           },
           {
@@ -63,7 +77,8 @@
               "title": "B183B01 - BUFFER BLOCKING"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -97,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "RUN BY",
+                "query": "T30",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -121,8 +136,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -229,12 +243,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1d1386bb0c0cdae1",
+  "active": "7b678ba621cb9260",
   "lastOpenFiles": [
-    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 정보 메타정보.md",
-    "🧪 수배로직/수배-PID/B181A - CWT FRAME.md",
+    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/E321A - CEILING 천장 이미지.md",
+    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/E321A - 천장 관련 도면.md",
+    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/E312A16 - ISOATION BRACKET.md",
+    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/E321A - CEILING ASSY_정보.md",
+    "image/Pasted image 20261008132023.png",
+    "image/Pasted image 20261008131847.png",
+    "🧪 수배로직/수배-PID/BUFFER/B183C01 - BUFFER SUPPORT.md",
+    "🧪 수배로직/수배-PID/BUFFER/런 바이(RUN BY) 기준.md",
     "🧪 수배로직/수배-PID/BUFFER/B183B01 - BUFFER BLOCKING.md",
-    "🧪 수배로직/🟡 작업_진행중/엘베_잡학지식/도면 용어 정리.md",
+    "🧪 수배로직/수배-PID/BUFFER/B195A02 - OIL BUFFER.md",
+    "🧪 수배로직/수배-PID/BUFFER/BUFFER - (런바이, Run-By) - Extension.md",
+    "VAULT-PLM/수배로직/수배로직 공부.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/인증 관련.md",
+    "🧪 수배로직/수배-PID/B181A - CWT FRAME.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/Untitled",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 정보 메타정보.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/도면 용어 정리.md",
     "🧪 수배로직/🟡 작업_진행중/PLM_DB_API_명세서/비표준사양 DB 정의서.md",
     "🧪 수배로직/🟡 작업_진행중/06_PLM_DB_API_명세서/비표준사양 DB 정의서.md",
     "🧪 수배로직/수배-PID/B121B - TOP BEAM/EL_PB121B - TOP BEAM.md",
@@ -250,32 +277,19 @@
     "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/04. 카 외부 사다리 (EL_PB189D).md",
     "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/03. PIT 사다리 (PIT LADDER).md",
     "🧪 수배로직/수배-PID/B120A - PLATFORM/플랫폼 이미지.md",
-    "🧪 수배로직/수배-PID/A200A01 - ENCODER/EL_PA200A01 - ENCODER.md",
-    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/E312A16 - ISOATION BRACKET.md",
-    "🧪 수배로직/수배-PID/B120A - PLATFORM/잭 볼트, 스토퍼.md",
-    "🧪 수배로직/수배-PID/B120A - PLATFORM/로드 센서 (LOAD SENSOR).md",
-    "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE/EL_PA116A - GOV TENSION SHEAVE.md",
-    "🧪 수배로직/수배-PID/A116A - GOV TENSION SHEAVE/A116A - GOV TENSION SHEAVE.md",
-    "VAULT-PLM/Query-정리/공용DB/PLM에 공통DB에 있는 테이블 정리.md",
     "image/Pasted image 20261007114811.png",
-    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/E321A - CEILING ASSY_정보.md",
-    "🧪 수배로직/수배-PID/A103C - ISOLATION_PAD/EL_PA103C - ISOLATION PAD.md",
     "image/Pasted image 20261006163759.png",
     "image/Pasted image 20261006163749.png",
     "image/Pasted image 20261006163519.png",
     "image/Pasted image 20261006163417.png",
-    "image/Pasted image 20261006162926.png",
-    "image/Pasted image 20261006162917.png",
-    "🧪 수배로직/수배-PID/E321A - CEILING ASSY/E321A - 천장 관련 도면.md",
     "🧪 수배로직/수배-PID/B128B08 - T-CABLE PROTECTOR",
     "VAULT-PLM/Query-정리/공용DB",
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2027-데이터분석",
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지",
     "VAULT-PLM/Query-정리/실용적 쿼리",
     "🧪 수배로직/수배-PID/E321A99 - CEILING COMPONENT",
-    "🧪 수배로직/🟡 작업_진행중/엘베_잡학지식",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식",
     "VAULT-PLM/Query-정리/SAP",
-    "🧪 수배로직/🟡 작업_진행중/07_JQPR 정리",
-    "🧪 수배로직/🟡 작업_진행중/04_ODS_작업"
+    "🧪 수배로직/🟡 작업_진행중/07_JQPR 정리"
   ]
 }
