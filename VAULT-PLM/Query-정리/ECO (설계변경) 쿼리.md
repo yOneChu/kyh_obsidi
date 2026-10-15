@@ -21,13 +21,16 @@ SELECT
        (SELECT B.USER_NAME FROM V_USER_INFO B WHERE B.USER_ID = A.MD$USER) AS CRE_USER, -- 등록자  
        --A.EC_CLASS, -- 구분 (제품신규/제품수정/ 등)  
        CODN(A.EC_CLASS) AS EC_CLASS_KO, --구분 (제품신규/제품수정/ 등)  
-       --A.EC_CLASS_DESC,       CODN(A.EC_CLASS_DESC) AS 구분내역_실시시기, -- 구분내역/실시시기  
+       --A.EC_CLASS_DESC,       
+       CODN(A.EC_CLASS_DESC) AS 구분내역_실시시기, -- 구분내역/실시시기  
        A.PROD_MODIFY_ETC AS 기타변경, --  
        A.EC_REMARK_DESC AS 내용및사유, -- 내용및사유  
        CODN(A.VERIFICATION) AS 검증유무, --검증유무  
        CODN(A.LOGIC_EXCEPTION) AS 정합성예외, --정합성 예외  
        CODN(A.PHANTOM_EXCEPTION) AS Phantom, --Phantom 하위 자재 검사 예외  
        SUBSTR(A.MD$CDATE, 0 , 8) AS CREDAY,  
+       A.REMARKS AS REMARKS1, -- 변경 전  
+	   A.REMARKS2 AS REMARKS2, -- 변경 후  
        DATEFORMAT(A.MD$CDATE, 'YYYYMMDDHH24MISS', 'YYYY-MM-DD HH24:MI:SS') AS CRE_DATE, 
        DATEFORMAT(A.MD$MDATE, 'YYYYMMDDHH24MISS', 'YYYY-MM-DD HH24:MI:SS') AS MOD_DATE  
        --,A.*  
