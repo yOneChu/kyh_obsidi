@@ -12,7 +12,7 @@
 [[CAL_APPLICATION_INNOVER_NEO]]
 [[CAL_ETS_SPD1]] : COMPEN CHAIN 종류
 
-[[방진 (ISOLATION PAD)]]
+[[방진 (Isolation Pad)]]
 
 
 ---
