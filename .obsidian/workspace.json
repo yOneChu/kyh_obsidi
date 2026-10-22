@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "D162A09 - KEY DEVICE.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/08_기타_이슈/카 듀티.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "D162A09 - KEY DEVICE"
+              "title": "카 듀티"
             }
           },
           {
@@ -98,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "KEY DEVI",
+                "query": "BUFF",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -190,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "D162A09 - KEY DEVICE.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/08_기타_이슈/카 듀티.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -228,17 +228,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8d4c262738036b57",
+  "active": "9735d466ac85cb1e",
   "lastOpenFiles": [
+    "image/Pasted image 20261022181151.png",
+    "🧪 수배로직/수배-PID/BUFFER/B183B01 - BUFFER BLOCKING.md",
+    "🧪 수배로직/🟡 작업_진행중/08_기타_이슈/카 듀티.md",
+    "🧪 수배로직/🟡 작업_진행중/08_기타_이슈",
+    "🧪 수배로직/수배-PID/B189C99 - LADDER COMPONENT.md",
+    "D162A09 - KEY DEVICE.md",
     "image/Pasted image 20261020142253.png",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/02. SUBWEIGHT 전산화.md",
-    "D162A09 - KEY DEVICE.md",
     "기계공학_엘베/CAR/CEILING ASSY.md",
     "기계공학_엘베/02_기계공학/주철(FC), SS400(철판).md",
     "🧪 수배로직/💻 개발/BOM 이력관리.md",
     "🧪 수배로직/🟡 작업_진행중/PLM_DB_API_명세서/비표준사양 DB 정의서.md",
     "VAULT-PLM/Query-정리/원가절감실적조회.md",
-    "🧪 수배로직/수배-PID/BUFFER/B183B01 - BUFFER BLOCKING.md",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/재질 용어.md",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/02. 로직 이관 데이터 분석.md",
     "SAP/JQPR 정보.md",
@@ -254,8 +258,6 @@
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/코드 설명.md",
     "VAULT-PLM/Query-정리/blockNo로 특정기간에 제품에 수배된 자재 찾기.md",
     "VAULT-PLM/Query-정리/ECO (설계변경) 쿼리.md",
-    "VAULT-PLM/Query-정리/전산작업요청 쿼리.md",
-    "VAULT-PLM/Query-정리/수배로직 쿼리.md",
     "image/Pasted image 20261008132023.png",
     "image/Pasted image 20261008131847.png",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/Untitled",
@@ -266,7 +268,6 @@
     "image/Pasted image 20261006163759.png",
     "image/Pasted image 20261006163749.png",
     "image/Pasted image 20261006163519.png",
-    "image/Pasted image 20261006163417.png",
     "🧪 수배로직/수배-PID/B128B08 - T-CABLE PROTECTOR",
     "VAULT-PLM/Query-정리/공용DB",
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2027-데이터분석",
@@ -274,7 +275,6 @@
     "VAULT-PLM/Query-정리/실용적 쿼리",
     "🧪 수배로직/수배-PID/E321A99 - CEILING COMPONENT",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식",
-    "VAULT-PLM/Query-정리/SAP",
-    "🧪 수배로직/🟡 작업_진행중/07_JQPR 정리"
+    "VAULT-PLM/Query-정리/SAP"
   ]
 }
