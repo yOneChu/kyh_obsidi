@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/08_기타_이슈/카 듀티.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/02. 로직 이관 데이터 분석.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "카 듀티"
+              "title": "02. 로직 이관 데이터 분석"
             }
           },
           {
@@ -190,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/08_기타_이슈/카 듀티.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/02. 로직 이관 데이터 분석.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -228,11 +228,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9735d466ac85cb1e",
+  "active": "8d4c262738036b57",
   "lastOpenFiles": [
+    "🧪 수배로직/🟡 작업_진행중/08_기타_이슈/카 듀티.md",
     "image/Pasted image 20261022181151.png",
     "🧪 수배로직/수배-PID/BUFFER/B183B01 - BUFFER BLOCKING.md",
-    "🧪 수배로직/🟡 작업_진행중/08_기타_이슈/카 듀티.md",
     "🧪 수배로직/🟡 작업_진행중/08_기타_이슈",
     "🧪 수배로직/수배-PID/B189C99 - LADDER COMPONENT.md",
     "D162A09 - KEY DEVICE.md",
@@ -267,7 +267,6 @@
     "image/Pasted image 20261007114811.png",
     "image/Pasted image 20261006163759.png",
     "image/Pasted image 20261006163749.png",
-    "image/Pasted image 20261006163519.png",
     "🧪 수배로직/수배-PID/B128B08 - T-CABLE PROTECTOR",
     "VAULT-PLM/Query-정리/공용DB",
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2027-데이터분석",
