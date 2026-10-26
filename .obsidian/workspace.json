@@ -50,6 +50,20 @@
             }
           },
           {
+            "id": "60b5f54559e3fb69",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/01-0. 카내 사다리 (E322B12).md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01-0. 카내 사다리 (E322B12)"
+            }
+          },
+          {
             "id": "5902ee793a866753",
             "type": "leaf",
             "state": {
@@ -64,7 +78,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -98,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "BUFF",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -190,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/02. 로직 이관 데이터 분석.md",
+                "file": "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/01-0. 카내 사다리 (E322B12).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -228,13 +242,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "8d4c262738036b57",
+  "active": "60b5f54559e3fb69",
   "lastOpenFiles": [
+    "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/01-1. E322B12 - INTERNAL LADDER (카내사다리).md",
+    "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/01-0. 카내 사다리 (E322B12).md",
+    "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/03-1. 승강로 사다리 (PIT LADDER).md",
+    "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/02-0. 비상용 승강로 사다리(B189C01).md",
+    "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/EL_PB189C01.md",
+    "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/02-1. 비상용 승강로 사다리.md",
+    "image/Pasted image 20261026162116.png",
+    "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/03. PIT 사다리 (PIT LADDER).md",
+    "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/04. 카 외부 사다리 (EL_PB189D).md",
+    "🧪 수배로직/수배-PID/B189C99 - LADDER COMPONENT.md",
     "🧪 수배로직/🟡 작업_진행중/08_기타_이슈/카 듀티.md",
     "image/Pasted image 20261022181151.png",
     "🧪 수배로직/수배-PID/BUFFER/B183B01 - BUFFER BLOCKING.md",
     "🧪 수배로직/🟡 작업_진행중/08_기타_이슈",
-    "🧪 수배로직/수배-PID/B189C99 - LADDER COMPONENT.md",
     "D162A09 - KEY DEVICE.md",
     "image/Pasted image 20261020142253.png",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/02. SUBWEIGHT 전산화.md",
@@ -251,13 +274,6 @@
     "Untitled 2.md",
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/03. 기능 메뉴얼.md",
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/02. 코드 정리.md",
-    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/PLM bom 시뮬.md",
-    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/BOM 이상감지 개발 프로세스.md",
-    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/BOM 사전 검증 자동화.md",
-    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/테이블 정의서.md",
-    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/코드 설명.md",
-    "VAULT-PLM/Query-정리/blockNo로 특정기간에 제품에 수배된 자재 찾기.md",
-    "VAULT-PLM/Query-정리/ECO (설계변경) 쿼리.md",
     "image/Pasted image 20261008132023.png",
     "image/Pasted image 20261008131847.png",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/Untitled",
@@ -266,7 +282,6 @@
     "image/Pasted image 20261007140815.png",
     "image/Pasted image 20261007114811.png",
     "image/Pasted image 20261006163759.png",
-    "image/Pasted image 20261006163749.png",
     "🧪 수배로직/수배-PID/B128B08 - T-CABLE PROTECTOR",
     "VAULT-PLM/Query-정리/공용DB",
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2027-데이터분석",
