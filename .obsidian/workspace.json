@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/01-0. 카내 사다리 (E322B12).md",
+                "file": "🧪 수배로직/수배-PID/LADDER 정리/02-0. B189C01 - 비상용 승강로,PIT 사다리.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-0. 카내 사다리 (E322B12)"
+              "title": "02-0. B189C01 - 비상용 승강로,PIT 사다리"
             }
           },
           {
@@ -69,16 +69,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/02. SUBWEIGHT 전산화.md",
+                "file": "🧪 수배로직/수배-PID/LADDER 정리/엘리베이터 탈출 절차.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02. SUBWEIGHT 전산화"
+              "title": "엘리베이터 탈출 절차"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -204,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/01-0. 카내 사다리 (E322B12).md",
+                "file": "🧪 수배로직/수배-PID/LADDER 정리/엘리베이터 탈출 절차.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -242,25 +242,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "60b5f54559e3fb69",
+  "active": "5902ee793a866753",
   "lastOpenFiles": [
-    "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/01-1. E322B12 - INTERNAL LADDER (카내사다리).md",
-    "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/01-0. 카내 사다리 (E322B12).md",
-    "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/03-1. 승강로 사다리 (PIT LADDER).md",
-    "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/02-0. 비상용 승강로 사다리(B189C01).md",
-    "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/EL_PB189C01.md",
-    "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/02-1. 비상용 승강로 사다리.md",
-    "image/Pasted image 20261026162116.png",
-    "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/03. PIT 사다리 (PIT LADDER).md",
-    "🧪 수배로직/수배-PID/B189C01 - HOISTWAY PIT LADDER/04. 카 외부 사다리 (EL_PB189D).md",
+    "image/Pasted image 20261026210548.png",
+    "image/Pasted image 20261026210529.png",
+    "🧪 수배로직/수배-PID/LADDER 정리/01-0. 카내 사다리 (E322B12).md",
+    "🧪 수배로직/수배-PID/LADDER 정리/01-1. E322B12 - INTERNAL LADDER (카내사다리).md",
+    "🧪 수배로직/수배-PID/LADDER 정리/엘리베이터 탈출 절차.md",
+    "image/Pasted image 20261026210401.png",
+    "image/Pasted image 20261026210349.png",
+    "image/Pasted image 20261026210336.png",
+    "image/Pasted image 20261026210137.png",
+    "image/Pasted image 20261026210026.png",
+    "🧪 수배로직/수배-PID/LADDER 정리/B189D02 - LADDER CASE.md",
+    "image/Pasted image 20261026205644.png",
+    "image/Pasted image 20261026205540.png",
+    "🧪 수배로직/수배-PID/LADDER 정리/04. B189D - 카 외부 사다리.md",
+    "🧪 수배로직/수배-PID/LADDER 정리/03. B189C01 - PIT LADDER 이미지.md",
+    "🧪 수배로직/수배-PID/LADDER 정리/03-1. B189C01 - 승강로(피트) 사다리 (PIT LADDER).md",
+    "🧪 수배로직/수배-PID/LADDER 정리/02-1. B189C01 - 비상용 승강로,PIT 사다리.md",
+    "🧪 수배로직/수배-PID/LADDER 정리/02-0. B189C01 - 비상용 승강로,PIT 사다리.md",
+    "image/Pasted image 20261026203944.png",
+    "image/Pasted image 20261026203911.png",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/02. SUBWEIGHT 전산화.md",
+    "🧪 수배로직/수배-PID/LADDER 정리/EL_PB189C01.md",
     "🧪 수배로직/수배-PID/B189C99 - LADDER COMPONENT.md",
     "🧪 수배로직/🟡 작업_진행중/08_기타_이슈/카 듀티.md",
-    "image/Pasted image 20261022181151.png",
     "🧪 수배로직/수배-PID/BUFFER/B183B01 - BUFFER BLOCKING.md",
     "🧪 수배로직/🟡 작업_진행중/08_기타_이슈",
     "D162A09 - KEY DEVICE.md",
-    "image/Pasted image 20261020142253.png",
-    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/02. SUBWEIGHT 전산화.md",
     "기계공학_엘베/CAR/CEILING ASSY.md",
     "기계공학_엘베/02_기계공학/주철(FC), SS400(철판).md",
     "🧪 수배로직/💻 개발/BOM 이력관리.md",
@@ -271,17 +281,7 @@
     "SAP/JQPR 정보.md",
     "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT/이슈사항-2026.07.20.md",
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/01. 기획안.md",
-    "Untitled 2.md",
-    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/03. 기능 메뉴얼.md",
-    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/02. 코드 정리.md",
-    "image/Pasted image 20261008132023.png",
-    "image/Pasted image 20261008131847.png",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/Untitled",
-    "image/Pasted image 20261007142423.png",
-    "image/Pasted image 20261007141959.png",
-    "image/Pasted image 20261007140815.png",
-    "image/Pasted image 20261007114811.png",
-    "image/Pasted image 20261006163759.png",
     "🧪 수배로직/수배-PID/B128B08 - T-CABLE PROTECTOR",
     "VAULT-PLM/Query-정리/공용DB",
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2027-데이터분석",
