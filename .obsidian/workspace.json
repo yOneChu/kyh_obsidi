@@ -13,54 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/BUFFER/런 바이(RUN BY) 기준.md",
+                "file": "🧪 수배로직/수배-PID/A103C - ISOLATION_PAD/EL_PA103C - ISOLATION PAD.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "런 바이(RUN BY) 기준"
-            }
-          },
-          {
-            "id": "7b678ba621cb9260",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "기계공학_엘베/CAR/CEILING ASSY.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CEILING ASSY"
-            }
-          },
-          {
-            "id": "8d4c262738036b57",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/02. 로직 이관 데이터 분석.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "02. 로직 이관 데이터 분석"
-            }
-          },
-          {
-            "id": "60b5f54559e3fb69",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/수배-PID/LADDER 정리/02-0. B189C01 - 비상용 승강로,PIT 사다리.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "02-0. B189C01 - 비상용 승강로,PIT 사다리"
+              "title": "EL_PA103C - ISOLATION PAD"
             }
           },
           {
@@ -69,12 +27,54 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/수배-PID/LADDER 정리/엘리베이터 탈출 절차.md",
+                "file": "🧪 수배로직/수배-PID/B128A01 - CAR CABLE HANGER/EL_PB128A01 - CAR CABLE HANGER.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "EL_PB128A01 - CAR CABLE HANGER"
+            }
+          },
+          {
+            "id": "4dfb5dc6b49719d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/수배-PID/레이아웃 참조.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "엘리베이터 탈출 절차"
+              "title": "레이아웃 참조"
+            }
+          },
+          {
+            "id": "107ffbb80e071dcf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/전산화 작업 Knowledge.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "전산화 작업 Knowledge"
+            }
+          },
+          {
+            "id": "7169f6af9b078e8a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "🧪 수배로직/수배-PID/B128A01 - CAR CABLE HANGER/(용도) CAR CABLE HANGER - B128A01.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "(용도) CAR CABLE HANGER - B128A01"
             }
           }
         ],
@@ -112,7 +112,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "CAR CAB",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -204,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🧪 수배로직/수배-PID/LADDER 정리/엘리베이터 탈출 절차.md",
+                "file": "🧪 수배로직/수배-PID/B128A01 - CAR CABLE HANGER/(용도) CAR CABLE HANGER - B128A01.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -242,45 +242,46 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "5902ee793a866753",
+  "active": "7169f6af9b078e8a",
   "lastOpenFiles": [
+    "🧪 수배로직/수배-PID/B128A01 - CAR CABLE HANGER/EL_PB128A01 - CAR CABLE HANGER.md",
+    "🧪 수배로직/수배-PID/B128A01 - CAR CABLE HANGER/(용도) CAR CABLE HANGER - B128A01.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/JQPR.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/재질 용어.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/팀-법카.md",
+    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/자재현장 추적 (제출완료).md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/전산화 작업 Knowledge.md",
+    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/수배 로직 PID 분석 에이전트(제출완료).md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/02. 로직 이관 데이터 분석.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/도면 용어 정리-3 (총).md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/설변 통제.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/기계 용어.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/RE 글로벌 자재 Y호기 적용 프로세스 공유의 건..msg",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/MLB Knowledge.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/PLM ECO 결재 시 검증 로직.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/도면 용어 정리.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/도면 용어 정리-2.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/인증 관련.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/업무 Knowledge.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/02. SUBWEIGHT 전산화.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/C14자리 부품 조회.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/K도면.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 할일(동기M 조언).md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 제외조건.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
+    "🧪 수배로직/🟡 작업_진행중/06_PLM_DB_API_명세서/비표준사양 DB 정의서.md",
+    "🧪 수배로직/🟡 작업_진행중/PLM_DB_API_명세서/비표준사양 DB 정의서.md",
+    "image/Pasted image 20261027114545.png",
+    "image/Pasted image 20261027114533.png",
+    "image/Pasted image 20261027105946.png",
+    "image/Pasted image 20261027091920.png",
+    "image/Pasted image 20261027091627.png",
+    "image/Pasted image 20261027091522.png",
+    "image/Pasted image 20261027091455.png",
+    "image/Pasted image 20261027091346.png",
     "image/Pasted image 20261026210548.png",
     "image/Pasted image 20261026210529.png",
-    "🧪 수배로직/수배-PID/LADDER 정리/01-0. 카내 사다리 (E322B12).md",
-    "🧪 수배로직/수배-PID/LADDER 정리/01-1. E322B12 - INTERNAL LADDER (카내사다리).md",
-    "🧪 수배로직/수배-PID/LADDER 정리/엘리베이터 탈출 절차.md",
-    "image/Pasted image 20261026210401.png",
-    "image/Pasted image 20261026210349.png",
-    "image/Pasted image 20261026210336.png",
-    "image/Pasted image 20261026210137.png",
-    "image/Pasted image 20261026210026.png",
-    "🧪 수배로직/수배-PID/LADDER 정리/B189D02 - LADDER CASE.md",
-    "image/Pasted image 20261026205644.png",
-    "image/Pasted image 20261026205540.png",
-    "🧪 수배로직/수배-PID/LADDER 정리/04. B189D - 카 외부 사다리.md",
-    "🧪 수배로직/수배-PID/LADDER 정리/03. B189C01 - PIT LADDER 이미지.md",
-    "🧪 수배로직/수배-PID/LADDER 정리/03-1. B189C01 - 승강로(피트) 사다리 (PIT LADDER).md",
-    "🧪 수배로직/수배-PID/LADDER 정리/02-1. B189C01 - 비상용 승강로,PIT 사다리.md",
-    "🧪 수배로직/수배-PID/LADDER 정리/02-0. B189C01 - 비상용 승강로,PIT 사다리.md",
-    "image/Pasted image 20261026203944.png",
-    "image/Pasted image 20261026203911.png",
-    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/02. SUBWEIGHT 전산화.md",
-    "🧪 수배로직/수배-PID/LADDER 정리/EL_PB189C01.md",
-    "🧪 수배로직/수배-PID/B189C99 - LADDER COMPONENT.md",
-    "🧪 수배로직/🟡 작업_진행중/08_기타_이슈/카 듀티.md",
-    "🧪 수배로직/수배-PID/BUFFER/B183B01 - BUFFER BLOCKING.md",
     "🧪 수배로직/🟡 작업_진행중/08_기타_이슈",
-    "D162A09 - KEY DEVICE.md",
-    "기계공학_엘베/CAR/CEILING ASSY.md",
-    "기계공학_엘베/02_기계공학/주철(FC), SS400(철판).md",
-    "🧪 수배로직/💻 개발/BOM 이력관리.md",
-    "🧪 수배로직/🟡 작업_진행중/PLM_DB_API_명세서/비표준사양 DB 정의서.md",
-    "VAULT-PLM/Query-정리/원가절감실적조회.md",
-    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/재질 용어.md",
-    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/02. 로직 이관 데이터 분석.md",
-    "SAP/JQPR 정보.md",
-    "🧪 수배로직/수배-PID(SHIP)/SH_B181B_SUBWEIGHT/이슈사항-2026.07.20.md",
-    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/01. 기획안.md",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/Untitled",
     "🧪 수배로직/수배-PID/B128B08 - T-CABLE PROTECTOR",
     "VAULT-PLM/Query-정리/공용DB",
@@ -288,7 +289,6 @@
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지",
     "VAULT-PLM/Query-정리/실용적 쿼리",
     "🧪 수배로직/수배-PID/E321A99 - CEILING COMPONENT",
-    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식",
-    "VAULT-PLM/Query-정리/SAP"
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식"
   ]
 }

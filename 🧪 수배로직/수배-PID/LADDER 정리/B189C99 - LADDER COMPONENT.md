@@ -1,5 +1,8 @@
 ---
 작성일: 2026-10-22
+tags:
+  - PROTECTOR
+  - T-CABLE
 ---
 
 
@@ -13,3 +16,12 @@
 ---
 
 EL_PB189C99
+
+
+| 레일 취부형
+![[Pasted image 20261027091346.png]]
+
+
+![[Pasted image 20261027091455.png]]
+
+![[Pasted image 20261027091522.png]]![[Pasted image 20261027091627.png]]
