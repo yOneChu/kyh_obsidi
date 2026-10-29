@@ -62,23 +62,9 @@
               "icon": "lucide-file",
               "title": "전산화 작업 Knowledge"
             }
-          },
-          {
-            "id": "7169f6af9b078e8a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/수배-PID/B128A01 - CAR CABLE HANGER/(용도) CAR CABLE HANGER - B128A01.md",
-                "mode": "preview",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "(용도) CAR CABLE HANGER - B128A01"
-            }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -112,7 +98,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "CAR CAB",
+                "query": "VAULT",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -136,7 +122,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -204,7 +191,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🧪 수배로직/수배-PID/B128A01 - CAR CABLE HANGER/(용도) CAR CABLE HANGER - B128A01.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/전산화 작업 Knowledge.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -228,7 +215,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 276.5
+    "width": 384.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -242,10 +229,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7169f6af9b078e8a",
+  "active": "107ffbb80e071dcf",
   "lastOpenFiles": [
-    "🧪 수배로직/수배-PID/B128A01 - CAR CABLE HANGER/EL_PB128A01 - CAR CABLE HANGER.md",
+    "🧪 수배로직/💻 개발/PLM 함수 정리(VAULT).md",
+    "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/VAULT API.md",
+    "VAULT-PLM/수배로직검증/BlockNo 기준정보 이력 관리.md",
+    "🧪 수배로직/팀_주요업무/도면뷰어.md",
+    "🧪 수배로직/🟡 작업_진행중/PLM_DB_API_명세서/AI-DB 연계 사용 기준 메일 (중요).md",
+    "🧪 수배로직/🟡 작업_진행중/06_PLM_DB_API_명세서/AI-DB 연계 사용 기준 메일 (중요).md",
+    "기계공학_엘베/02_기계공학/반력 이란.md",
+    "기계공학_엘베/02_기계공학/후크의 법칙.md",
+    "기계공학_엘베/PIT/PIT SCREEN.md",
+    "기계공학_엘베/02_기계공학/편심.md",
+    "기계공학_엘베/02_기계공학/용어 정리.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/기계 용어.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 제외조건.md",
+    "SAP/💡 SAP 계정.md",
+    "🧪 수배로직/🟡 작업_진행중/메일 경력(인사팀 발송).md",
     "🧪 수배로직/수배-PID/B128A01 - CAR CABLE HANGER/(용도) CAR CABLE HANGER - B128A01.md",
+    "🧪 수배로직/수배-PID/B128A01 - CAR CABLE HANGER/EL_PB128A01 - CAR CABLE HANGER.md",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/JQPR.md",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/재질 용어.md",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/팀-법카.md",
@@ -255,22 +257,7 @@
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/02. 로직 이관 데이터 분석.md",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/도면 용어 정리-3 (총).md",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/설변 통제.md",
-    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/기계 용어.md",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/RE 글로벌 자재 Y호기 적용 프로세스 공유의 건..msg",
-    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/MLB Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/PLM ECO 결재 시 검증 로직.md",
-    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/도면 용어 정리.md",
-    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/도면 용어 정리-2.md",
-    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/인증 관련.md",
-    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/업무 Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/02. SUBWEIGHT 전산화.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/C14자리 부품 조회.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/K도면.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 할일(동기M 조언).md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 제외조건.md",
-    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/PLAN-C 정의.md",
-    "🧪 수배로직/🟡 작업_진행중/06_PLM_DB_API_명세서/비표준사양 DB 정의서.md",
-    "🧪 수배로직/🟡 작업_진행중/PLM_DB_API_명세서/비표준사양 DB 정의서.md",
     "image/Pasted image 20261027114545.png",
     "image/Pasted image 20261027114533.png",
     "image/Pasted image 20261027105946.png",
