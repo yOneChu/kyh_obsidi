@@ -122,8 +122,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -229,12 +228,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "107ffbb80e071dcf",
+  "active": "14bac03ef96bac8d",
   "lastOpenFiles": [
+    "🧪 수배로직/🟢 작업_완료/COMPEN CHAIN 관리-김선태,최진영.md",
+    "🧪 수배로직/수배-PID/B186A01 - ROPE SHACKLE/B186A01 - ROPE(BELT) SHACKLE (수량).md",
+    "🧪 수배로직/수배-PID/A260A05 - PIT SWITCH.md",
+    "기계공학_엘베/CAR/보상 체인(Compensation Chain) = Compen Hitch Plate.md",
+    "🧪 수배로직/수배-PID/B120B03 - BALANCE WEIGHT/EL_PB120B03 - BALANCE WEIGHT.md",
     "🧪 수배로직/수배-PID/B189A - COMPEN CHAIN.md",
     "🧪 수배로직/수배-PID/B185A - MAIN ROPE(BELT).md",
     "🧪 수배로직/수배-PID/A103C - ISOLATION_PAD/EL_PA103C - ISOLATION PAD.md",
-    "🧪 수배로직/🟢 작업_완료/COMPEN CHAIN 관리-김선태,최진영.md",
     "🧪 수배로직/수배-PID/CAL-로직/CAL_ETS_SPD1.md",
     "기계공학_엘베/승강로/ROPE SHACKLE (B186A06).md",
     "🧪 수배로직/수배-PID/B128A01 - CAR CABLE HANGER/EL_PB128A01 - CAR CABLE HANGER.md",
@@ -254,10 +257,6 @@
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/CRM 관련.md",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/BOM 수배율 프로세스.md",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/팀-법카.md",
-    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/전산화 작업 Knowledge.md",
-    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/재질 용어.md",
-    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/인증 관련.md",
-    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/업무 Knowledge.md",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/RE 글로벌 자재 Y호기 적용 프로세스 공유의 건..msg",
     "image/Pasted image 20261027114545.png",
     "image/Pasted image 20261027114533.png",
