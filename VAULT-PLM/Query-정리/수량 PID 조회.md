@@ -4,7 +4,7 @@ aliases:
 ---
 
 
-```
+```SQL
 with ouid as  
          (select A.vf$ouid AS VFOID  
           from product$vf A,  
