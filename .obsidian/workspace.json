@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01_북미 수출형 전산화.md",
+                "file": "기계공학_엘베/기계실/벽파훼 정보.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_북미 수출형 전산화"
+              "title": "벽파훼 정보"
             }
           },
           {
@@ -31,20 +31,6 @@
               },
               "icon": "lucide-book-up",
               "title": "Release Notes 1.15.0"
-            }
-          },
-          {
-            "id": "5902ee793a866753",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "🧪 수배로직/수배-PID/B120B03 - BALANCE WEIGHT/EL_PB120B03 - BALANCE WEIGHT.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "EL_PB120B03 - BALANCE WEIGHT"
             }
           },
           {
@@ -62,7 +48,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -228,8 +214,13 @@
   },
   "active": "4dfb5dc6b49719d7",
   "lastOpenFiles": [
-    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2027-데이터분석/엘리베이터 분석.md",
+    "기계공학_엘베/기계실/벽파훼 정보.md",
+    "🧪 수배로직/시스템/SUB-WEIGHT_계산식.md",
+    "🧪 수배로직/🟡 작업_진행중/01. 북미전산화/01_북미 수출형 전산화.md",
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/04. 화면 URL 정리.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/C14자리 부품 조회.md",
+    "🧪 수배로직/🟡 작업_진행중/⭐ PLAN-C/쿼리(C14자리).md",
+    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2027-데이터분석/엘리베이터 분석.md",
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/BOM 이상감지 개발 프로세스.md",
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/BOM 사전 검증 자동화.md",
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/테이블 정의서.md",
@@ -254,11 +245,6 @@
     "🧪 수배로직/수배-PID/B128A01 - CAR CABLE HANGER/EL_PB128A01 - CAR CABLE HANGER.md",
     "🧪 수배로직/🟡 작업_진행중/🌈 하고있는일-ING.md",
     "Daily/01.주간/2026-06-3주차.md",
-    "🧪 수배로직/🟡 작업_진행중/03_전산화요청/AI - 04773.md",
-    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/PLM 데이터 분석 AI 에이전트(제출완료).md",
-    "IT_정리/AI활용/AX vs DX(디지털 전환) 핵심 차이점 완벽 정리.md",
-    "🧪 수배로직/수배-PID/B184A02 - SIDE SCREEN/B184A02 - SIDE SCREEN 정의.md",
-    "🧪 수배로직/수배-PID/B184A02 - SIDE SCREEN/B184A02 - SIDE SCREEN.md",
     "🧪 수배로직/수배-PID/B184A02 - SIDE SCREEN",
     "image/Pasted image 20261105134028.png",
     "image/Pasted image 20261105133951.png",
