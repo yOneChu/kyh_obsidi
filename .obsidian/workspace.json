@@ -39,12 +39,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/04. 화면 URL 정리.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/업무 Knowledge.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04. 화면 URL 정리"
+              "title": "업무 Knowledge"
             }
           }
         ],
@@ -82,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "서브웨이트",
+                "query": "최초서계",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -106,7 +106,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -174,7 +175,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/04. 화면 URL 정리.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/업무 Knowledge.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -212,11 +213,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4dfb5dc6b49719d7",
+  "active": "fb22feaf76d8dfaa",
   "lastOpenFiles": [
+    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/04. 화면 URL 정리.md",
     "🧪 수배로직/🟡 작업_진행중/11_이클립스_사용법/01. 다른 브런치와 코드 비교하는 방법.md",
     "image/Pasted image 20261109114417.png",
-    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/04. 화면 URL 정리.md",
     "🧪 수배로직/🟡 작업_진행중/11_이클립스_사용법",
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/07. JAVA PID 추가 방법.md",
     "기계공학_엘베/기계실/벽파훼 정보.md",
