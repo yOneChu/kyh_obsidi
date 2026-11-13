@@ -53,16 +53,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/04. 화면 URL 정리.md",
+                "file": "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/팀-법카.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04. 화면 URL 정리"
+              "title": "팀-법카"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -96,7 +95,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "최초서계",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -120,7 +119,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -188,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/04. 화면 URL 정리.md",
+                "file": "기계공학_엘베/기계실/벽파훼 정보.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -212,7 +212,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 384.5
+    "width": 254.1666259765625
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -226,10 +226,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b9dd57650d602871",
+  "active": "1d1386bb0c0cdae1",
   "lastOpenFiles": [
-    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/업무 Knowledge.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/팀-법카.md",
+    "image/Pasted image 20261113144937.png",
+    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/08. 발표 대본.md",
+    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/09. 파일럿 배포 메일 (팀장).md",
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/04. 화면 URL 정리.md",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/업무 Knowledge.md",
     "🧪 수배로직/🟡 작업_진행중/11_이클립스_사용법/01. 다른 브런치와 코드 비교하는 방법.md",
     "image/Pasted image 20261109114417.png",
     "🧪 수배로직/🟡 작업_진행중/11_이클립스_사용법",
@@ -257,16 +261,12 @@
     "image/Pasted image 20261105221600.png",
     "image/Pasted image 20261105221547.png",
     "image/Pasted image 20261105221453.png",
-    "기계공학_엘베/엘리베이터 정보.md",
     "기계공학_엘베/엘베 설치 사진",
-    "엘리베이터.md",
-    "🧪 수배로직/🟡 작업_진행중/PLM_DB_API_명세서/비표준사양 DB 정의서.md",
     "🧪 수배로직/수배-PID/B184A02 - SIDE SCREEN",
     "image/Pasted image 20261105134028.png",
     "image/Pasted image 20261105133951.png",
     "image/Pasted image 20261105133923.png",
     "image/Pasted image 20261105133903.png",
-    "image/Pasted image 20261105132925.png",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/RE 글로벌 자재 Y호기 적용 프로세스 공유의 건..msg",
     "🧪 수배로직/🟡 작업_진행중/08_기타_이슈",
     "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/Untitled",
