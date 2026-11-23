@@ -1,0 +1,3148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="artifact-type" content="narrative">
+  <meta name="design-style" content="carbon">
+  <title>승강기설계(Part 02) 핵심 마스터 가이드 — 비전공자를 위한 승강기기사·산업기사 학습서</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.2/dist/katex.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.18.2/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.18.2/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
+  <script src="https://unpkg.com/lucide@1.43.0/dist/umd/lucide.min.js"></script>
+
+  <style>
+    :root {
+      color-scheme: light;
+
+      /* Carbon Design System Tokens */
+      --background: #ffffff;
+      --surface-container-low: #f4f4f4;
+      --surface-container: #f4f4f4;
+      --surface-container-high: #e0e0e0;
+
+      /* Ink */
+      --on-surface: #161616;
+      --on-surface-variant: #525252;
+
+      /* Rules */
+      --outline: #8d8d8d;
+      --outline-variant: #e0e0e0;
+
+      /* Accents */
+      --primary: #0f62fe;
+      --primary-hover: #0353e9;
+      --on-primary: #ffffff;
+      --primary-container: #d0e2ff;
+      --on-primary-container: #161616;
+      --secondary: #6f6f6f;
+      --tertiary: #198038;
+      --tertiary-container: #defbe6;
+      --error: #da1e28;
+      --error-container: #fff1f1;
+      --on-error: #ffffff;
+
+      /* Semantic Tokens */
+      --positive: #198038;
+      --warning: #b28600;
+      --warning-container: #fcf4d6;
+      --focus: #0f62fe;
+
+      /* Data Series */
+      --data-1: #0f62fe;
+      --data-2: #6929c4;
+      --data-3: #005d5d;
+      --data-4: #9f1853;
+      --data-context: #8d8d8d;
+
+      /* Fonts (Korean first per non-Latin rules) */
+      --font-headline: 'Noto Sans KR', 'IBM Plex Sans', sans-serif;
+      --font-body: 'Noto Sans KR', 'IBM Plex Sans', sans-serif;
+      --font-label: 'IBM Plex Mono', 'Noto Sans KR', monospace;
+
+      /* Shape */
+      --rounded: 0.125rem;
+      --rounded-lg: 0.25rem;
+      --rounded-full: 0.75rem;
+
+      /* Effects */
+      --shadow-1: 0 2px 6px rgb(0 0 0 / 0.1);
+      --shadow-2: 0 4px 12px rgb(0 0 0 / 0.12);
+      --rule: 1px solid var(--outline-variant);
+      --field-rule: 1px solid var(--outline);
+      --indicator: 2px solid var(--primary);
+      --indicator-left: 3px solid var(--primary);
+      --indicator-positive: 3px solid var(--positive);
+      --indicator-warning: 3px solid var(--warning);
+      --indicator-error: 3px solid var(--error);
+
+      /* Type Scale (Narrative) */
+      --display-size: clamp(2rem, 1.35rem + 2.6vw, 3.35rem);
+      --headline-size: clamp(1.5rem, 1.15rem + 1.4vw, 2.15rem);
+      --subhead-size: clamp(1.125rem, 1.02rem + 0.45vw, 1.375rem);
+      --body-size: clamp(1rem, 0.96rem + 0.18vw, 1.0625rem);
+      --label-size: 0.75rem;
+
+      /* Spacing Scale */
+      --space-xs: 0.25rem;
+      --space-sm: 0.5rem;
+      --space-md: 1rem;
+      --space-lg: 1.5rem;
+      --space-xl: 2.5rem;
+      --space-2xl: 4rem;
+      --space-3xl: 5.5rem;
+
+      /* Motion */
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+      --dur-micro: 120ms;
+      --dur-short: 220ms;
+      --dur-long: 420ms;
+    }
+
+    /* Base Reset */
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { overflow-x: clip; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    header { position: static !important; }
+
+    body {
+      background-color: var(--background);
+      color: var(--on-surface);
+      font-family: var(--font-body);
+      font-size: var(--body-size);
+      line-height: 1.6;
+      word-break: keep-all;
+      overflow-wrap: break-word;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    button, input, select, textarea {
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible, [tabindex]:focus-visible {
+      outline: 2px solid var(--focus);
+      outline-offset: 2px;
+    }
+
+    /* Layout Shell */
+    .page-grid {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: var(--space-xl);
+      padding: var(--space-lg) var(--space-lg) var(--space-3xl);
+      max-width: 1320px;
+      margin: 0 auto;
+    }
+    .page-grid * { min-width: 0; }
+
+    /* Top System Masthead */
+    .masthead {
+      background-color: var(--background);
+      border-bottom: var(--rule);
+      padding: var(--space-xl) var(--space-lg) var(--space-lg);
+      max-width: 1320px;
+      margin: 0 auto;
+    }
+
+    .masthead-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--space-sm);
+      margin-bottom: var(--space-md);
+    }
+
+    .mono-code {
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      color: var(--on-surface-variant);
+      letter-spacing: 0.04em;
+    }
+
+    .tag-pill {
+      display: inline-flex;
+      align-items: center;
+      height: 24px;
+      padding: 0 var(--space-sm);
+      background-color: var(--primary-container);
+      color: var(--on-primary-container);
+      border-radius: var(--rounded-full);
+      font-size: var(--label-size);
+      font-weight: 500;
+      letter-spacing: 0;
+    }
+
+    .tag-pill--neutral {
+      background-color: var(--surface-container-high);
+      color: var(--on-surface);
+    }
+
+    .tag-pill--ok {
+      background-color: var(--tertiary-container);
+      color: var(--tertiary);
+    }
+
+    .tag-pill--warn {
+      background-color: var(--warning-container);
+      color: var(--on-surface);
+    }
+
+    .display-title {
+      font-family: var(--font-headline);
+      font-size: var(--display-size);
+      font-weight: 300;
+      line-height: 1.18;
+      margin: 0 0 var(--space-md) 0;
+      letter-spacing: 0;
+      color: var(--on-surface);
+    }
+
+    .display-title strong {
+      font-weight: 700;
+    }
+
+    .masthead-lede {
+      max-width: 65ch;
+      color: var(--on-surface-variant);
+      margin: 0 0 var(--space-lg) 0;
+      font-size: var(--subhead-size);
+      line-height: 1.5;
+    }
+
+    /* Headline KPI Summary Strip */
+    .kpi-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr));
+      gap: var(--space-sm);
+      margin-top: var(--space-md);
+    }
+
+    .kpi-tile {
+      background-color: var(--surface-container);
+      padding: var(--space-md);
+      border-bottom: 2px solid transparent;
+    }
+
+    .kpi-tile--primary {
+      border-bottom: var(--indicator);
+    }
+
+    .kpi-label {
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      color: var(--on-surface-variant);
+      margin-bottom: var(--space-xs);
+      display: block;
+    }
+
+    .kpi-value {
+      font-family: var(--font-label);
+      font-size: 1.75rem;
+      font-weight: 400;
+      color: var(--on-surface);
+      line-height: 1.2;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .kpi-hint {
+      font-size: 0.8125rem;
+      color: var(--on-surface-variant);
+      margin-top: var(--space-xs);
+    }
+
+    /* Sidebar Navigation */
+    .side-rail {
+      position: sticky;
+      top: var(--space-lg);
+      align-self: start;
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-md);
+    }
+
+    .side-nav {
+      background-color: var(--surface-container);
+      padding: var(--space-md) 0;
+    }
+
+    .side-nav-header {
+      padding: 0 var(--space-md) var(--space-sm);
+      border-bottom: var(--rule);
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      color: var(--on-surface-variant);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .side-nav-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .side-nav-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-sm);
+      padding: var(--space-sm) var(--space-md);
+      color: var(--on-surface);
+      text-decoration: none;
+      font-size: 0.875rem;
+      border-left: 3px solid transparent;
+      transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+    }
+
+    .side-nav-link:hover {
+      background-color: var(--surface-container-high);
+    }
+
+    .side-nav-link.is-active {
+      border-left: var(--indicator-left);
+      background-color: var(--primary-container);
+      color: var(--on-primary-container);
+      font-weight: 600;
+    }
+
+    .nav-status-dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--outline-variant);
+      flex-shrink: 0;
+    }
+
+    .nav-status-dot.is-done {
+      background-color: var(--tertiary);
+    }
+
+    .side-progress-box {
+      background-color: var(--surface-container);
+      padding: var(--space-md);
+    }
+
+    .progress-bar-track {
+      height: 6px;
+      background-color: var(--surface-container-high);
+      width: 100%;
+      margin: var(--space-sm) 0;
+    }
+
+    .progress-bar-fill {
+      height: 100%;
+      background-color: var(--primary);
+      width: 0%;
+      transition: width var(--dur-short) var(--ease-out);
+    }
+
+    /* Mobile Quick Jump Bar (visible on narrow screens) */
+    .mobile-nav-strip {
+      display: none;
+      gap: var(--space-xs);
+      overflow-x: auto;
+      padding: var(--space-sm) var(--space-md);
+      background-color: var(--surface-container);
+      border-bottom: var(--rule);
+    }
+
+    .mobile-jump-btn {
+      white-space: nowrap;
+      padding: var(--space-xs) var(--space-sm);
+      border: var(--rule);
+      background-color: var(--background);
+      color: var(--on-surface);
+      font-size: 0.8125rem;
+      text-decoration: none;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    /* Main Content Column */
+    .main-flow {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-2xl);
+    }
+
+    .chapter-section {
+      scroll-margin-top: var(--space-lg);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-lg);
+    }
+
+    .section-header {
+      border-bottom: var(--rule);
+      padding-bottom: var(--space-md);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: var(--space-md);
+    }
+
+    .section-eyebrow {
+      font-family: var(--font-label);
+      font-size: var(--label-size);
+      color: var(--primary);
+      font-weight: 600;
+      display: block;
+      margin-bottom: var(--space-xs);
+    }
+
+    .section-title {
+      font-family: var(--font-headline);
+      font-size: var(--headline-size);
+      font-weight: 300;
+      line-height: 1.25;
+      margin: 0;
+      color: var(--on-surface);
+    }
+
+    .section-title strong {
+      font-weight: 700;
+    }
+
+    .section-lede {
+      max-width: 65ch;
+      color: var(--on-surface-variant);
+      margin: var(--space-xs) 0 0 0;
+    }
+
+    .sub-heading {
+      font-family: var(--font-headline);
+      font-size: var(--subhead-size);
+      font-weight: 600;
+      margin: 0 0 var(--space-sm) 0;
+      color: var(--on-surface);
+    }
+
+    .prose-block {
+      max-width: 65ch;
+      margin: 0;
+    }
+
+    /* Carbon Layers & Cards */
+    .layer {
+      background-color: var(--surface-container);
+      padding: var(--space-lg);
+      border-radius: 0;
+    }
+
+    .layer .layer-inner {
+      background-color: var(--surface-container-high);
+      padding: var(--space-md);
+    }
+
+    .layer--white {
+      background-color: var(--background);
+      border: var(--rule);
+      padding: var(--space-lg);
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(270px, 100%), 1fr));
+      gap: var(--space-md);
+    }
+
+    .card-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(340px, 100%), 1fr));
+      gap: var(--space-md);
+    }
+
+    .split-asymmetric {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+      gap: var(--space-lg);
+      align-items: start;
+    }
+
+    /* Notifications / Callouts */
+    .callout {
+      background-color: var(--surface-container);
+      padding: var(--space-md) var(--space-lg);
+      border-left: var(--indicator-left);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xs);
+    }
+
+    .callout--ok { border-left: var(--indicator-positive); }
+    .callout--warn { border-left: var(--indicator-warning); }
+    .callout--error { border-left: var(--indicator-error); }
+
+    .callout-title {
+      font-weight: 600;
+      font-size: 0.9375rem;
+      display: flex;
+      align-items: center;
+      gap: var(--space-sm);
+    }
+
+    .callout p {
+      margin: 0;
+      color: var(--on-surface-variant);
+      font-size: 0.9375rem;
+      max-width: 65ch;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-sm);
+      min-height: 44px;
+      padding: var(--space-sm) var(--space-lg);
+      border: 1px solid transparent;
+      border-radius: 0;
+      font-size: 0.875rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: background-color var(--dur-micro) var(--ease-out), color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+      text-decoration: none;
+    }
+
+    .btn--primary {
+      background-color: var(--primary);
+      color: var(--on-primary);
+    }
+
+    .btn--primary:hover {
+      background-color: var(--primary-hover);
+    }
+
+    .btn--secondary {
+      background-color: transparent;
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .btn--secondary:hover {
+      background-color: var(--primary-container);
+      color: var(--on-primary-container);
+    }
+
+    .btn--ghost {
+      background-color: transparent;
+      color: var(--primary);
+      padding: var(--space-sm) var(--space-md);
+    }
+
+    .btn--ghost:hover {
+      background-color: var(--surface-container-high);
+    }
+
+    .btn--done {
+      background-color: var(--tertiary-container);
+      border-color: var(--tertiary);
+      color: var(--tertiary);
+    }
+
+    /* Interactive Tabs (Sub-module Comparison Tabs) */
+    .tab-bar {
+      display: flex;
+      flex-wrap: wrap;
+      border-bottom: var(--rule);
+      gap: var(--space-xs);
+    }
+
+    .tab-btn {
+      background: transparent;
+      border: 0;
+      border-bottom: 2px solid transparent;
+      padding: var(--space-sm) var(--space-md);
+      min-height: 44px;
+      cursor: pointer;
+      color: var(--on-surface-variant);
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+    }
+
+    .tab-btn:hover {
+      color: var(--on-surface);
+      background-color: var(--surface-container);
+    }
+
+    .tab-btn.is-active {
+      color: var(--on-surface);
+      font-weight: 600;
+      border-bottom: var(--indicator);
+    }
+
+    .tab-panel {
+      display: none;
+      padding-top: var(--space-md);
+    }
+
+    .tab-panel.is-active {
+      display: block;
+    }
+
+    /* Accordion (Progressive Disclosure) */
+    .accordion {
+      border-top: var(--rule);
+    }
+
+    .accordion-item {
+      border-bottom: var(--rule);
+    }
+
+    .accordion-trigger {
+      width: 100%;
+      background: transparent;
+      border: 0;
+      min-height: 48px;
+      padding: var(--space-md) var(--space-sm);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: left;
+      cursor: pointer;
+      color: var(--on-surface);
+      font-weight: 600;
+      font-size: 0.9375rem;
+      gap: var(--space-md);
+    }
+
+    .accordion-trigger:hover {
+      background-color: var(--surface-container);
+    }
+
+    .accordion-body {
+      display: none;
+      padding: 0 var(--space-sm) var(--space-md);
+      color: var(--on-surface-variant);
+      font-size: 0.9375rem;
+    }
+
+    .accordion-item.is-open .accordion-body {
+      display: block;
+    }
+
+    .accordion-chevron {
+      transition: transform var(--dur-short) var(--ease-out);
+      flex-shrink: 0;
+    }
+
+    .accordion-item.is-open .accordion-chevron {
+      transform: rotate(180deg);
+    }
+
+    /* Formula Boxes */
+    .formula-card {
+      background-color: var(--surface-container);
+      padding: var(--space-md);
+      border-left: var(--indicator-left);
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xs);
+    }
+
+    .formula-title {
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--on-surface);
+    }
+
+    .formula-math {
+      background-color: var(--background);
+      padding: var(--space-sm) var(--space-md);
+      border: var(--rule);
+      overflow-x: auto;
+      font-size: 1rem;
+      margin: var(--space-xs) 0;
+    }
+
+    .formula-note {
+      font-size: 0.8125rem;
+      color: var(--on-surface-variant);
+      line-height: 1.5;
+    }
+
+    /* Carbon Data Tables */
+    .table-wrap {
+      overflow-x: auto;
+      border-top: var(--rule);
+      border-bottom: var(--rule);
+    }
+
+    table.carbon-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+      text-align: left;
+    }
+
+    table.carbon-table thead th {
+      background-color: var(--surface-container-high);
+      color: var(--on-surface);
+      font-family: var(--font-label);
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: var(--space-sm) var(--space-md);
+      border-bottom: var(--rule);
+      white-space: nowrap;
+    }
+
+    table.carbon-table tbody td {
+      padding: var(--space-sm) var(--space-md);
+      border-bottom: var(--rule);
+      vertical-align: top;
+    }
+
+    table.carbon-table tbody tr:nth-child(even) {
+      background-color: var(--surface-container-low);
+    }
+
+    table.carbon-table tbody tr:hover {
+      background-color: var(--primary-container);
+    }
+
+    .num-cell {
+      font-family: var(--font-label);
+      font-variant-numeric: tabular-nums;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    /* Inputs & Controls */
+    .control-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(210px, 100%), 1fr));
+      gap: var(--space-md);
+      align-items: end;
+    }
+
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-xs);
+    }
+
+    .field-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--on-surface-variant);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .input-pair {
+      display: grid;
+      grid-template-columns: 1fr 84px;
+      gap: var(--space-sm);
+      align-items: center;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      accent-color: var(--primary);
+      cursor: pointer;
+      min-height: 44px;
+    }
+
+    input[type="number"], select.carbon-select {
+      height: 40px;
+      background-color: var(--background);
+      border: 0;
+      border-bottom: var(--field-rule);
+      padding: 0 var(--space-sm);
+      color: var(--on-surface);
+      font-family: var(--font-label);
+      font-size: 0.875rem;
+      border-radius: var(--rounded);
+      width: 100%;
+    }
+
+    select.carbon-select {
+      font-family: var(--font-body);
+      padding-right: var(--space-lg);
+      cursor: pointer;
+    }
+
+    /* Interactive SVG Diagrams */
+    .diagram-frame {
+      background-color: var(--background);
+      border: var(--rule);
+      padding: var(--space-md);
+    }
+
+    .svg-interactive-node {
+      cursor: pointer;
+      transition: opacity var(--dur-micro) var(--ease-out);
+    }
+
+    .svg-interactive-node:hover {
+      opacity: 0.82;
+    }
+
+    .hotspot-btn {
+      width: 100%;
+      text-align: left;
+      background-color: var(--background);
+      border: var(--rule);
+      border-left: 3px solid transparent;
+      padding: var(--space-sm) var(--space-md);
+      cursor: pointer;
+      min-height: 44px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.875rem;
+      color: var(--on-surface);
+    }
+
+    .hotspot-btn:hover {
+      background-color: var(--surface-container-high);
+    }
+
+    .hotspot-btn.is-active {
+      border-left: var(--indicator-left);
+      background-color: var(--primary-container);
+      font-weight: 600;
+    }
+
+    /* Flashcards */
+    .flashcard {
+      background-color: var(--surface-container);
+      padding: var(--space-md);
+      border-top: 2px solid var(--primary);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: var(--space-sm);
+    }
+
+    .flashcard-answer {
+      background-color: var(--background);
+      padding: var(--space-sm) var(--space-md);
+      border: var(--rule);
+      font-family: var(--font-label);
+      font-size: 0.9375rem;
+      color: var(--primary);
+      font-weight: 600;
+      transition: filter var(--dur-short) var(--ease-out);
+    }
+
+    .flashcard-answer.is-masked {
+      filter: blur(6px);
+      user-select: none;
+    }
+
+    /* Quiz Styling */
+    .quiz-option {
+      width: 100%;
+      text-align: left;
+      background-color: var(--background);
+      border: var(--rule);
+      padding: var(--space-sm) var(--space-md);
+      min-height: 44px;
+      cursor: pointer;
+      display: flex;
+      align-items: flex-start;
+      gap: var(--space-sm);
+      font-size: 0.9375rem;
+      color: var(--on-surface);
+      transition: background-color var(--dur-micro) var(--ease-out), border-color var(--dur-micro) var(--ease-out);
+    }
+
+    .quiz-option:hover:not(:disabled) {
+      background-color: var(--surface-container-high);
+    }
+
+    .quiz-option.is-selected {
+      border-color: var(--primary);
+      background-color: var(--primary-container);
+      font-weight: 500;
+    }
+
+    .quiz-option.is-correct {
+      border-color: var(--tertiary);
+      background-color: var(--tertiary-container);
+      color: var(--on-surface);
+    }
+
+    .quiz-option.is-wrong {
+      border-color: var(--error);
+      background-color: var(--error-container);
+      color: var(--on-surface);
+    }
+
+    .chart-box {
+      position: relative;
+      min-height: 260px;
+      width: 100%;
+      background-color: var(--background);
+      border: var(--rule);
+      padding: var(--space-md);
+    }
+
+    /* Footer */
+    .site-footer {
+      border-top: var(--rule);
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: var(--space-lg);
+      color: var(--on-surface-variant);
+      font-size: 0.8125rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: var(--space-md);
+    }
+
+    @media (max-width: 960px) {
+      .page-grid {
+        grid-template-columns: 1fr;
+        padding: var(--space-md);
+      }
+      aside.side-rail {
+        display: none;
+      }
+      .mobile-nav-strip {
+        display: flex;
+      }
+      .split-asymmetric {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .masthead {
+        padding: var(--space-lg) var(--space-md) var(--space-md);
+      }
+      .page-grid {
+        padding: var(--space-md);
+        gap: var(--space-lg);
+      }
+      .layer, .layer--white {
+        padding: var(--space-md);
+      }
+      .input-pair {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top System Masthead -->
+  <header class="masthead">
+    <div class="masthead-meta">
+      <span class="mono-code">PART 02 // ELEVATOR DESIGN ENGINEERING</span>
+      <span class="tag-pill">승강기기사 · 승강기산업기사 대비</span>
+      <span class="tag-pill tag-pill--neutral">비전공자 눈높이 완전정복</span>
+    </div>
+    <h1 class="display-title">승강기설계 전 단원 <strong>핵심 마스터 가이드</strong></h1>
+    <p class="masthead-lede">
+      교통량 계산부터 승강로 치수, 카·도어·안전장치, 기계실·권상기·와이어로프, 그리고 기계역학·제어·내진설비까지.
+      어려운 수식과 법규 수치를 비전공자의 언어로 풀어내고, 직접 수치를 조절하며 원리를 체득할 수 있도록 구성했습니다.
+    </p>
+
+    <div class="kpi-strip">
+      <div class="kpi-tile kpi-tile--primary">
+        <span class="kpi-label">STUDY PROGRESS // 학습 완료율</span>
+        <div class="kpi-value" id="top-progress-pct">0%</div>
+        <div class="kpi-hint" id="top-progress-count">0 / 6 단원 완료</div>
+      </div>
+      <div class="kpi-tile">
+        <span class="kpi-label">QUIZ ACCURACY // 자가진단 성취도</span>
+        <div class="kpi-value" id="top-quiz-score">미응시</div>
+        <div class="kpi-hint" id="top-quiz-hint">15문항 실전 모의 테스트</div>
+      </div>
+      <div class="kpi-tile">
+        <span class="kpi-label">KEY BOUNDARY // 필수 암기 경계 속도</span>
+        <div class="kpi-value">60 m/min</div>
+        <div class="kpi-hint">1.0 m/s — 완충기·비상정지장치 구분선</div>
+      </div>
+      <div class="kpi-tile">
+        <span class="kpi-label">TRACTION RATIO // 시브 최소 지름비</span>
+        <div class="kpi-value">D ≥ 40d</div>
+        <div class="kpi-hint">로프 직경(8mm 이상)의 40배 이상</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Quick Jump Strip -->
+  <nav class="mobile-nav-strip" aria-label="단원 빠른 이동">
+    <a class="mobile-jump-btn" href="#part1">제1편 설계 기본</a>
+    <a class="mobile-jump-btn" href="#part2">제2편 승강로·완충기</a>
+    <a class="mobile-jump-btn" href="#part3">제3편 카·도어·안전</a>
+    <a class="mobile-jump-btn" href="#part4">제4편 기계실·로프</a>
+    <a class="mobile-jump-btn" href="#part5">제5~7편 역학·제어·재해</a>
+    <a class="mobile-jump-btn" href="#part-quiz">공식카드 · 퀴즈</a>
+  </nav>
+
+  <div class="page-grid">
+    <!-- Left Rail Navigation -->
+    <aside class="side-rail" aria-label="단원 목차 및 학습 진도">
+      <nav class="side-nav">
+        <div class="side-nav-header">
+          <span>CURRICULUM INDEX</span>
+          <span class="mono-code">7 PARTS</span>
+        </div>
+        <ul class="side-nav-list">
+          <li>
+            <a href="#part1" class="side-nav-link is-active" data-nav="part1">
+              <span>1편. 승강기 설계의 기본</span>
+              <span class="nav-status-dot" id="dot-part1"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#part2" class="side-nav-link" data-nav="part2">
+              <span>2편. 승강로·레일·완충기</span>
+              <span class="nav-status-dot" id="dot-part2"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#part3" class="side-nav-link" data-nav="part3">
+              <span>3편. 카·도어·추락방지</span>
+              <span class="nav-status-dot" id="dot-part3"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#part4" class="side-nav-link" data-nav="part4">
+              <span>4편. 기계실·권상기·로프</span>
+              <span class="nav-status-dot" id="dot-part4"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#part5" class="side-nav-link" data-nav="part5">
+              <span>5~7편. 역학·제어·재해</span>
+              <span class="nav-status-dot" id="dot-part5"></span>
+            </a>
+          </li>
+          <li>
+            <a href="#part-quiz" class="side-nav-link" data-nav="part-quiz">
+              <span>핵심 암기카드 &amp; CBT 퀴즈</span>
+              <span class="nav-status-dot" id="dot-part-quiz"></span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="side-progress-box">
+        <div class="mono-code">STUDY TRACKER</div>
+        <div class="progress-bar-track">
+          <div class="progress-bar-fill" id="side-progress-fill"></div>
+        </div>
+        <div class="kpi-hint" id="side-progress-label">각 단원 학습 후 완료 버튼을 눌러 기록하세요.</div>
+        <div style="margin-top: var(--space-md); display: flex; flex-direction: column; gap: var(--space-xs);">
+          <button type="button" class="btn btn--secondary" onclick="exportStudyNotes()">학습 요약 파일 저장</button>
+          <button type="button" class="btn btn--ghost" id="btn-reset-all" onclick="handleResetAll(this)">진도·퀴즈 초기화</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content Column -->
+    <main class="main-flow">
+
+      <!-- =========================================================
+           제1편 승강기 설계의 기본
+           ========================================================= -->
+      <section id="part1" class="chapter-section">
+        <div class="section-header">
+          <div>
+            <span class="section-eyebrow">PART 01 // FUNDAMENTALS OF ELEVATOR DESIGN</span>
+            <h2 class="section-title">제1편 <strong>승강기 설계의 기본</strong></h2>
+            <p class="section-lede">건물의 규모와 용도에 맞춰 몇 대의 엘리베이터를, 어떤 속도와 배치로 설치해야 대기시간 없이 쾌적하게 수송할 수 있는지 결정하는 출발점입니다.</p>
+          </div>
+          <button type="button" class="btn btn--secondary" id="complete-part1" onclick="toggleUnitComplete('part1')">
+            <span>이 단원 학습 완료</span>
+          </button>
+        </div>
+
+        <div class="callout">
+          <div class="callout-title">비전공자를 위한 핵심 직관 — "출근 시간 5분 동안 몇 %를 실어 나를까?"</div>
+          <p>엘리베이터 대수는 하루 전체 인원이 아니라 <strong>가장 붐비는 5분(피크 타임)</strong>을 기준으로 정합니다. 한 바퀴 돌고 오는 시간(일주시간, RTT)이 짧을수록, 1회 탑승 인원이 많을수록 적은 대수로도 충분합니다.</p>
+        </div>
+
+        <!-- 1.1 교통량 계산 공식 카드 -->
+        <div>
+          <h3 class="sub-heading">1. 교통량 계산 4대 핵심 공식</h3>
+          <div class="card-grid-2">
+            <div class="formula-card">
+              <div class="formula-title">① 일주시간 (RTT: Round Trip Time)</div>
+              <div class="formula-math">$$RTT = \frac{2H_m}{v} + (S + 1) \cdot t_s + 2p \cdot t_p$$</div>
+              <div class="formula-note">
+                기준층에서 출발해 최고 정지층까지 올라갔다 돌아오는 총 시간(초).<br>
+                • $H_m$: 평균 최고 도달 높이(m), $v$: 정격속도(m/s)<br>
+                • $S$: 편도 평균 정지 횟수 (+1은 기준층 정지 포함), $t_s$: 1회 정지당 가감속·도어개폐 손실시간(초)<br>
+                • $p$: 1회 평균 승객수(보통 정원의 80%, $0.8C$), $t_p$: 1인당 승·하차 시간(약 1~1.5초)
+              </div>
+            </div>
+
+            <div class="formula-card">
+              <div class="formula-title">② 1대당 5분간 수송인원 ($P_5$) 및 수송능력 ($H$)</div>
+              <div class="formula-math">$$P_5 = \frac{300 \times p}{RTT} \qquad H(\%) = \frac{P_5 \times N}{B} \times 100$$</div>
+              <div class="formula-note">
+                • $300$: 5분 = $5 \times 60 = 300$초<br>
+                • $N$: 엘리베이터 대수, $B$: 건물 총 재실인구(명)<br>
+                • <strong>필요 대수 산정:</strong> $N = \frac{\text{요구 수송인원}}{P_5} = \frac{H(\%) \times B \times RTT}{30,000 \times p}$
+              </div>
+            </div>
+
+            <div class="formula-card">
+              <div class="formula-title">③ 평균 운전간격 ($I$) 및 평균 대기시간</div>
+              <div class="formula-math">$$I = \frac{RTT}{N} \text{ (초)} \qquad \text{평균 대기시간} \approx (0.5 \sim 0.75) \times I$$</div>
+              <div class="formula-note">
+                • 승강장에 서 있을 때 다음 엘리베이터가 도착할 때까지의 주기입니다.<br>
+                • 대수가 2배가 되면 운전간격은 절반으로 줄어 체감 서비스 품질이 급상승합니다.
+              </div>
+            </div>
+
+            <div class="formula-card">
+              <div class="formula-title">④ 정원 산정 기준 (단위 면적·체중)</div>
+              <div class="formula-math">$$\text{1인 표준체중} = 65\text{ kg (또는 } 75\text{ kg)}$$</div>
+              <div class="formula-note">
+                • 국내 승강기 안전기준 정원 산정: 정격하중 $\div 65\text{ kg}$ (초과 소수점 버림) 또는 EN 81-20 기준 75 kg 병행 출제.<br>
+                • 교통량 계산 시 만원 혼잡도를 피해 실제 탑승률은 정원의 <strong>80%($0.8C$)</strong>를 대입하는 것이 정석입니다.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Traffic Calculator -->
+        <div class="layer">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-sm); margin-bottom: var(--space-md);">
+            <div>
+              <span class="mono-code">INTERACTIVE LAB 01 // TRAFFIC &amp; FLEET SIZING</span>
+              <h3 class="sub-heading" style="margin: var(--space-xs) 0 0;">교통량 · 필요 대수 · 운전간격 실시간 시뮬레이터</h3>
+            </div>
+            <div style="display: flex; gap: var(--space-xs); flex-wrap: wrap;">
+              <button type="button" class="btn btn--ghost" onclick="applyTrafficPreset('office')">오피스 프리셋</button>
+              <button type="button" class="btn btn--ghost" onclick="applyTrafficPreset('hotel')">호텔 프리셋</button>
+              <button type="button" class="btn btn--ghost" onclick="applyTrafficPreset('apt')">아파트 프리셋</button>
+            </div>
+          </div>
+
+          <div class="control-grid">
+            <div class="field-group">
+              <label class="field-label" for="num-pop">건물 총 인구 B (명)</label>
+              <div class="input-pair">
+                <input type="range" id="range-pop" min="200" max="3000" step="50" value="1000" oninput="syncFromSliderPop(this.value)">
+                <input type="number" id="num-pop" min="200" max="3000" step="50" value="1000" oninput="syncFromNumberPop(this.value)">
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="num-hc">목표 5분 집중률 H (%)</label>
+              <div class="input-pair">
+                <input type="range" id="range-hc" min="4" max="20" step="0.5" value="12" oninput="syncFromSliderHc(this.value)">
+                <input type="number" id="num-hc" min="4" max="20" step="0.5" value="12" oninput="syncFromNumberHc(this.value)">
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="num-cap">카 정격정원 C (인승)</label>
+              <div class="input-pair">
+                <input type="range" id="range-cap" min="8" max="24" step="1" value="15" oninput="syncFromSliderCap(this.value)">
+                <input type="number" id="num-cap" min="8" max="24" step="1" value="15" oninput="syncFromNumberCap(this.value)">
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="num-rtt">일주시간 RTT (초)</label>
+              <div class="input-pair">
+                <input type="range" id="range-rtt" min="60" max="240" step="5" value="120" oninput="syncFromSliderRtt(this.value)">
+                <input type="number" id="num-rtt" min="60" max="240" step="5" value="120" oninput="syncFromNumberRtt(this.value)">
+              </div>
+            </div>
+          </div>
+
+          <div class="kpi-strip" style="margin-top: var(--space-lg);">
+            <div class="kpi-tile kpi-tile--primary" style="background-color: var(--background);">
+              <span class="kpi-label">1회 평균 탑승 (0.8C)</span>
+              <div class="kpi-value" id="out-p">12.0 명</div>
+            </div>
+            <div class="kpi-tile" style="background-color: var(--background);">
+              <span class="kpi-label">1대당 5분 수송인원 P5</span>
+              <div class="kpi-value" id="out-p5">30.0 명</div>
+            </div>
+            <div class="kpi-tile" style="background-color: var(--background);">
+              <span class="kpi-label">산정 필요 대수 N</span>
+              <div class="kpi-value" id="out-n">4 대</div>
+            </div>
+            <div class="kpi-tile" style="background-color: var(--background);">
+              <span class="kpi-label">평균 운전간격 I = RTT/N</span>
+              <div class="kpi-value" id="out-interval">30.0 초</div>
+              <div class="kpi-hint" id="out-interval-eval">오피스 권장(25~35초) 적합</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1.2 건물용도별 교통수요 테이블 -->
+        <div>
+          <h3 class="sub-heading">2. 건물 용도별 교통수요 및 배치 기준</h3>
+          <div class="table-wrap">
+            <table class="carbon-table">
+              <thead>
+                <tr>
+                  <th>건물 용도</th>
+                  <th class="num-cell">5분간 집중률 (%)</th>
+                  <th class="num-cell">목표 운전간격 (초)</th>
+                  <th>교통 패턴 및 설계 포인트</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>오피스 (사무소)</strong></td>
+                  <td class="num-cell">11 ~ 15%</td>
+                  <td class="num-cell">25 ~ 35초</td>
+                  <td>출근 시 상행 집중(Up-peak), 점심 양방향 혼잡. 단독사옥은 15~20%까지 상향.</td>
+                </tr>
+                <tr>
+                  <td><strong>호텔 (숙박)</strong></td>
+                  <td class="num-cell">10 ~ 12%</td>
+                  <td class="num-cell">30 ~ 50초</td>
+                  <td>체크아웃·식사 시간대 양방향 이동, 수하물 고려 카 깊이 확보 및 저진동 설계.</td>
+                </tr>
+                <tr>
+                  <td><strong>아파트 (공동주택)</strong></td>
+                  <td class="num-cell">5 ~ 8%</td>
+                  <td class="num-cell">40 ~ 60초</td>
+                  <td>교통수요가 가장 완만함. 이사·가구 운반 대비 승강장 및 도어 유효폭 확보.</td>
+                </tr>
+                <tr>
+                  <td><strong>백화점·상업시설</strong></td>
+                  <td class="num-cell">10 ~ 15%</td>
+                  <td class="num-cell">30 ~ 40초</td>
+                  <td>주 수송은 에스컬레이터(80~90%), 엘리베이터는 보조·고층부·유모차/장애인용 담당.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 1.3 엘리베이터 배치 & 에스컬레이터 배치/수송능력 -->
+        <div class="layer--white">
+          <div class="tab-bar" role="tablist" aria-label="배치 및 에스컬레이터 학습 탭">
+            <button type="button" class="tab-btn is-active" onclick="switchTab(this, 'p1-tab-group')">군관리 &amp; 엘리베이터 배치</button>
+            <button type="button" class="tab-btn" onclick="switchTab(this, 'p1-tab-esc-layout')">에스컬레이터 배치 방식</button>
+            <button type="button" class="tab-btn" onclick="switchTab(this, 'p1-tab-esc-calc')">에스컬레이터 수송능력·하중</button>
+            <button type="button" class="tab-btn" onclick="switchTab(this, 'p1-tab-special')">비상용·화물·장애인용 기준</button>
+          </div>
+
+          <div id="p1-tab-group" class="tab-panel is-active">
+            <div class="split-asymmetric">
+              <div>
+                <h4 class="sub-heading">군관리(Group Supervisory Control)와 배열 한계</h4>
+                <p class="prose-block">2대 이상의 엘리베이터를 하나의 제어시스템으로 통합 배차하여 호출 대기시간과 전력 소비를 최소화하는 방식입니다. 승객이 모든 문의 도착을 한눈에 보고 걸어갈 수 있어야 하므로 배치 대수에 제한이 있습니다.</p>
+                <ul>
+                  <li><strong>일렬(직선) 배치:</strong> 최대 <strong>3~4대</strong>까지 권장 (4대 초과 시 양 끝 보행거리 과다).</li>
+                  <li><strong>대면(마주보는) 배치:</strong> 복도 양쪽에 마주 보게 배치, 한 군(Bank)당 최대 <strong>8대(4대 + 4대)</strong>가 표준 한계입니다.</li>
+                  <li><strong>로비 폭 확보:</strong> 대면 배치 시 승강장 로비 폭은 최소 <strong>3.5~4.5m 이상</strong> 확보해야 대기 승객 간 동선이 엉키지 않습니다.</li>
+                </ul>
+              </div>
+              <div class="diagram-frame">
+                <div class="mono-code" style="margin-bottom: var(--space-sm);">BANK LAYOUT // 4+4 대면 배치 모식도</div>
+                <svg viewBox="0 0 320 180" width="100%" aria-label="엘리베이터 4대+4대 대면 배치 모식도">
+                  <rect x="20" y="15" width="60" height="36" fill="var(--surface-container-high)" stroke="var(--on-surface)" stroke-width="1.5"/>
+                  <rect x="90" y="15" width="60" height="36" fill="var(--surface-container-high)" stroke="var(--on-surface)" stroke-width="1.5"/>
+                  <rect x="160" y="15" width="60" height="36" fill="var(--surface-container-high)" stroke="var(--on-surface)" stroke-width="1.5"/>
+                  <rect x="230" y="15" width="60" height="36" fill="var(--surface-container-high)" stroke="var(--on-surface)" stroke-width="1.5"/>
+                  <text x="50" y="38" text-anchor="middle" font-size="11" fill="var(--on-surface)">EL #1</text>
+                  <text x="120" y="38" text-anchor="middle" font-size="11" fill="var(--on-surface)">EL #2</text>
+                  <text x="190" y="38" text-anchor="middle" font-size="11" fill="var(--on-surface)">EL #3</text>
+                  <text x="260" y="38" text-anchor="middle" font-size="11" fill="var(--on-surface)">EL #4</text>
+
+                  <rect x="20" y="60" width="270" height="60" fill="var(--primary-container)" stroke="var(--primary)" stroke-dasharray="4 3"/>
+                  <text x="155" y="88" text-anchor="middle" font-size="12" font-weight="600" fill="var(--on-primary-container)">승강장 홀 (폭 3.5~4.5m 이상)</text>
+                  <text x="155" y="106" text-anchor="middle" font-size="10" fill="var(--on-surface-variant)">1개 군(Bank) 최대 8대 표준</text>
+
+                  <rect x="20" y="130" width="60" height="36" fill="var(--surface-container-high)" stroke="var(--on-surface)" stroke-width="1.5"/>
+                  <rect x="90" y="130" width="60" height="36" fill="var(--surface-container-high)" stroke="var(--on-surface)" stroke-width="1.5"/>
+                  <rect x="160" y="130" width="60" height="36" fill="var(--surface-container-high)" stroke="var(--on-surface)" stroke-width="1.5"/>
+                  <rect x="230" y="130" width="60" height="36" fill="var(--surface-container-high)" stroke="var(--on-surface)" stroke-width="1.5"/>
+                  <text x="50" y="153" text-anchor="middle" font-size="11" fill="var(--on-surface)">EL #5</text>
+                  <text x="120" y="153" text-anchor="middle" font-size="11" fill="var(--on-surface)">EL #6</text>
+                  <text x="190" y="153" text-anchor="middle" font-size="11" fill="var(--on-surface)">EL #7</text>
+                  <text x="260" y="153" text-anchor="middle" font-size="11" fill="var(--on-surface)">EL #8</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div id="p1-tab-esc-layout" class="tab-panel">
+            <div class="card-grid">
+              <div class="layer">
+                <span class="tag-pill tag-pill--neutral">단열 승계형 (직렬 연속)</span>
+                <p style="margin-top: var(--space-sm); font-size: 0.9rem;">같은 방향으로 일렬로 이어 올라가는 배치입니다. 연속 탑승이 가능하지만 전체 길이가 길어지고 상·하행 중 한 방향만 설치 시 복귀 동선이 불편합니다.</p>
+                <svg viewBox="0 0 220 90" width="100%" aria-label="단열 승계형 배치">
+                  <line x1="20" y1="75" x2="100" y2="45" stroke="var(--data-1)" stroke-width="4"/>
+                  <line x1="120" y1="45" x2="200" y2="15" stroke="var(--data-1)" stroke-width="4"/>
+                  <line x1="10" y1="75" x2="210" y2="75" stroke="var(--outline)" stroke-width="1"/>
+                  <line x1="10" y1="45" x2="210" y2="45" stroke="var(--outline)" stroke-width="1"/>
+                  <line x1="10" y1="15" x2="210" y2="15" stroke="var(--outline)" stroke-width="1"/>
+                </svg>
+              </div>
+
+              <div class="layer">
+                <span class="tag-pill tag-pill--neutral">단열 겹침형 (병렬 연속)</span>
+                <p style="margin-top: var(--space-sm); font-size: 0.9rem;">상행·하행을 겹쳐 직선 구간을 줄였으나 매 층마다 180도 돌아서 타야 합니다. 백화점 매장을 강제로 둘러보게 하는 판매 유도형에 적합합니다.</p>
+                <svg viewBox="0 0 220 90" width="100%" aria-label="단열 겹침형 배치">
+                  <line x1="30" y1="75" x2="110" y2="45" stroke="var(--data-1)" stroke-width="4"/>
+                  <line x1="110" y1="45" x2="190" y2="15" stroke="var(--data-2)" stroke-width="4" transform="translate(0,0)"/>
+                  <line x1="190" y1="75" x2="110" y2="45" stroke="var(--data-3)" stroke-width="3" stroke-dasharray="4 2"/>
+                  <line x1="10" y1="75" x2="210" y2="75" stroke="var(--outline)" stroke-width="1"/>
+                  <line x1="10" y1="45" x2="210" y2="45" stroke="var(--outline)" stroke-width="1"/>
+                  <line x1="10" y1="15" x2="210" y2="15" stroke="var(--outline)" stroke-width="1"/>
+                </svg>
+              </div>
+
+              <div class="layer">
+                <span class="tag-pill">교차 승계형 (X자형 · 가장 보편적)</span>
+                <p style="margin-top: var(--space-sm); font-size: 0.9rem;">상행과 하행이 X자로 교차하며 연속 승계가 가능합니다. 바닥 점유면적이 가장 작고 이동 동선이 짧아 대형 빌딩·백화점 표준입니다.</p>
+                <svg viewBox="0 0 220 90" width="100%" aria-label="교차 승계형 배치">
+                  <line x1="40" y1="75" x2="180" y2="45" stroke="var(--data-1)" stroke-width="4"/>
+                  <line x1="180" y1="75" x2="40" y2="45" stroke="var(--data-2)" stroke-width="4"/>
+                  <line x1="40" y1="45" x2="180" y2="15" stroke="var(--data-1)" stroke-width="4"/>
+                  <line x1="180" y1="45" x2="40" y2="15" stroke="var(--data-2)" stroke-width="4"/>
+                  <line x1="10" y1="75" x2="210" y2="75" stroke="var(--outline)" stroke-width="1"/>
+                  <line x1="10" y1="45" x2="210" y2="45" stroke="var(--outline)" stroke-width="1"/>
+                  <line x1="10" y1="15" x2="210" y2="15" stroke="var(--outline)" stroke-width="1"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div id="p1-tab-esc-calc" class="tab-panel">
+            <div class="card-grid-2">
+              <div class="formula-card">
+                <div class="formula-title">에스컬레이터 이론 수송능력 ($C$)</div>
+                <div class="formula-math">$$C = \frac{3600 \times v \times k}{0.4} \text{ (명/h)}$$</div>
+                <div class="formula-note">
+                  • $v$: 주행속도(m/s, 표준 $30\text{ m/min} = 0.5\text{ m/s}$), $0.4$: 디딤판(스텝) 길이 0.4m<br>
+                  • $k$: 디딤판 1매당 탑승인원 — <strong>600형(1인용) $k=1 \rightarrow 4,500$명/h</strong>, <strong>1000·1200형(2인용) $k=2 \rightarrow 9,000$명/h</strong><br>
+                  • 경사각: 표준 <strong>30°</strong> (층고 6m 이하, 속도 30m/min 이하 시 35°까지 허용)
+                </div>
+              </div>
+
+              <div class="formula-card">
+                <div class="formula-title">에스컬레이터 적재하중(설계하중) 공식</div>
+                <div class="formula-math">$$W = 270 \times A = 270 \times B \times L \text{ (kgf)} \quad / \quad F = 5000 \times B \times L \text{ (N)}$$</div>
+                <div class="formula-note">
+                  • $B$: 디딤판 유효폭(m), $L$: 상·하부 승강장 간 수평투영거리(m)<br>
+                  • 구 국내 안전기준 계산 문제: $W = 270\text{ kg/m}^2 \times B \times L$ (또는 $260$ 출제 조건 확인)<br>
+                  • 현행 KC/EN 115 구조강도 기준: 단위면적당 하중 $5,000\text{ N/m}^2$ 적용
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="p1-tab-special" class="tab-panel">
+            <div class="table-wrap">
+              <table class="carbon-table">
+                <thead>
+                  <tr>
+                    <th>구분</th>
+                    <th>핵심 법적 수치 및 규격</th>
+                    <th>시험 빈출 포인트</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>비상용 승강기</strong></td>
+                    <td>
+                      • 설치 대상: 높이 <strong>31 m 초과</strong> 건축물<br>
+                      • 대수: 최대 바닥면적 <strong>1,500㎡ 이하 1대</strong>, 초과 시 <strong>3,000㎡마다 1대 가산</strong><br>
+                      • 승강장 바닥면적: <strong>6㎡ 이상</strong><br>
+                      • 속도: <strong>60 m/min 이상</strong> / 예비전원: <strong>2시간 이상</strong>
+                    </td>
+                    <td>예) 최대 바닥면적 5,000㎡이면?<br>$1 + \lceil (5000 - 1500)/3000 \rceil = 1 + 2 = 3$대!</td>
+                  </tr>
+                  <tr>
+                    <td><strong>장애인용 승강기</strong></td>
+                    <td>
+                      • 카 내부 치수: <strong>폭 1.6 m × 깊이 1.35 m 이상</strong> (출입구 유효폭 <strong>0.8 m 이상</strong>, 신축 권장 0.9 m)<br>
+                      • 승강장 전면 공간: <strong>1.4 m × 1.4 m 이상</strong><br>
+                      • 조작반 높이: <strong>0.8 ~ 1.2 m</strong> (횡형 설치)<br>
+                      • 손잡이(핸드레일): 높이 <strong>0.8 ~ 0.9 m</strong>, 후면 거울 설치
+                    </td>
+                    <td>휠체어가 탑승 후 회전하거나 승강장에서 대기할 수 있는 유효 치수(1.6×1.35m, 전면 1.4×1.4m) 암기 필수.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>화물용·자동차용</strong></td>
+                    <td>
+                      • 자동차용 적재하중 기준: <strong>200 kg/m² 이상</strong> (일반 승용보다 단위면적당 하중이 낮고 바닥면적이 넓음)<br>
+                      • 화물용 정격하중: 카 바닥면적에 비례한 최소 정격하중 이상 설계
+                    </td>
+                    <td>승용과 반대로 자동차용은 차체 면적이 넓어 $200\text{ kg/m}^2$ 이상 기준 적용.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           제2편 승강기 관련 기준 (승강로·균형추·레일·완충기·단말정차)
+           ========================================================= -->
+      <section id="part2" class="chapter-section">
+        <div class="section-header">
+          <div>
+            <span class="section-eyebrow">PART 02 // HOISTWAY, RAILS &amp; BUFFERS</span>
+            <h2 class="section-title">제2편 <strong>승강로 · 가이드레일 · 완충기 기준</strong></h2>
+            <p class="section-lede">카가 위아래로 달리는 통로(승강로)의 안전 여유 치수와, 무게 균형을 맞추는 균형추, 궤도를 잡는 가이드레일, 추락 충격을 흡수하는 완충기를 다룹니다.</p>
+          </div>
+          <button type="button" class="btn btn--secondary" id="complete-part2" onclick="toggleUnitComplete('part2')">
+            <span>이 단원 학습 완료</span>
+          </button>
+        </div>
+
+        <!-- Interactive Hoistway Cross Section -->
+        <div class="layer">
+          <span class="mono-code">INTERACTIVE SCHEMATIC // CLICK TO INSPECT HOISTWAY ZONES</span>
+          <h3 class="sub-heading" style="margin-top: var(--space-xs);">승강로 수직 단면도 — 부위별 클릭 탐색</h3>
+
+          <div class="split-asymmetric">
+            <div class="diagram-frame">
+              <svg viewBox="0 0 360 410" width="100%" aria-label="승강로 수직 단면 모식도">
+                <!-- Hoistway Outer Walls -->
+                <rect x="60" y="15" width="240" height="380" fill="var(--surface-container-low)" stroke="var(--on-surface)" stroke-width="2"/>
+                <!-- Overhead slab -->
+                <rect x="55" y="5" width="250" height="12" fill="var(--on-surface)"/>
+                <!-- Pit floor -->
+                <rect x="55" y="395" width="250" height="12" fill="var(--on-surface)"/>
+
+                <!-- Top Floor Line -->
+                <line x1="20" y1="110" x2="340" y2="110" stroke="var(--outline)" stroke-width="1.5" stroke-dasharray="5 3"/>
+                <text x="15" y="106" font-size="10" fill="var(--on-surface-variant)">최상층 바닥</text>
+
+                <!-- Bottom Floor Line -->
+                <line x1="20" y1="320" x2="340" y2="320" stroke="var(--outline)" stroke-width="1.5" stroke-dasharray="5 3"/>
+                <text x="15" y="316" font-size="10" fill="var(--on-surface-variant)">최하층 바닥</text>
+
+                <!-- Guide Rails -->
+                <line x1="100" y1="20" x2="100" y2="395" stroke="var(--data-3)" stroke-width="3"/>
+                <line x1="200" y1="20" x2="200" y2="395" stroke="var(--data-3)" stroke-width="3"/>
+
+                <!-- Overhead & Top Clearance Zone -->
+                <g class="svg-interactive-node" onclick="selectHoistwayZone('top')">
+                  <rect x="65" y="18" width="230" height="90" fill="var(--primary-container)" fill-opacity="0.55" stroke="var(--primary)" stroke-dasharray="3 3"/>
+                  <text x="180" y="42" text-anchor="middle" font-size="11" font-weight="600" fill="var(--on-primary-container)">오버헤드 (OH) / 꼭대기 틈새</text>
+                  <line x1="280" y1="18" x2="280" y2="110" stroke="var(--primary)" stroke-width="2"/>
+                </g>
+
+                <!-- Elevator Car -->
+                <g class="svg-interactive-node" onclick="selectHoistwayZone('car')">
+                  <rect x="105" y="115" width="90" height="80" fill="var(--background)" stroke="var(--on-surface)" stroke-width="2"/>
+                  <rect x="125" y="105" width="50" height="10" fill="var(--on-surface)"/>
+                  <text x="150" y="158" text-anchor="middle" font-size="12" font-weight="600" fill="var(--on-surface)">카 (Car)</text>
+                </g>
+
+                <!-- Counterweight -->
+                <g class="svg-interactive-node" onclick="selectHoistwayZone('cwt')">
+                  <rect x="225" y="210" width="45" height="75" fill="var(--surface-container-high)" stroke="var(--on-surface)" stroke-width="2"/>
+                  <text x="247" y="250" text-anchor="middle" font-size="11" font-weight="600" fill="var(--on-surface)">균형추</text>
+                  <text x="247" y="264" text-anchor="middle" font-size="9" fill="var(--on-surface-variant)">CWT</text>
+                </g>
+
+                <!-- Terminal Switches -->
+                <g class="svg-interactive-node" onclick="selectHoistwayZone('terminal')">
+                  <rect x="70" y="88" width="24" height="14" fill="var(--warning-container)" stroke="var(--warning)" stroke-width="1.5"/>
+                  <text x="82" y="99" text-anchor="middle" font-size="8" font-weight="700" fill="var(--on-surface)">FLS</text>
+                  <rect x="70" y="106" width="24" height="14" fill="var(--primary-container)" stroke="var(--primary)" stroke-width="1.5"/>
+                  <text x="82" y="117" text-anchor="middle" font-size="8" font-weight="700" fill="var(--on-surface)">LS</text>
+                  <rect x="70" y="305" width="24" height="14" fill="var(--primary-container)" stroke="var(--primary)" stroke-width="1.5"/>
+                  <text x="82" y="316" text-anchor="middle" font-size="8" font-weight="700" fill="var(--on-surface)">LS</text>
+                  <rect x="70" y="323" width="24" height="14" fill="var(--warning-container)" stroke="var(--warning)" stroke-width="1.5"/>
+                  <text x="82" y="334" text-anchor="middle" font-size="8" font-weight="700" fill="var(--on-surface)">FLS</text>
+                </g>
+
+                <!-- Pit & Buffers -->
+                <g class="svg-interactive-node" onclick="selectHoistwayZone('pit')">
+                  <rect x="65" y="322" width="230" height="71" fill="var(--tertiary-container)" fill-opacity="0.55" stroke="var(--tertiary)" stroke-dasharray="3 3"/>
+                  <rect x="135" y="355" width="30" height="38" fill="var(--data-2)"/>
+                  <rect x="235" y="355" width="25" height="38" fill="var(--data-2)"/>
+                  <text x="150" y="346" text-anchor="middle" font-size="10" font-weight="600" fill="var(--on-surface)">카 완충기</text>
+                  <text x="247" y="346" text-anchor="middle" font-size="10" font-weight="600" fill="var(--on-surface)">CWT 완충기</text>
+                  <text x="180" y="388" text-anchor="middle" font-size="10" fill="var(--on-surface)">피트 깊이 (Pit)</text>
+                </g>
+              </svg>
+            </div>
+
+            <div style="display: flex; flex-direction: column; gap: var(--space-sm);">
+              <button type="button" class="hotspot-btn is-active" id="hz-btn-top" onclick="selectHoistwayZone('top')">
+                <span>1. 꼭대기 틈새 &amp; 오버헤드 (OH)</span>
+                <span class="mono-code">TOP</span>
+              </button>
+              <button type="button" class="hotspot-btn" id="hz-btn-pit" onclick="selectHoistwayZone('pit')">
+                <span>2. 피트(Pit) 깊이 &amp; 주행여유</span>
+                <span class="mono-code">PIT</span>
+              </button>
+              <button type="button" class="hotspot-btn" id="hz-btn-cwt" onclick="selectHoistwayZone('cwt')">
+                <span>3. 균형추 &amp; 오버밸런스율</span>
+                <span class="mono-code">CWT</span>
+              </button>
+              <button type="button" class="hotspot-btn" id="hz-btn-terminal" onclick="selectHoistwayZone('terminal')">
+                <span>4. 단말 정차 장치 (LS / FLS)</span>
+                <span class="mono-code">LIMIT</span>
+              </button>
+              <button type="button" class="hotspot-btn" id="hz-btn-car" onclick="selectHoistwayZone('car')">
+                <span>5. 가이드레일 규격 &amp; 허용응력</span>
+                <span class="mono-code">RAIL</span>
+              </button>
+
+              <div class="layer--white" id="hoistway-detail-panel" style="margin-top: var(--space-xs);">
+                <div class="mono-code" id="hz-detail-code">ZONE // TOP CLEARANCE &amp; OVERHEAD</div>
+                <h4 class="sub-heading" id="hz-detail-title" style="margin-top: var(--space-xs);">꼭대기 틈새 및 오버헤드 (Overhead)</h4>
+                <p id="hz-detail-desc" style="margin: 0; font-size: 0.9375rem; color: var(--on-surface-variant);">
+                  <strong>오버헤드(OH)</strong>는 최상층 승강장 바닥에서 승강로 천장 슬래브 하단까지의 전체 높이입니다. <strong>꼭대기 틈새</strong>는 카가 최상층에 정지했을 때 카 지붕과 승강로 천장 사이의 수직 거리로, 균형추가 완충기를 완전히 압축한 상태에서도 카 지붕 위 점검자의 안전 공간(최소 $1.0 + 0.035 v^2$ m 등)이 확보되어야 합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Balance & Buffer Calculator + Guide Rail Table -->
+        <div class="card-grid-2">
+          <div class="formula-card">
+            <div class="formula-title">균형추(Counterweight) 무게 공식</div>
+            <div class="formula-math">$$W_{cwt} = W_{car} + (\text{오버밸런스율 } \alpha \times W_{rated})$$</div>
+            <div class="formula-note">
+              • 오버밸런스율 $\alpha$: 통상 <strong>40~50% (표준 45% 또는 50%)</strong>.<br>
+              • 이유: 엘리베이터는 평균적으로 정원의 절반 정도만 타고 다니므로, 카 무게 + 정격하중의 절반을 균형추로 맞추면 전동기 부하가 가장 적어집니다.
+            </div>
+          </div>
+
+          <div class="formula-card">
+            <div class="formula-title">완충기 최소 행정 계산식 ($v$: 정격속도 m/s)</div>
+            <div class="formula-math">$$\text{스프링형: } S \ge 0.135 v^2 \text{ (최소 65mm)} \qquad \text{유압식: } S \ge \frac{(1.15v)^2}{2g} \approx 0.0674 v^2$$</div>
+            <div class="formula-note">
+              • <strong>스프링 완충기(에너지 축적형):</strong> 정격속도 <strong>60 m/min (1.0 m/s) 이하</strong>에만 사용.<br>
+              • <strong>유압식 완충기(에너지 소모형):</strong> <strong>60 m/min 초과</strong> 고속기 필수, 압축 후 정상 복귀 시간 <strong>90초 이하</strong>, $2.5g$ 초과 감속 지속시간 0.04초 이하.
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Buffer & Counterweight Calculator -->
+        <div class="layer">
+          <span class="mono-code">INTERACTIVE LAB 02 // BUFFER STROKE &amp; COUNTERWEIGHT</span>
+          <h3 class="sub-heading" style="margin-top: var(--space-xs);">완충기 행정 · 균형추 무게 계산기</h3>
+
+          <div class="control-grid">
+            <div class="field-group">
+              <label class="field-label" for="num-speed">정격속도 V (m/min)</label>
+              <div class="input-pair">
+                <input type="range" id="range-speed" min="30" max="240" step="15" value="90" oninput="syncFromSliderSpeed(this.value)">
+                <input type="number" id="num-speed" min="30" max="360" step="5" value="90" oninput="syncFromNumberSpeed(this.value)">
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="num-wcar">카 자중 W_car (kg)</label>
+              <div class="input-pair">
+                <input type="range" id="range-wcar" min="600" max="2500" step="50" value="1200" oninput="syncFromSliderWcar(this.value)">
+                <input type="number" id="num-wcar" min="400" max="4000" step="50" value="1200" oninput="syncFromNumberWcar(this.value)">
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="num-wrated">정격하중 W_rated (kg)</label>
+              <div class="input-pair">
+                <input type="range" id="range-wrated" min="450" max="2000" step="50" value="1000" oninput="syncFromSliderWrated(this.value)">
+                <input type="number" id="num-wrated" min="300" max="3000" step="50" value="1000" oninput="syncFromNumberWrated(this.value)">
+              </div>
+            </div>
+
+            <div class="field-group">
+              <label class="field-label" for="sel-ob">오버밸런스율 (%)</label>
+              <select class="carbon-select" id="sel-ob" onchange="updatePart2Calc()">
+                <option value="0.40">40% (0.40)</option>
+                <option value="0.45">45% (0.45)</option>
+                <option value="0.50" selected>50% (0.50 - 표준)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="kpi-strip" style="margin-top: var(--space-md);">
+            <div class="kpi-tile kpi-tile--primary" style="background-color: var(--background);">
+              <span class="kpi-label">정격속도 (m/s)</span>
+              <div class="kpi-value" id="out-vms">1.50 m/s</div>
+              <div class="kpi-hint" id="out-buf-type">유압식 완충기 필수 (&gt; 1.0 m/s)</div>
+            </div>
+            <div class="kpi-tile" style="background-color: var(--background);">
+              <span class="kpi-label">유압식 완충기 최소행정</span>
+              <div class="kpi-value" id="out-oil-stroke">151.7 mm</div>
+              <div class="kpi-hint">0.0674 × v² (m)</div>
+            </div>
+            <div class="kpi-tile" style="background-color: var(--background);">
+              <span class="kpi-label">스프링 완충기 행정 (적용시)</span>
+              <div class="kpi-value" id="out-spr-stroke">적용 불가</div>
+              <div class="kpi-hint">1.0 m/s(60 m/min) 이하만 허용</div>
+            </div>
+            <div class="kpi-tile" style="background-color: var(--background);">
+              <span class="kpi-label">균형추 무게 W_cwt</span>
+              <div class="kpi-value" id="out-cwt">1,700 kg</div>
+              <div class="kpi-hint">W_car + α × W_rated</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Guide Rail Specs -->
+        <div>
+          <h3 class="sub-heading">가이드레일(Guide Rail) 규격 및 강도 기준</h3>
+          <div class="split-asymmetric">
+            <div class="table-wrap">
+              <table class="carbon-table">
+                <thead>
+                  <tr>
+                    <th>항목</th>
+                    <th>표준 규격 및 수치</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>T형 레일 호칭</strong></td>
+                    <td><strong>8K, 13K, 18K, 24K, 30K, 37K, 50K</strong> (1m당 질량 kg 기준, 주로 카측 13K/18K/24K, CWT측 8K/13K)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>표준 길이</strong></td>
+                    <td><strong>5 m</strong> (5,000 mm) — 레일 이음매는 피시플레이트(이음판)로 볼트 체결</td>
+                  </tr>
+                  <tr>
+                    <td><strong>재질 허용응력</strong></td>
+                    <td>일반 압연강재(SS400) 인장강도 4,000 kg/cm², <strong>허용응력 2,400 kg/cm² (240 MPa)</strong></td>
+                  </tr>
+                  <tr>
+                    <td><strong>굽힘응력 계산</strong></td>
+                    <td>$\sigma_b = \frac{M}{Z} \le \sigma_{\text{허용}}$ (여기서 $M = \frac{F \cdot l}{8}$ 또는 $\frac{F \cdot l}{4}$, $l$: 브래킷 간격)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="callout callout--warn">
+              <div class="callout-title">단말 정차 장치 3단계 구분</div>
+              <p>
+                <strong>1. 감속 스위치:</strong> 최상·최하층 접근 시 정상 감속 지시.<br>
+                <strong>2. 리미트 스위치 (LS):</strong> 정상 정지층을 약간 지나치면 작동하여 제어회로(방향별) 차단.<br>
+                <strong>3. 파이널 리미트 스위치 (FLS):</strong> 완충기 충돌 직전 작동하여 주전원(전동기+브레이크) 직접 차단. 반드시 <strong>수동 복귀</strong> 방식이어야 합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           제3편 카 및 승강관련 기준
+           ========================================================= -->
+      <section id="part3" class="chapter-section">
+        <div class="section-header">
+          <div>
+            <span class="section-eyebrow">PART 03 // CAR FRAME, DOORS &amp; SAFETY GEAR</span>
+            <h2 class="section-title">제3편 <strong>카 · 도어 시스템 · 추락방지안전장치</strong></h2>
+            <p class="section-lede">승객이 직접 마주하는 도어 시스템의 개폐 방식과 끼임 방지 기준, 카를 지탱하는 카틀의 처짐 기준, 그리고 로프 파단 시 카를 멈추는 비상정지장치 원리를 정리합니다.</p>
+          </div>
+          <button type="button" class="btn btn--secondary" id="complete-part3" onclick="toggleUnitComplete('part3')">
+            <span>이 단원 학습 완료</span>
+          </button>
+        </div>
+
+        <!-- Door System Comparison -->
+        <div class="layer--white">
+          <div class="tab-bar" role="tablist" aria-label="도어 및 안전장치 탭">
+            <button type="button" class="tab-btn is-active" onclick="switchTab(this, 'p3-tab-doors')">도어 개폐방식 (2CO vs 2S)</button>
+            <button type="button" class="tab-btn" onclick="switchTab(this, 'p3-tab-door-safety')">도어 힘 기준 &amp; 인터록·안전장치</button>
+            <button type="button" class="tab-btn" onclick="switchTab(this, 'p3-tab-frame')">카틀·카체대 &amp; 처짐량 (1/960)</button>
+          </div>
+
+          <div id="p3-tab-doors" class="tab-panel is-active">
+            <div class="card-grid-2">
+              <div class="layer">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <strong style="font-size: 1rem;">2CO (2-Panel Center Opening)</strong>
+                  <span class="tag-pill">중앙개폐식</span>
+                </div>
+                <svg viewBox="0 0 260 110" width="100%" style="margin: var(--space-sm) 0;" aria-label="중앙개폐식 2CO 도어 모식도">
+                  <rect x="20" y="15" width="220" height="80" fill="var(--background)" stroke="var(--on-surface)" stroke-width="1.5"/>
+                  <rect x="55" y="20" width="75" height="70" fill="var(--primary-container)" stroke="var(--primary)" stroke-width="1.5"/>
+                  <rect x="130" y="20" width="75" height="70" fill="var(--primary-container)" stroke="var(--primary)" stroke-width="1.5"/>
+                  <line x1="130" y1="20" x2="130" y2="90" stroke="var(--on-surface)" stroke-width="2"/>
+                  <path d="M 110 55 L 70 55 M 78 49 L 70 55 L 78 61" stroke="var(--primary)" stroke-width="2" fill="none"/>
+                  <path d="M 150 55 L 190 55 M 182 49 L 190 55 L 182 61" stroke="var(--primary)" stroke-width="2" fill="none"/>
+                </svg>
+                <p style="margin: 0; font-size: 0.9rem; color: var(--on-surface-variant);">문짝 2매가 중앙에서 양쪽으로 동시에 열립니다. 개폐 시간이 가장 짧아 <strong>승용 엘리베이터의 표준</strong>이지만 좌우 문집(Door Pocket) 폭이 필요합니다.</p>
+              </div>
+
+              <div class="layer">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <strong style="font-size: 1rem;">2S (2-Panel Side Opening)</strong>
+                  <span class="tag-pill tag-pill--neutral">측면(편)개폐식</span>
+                </div>
+                <svg viewBox="0 0 260 110" width="100%" style="margin: var(--space-sm) 0;" aria-label="측면개폐식 2S 도어 모식도">
+                  <rect x="20" y="15" width="220" height="80" fill="var(--background)" stroke="var(--on-surface)" stroke-width="1.5"/>
+                  <rect x="55" y="20" width="75" height="70" fill="var(--surface-container-high)" stroke="var(--on-surface)" stroke-width="1.5"/>
+                  <rect x="125" y="24" width="75" height="66" fill="var(--primary-container)" stroke="var(--primary)" stroke-width="1.5"/>
+                  <path d="M 185 55 L 80 55 M 90 48 L 80 55 L 90 62" stroke="var(--primary)" stroke-width="2" fill="none"/>
+                </svg>
+                <p style="margin: 0; font-size: 0.9rem; color: var(--on-surface-variant);">문짝 2매가 2:1 속도비로 겹치며 한쪽으로 열립니다. 좁은 승강로에서 출입구 유효폭을 최대한 넓힐 수 있어 <strong>소형·병원용·화물용</strong>에 유리합니다.</p>
+              </div>
+            </div>
+          </div>
+
+          <div id="p3-tab-door-safety" class="tab-panel">
+            <div class="table-wrap">
+              <table class="carbon-table">
+                <thead>
+                  <tr>
+                    <th>장치 및 기준</th>
+                    <th>핵심 내용 및 수치 기준</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>도어 개폐력 / 강도 기준</strong></td>
+                    <td>
+                      • <strong>문 닫힘 저지력:</strong> 사람이 문을 막았을 때 문이 가하는 힘은 <strong>150 N 이하</strong> (초기 접촉 감압/수동개방력 참고 <strong>50 N</strong> 수준 설계).<br>
+                      • <strong>도어 강도시험:</strong> 승강장 문·카 문 직각 방향으로 <strong>300 N</strong>의 힘을 가해도 영구 변형이나 이탈이 없어야 함 (1000 N 시 탄성 변형 내 안전).
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><strong>도어 인터록 (Interlock)</strong></td>
+                    <td>승강장 문이 완전히 닫히고 잠김(걸쇠 걸림 깊이 최소 <strong>7 mm 이상</strong>)이 전기 접점으로 확인되지 않으면 카가 출발하지 못하게 하는 2중 안전장치입니다.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>도어 클로저 (Door Closer)</strong></td>
+                    <td>카가 다른 층에 있을 때 승강장 문이 열려 있지 않도록 추(Weight) 또는 스프링의 힘으로 문을 자동으로 닫아주는 장치입니다.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>문닫힘 안전장치</strong></td>
+                    <td><strong>세이프티 슈</strong>(접촉식), <strong>광전장치</strong>(포토센서), <strong>멀티빔(라이트 커튼)</strong> — 문이 닫힐 때 승객이나 물체를 감지하면 즉시 반전 개방합니다.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div id="p3-tab-frame" class="tab-panel">
+            <div class="split-asymmetric">
+              <div>
+                <h4 class="sub-heading">카틀(Car Frame)의 3대 구조 부재</h4>
+                <ul>
+                  <li><strong>상부 체대 (Crosshead):</strong> 카 최상단 가로보. 권상 로프 히치(Hitch) 또는 2:1 풀리가 연결되어 하중을 매답니다.</li>
+                  <li><strong>카주 (Stile / Upright):</strong> 상부 체대와 하부 체대를 양옆에서 수직으로 연결하는 기둥.</li>
+                  <li><strong>하부 체대 (Safety Plank):</strong> 카 바닥틀(Platform)을 받치며 하단에 <strong>추락방지안전장치(세이프티)</strong>가 장착됩니다.</li>
+                </ul>
+                <div class="formula-card" style="margin-top: var(--space-md);">
+                  <div class="formula-title">카틀 및 바닥틀 허용 처짐량 기준</div>
+                  <div class="formula-math">$$\delta_{\max} \le \frac{L}{960}$$</div>
+                  <div class="formula-note">정격하중을 균등 분포시켰을 때 상부체대·하부체대·바닥 보의 최대 처짐량은 스팬($L$)의 <strong>1/960 이하</strong>여야 합니다.</div>
+                </div>
+              </div>
+              <div class="diagram-frame">
+                <div class="mono-code" style="margin-bottom: var(--space-xs);">CAR FRAME // 상부체대·카주·하부체대</div>
+                <svg viewBox="0 0 260 220" width="100%" aria-label="카틀 구조 모식도">
+                  <!-- Crosshead -->
+                  <rect x="45" y="25" width="170" height="18" fill="var(--primary)" stroke="var(--on-surface)" stroke-width="1.5"/>
+                  <text x="130" y="38" text-anchor="middle" font-size="11" font-weight="600" fill="var(--on-primary)">상부 체대 (Crosshead)</text>
+                  <!-- Ropes -->
+                  <line x1="120" y1="0" x2="120" y2="25" stroke="var(--on-surface)" stroke-width="2"/>
+                  <line x1="130" y1="0" x2="130" y2="25" stroke="var(--on-surface)" stroke-width="2"/>
+                  <line x1="140" y1="0" x2="140" y2="25" stroke="var(--on-surface)" stroke-width="2"/>
+                  <!-- Stiles -->
+                  <rect x="50" y="43" width="14" height="132" fill="var(--surface-container-high)" stroke="var(--on-surface)" stroke-width="1.5"/>
+                  <rect x="196" y="43" width="14" height="132" fill="var(--surface-container-high)" stroke="var(--on-surface)" stroke-width="1.5"/>
+                  <text x="28" y="110" text-anchor="middle" font-size="10" fill="var(--on-surface)">카주</text>
+                  <text x="232" y="110" text-anchor="middle" font-size="10" fill="var(--on-surface)">카주</text>
+                  <!-- Car Enclosure -->
+                  <rect x="68" y="50" width="124" height="120" fill="var(--surface-container-low)" stroke="var(--outline)" stroke-dasharray="4 2"/>
+                  <text x="130" y="112" text-anchor="middle" font-size="12" fill="var(--on-surface-variant)">카 실 (Car Body)</text>
+                  <!-- Safety Plank -->
+                  <rect x="45" y="175" width="170" height="18" fill="var(--primary)" stroke="var(--on-surface)" stroke-width="1.5"/>
+                  <text x="130" y="188" text-anchor="middle" font-size="11" font-weight="600" fill="var(--on-primary)">하부 체대 (Safety Plank)</text>
+                  <!-- Safety Gear blocks -->
+                  <rect x="35" y="172" width="16" height="24" fill="var(--error)"/>
+                  <rect x="209" y="172" width="16" height="24" fill="var(--error)"/>
+                  <text x="130" y="212" text-anchor="middle" font-size="10" fill="var(--error)" font-weight="600">비상정지장치 장착 (처짐 ≤ L/960)</text>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Safety Gear Deep Dive -->
+        <div class="layer">
+          <span class="mono-code">SAFETY GEAR // OVERSPEED PROTECTION</span>
+          <h3 class="sub-heading" style="margin-top: var(--space-xs);">추락방지안전장치 (비상정지장치) 작동 원리 비교</h3>
+          <p class="prose-block" style="margin-bottom: var(--space-md);">하강 중 로프가 끊어지거나 속도가 비정상적으로 빨라지면 <strong>조속기(Governor)</strong>가 조속기 로프를 꽉 잡아당기고, 그 장력으로 카 하부 체대의 쐐기(Safety Block)를 끌어올려 가이드레일을 물어 정지시킵니다.</p>
+
+          <div class="card-grid">
+            <div class="layer--white" style="border-top: 3px solid var(--data-1);">
+              <span class="tag-pill">≤ 60 m/min (1.0 m/s 이하)</span>
+              <h4 class="sub-heading" style="margin-top: var(--space-sm);">즉시작동형 (Instantaneous)</h4>
+              <p style="font-size: 0.9rem; color: var(--on-surface-variant);">원통형 롤러나 쐐기가 가이드레일과 카 블록 사이에 <strong>즉시 끼어들어 순간 정지</strong>합니다. 제동 충격이 매우 크므로 저속 엘리베이터에만 허용됩니다.</p>
+            </div>
+
+            <div class="layer--white" style="border-top: 3px solid var(--data-2);">
+              <span class="tag-pill tag-pill--neutral">&gt; 60 m/min (1.0 m/s 초과)</span>
+              <h4 class="sub-heading" style="margin-top: var(--space-sm);">점진작동형 — F.G.C형</h4>
+              <p style="font-size: 0.9rem; color: var(--on-surface-variant);"><strong>Flexible Guide Clamp:</strong> 쐐기가 레일을 물 때 <strong>U자형 판스프링</strong>이 벌어지며 일정한 탄성 압력을 가해 카가 미끄러지면서(0.2g~1.0g) 부드럽게 정지합니다.</p>
+            </div>
+
+            <div class="layer--white" style="border-top: 3px solid var(--data-3);">
+              <span class="tag-pill tag-pill--neutral">&gt; 60 m/min (1.0 m/s 초과)</span>
+              <h4 class="sub-heading" style="margin-top: var(--space-sm);">점진작동형 — F.W.C형 &amp; 슬랙로프</h4>
+              <p style="font-size: 0.9rem; color: var(--on-surface-variant);"><strong>Flexible Wedge Clamp:</strong> 쐐기와 압축 코일스프링 조합으로 점진 제동. <strong>슬랙 로프 세이프티</strong>는 로프가 느슨해지거나 끊어지는 순간 조속기 작동 전에도 즉시 작동합니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           제4편 기계실 관련 기준
+           ========================================================= -->
+      <section id="part4" class="chapter-section">
+        <div class="section-header">
+          <div>
+            <span class="section-eyebrow">PART 04 // MACHINE ROOM, TRACTION &amp; WIRE ROPE</span>
+            <h2 class="section-title">제4편 <strong>기계실 · 권상기 · 조속기 · 와이어로프</strong></h2>
+            <p class="section-lede">엘리베이터의 심장부인 기계실의 환경 기준, 동력을 전달하는 권상기와 도르래 홈의 비밀, 과속을 감시하는 조속기 및 와이어로프 안전율을 정리합니다.</p>
+          </div>
+          <button type="button" class="btn btn--secondary" id="complete-part4" onclick="toggleUnitComplete('part4')">
+            <span>이 단원 학습 완료</span>
+          </button>
+        </div>
+
+        <!-- Machine Room 4 Essential Figures -->
+        <div>
+          <h3 class="sub-heading">1. 기계실 환경 및 건축 4대 필수 수치</h3>
+          <div class="kpi-strip">
+            <div class="kpi-tile kpi-tile--primary">
+              <span class="kpi-label">실내 온도 유지</span>
+              <div class="kpi-value">5 ~ 40 ℃</div>
+              <div class="kpi-hint">제어반 전자부품 오작동 방지</div>
+            </div>
+            <div class="kpi-tile">
+              <span class="kpi-label">바닥면 조도</span>
+              <div class="kpi-value">200 lx 이상</div>
+              <div class="kpi-hint">승강로·피트는 50 lx 이상</div>
+            </div>
+            <div class="kpi-tile">
+              <span class="kpi-label">천장 유효높이</span>
+              <div class="kpi-value">2.1 m 이상</div>
+              <div class="kpi-hint">기기 상부 여유 0.5m 이상</div>
+            </div>
+            <div class="kpi-tile">
+              <span class="kpi-label">기계실 출입문</span>
+              <div class="kpi-value">0.7 × 1.8 m</div>
+              <div class="kpi-hint">불연재료 · 바깥열림 · 잠금장치</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Traction Machine & Sheave Grooves -->
+        <div class="card-grid-2">
+          <div class="layer--white">
+            <h3 class="sub-heading">2. 권상기: 기어식 vs 무기어식</h3>
+            <div class="table-wrap">
+              <table class="carbon-table">
+                <thead>
+                  <tr>
+                    <th>구분</th>
+                    <th>기어식 (Geared)</th>
+                    <th>무기어식 (Gearless)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>구조</strong></td>
+                    <td>고속 전동기 + 감속기(기어)</td>
+                    <td>저속 고토크 전동기(PMSM) 직결</td>
+                  </tr>
+                  <tr>
+                    <td><strong>적용 속도</strong></td>
+                    <td>저·중속 (보통 105~120 m/min 이하)</td>
+                    <td>중·고속·초고속 (120 m/min 이상~)</td>
+                  </tr>
+                  <tr>
+                    <td><strong>특징</strong></td>
+                    <td>토크 증대 용이, 저렴, 기어 마찰음·백래시</td>
+                    <td>소음·진동 극소, 효율 최고, MRL(기계실없는) 표준</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="accordion" style="margin-top: var(--space-md);">
+              <div class="accordion-item">
+                <button type="button" class="accordion-trigger" onclick="toggleAccordion(this)">
+                  <span>웜기어(Worm) vs 헬리컬기어(Helical) 상세 비교</span>
+                  <i data-lucide="chevron-down" class="accordion-chevron" width="18" height="18"></i>
+                </button>
+                <div class="accordion-body">
+                  • <strong>웜기어:</strong> 1단으로 큰 감속비(1/20~1/60) 가능, 정숙하고 역전방지(자립성)가 있으나 미끄럼 마찰로 효율이 낮고(60~80%) 발열이 큼.<br>
+                  • <strong>헬리컬기어:</strong> 치합 효율이 매우 높아(95% 이상) 에너지 절감·내구성이 우수하지만, 2~3단 감속이 필요하며 자립성이 없어 브레이크 신뢰성이 중요함.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="layer--white">
+            <h3 class="sub-heading">3. 시브 지름비 &amp; 홈(Groove) 형상</h3>
+            <div class="callout" style="margin-bottom: var(--space-md);">
+              <div class="callout-title">구동 시브 및 꺾임 도르래 피치원 지름 (D)</div>
+              <p>로프 굽힘 피로 파괴를 막기 위해 시브 지름($D$)은 와이어로프 지름($d$)의 <strong>40배 이상 ($D \ge 40d$)</strong>이어야 합니다.</p>
+            </div>
+            <svg viewBox="0 0 330 115" width="100%" aria-label="시브 홈 형상 U홈 V홈 언더컷 U홈 비교">
+              <!-- U groove -->
+              <rect x="10" y="10" width="95" height="95" fill="var(--surface-container)" stroke="var(--outline-variant)"/>
+              <path d="M 30 25 L 43 25 L 43 50 A 14 14 0 0 0 71 50 L 71 25 L 84 25 L 84 80 L 30 80 Z" fill="var(--surface-container-high)" stroke="var(--on-surface)" stroke-width="1.5"/>
+              <circle cx="57" cy="48" r="13" fill="var(--data-1)"/>
+              <text x="57" y="96" text-anchor="middle" font-size="11" font-weight="600" fill="var(--on-surface)">U형 (반원홈)</text>
+
+              <!-- V groove -->
+              <rect x="117" y="10" width="95" height="95" fill="var(--surface-container)" stroke="var(--outline-variant)"/>
+              <path d="M 137 25 L 146 25 L 164 68 L 182 25 L 191 25 L 191 80 L 137 80 Z" fill="var(--surface-container-high)" stroke="var(--on-surface)" stroke-width="1.5"/>
+              <circle cx="164" cy="45" r="12" fill="var(--data-2)"/>
+              <text x="164" y="96" text-anchor="middle" font-size="11" font-weight="600" fill="var(--on-surface)">V형 (쐐기홈)</text>
+
+              <!-- Undercut U groove -->
+              <rect x="224" y="10" width="95" height="95" fill="var(--surface-container)" stroke="var(--outline-variant)"/>
+              <path d="M 244 25 L 256 25 L 256 48 L 265 65 L 278 65 L 287 48 L 287 25 L 299 25 L 299 80 L 244 80 Z" fill="var(--surface-container-high)" stroke="var(--on-surface)" stroke-width="1.5"/>
+              <circle cx="271.5" cy="46" r="13" fill="var(--data-3)"/>
+              <text x="271.5" y="96" text-anchor="middle" font-size="11" font-weight="600" fill="var(--on-surface)">언더컷 U홈 (표준)</text>
+            </svg>
+            <p style="margin: var(--space-xs) 0 0; font-size: 0.875rem; color: var(--on-surface-variant);">
+              • <strong>U홈:</strong> 마모 적고 수명 김(트랙션 작음) / <strong>V홈:</strong> 트랙션 크나 마모 심함 / <strong>언더컷 U홈:</strong> 바닥을 파내 마모돼도 쐐기 마찰력 일정 유지(승용 표준).
+            </p>
+          </div>
+        </div>
+
+        <!-- Governor Calculator & Wire Rope Specs -->
+        <div class="layer">
+          <div class="split-asymmetric">
+            <div>
+              <span class="mono-code">INTERACTIVE LAB 03 // GOVERNOR &amp; SHEAVE CHECKER</span>
+              <h3 class="sub-heading" style="margin-top: var(--space-xs);">4. 조속기(Governor) 작동 속도 · 시브 지름 계산기</h3>
+              <p style="font-size: 0.9rem; color: var(--on-surface-variant);">조속기(디스크형 · 플라이볼형)는 과속 시 <strong>1단계 전기적 차단(1.15~1.3배)</strong> 후, 계속 가속되면 <strong>2단계 기계적 로프 파지(1.4배 이하)</strong>로 비상정지장치를 작동시킵니다.</p>
+
+              <div class="control-grid" style="margin-top: var(--space-md);">
+                <div class="field-group">
+                  <label class="field-label" for="num-gov-v">정격속도 V (m/min)</label>
+                  <div class="input-pair">
+                    <input type="range" id="range-gov-v" min="45" max="240" step="15" value="105" oninput="syncFromSliderGov(this.value)">
+                    <input type="number" id="num-gov-v" min="30" max="360" step="5" value="105" oninput="syncFromNumberGov(this.value)">
+                  </div>
+                </div>
+                <div class="field-group">
+                  <label class="field-label" for="sel-rope-d">와이어로프 지름 d (mm)</label>
+                  <select class="carbon-select" id="sel-rope-d" onchange="updatePart4Calc()">
+                    <option value="8">8 mm (법정 최소)</option>
+                    <option value="10" selected>10 mm (일반 승용)</option>
+                    <option value="12">12 mm (중·대형)</option>
+                    <option value="16">16 mm (고속·대하중)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="kpi-strip" style="margin-top: var(--space-md);">
+                <div class="kpi-tile kpi-tile--primary" style="background-color: var(--background);">
+                  <span class="kpi-label">1단계 과속스위치 (OS)</span>
+                  <div class="kpi-value" id="out-gov-1">120.8 ~ 136.5</div>
+                  <div class="kpi-hint">정격속도의 1.15 ~ 1.3배 (m/min)</div>
+                </div>
+                <div class="kpi-tile" style="background-color: var(--background);">
+                  <span class="kpi-label">2단계 기계적 파지 (상한)</span>
+                  <div class="kpi-value" id="out-gov-2">≤ 147.0</div>
+                  <div class="kpi-hint">정격속도의 1.4배 이하 (m/min)</div>
+                </div>
+                <div class="kpi-tile" style="background-color: var(--background);">
+                  <span class="kpi-label">최소 시브 피치원 지름 D</span>
+                  <div class="kpi-value" id="out-sheave-d">400 mm</div>
+                  <div class="kpi-hint">D ≥ 40 × d</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="layer--white">
+              <h4 class="sub-heading">5. 와이어로프(Wire Rope) 필수 암기 기준</h4>
+              <ul style="margin: 0; padding-left: 1.2rem; font-size: 0.9rem; display: flex; flex-direction: column; gap: var(--space-xs);">
+                <li><strong>공칭지름:</strong> 주 로프 <strong>8 mm 이상</strong> (조속기 로프는 6 mm 이상).</li>
+                <li><strong>최소 본수:</strong> 주 로프 <strong>2본 이상</strong> 독립 걸기 (현장·승용 관행 3본 이상).</li>
+                <li><strong>꼬임 방식:</strong> 킹크(꼬임 풀림)가 적고 취급성이 좋은 <strong>보통 Z꼬임(오른꼬임)</strong>이 표준.</li>
+                <li><strong>종단 고정:</strong> <strong>바빗 채움(Babbitt Metal, 화이트메탈)</strong> 소켓 또는 쐐기형(Wedge) 소켓.</li>
+                <li><strong>안전율(Safety Factor):</strong> 승용 및 화물용 주 로프 <strong>12 이상</strong> (조속기 로프 <strong>8 이상</strong>).</li>
+              </ul>
+              <div class="formula-card" style="margin-top: var(--space-md);">
+                <div class="formula-title">로프 안전율 공식</div>
+                <div class="formula-math">$$S_f = \frac{\text{로프 1본 파단하중} \times \text{본수 } n}{\text{정격적재 시 1가닥 최대정지장력 } T} \ge 12$$</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           제5편 기계요소 설계 및 6, 7편 핵심
+           ========================================================= -->
+      <section id="part5" class="chapter-section">
+        <div class="section-header">
+          <div>
+            <span class="section-eyebrow">PART 05–07 // MECHANICS, DRIVES &amp; DISASTER SAFETY</span>
+            <h2 class="section-title">제5~7편 <strong>기계요소 역학 · 전동기 제어 · 재해대책</strong></h2>
+            <p class="section-lede">비전공자가 가장 막막해하는 재료역학·축 토크 계산을 공식 4개로 압축하고, 전동기·유압 회로 및 지진·화재 관제운전 기준을 한눈에 정리합니다.</p>
+          </div>
+          <button type="button" class="btn btn--secondary" id="complete-part5" onclick="toggleUnitComplete('part5')">
+            <span>이 단원 학습 완료</span>
+          </button>
+        </div>
+
+        <!-- 5.1 Mechanics Formula Cards -->
+        <div>
+          <h3 class="sub-heading">1. 기계요소 역학 필수 공식 (제5편)</h3>
+          <div class="card-grid-2">
+            <div class="formula-card">
+              <div class="formula-title">응력($\sigma$), 변형률($\varepsilon$), 훅의 법칙, 포아송비($\nu$)</div>
+              <div class="formula-math">$$\sigma = \frac{P}{A} \qquad \varepsilon = \frac{\Delta l}{l} \qquad \sigma = E \cdot \varepsilon \qquad \nu = \frac{\varepsilon_{\text{횡}}}{\varepsilon_{\text{종}}} = \frac{1}{m}$$</div>
+              <div class="formula-note">
+                • $E$: 세로탄성계수(영률), $G$: 가로탄성계수(전단탄성계수), 강재 $\nu \approx 0.3$.<br>
+                • 탄성계수 관계식: $E = 2G(1 + \nu)$ (빈출 계산 문제!).
+              </div>
+            </div>
+
+            <div class="formula-card">
+              <div class="formula-title">보의 종류별 최대 굽힘모멘트($M_{\max}$) 및 반력</div>
+              <div class="formula-math">$$\sigma_b = \frac{M_{\max}}{Z} \quad \left(Z_{\text{사각}} = \frac{bh^2}{6},\; Z_{\text{원}} = \frac{\pi d^3}{32}\right)$$</div>
+              <div class="formula-note">
+                • <strong>외팔보(끝 집중하중 $P$):</strong> 반력 $R=P$, $M_{\max} = P \cdot l$<br>
+                • <strong>단순지지보(중앙 집중하중 $P$):</strong> 반력 $R_A=R_B=\frac{P}{2}$, $M_{\max} = \frac{P \cdot l}{4}$<br>
+                • <strong>단순지지보(등분포하중 $w$):</strong> 반력 $R_A=R_B=\frac{wl}{2}$, $M_{\max} = \frac{w l^2}{8}$
+              </div>
+            </div>
+
+            <div class="formula-card">
+              <div class="formula-title">축의 전달 토크($T$) 및 비틀림 전단응력($\tau$)</div>
+              <div class="formula-math">$$T = \frac{9550 \times P(\text{kW})}{N(\text{rpm})} \text{ (N}\cdot\text{m)} \qquad \tau = \frac{16T}{\pi d^3}$$</div>
+              <div class="formula-note">
+                • 공학단위(kgf·m) 환산 시: $T = 974 \frac{P(\text{kW})}{N}$ 또는 $T = 716.2 \frac{\text{PS}}{N}$.<br>
+                • 전달 동력이 같을 때 회전수($N$)가 클수록 토크($T$)는 작아집니다.
+              </div>
+            </div>
+
+            <div class="formula-card">
+              <div class="formula-title">3상 유도전동기 동기속도($N_s$)와 슬립($s$)</div>
+              <div class="formula-math">$$N_s = \frac{120 f}{P} \text{ (rpm)} \qquad s = \frac{N_s - N}{N_s} \qquad N = N_s(1 - s)$$</div>
+              <div class="formula-note">
+                • $f$: 전원 주파수(한국 60 Hz), $P$: 극수(2, 4, 6, 8극 등 짝수).<br>
+                • <strong>VVVF 제어:</strong> 인버터로 전압($V$)과 주파수($f$) 비율($V/f$)을 일정하게 제어해 토크를 유지하며 무단계 속도 제어를 수행합니다.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Motor & Torque Lab -->
+        <div class="layer">
+          <span class="mono-code">INTERACTIVE LAB 04 // MOTOR SPEED &amp; SHAFT TORQUE</span>
+          <h3 class="sub-heading" style="margin-top: var(--space-xs);">전동기 동기속도 · 슬립 · 축 전달 토크 계산기</h3>
+          <div class="control-grid">
+            <div class="field-group">
+              <label class="field-label" for="num-freq">주파수 f (Hz)</label>
+              <div class="input-pair">
+                <input type="range" id="range-freq" min="10" max="60" step="5" value="60" oninput="syncFromSliderFreq(this.value)">
+                <input type="number" id="num-freq" min="5" max="120" step="1" value="60" oninput="syncFromNumberFreq(this.value)">
+              </div>
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="sel-poles">전동기 극수 P (극)</label>
+              <select class="carbon-select" id="sel-poles" onchange="updatePart5Calc()">
+                <option value="2">2극</option>
+                <option value="4" selected>4극 (표준)</option>
+                <option value="6">6극</option>
+                <option value="8">8극</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="num-slip">슬립 s (%)</label>
+              <div class="input-pair">
+                <input type="range" id="range-slip" min="1" max="10" step="0.5" value="3" oninput="syncFromSliderSlip(this.value)">
+                <input type="number" id="num-slip" min="0" max="20" step="0.5" value="3" oninput="syncFromNumberSlip(this.value)">
+              </div>
+            </div>
+            <div class="field-group">
+              <label class="field-label" for="num-kw">전동기 출력 P (kW)</label>
+              <div class="input-pair">
+                <input type="range" id="range-kw" min="5" max="45" step="1" value="15" oninput="syncFromSliderKw(this.value)">
+                <input type="number" id="num-kw" min="1" max="100" step="0.5" value="15" oninput="syncFromNumberKw(this.value)">
+              </div>
+            </div>
+          </div>
+
+          <div class="kpi-strip" style="margin-top: var(--space-md);">
+            <div class="kpi-tile kpi-tile--primary" style="background-color: var(--background);">
+              <span class="kpi-label">동기속도 N_s</span>
+              <div class="kpi-value" id="out-ns">1,800 rpm</div>
+            </div>
+            <div class="kpi-tile" style="background-color: var(--background);">
+              <span class="kpi-label">실제 회전속도 N</span>
+              <div class="kpi-value" id="out-n-actual">1,746 rpm</div>
+            </div>
+            <div class="kpi-tile" style="background-color: var(--background);">
+              <span class="kpi-label">축 토크 T (SI)</span>
+              <div class="kpi-value" id="out-torque-nm">82.0 N·m</div>
+            </div>
+            <div class="kpi-tile" style="background-color: var(--background);">
+              <span class="kpi-label">축 토크 T (공학)</span>
+              <div class="kpi-value" id="out-torque-kgfm">8.37 kgf·m</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hydraulic Circuits & Disaster Safety -->
+        <div class="card-grid-2">
+          <div class="layer--white">
+            <h3 class="sub-heading">2. 유압식 승강기 유량 제어 회로 (제6편)</h3>
+            <div class="table-wrap">
+              <table class="carbon-table">
+                <thead>
+                  <tr>
+                    <th>회로 방식</th>
+                    <th>유량 제어 위치 및 특징</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>미터인 (Meter-in)</strong></td>
+                    <td>유압 실린더 <strong>입구(유입측)</strong>에 유량제어밸브 설치. 잉여 유량이 릴리프 밸브로 빠져 압력 손실이 큼.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>블리드오프 (Bleed-off)</strong></td>
+                    <td>펌프 토출 유량 중 불필요한 일부만 <strong>탱크로 바이패스</strong>. 부하 압력만 걸려 에너지 효율이 높고 발열이 적어 <strong>유압 승강기 상승 제어에 주로 사용</strong>.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="layer--white">
+            <h3 class="sub-heading">3. 재해 대책 설비 — 내진 · 지진 · 소방 (제7편)</h3>
+            <div class="accordion">
+              <div class="accordion-item is-open">
+                <button type="button" class="accordion-trigger" onclick="toggleAccordion(this)">
+                  <span>지진 관제운전 감지기 기준 (gal) &amp; 내진 수평진도</span>
+                  <i data-lucide="chevron-down" class="accordion-chevron" width="18" height="18"></i>
+                </button>
+                <div class="accordion-body">
+                  • <strong>내진설계 수평진도 ($k_H$):</strong> 지진 시 레일·기계대·균형추가 전도되지 않도록 수평지진력($F = k_H \cdot W$)에 견디게 설계 (일반 기기 $0.4 \sim 0.6$, 중요·특수 $1.0\text{ G}$ 고려).<br>
+                  • <strong>1차 저진동 감지 (약 80 gal 이상 / P파 초동 경보 10~40 gal 포함):</strong> 가장 가까운 층으로 이동·정지 후 문을 열어 승객 대피 (일정 시간 무이상 시 자동복귀 가능 모델 있음).<br>
+                  • <strong>2차 고진동 감지 (약 150 gal 이상 / S파 본진):</strong> 즉시 운행 정지 후 최단층 정차 또는 급정지. 안전점검 후 <strong>반드시 수동 복귀</strong>!
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <button type="button" class="accordion-trigger" onclick="toggleAccordion(this)">
+                  <span>1차 소방운전 vs 2차 소방운전 및 예비전원</span>
+                  <i data-lucide="chevron-down" class="accordion-chevron" width="18" height="18"></i>
+                </button>
+                <div class="accordion-body">
+                  • <strong>1차 소방운전 (피난층 귀환 운전):</strong> 화재 감지기 또는 1차 스위치 작동 시 모든 층 호출을 무시하고 즉시 <strong>지정 피난층(1층)</strong>으로 직행해 문을 열어 승객을 대피시킨 후 운행 정지.<br>
+                  • <strong>2차 소방운전 (소방관 전용):</strong> 소방관이 2차 스위치를 조작하면 카 내부 버튼만으로 문을 열고 닫으며(문열림 버튼 지속 누름 등) 원하는 층으로 이동해 화재 진압·인명 구조에 사용.<br>
+                  • <strong>예비전원 기준:</strong> 비상용 승강기 운행용 자가발전설비·축전지는 정전 시 <strong>2시간 이상</strong> 작동 가능해야 합니다 (일반 승강기 비상조명·통화장치 최소 1시간 이상).
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+           핵심 암기 공식 카드 & CBT 자가진단 퀴즈
+           ========================================================= -->
+      <section id="part-quiz" class="chapter-section">
+        <div class="section-header">
+          <div>
+            <span class="section-eyebrow">REVIEW DECK &amp; SELF-ASSESSMENT CBT</span>
+            <h2 class="section-title">비전공자 <strong>핵심 암기 카드 &amp; 실전 CBT 퀴즈</strong></h2>
+            <p class="section-lede">시험 직전 10분 만에 전 단원의 숫자·공식을 점검할 수 있는 암기 카드와 15문항 자가 진단 퀴즈입니다. 풀이 결과와 진도는 자동으로 저장됩니다.</p>
+          </div>
+          <button type="button" class="btn btn--secondary" id="complete-part-quiz" onclick="toggleUnitComplete('part-quiz')">
+            <span>이 단원 학습 완료</span>
+          </button>
+        </div>
+
+        <!-- Formula Flashcards -->
+        <div class="layer">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-sm); margin-bottom: var(--space-md);">
+            <div>
+              <span class="mono-code">FLASHCARD DECK // 12 MUST-MEMORIZE ITEMS</span>
+              <h3 class="sub-heading" style="margin: var(--space-xs) 0 0;">핵심 숫자 · 공식 암기 카드</h3>
+            </div>
+            <div style="display: flex; gap: var(--space-xs); flex-wrap: wrap;">
+              <button type="button" class="btn btn--secondary" id="btn-mask-toggle" onclick="toggleAllFlashcards()">전체 정답 가리기 (암기모드)</button>
+            </div>
+          </div>
+
+          <div class="card-grid" id="flashcard-grid"></div>
+        </div>
+
+        <!-- Interactive Quiz -->
+        <div class="layer--white" id="quiz-container">
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-sm); border-bottom: var(--rule); padding-bottom: var(--space-md); margin-bottom: var(--space-md);">
+            <div>
+              <span class="mono-code" id="quiz-progress-label">QUESTION 01 / 15</span>
+              <h3 class="sub-heading" style="margin: var(--space-xs) 0 0;">승강기설계 실전 자가진단 CBT (15문항)</h3>
+            </div>
+            <div style="display: flex; gap: var(--space-sm); align-items: center; flex-wrap: wrap;">
+              <span class="tag-pill" id="quiz-live-score">현재 점수: 0 / 15</span>
+              <button type="button" class="btn btn--ghost" onclick="filterQuizMode('all')" id="qmode-all">전체 풀기</button>
+              <button type="button" class="btn btn--ghost" onclick="filterQuizMode('wrong')" id="qmode-wrong">오답만 보기 (0)</button>
+            </div>
+          </div>
+
+          <div id="quiz-question-area"></div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: var(--space-sm); margin-top: var(--space-lg); padding-top: var(--space-md); border-top: var(--rule);">
+            <div style="display: flex; gap: var(--space-sm);">
+              <button type="button" class="btn btn--secondary" onclick="prevQuestion()">이전 문제</button>
+              <button type="button" class="btn btn--primary" onclick="nextQuestion()">다음 문제</button>
+            </div>
+            <button type="button" class="btn btn--ghost" onclick="handleQuizReset(this)">퀴즈 다시 풀기</button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <footer class="site-footer">
+    <div>출처: 승강기기사·승강기산업기사 필기 Part 02 승강기설계 핵심 이론, 승강기 안전관리법 및 승강기 안전기준(EN 81-20/50 부합화 기준) 정리</div>
+    <div class="mono-code">SELF-CONTAINED STUDY ARTIFACT // PERSISTENT PROGRESS ENABLED</div>
+  </footer>
+
+  <api-shim></api-shim>
+
+  <script>
+    // =========================================================================
+    // 1. State Management (notebookAppApi + Defensive Fallback)
+    // =========================================================================
+    var appState = {
+      completedUnits: [],
+      quizAnswers: {},
+      currentQuestionIdx: 0,
+      quizMode: 'all',
+      maskAnswers: false
+    };
+
+    var hoistwayData = {
+      top: {
+        code: `ZONE // TOP CLEARANCE & OVERHEAD`,
+        title: `1. 꼭대기 틈새 & 오버헤드 (Overhead)`,
+        desc: `• <strong>오버헤드(OH):</strong> 최상층 바닥면에서 승강로 천장 슬래브 하단까지의 총 높이입니다.<br>• <strong>꼭대기 틈새(Top Clearance):</strong> 카가 최상층에 정지했을 때 카 지붕 상단에서 승강로 천장까지 여유 거리입니다.<br>• 균형추가 완충기를 완전히 압축했을 때 카 상부 안전여유는 최소 <strong>1.0 + 0.035v² (m)</strong> 등을 만족해야 합니다.`
+      },
+      pit: {
+        code: `ZONE // PIT DEPTH & BOTTOM CLEARANCE`,
+        title: `2. 피트(Pit) 깊이 & 주행여유`,
+        desc: `• <strong>피트 깊이:</strong> 최하층 바닥면에서 피트 바닥까지의 깊이(속도에 비례하여 깊어짐, 저속 약 1.2~1.5m 이상).<br>• <strong>피트 주행여유:</strong> 카가 완충기를 완전히 압축해도 피트 바닥과 카 하부 돌출부 사이 최소 <strong>0.5 m (500 mm)</strong> 이상 여유를 확보해 점검자 압사 사고를 예방합니다.`
+      },
+      cwt: {
+        code: `ZONE // COUNTERWEIGHT & OVERBALANCE`,
+        title: `3. 균형추(CWT) & 오버밸런스율`,
+        desc: `• <strong>공식:</strong> W_cwt = W_car + (오버밸런스율 × W_rated)<br>• <strong>오버밸런스율:</strong> 보통 <strong>40~50% (표준 45% 또는 50%)</strong>를 적용합니다. 카 자중과 정격하중 절반의 균형을 맞춰 전동기 소비전력과 토크를 최소화합니다.`
+      },
+      terminal: {
+        code: `ZONE // TERMINAL STOPPING DEVICES`,
+        title: `4. 단말 정차 장치 (LS / FLS)`,
+        desc: `• <strong>리미트 스위치 (LS):</strong> 정상 정지층을 약간 통과 시 방향별 제어회로를 차단해 정지시킵니다.<br>• <strong>파이널 리미트 스위치 (FLS):</strong> 완충기 충돌 직전에 작동해 전동기와 브레이크 주전원을 직접 차단하며, 안전 점검을 위해 <strong>수동 복귀</strong> 방식이어야 합니다.`
+      },
+      car: {
+        code: `ZONE // GUIDE RAIL SPECIFICATIONS`,
+        title: `5. 가이드레일 규격 & 허용응력`,
+        desc: `• <strong>T형 레일 호칭:</strong> 8K, 13K, 18K, 24K, 30K, 37K, 50K (단위 길이당 질량 kg).<br>• <strong>표준 길이:</strong> <strong>5 m</strong> (5,000 mm).<br>• <strong>강재 허용응력:</strong> 일반 구조용 강재 기준 <strong>2,400 kg/cm²</strong> (비상정지장치 작동 시 좌굴·굽힘 응력 검토).`
+      }
+    };
+
+    var flashcardData = [
+      { title: `5분간 수송인원 (P5)`, answer: `P5 = (300 × p) / RTT`, note: `300은 5분(300초), p는 1회 평균 탑승인원(보통 0.8C)` },
+      { title: `평균 운전간격 (I)`, answer: `I = RTT / N (초)`, note: `일주시간을 대수로 나눈 값, 오피스 권장 25~35초` },
+      { title: `비상용 승강기 설치·대수`, answer: `높이 31m 초과 / 1500㎡ 1대 (+3000㎡마다 1대)`, note: `승강장 6㎡ 이상, 속도 60m/min 이상, 예비전원 2시간 이상` },
+      { title: `장애인용 승강기 내부 치수`, answer: `1.6 m × 1.35 m 이상 (유효출입폭 0.8m↑)`, note: `전면 승강장 1.4×1.4m, 조작반 0.8~1.2m, 핸드레일 0.8~0.9m` },
+      { title: `에스컬레이터 이론 수송능력`, answer: `600형: 4,500명/h / 1000형: 9,000명/h`, note: `표준 경사각 30°, 속도 30m/min(0.5m/s), 적재하중 W=270·B·L` },
+      { title: `완충기 속도 경계 & 복귀시간`, answer: `60m/min(1.0m/s) 경계 / 유압 복귀 ≤ 90초`, note: `스프링 0.135v²(최소 65mm), 유압식 0.0674v²` },
+      { title: `가이드레일 규격 & 허용응력`, answer: `8K~50K / 표준길이 5m / 2,400 kg/cm²`, note: `카틀·바닥틀 허용 처짐량은 스팬(L)의 1/960 이하` },
+      { title: `도어 인터록 & 개폐력`, answer: `걸림 ≥ 7mm / 닫힘저지 ≤ 150N (강도 300N)`, note: `2CO 중앙개폐(승용 표준), 2S 측면개폐(유효폭 유리)` },
+      { title: `추락방지안전장치 경계`, answer: `≤ 60 m/min 즉시작동 / > 60 m/min 점진작동`, note: `점진작동형: F.G.C(판스프링), F.W.C(코일스프링)` },
+      { title: `기계실 4대 환경 조건`, answer: `5~40℃ / 200 lx↑ / 천장 2.1m↑ / 문 0.7×1.8m`, note: `출입문은 불연재·바깥열림·잠금장치 구비` },
+      { title: `조속기 & 로프 & 시브 기준`, answer: `OS 1.15~1.3v, 파지 ≤1.4v / D ≥ 40d / 안전율 ≥ 12`, note: `로프 지름 8mm↑, 2본↑, 보통 Z꼬임, 바빗소켓` },
+      { title: `전동기 · 지진 · 소방운전`, answer: `Ns = 120f/P / 지진 80·150 gal / 예비전원 2시간`, note: `1차 소방(피난층 직행), 2차 소방(소방관 전용)` }
+    ];
+
+    var quizData = [
+      {
+        part: `제1편`,
+        q: `일주시간(RTT)이 120초이고, 정원 15인승(실탑승률 80%) 엘리베이터가 4대 군관리로 운행될 때, 1대당 5분간 수송인원(P5)과 평균 운전간격(I)은?`,
+        options: [
+          `P5 = 25명, I = 40초`,
+          `P5 = 30명, I = 30초`,
+          `P5 = 36명, I = 25초`,
+          `P5 = 40명, I = 30초`
+        ],
+        answer: 1,
+        explain: `1회 평균 탑승인원 p = 15 × 0.8 = 12명입니다. P5 = (300 × 12) / 120 = 30명, 평균 운전간격 I = RTT / N = 120 / 4 = 30초입니다.`
+      },
+      {
+        part: `제1편`,
+        q: `에스컬레이터 배치 방식 중 바닥 점유면적이 가장 작고 상·하행 연속 승계가 편리해 백화점이나 대형 상업시설에 가장 널리 쓰이는 방식은?`,
+        options: [
+          `단열 승계형`,
+          `단열 겹침형`,
+          `교차 승계형 (X자형)`,
+          `병렬 분리형`
+        ],
+        answer: 2,
+        explain: `교차 승계형(Crisscross, X자형)은 상·하행이 교차 배치되어 점유면적이 최소이고 연속 탑승 동선이 가장 짧아 백화점에 보편적으로 사용됩니다.`
+      },
+      {
+        part: `제1편`,
+        q: `높이 31m를 초과하는 건축물에서 각 층 바닥면적 중 최대 바닥면적이 5,000㎡일 때, 법적으로 설치해야 하는 비상용 승강기의 최소 대수는?`,
+        options: [
+          `1대`,
+          `2대`,
+          `3대`,
+          `4대`
+        ],
+        answer: 2,
+        explain: `비상용 승강기 대수는 1,500㎡ 이하 1대, 초과 시 3,000㎡마다 1대 추가합니다. 5,000 - 1,500 = 3,500㎡이므로 3,000㎡ 2구간에 해당하여 1 + 2 = 3대입니다.`
+      },
+      {
+        part: `제1편`,
+        q: `장애인용 승강기의 카 내부 최소 유효 바닥 치수로 옳은 것은?`,
+        options: [
+          `폭 1.2m × 깊이 1.1m 이상`,
+          `폭 1.4m × 깊이 1.4m 이상`,
+          `폭 1.6m × 깊이 1.35m 이상`,
+          `폭 1.8m × 깊이 1.5m 이상`
+        ],
+        answer: 2,
+        explain: `장애인용 승강기 카 내부는 폭 1.6m 이상, 깊이 1.35m 이상이어야 하며, 승강장 전면 활동공간은 1.4m × 1.4m 이상 확보해야 합니다.`
+      },
+      {
+        part: `제2편`,
+        q: `카 자중이 1,200 kg이고 정격하중이 1,000 kg인 엘리베이터에서 오버밸런스율을 45%로 설계할 때, 균형추(CWT)의 무게는?`,
+        options: [
+          `1,450 kg`,
+          `1,650 kg`,
+          `1,700 kg`,
+          `2,200 kg`
+        ],
+        answer: 1,
+        explain: `균형추 무게 W_cwt = W_car + (오버밸런스율 × W_rated) = 1,200 + (0.45 × 1,000) = 1,650 kg입니다.`
+      },
+      {
+        part: `제2편`,
+        q: `유압식(에너지 소모형) 완충기에 대한 설명으로 틀린 것은?`,
+        options: [
+          `정격속도 60 m/min (1.0 m/s) 초과 승강기에 필수 적용한다.`,
+          `최소 행정 공식은 0.0674 v² (m) 수준으로 산정한다.`,
+          `완전 압축 후 정상 위치로 복귀하는 시간은 90초 이하이다.`,
+          `저속 승강기에서는 스프링 완충기보다 반발 충격이 훨씬 크다.`
+        ],
+        answer: 3,
+        explain: `유압식 완충기는 오일 오리피스를 통해 운동에너지를 열에너지로 소모시키므로 스프링 완충기와 달리 반발력이 작아 고속기에 적합합니다.`
+      },
+      {
+        part: `제2편`,
+        q: `승강기 단말 정차 장치 중 완충기 충돌 직전에 작동하여 전동기와 브레이크 주회로 전원을 직접 차단하며, 수동 복귀 방식이어야 하는 것은?`,
+        options: [
+          `감속 스위치`,
+          `리미트 스위치 (LS)`,
+          `파이널 리미트 스위치 (FLS)`,
+          `도어 존 스위치`
+        ],
+        answer: 2,
+        explain: `파이널 리미트 스위치(FLS)는 정상 리미트 스위치 고장 시 작동하는 최종 단말 정차 안전장치로, 주 전원을 차단하고 반드시 수동으로 복귀해야 합니다.`
+      },
+      {
+        part: `제3편`,
+        q: `승강기 도어 방식 중 문짝 2매가 한쪽 방향으로 2:1 속도비로 겹치며 열려 좁은 승강로에서 출입구 유효폭 확보에 유리한 방식은?`,
+        options: [
+          `2CO (중앙개폐식)`,
+          `2S (측면편개폐식)`,
+          `4CO (4매 중앙개폐식)`,
+          `상하개폐식`
+        ],
+        answer: 1,
+        explain: `2S(2-Panel Side Opening) 방식은 문집이 한쪽에만 필요하여 승강로 폭 대비 유효 출입폭을 최대한 넓힐 수 있습니다.`
+      },
+      {
+        part: `제3편`,
+        q: `정격속도가 105 m/min인 엘리베이터에 적용해야 하는 추락방지안전장치(비상정지장치)의 형식과, 카틀의 최대 허용 처짐량 기준이 바르게 짝지어진 것은?`,
+        options: [
+          `즉시작동형 / 스팬의 1/500 이하`,
+          `즉시작동형 / 스팬의 1/960 이하`,
+          `점진작동형 / 스팬의 1/960 이하`,
+          `점진작동형 / 스팬의 1/400 이하`
+        ],
+        answer: 2,
+        explain: `60 m/min(1.0 m/s)을 초과하면 충격 완화를 위해 점진작동형(F.G.C 또는 F.W.C형)을 사용해야 하며, 카틀·바닥틀의 허용 처짐량은 1/960 이하입니다.`
+      },
+      {
+        part: `제4편`,
+        q: `승강기 기계실의 환경 및 건축 기준으로 옳지 않은 것은?`,
+        options: [
+          `기계실 실내 온도는 5~40℃를 유지해야 한다.`,
+          `기계실 바닥면 조도는 200 lx 이상이어야 한다.`,
+          `기계실 천장 유효 높이는 2.1 m 이상이어야 한다.`,
+          `기계실 출입문 폭은 0.5 m 이상, 높이는 1.5 m 이상으로 한다.`
+        ],
+        answer: 3,
+        explain: `기계실 출입문은 폭 0.7 m 이상, 높이 1.8 m 이상으로 불연재료를 사용하고 바깥쪽으로 열리도록 설치해야 합니다.`
+      },
+      {
+        part: `제4편`,
+        q: `권상기의 시브(도르래) 홈 형상 중 반원형 홈 바닥을 파내어 로프가 마모되어도 일정한 쐐기 마찰력(트랙션)을 유지하는 승용 표준 홈은?`,
+        options: [
+          `U형 홈`,
+          `V형 홈`,
+          `언더컷(Undercut) U형 홈`,
+          `평형 홈`
+        ],
+        answer: 2,
+        explain: `언더컷 U형 홈은 U홈의 수명 장점과 V홈의 트랙션 장점을 절충하여, 마모가 진행되어도 트랙션 특성이 안정적으로 유지됩니다.`
+      },
+      {
+        part: `제4편`,
+        q: `승용 엘리베이터의 와이어로프 및 시브 기준에 대한 설명으로 틀린 것은?`,
+        options: [
+          `구동 시브 피치원 지름은 와이어로프 지름의 40배 이상이다.`,
+          `주 로프 공칭지름은 8 mm 이상, 최소 2본 이상 사용한다.`,
+          `승용 와이어로프의 안전율은 12 이상이어야 한다.`,
+          `와이어로프의 꼬임은 유연성이 큰 랭 S꼬임을 표준으로 한다.`
+        ],
+        answer: 3,
+        explain: `승강기용 와이어로프는 자전(킹크)이 적고 내구성이 우수한 '보통 Z꼬임'을 표준으로 사용합니다.`
+      },
+      {
+        part: `제5~7편`,
+        q: `주파수 60 Hz, 4극 3상 유도전동기의 슬립이 3%일 때 실제 회전속도(N)는 약 몇 rpm인가?`,
+        options: [
+          `1,800 rpm`,
+          `1,746 rpm`,
+          `1,650 rpm`,
+          `1,164 rpm`
+        ],
+        answer: 1,
+        explain: `동기속도 Ns = 120 × 60 / 4 = 1,800 rpm입니다. 실제 속도 N = Ns(1 - s) = 1,800 × (1 - 0.03) = 1,746 rpm입니다.`
+      },
+      {
+        part: `제5~7편`,
+        q: `유압식 엘리베이터의 속도 제어 회로 중 펌프 토출 유량의 일부만 탱크로 바이패스시켜 압력 손실과 발열이 적은 방식은?`,
+        options: [
+          `미터인(Meter-in) 회로`,
+          `미터아웃(Meter-out) 회로`,
+          `블리드오프(Bleed-off) 회로`,
+          `시퀀스(Sequence) 회로`
+        ],
+        answer: 2,
+        explain: `블리드오프 회로는 부하 압력에 비례하여 펌프 압력이 걸리므로 릴리프 밸브 손실이 작아 유압 엘리베이터 상승 제어에 유리합니다.`
+      },
+      {
+        part: `제5~7편`,
+        q: `지진 및 화재 시 승강기 비상운전 기준으로 옳은 것은?`,
+        options: [
+          `고진동(150 gal 이상) 감지 시 승강기는 가장 가까운 층에 대피시킨 후 자동 복귀한다.`,
+          `1차 소방운전은 소방관이 카 내부에서 수동으로 원하는 층을 이동하는 운전이다.`,
+          `비상용 승강기의 예비전원은 정전 시 최소 2시간 이상 작동할 수 있어야 한다.`,
+          `저진동 감지 시 엘리베이터는 주행 중 즉시 급제동한다.`
+        ],
+        answer: 2,
+        explain: `고진동(150 gal 이상) 감지 시에는 점검 후 수동 복귀가 원칙이며, 1차 소방운전은 피난층 직행 귀환 운전입니다. 비상용 승강기 예비전원은 2시간 이상입니다.`
+      }
+    ];
+
+    // =========================================================================
+    // 2. Utility & Persistence Functions
+    // =========================================================================
+    async function saveState() {
+      try {
+        if (window.notebookAppApi && typeof window.notebookAppApi.setAppState === 'function') {
+          await window.notebookAppApi.setAppState(appState);
+        }
+      } catch (e) {
+        // Ignore persistence errors in standalone preview
+      }
+    }
+
+    function updateProgressUI() {
+      var totalUnits = 6;
+      var doneCount = appState.completedUnits.length;
+      var pct = Math.round((doneCount / totalUnits) * 100);
+
+      var topPct = document.getElementById('top-progress-pct');
+      var topCnt = document.getElementById('top-progress-count');
+      var sideFill = document.getElementById('side-progress-fill');
+      var sideLbl = document.getElementById('side-progress-label');
+
+      if (topPct) topPct.textContent = pct + '%';
+      if (topCnt) topCnt.textContent = doneCount + ' / ' + totalUnits + ' 단원 완료';
+      if (sideFill) sideFill.style.width = pct + '%';
+      if (sideLbl) sideLbl.textContent = '전체 ' + totalUnits + '개 파트 중 ' + doneCount + '개 학습 완료';
+
+      var unitIds = ['part1', 'part2', 'part3', 'part4', 'part5', 'part-quiz'];
+      for (var i = 0; i < unitIds.length; i++) {
+        var uid = unitIds[i];
+        var isDone = appState.completedUnits.indexOf(uid) !== -1;
+        var dot = document.getElementById('dot-' + uid);
+        var btn = document.getElementById('complete-' + uid);
+        if (dot) {
+          if (isDone) dot.classList.add('is-done');
+          else dot.classList.remove('is-done');
+        }
+        if (btn) {
+          if (isDone) {
+            btn.className = 'btn btn--done';
+            btn.innerHTML = '<span>학습 완료됨 ✓</span>';
+          } else {
+            btn.className = 'btn btn--secondary';
+            btn.innerHTML = '<span>이 단원 학습 완료</span>';
+          }
+        }
+      }
+
+      // Quiz Score Summary
+      var answeredKeys = Object.keys(appState.quizAnswers);
+      var correctCount = 0;
+      var wrongCount = 0;
+      for (var k = 0; k < answeredKeys.length; k++) {
+        var idx = parseInt(answeredKeys[k], 10);
+        if (quizData[idx] && appState.quizAnswers[idx] === quizData[idx].answer) {
+          correctCount++;
+        } else {
+          wrongCount++;
+        }
+      }
+
+      var topQuiz = document.getElementById('top-quiz-score');
+      var topQuizHint = document.getElementById('top-quiz-hint');
+      var liveScore = document.getElementById('quiz-live-score');
+      var wrongBtn = document.getElementById('qmode-wrong');
+
+      if (topQuiz) {
+        topQuiz.textContent = answeredKeys.length === 0 ? '미응시' : correctCount + ' / ' + quizData.length;
+      }
+      if (topQuizHint) {
+        topQuizHint.textContent = answeredKeys.length === 0 ? '15문항 실전 모의 테스트' : answeredKeys.length + '문항 풀이 완료 (정답률 ' + Math.round((correctCount / answeredKeys.length) * 100) + '%)';
+      }
+      if (liveScore) {
+        liveScore.textContent = '현재 점수: ' + correctCount + ' / ' + quizData.length;
+      }
+      if (wrongBtn) {
+        wrongBtn.textContent = '오답만 보기 (' + wrongCount + ')';
+      }
+    }
+
+    function toggleUnitComplete(unitId) {
+      var idx = appState.completedUnits.indexOf(unitId);
+      if (idx === -1) {
+        appState.completedUnits.push(unitId);
+      } else {
+        appState.completedUnits.splice(idx, 1);
+      }
+      updateProgressUI();
+      saveState();
+    }
+
+    // =========================================================================
+    // 3. Tabs, Accordions & Hoistway Schematic
+    // =========================================================================
+    function switchTab(btnEl, panelId) {
+      if (!btnEl) return;
+      var parent = btnEl.closest('.layer--white');
+      if (!parent) return;
+      var btns = parent.querySelectorAll('.tab-btn');
+      var panels = parent.querySelectorAll('.tab-panel');
+      for (var i = 0; i < btns.length; i++) btns[i].classList.remove('is-active');
+      for (var j = 0; j < panels.length; j++) panels[j].classList.remove('is-active');
+      btnEl.classList.add('is-active');
+      var target = document.getElementById(panelId);
+      if (target) target.classList.add('is-active');
+    }
+
+    function toggleAccordion(triggerEl) {
+      if (!triggerEl) return;
+      var item = triggerEl.closest('.accordion-item');
+      if (item) item.classList.toggle('is-open');
+    }
+
+    function selectHoistwayZone(zoneKey) {
+      var data = hoistwayData[zoneKey];
+      if (!data) return;
+      var btns = document.querySelectorAll('.hotspot-btn');
+      for (var i = 0; i < btns.length; i++) btns[i].classList.remove('is-active');
+      var activeBtn = document.getElementById('hz-btn-' + zoneKey);
+      if (activeBtn) activeBtn.classList.add('is-active');
+
+      var codeEl = document.getElementById('hz-detail-code');
+      var titleEl = document.getElementById('hz-detail-title');
+      var descEl = document.getElementById('hz-detail-desc');
+      if (codeEl) codeEl.textContent = data.code;
+      if (titleEl) titleEl.textContent = data.title;
+      if (descEl) descEl.innerHTML = data.desc;
+    }
+
+    // =========================================================================
+    // 4. Interactive Calculators (Dedicated Dual-Input Handlers)
+    // =========================================================================
+    // Part 1: Traffic Calculator
+    function syncFromSliderPop(val) {
+      var el = document.getElementById('num-pop');
+      if (el) el.value = val;
+      updatePart1Calc();
+    }
+    function syncFromNumberPop(val) {
+      var el = document.getElementById('range-pop');
+      if (el) el.value = val;
+      updatePart1Calc();
+    }
+    function syncFromSliderHc(val) {
+      var el = document.getElementById('num-hc');
+      if (el) el.value = val;
+      updatePart1Calc();
+    }
+    function syncFromNumberHc(val) {
+      var el = document.getElementById('range-hc');
+      if (el) el.value = val;
+      updatePart1Calc();
+    }
+    function syncFromSliderCap(val) {
+      var el = document.getElementById('num-cap');
+      if (el) el.value = val;
+      updatePart1Calc();
+    }
+    function syncFromNumberCap(val) {
+      var el = document.getElementById('range-cap');
+      if (el) el.value = val;
+      updatePart1Calc();
+    }
+    function syncFromSliderRtt(val) {
+      var el = document.getElementById('num-rtt');
+      if (el) el.value = val;
+      updatePart1Calc();
+    }
+    function syncFromNumberRtt(val) {
+      var el = document.getElementById('range-rtt');
+      if (el) el.value = val;
+      updatePart1Calc();
+    }
+
+    function applyTrafficPreset(type) {
+      var pop = 1000, hc = 12, cap = 15, rtt = 120;
+      if (type === 'hotel') { pop = 600; hc = 10; cap = 15; rtt = 140; }
+      if (type === 'apt') { pop = 800; hc = 6; cap = 13; rtt = 110; }
+      var ids = [
+        ['range-pop', pop], ['num-pop', pop],
+        ['range-hc', hc], ['num-hc', hc],
+        ['range-cap', cap], ['num-cap', cap],
+        ['range-rtt', rtt], ['num-rtt', rtt]
+      ];
+      for (var i = 0; i < ids.length; i++) {
+        var el = document.getElementById(ids[i][0]);
+        if (el) el.value = ids[i][1];
+      }
+      updatePart1Calc();
+    }
+
+    function updatePart1Calc() {
+      var popEl = document.getElementById('num-pop');
+      var hcEl = document.getElementById('num-hc');
+      var capEl = document.getElementById('num-cap');
+      var rttEl = document.getElementById('num-rtt');
+      if (!popEl || !hcEl || !capEl || !rttEl) return;
+
+      var B = Math.max(10, parseFloat(popEl.value) || 1000);
+      var H = Math.max(1, parseFloat(hcEl.value) || 12);
+      var C = Math.max(4, parseFloat(capEl.value) || 15);
+      var RTT = Math.max(30, parseFloat(rttEl.value) || 120);
+
+      var p = 0.8 * C;
+      var p5 = (300 * p) / RTT;
+      var reqPeople = B * (H / 100);
+      var N = Math.max(1, Math.ceil(reqPeople / p5));
+      var interval = RTT / N;
+
+      var outP = document.getElementById('out-p');
+      var outP5 = document.getElementById('out-p5');
+      var outN = document.getElementById('out-n');
+      var outInt = document.getElementById('out-interval');
+      var outEval = document.getElementById('out-interval-eval');
+
+      if (outP) outP.textContent = p.toFixed(1) + ' 명';
+      if (outP5) outP5.textContent = p5.toFixed(1) + ' 명';
+      if (outN) outN.textContent = N + ' 대';
+      if (outInt) outInt.textContent = interval.toFixed(1) + ' 초';
+      if (outEval) {
+        if (interval <= 35) outEval.textContent = '매우 쾌적 (오피스 권장 25~35초 충족)';
+        else if (interval <= 50) outEval.textContent = '양호 (호텔·상업시설 기준 적합)';
+        else outEval.textContent = '대기 다소 김 (아파트 수준 또는 대수 증설 검토)';
+      }
+    }
+
+    // Part 2: Buffer & Counterweight Calculator
+    function syncFromSliderSpeed(val) {
+      var el = document.getElementById('num-speed');
+      if (el) el.value = val;
+      updatePart2Calc();
+    }
+    function syncFromNumberSpeed(val) {
+      var el = document.getElementById('range-speed');
+      if (el) el.value = val;
+      updatePart2Calc();
+    }
+    function syncFromSliderWcar(val) {
+      var el = document.getElementById('num-wcar');
+      if (el) el.value = val;
+      updatePart2Calc();
+    }
+    function syncFromNumberWcar(val) {
+      var el = document.getElementById('range-wcar');
+      if (el) el.value = val;
+      updatePart2Calc();
+    }
+    function syncFromSliderWrated(val) {
+      var el = document.getElementById('num-wrated');
+      if (el) el.value = val;
+      updatePart2Calc();
+    }
+    function syncFromNumberWrated(val) {
+      var el = document.getElementById('range-wrated');
+      if (el) el.value = val;
+      updatePart2Calc();
+    }
+
+    function updatePart2Calc() {
+      var spEl = document.getElementById('num-speed');
+      var wcarEl = document.getElementById('num-wcar');
+      var wratEl = document.getElementById('num-wrated');
+      var obEl = document.getElementById('sel-ob');
+      if (!spEl || !wcarEl || !wratEl || !obEl) return;
+
+      var vMin = Math.max(15, parseFloat(spEl.value) || 90);
+      var vMs = vMin / 60;
+      var wCar = parseFloat(wcarEl.value) || 1200;
+      var wRated = parseFloat(wratEl.value) || 1000;
+      var alpha = parseFloat(obEl.value) || 0.5;
+
+      var oilStrokeMm = 0.0674 * vMs * vMs * 1000;
+      var sprStrokeMm = Math.max(65, 0.135 * vMs * vMs * 1000);
+      var cwt = wCar + alpha * wRated;
+
+      var outVms = document.getElementById('out-vms');
+      var outBufType = document.getElementById('out-buf-type');
+      var outOil = document.getElementById('out-oil-stroke');
+      var outSpr = document.getElementById('out-spr-stroke');
+      var outCwt = document.getElementById('out-cwt');
+
+      if (outVms) outVms.textContent = vMs.toFixed(2) + ' m/s';
+      if (outBufType) {
+        outBufType.textContent = vMin > 60 ? '유압식 완충기 필수 (> 60 m/min)' : '스프링·유압식 모두 적용 가능 (≤ 60 m/min)';
+      }
+      if (outOil) outOil.textContent = oilStrokeMm.toFixed(1) + ' mm';
+      if (outSpr) {
+        outSpr.textContent = vMin > 60 ? '적용 불가' : sprStrokeMm.toFixed(1) + ' mm';
+      }
+      if (outCwt) outCwt.textContent = Math.round(cwt).toLocaleString() + ' kg';
+    }
+
+    // Part 4: Governor & Sheave Calculator
+    function syncFromSliderGov(val) {
+      var el = document.getElementById('num-gov-v');
+      if (el) el.value = val;
+      updatePart4Calc();
+    }
+    function syncFromNumberGov(val) {
+      var el = document.getElementById('range-gov-v');
+      if (el) el.value = val;
+      updatePart4Calc();
+    }
+
+    function updatePart4Calc() {
+      var vEl = document.getElementById('num-gov-v');
+      var dEl = document.getElementById('sel-rope-d');
+      if (!vEl || !dEl) return;
+
+      var v = Math.max(15, parseFloat(vEl.value) || 105);
+      var d = parseFloat(dEl.value) || 10;
+
+      var osMin = v * 1.15;
+      var osMax = v * 1.30;
+      var mechMax = v * 1.40;
+      var sheaveD = 40 * d;
+
+      var out1 = document.getElementById('out-gov-1');
+      var out2 = document.getElementById('out-gov-2');
+      var outD = document.getElementById('out-sheave-d');
+      if (out1) out1.textContent = osMin.toFixed(1) + ' ~ ' + osMax.toFixed(1);
+      if (out2) out2.textContent = '≤ ' + mechMax.toFixed(1);
+      if (outD) outD.textContent = sheaveD + ' mm';
+    }
+
+    // Part 5: Motor & Torque Calculator
+    function syncFromSliderFreq(val) {
+      var el = document.getElementById('num-freq');
+      if (el) el.value = val;
+      updatePart5Calc();
+    }
+    function syncFromNumberFreq(val) {
+      var el = document.getElementById('range-freq');
+      if (el) el.value = val;
+      updatePart5Calc();
+    }
+    function syncFromSliderSlip(val) {
+      var el = document.getElementById('num-slip');
+      if (el) el.value = val;
+      updatePart5Calc();
+    }
+    function syncFromNumberSlip(val) {
+      var el = document.getElementById('range-slip');
+      if (el) el.value = val;
+      updatePart5Calc();
+    }
+    function syncFromSliderKw(val) {
+      var el = document.getElementById('num-kw');
+      if (el) el.value = val;
+      updatePart5Calc();
+    }
+    function syncFromNumberKw(val) {
+      var el = document.getElementById('range-kw');
+      if (el) el.value = val;
+      updatePart5Calc();
+    }
+
+    function updatePart5Calc() {
+      var fEl = document.getElementById('num-freq');
+      var pEl = document.getElementById('sel-poles');
+      var sEl = document.getElementById('num-slip');
+      var kwEl = document.getElementById('num-kw');
+      if (!fEl || !pEl || !sEl || !kwEl) return;
+
+      var f = Math.max(1, parseFloat(fEl.value) || 60);
+      var poles = Math.max(2, parseInt(pEl.value, 10) || 4);
+      var slipPct = Math.max(0, parseFloat(sEl.value) || 3);
+      var kw = Math.max(0.5, parseFloat(kwEl.value) || 15);
+
+      var ns = (120 * f) / poles;
+      var nActual = ns * (1 - slipPct / 100);
+      var tNm = nActual > 0 ? (9550 * kw) / nActual : 0;
+      var tKgfm = nActual > 0 ? (974 * kw) / nActual : 0;
+
+      var outNs = document.getElementById('out-ns');
+      var outN = document.getElementById('out-n-actual');
+      var outNm = document.getElementById('out-torque-nm');
+      var outKg = document.getElementById('out-torque-kgfm');
+
+      if (outNs) outNs.textContent = Math.round(ns).toLocaleString() + ' rpm';
+      if (outN) outN.textContent = Math.round(nActual).toLocaleString() + ' rpm';
+      if (outNm) outNm.textContent = tNm.toFixed(1) + ' N·m';
+      if (outKg) outKg.textContent = tKgfm.toFixed(2) + ' kgf·m';
+    }
+
+    // =========================================================================
+    // 5. Flashcards & Interactive Quiz
+    // =========================================================================
+    function renderFlashcards() {
+      var grid = document.getElementById('flashcard-grid');
+      if (!grid) return;
+      var html = '';
+      for (var i = 0; i < flashcardData.length; i++) {
+        var fc = flashcardData[i];
+        var maskedClass = appState.maskAnswers ? ' is-masked' : '';
+        html += '<div class="flashcard">';
+        html += '  <div class="formula-title">' + fc.title + '</div>';
+        html += '  <div class="flashcard-answer' + maskedClass + '" onclick="revealSingleFlashcard(this)" title="클릭하여 확인">' + fc.answer + '</div>';
+        html += '  <div class="formula-note">' + fc.note + '</div>';
+        html += '</div>';
+      }
+      grid.innerHTML = html;
+
+      var toggleBtn = document.getElementById('btn-mask-toggle');
+      if (toggleBtn) {
+        toggleBtn.textContent = appState.maskAnswers ? '전체 정답 보이기' : '전체 정답 가리기 (암기모드)';
+      }
+    }
+
+    function toggleAllFlashcards() {
+      appState.maskAnswers = !appState.maskAnswers;
+      renderFlashcards();
+      saveState();
+    }
+
+    function revealSingleFlashcard(el) {
+      if (el) el.classList.toggle('is-masked');
+    }
+
+    function getVisibleQuizIndices() {
+      var indices = [];
+      for (var i = 0; i < quizData.length; i++) {
+        if (appState.quizMode === 'wrong') {
+          if (appState.quizAnswers.hasOwnProperty(i) && appState.quizAnswers[i] !== quizData[i].answer) {
+            indices.push(i);
+          }
+        } else {
+          indices.push(i);
+        }
+      }
+      return indices;
+    }
+
+    function filterQuizMode(mode) {
+      appState.quizMode = mode;
+      var visible = getVisibleQuizIndices();
+      if (visible.length > 0) {
+        appState.currentQuestionIdx = visible[0];
+      }
+      renderQuiz();
+      saveState();
+    }
+
+    function renderQuiz() {
+      var area = document.getElementById('quiz-question-area');
+      var progLabel = document.getElementById('quiz-progress-label');
+      var btnAll = document.getElementById('qmode-all');
+      var btnWrong = document.getElementById('qmode-wrong');
+      if (!area) return;
+
+      if (btnAll && btnWrong) {
+        btnAll.className = appState.quizMode === 'all' ? 'btn btn--secondary' : 'btn btn--ghost';
+        btnWrong.className = appState.quizMode === 'wrong' ? 'btn btn--secondary' : 'btn btn--ghost';
+      }
+
+      var visible = getVisibleQuizIndices();
+      if (visible.length === 0) {
+        if (progLabel) progLabel.textContent = 'WRONG ANSWERS // 0 ITEMS';
+        area.innerHTML = '<div class="callout callout--ok"><div class="callout-title">오답 문항이 없습니다</div><p>현재까지 틀린 문제가 없습니다. 전체 풀기 모드로 돌아가 모든 문항에 도전해 보세요.</p></div>';
+        return;
+      }
+
+      if (visible.indexOf(appState.currentQuestionIdx) === -1) {
+        appState.currentQuestionIdx = visible[0];
+      }
+
+      var qIdx = appState.currentQuestionIdx;
+      var qObj = quizData[qIdx];
+      var chosen = appState.quizAnswers.hasOwnProperty(qIdx) ? appState.quizAnswers[qIdx] : null;
+      var posInVisible = visible.indexOf(qIdx) + 1;
+
+      if (progLabel) {
+        progLabel.textContent = 'QUESTION ' + (qIdx + 1) + ' / ' + quizData.length + ' (' + qObj.part + ') · ' + posInVisible + '/' + visible.length;
+      }
+
+      var html = '<div style="margin-bottom: var(--space-md); font-size: 1.0625rem; font-weight: 600;">Q' + (qIdx + 1) + '. ' + qObj.q + '</div>';
+      html += '<div style="display: flex; flex-direction: column; gap: var(--space-xs);">';
+      for (var optIdx = 0; optIdx < qObj.options.length; optIdx++) {
+        var cls = 'quiz-option';
+        if (chosen !== null) {
+          if (optIdx === qObj.answer) cls += ' is-correct';
+          else if (optIdx === chosen) cls += ' is-wrong';
+        }
+        html += '<button type="button" class="' + cls + '" onclick="selectQuizOption(' + qIdx + ', ' + optIdx + ')">';
+        html += '  <span class="mono-code">(' + (optIdx + 1) + ')</span>';
+        html += '  <span>' + qObj.options[optIdx] + '</span>';
+        html += '</button>';
+      }
+      html += '</div>';
+
+      if (chosen !== null) {
+        var isRight = chosen === qObj.answer;
+        var callCls = isRight ? 'callout callout--ok' : 'callout callout--error';
+        var verdict = isRight ? '정답입니다!' : '오답입니다 — 정답: (' + (qObj.answer + 1) + ')번';
+        html += '<div class="' + callCls + '" style="margin-top: var(--space-md);">';
+        html += '  <div class="callout-title">' + verdict + '</div>';
+        html += '  <p>' + qObj.explain + '</p>';
+        html += '</div>';
+      }
+
+      area.innerHTML = html;
+      updateProgressUI();
+    }
+
+    function selectQuizOption(qIdx, optIdx) {
+      appState.quizAnswers[qIdx] = optIdx;
+      renderQuiz();
+      saveState();
+    }
+
+    function nextQuestion() {
+      var visible = getVisibleQuizIndices();
+      if (visible.length === 0) return;
+      var curPos = visible.indexOf(appState.currentQuestionIdx);
+      var nextPos = (curPos + 1) % visible.length;
+      appState.currentQuestionIdx = visible[nextPos];
+      renderQuiz();
+      saveState();
+    }
+
+    function prevQuestion() {
+      var visible = getVisibleQuizIndices();
+      if (visible.length === 0) return;
+      var curPos = visible.indexOf(appState.currentQuestionIdx);
+      var prevPos = (curPos - 1 + visible.length) % visible.length;
+      appState.currentQuestionIdx = visible[prevPos];
+      renderQuiz();
+      saveState();
+    }
+
+    function handleQuizReset(btn) {
+      if (!btn) return;
+      if (btn.dataset.armed !== 'true') {
+        btn.dataset.armed = 'true';
+        btn.textContent = '한 번 더 클릭하면 퀴즈 초기화';
+        return;
+      }
+      btn.dataset.armed = 'false';
+      btn.textContent = '퀴즈 다시 풀기';
+      appState.quizAnswers = {};
+      appState.currentQuestionIdx = 0;
+      appState.quizMode = 'all';
+      renderQuiz();
+      updateProgressUI();
+      saveState();
+    }
+
+    function handleResetAll(btn) {
+      if (!btn) return;
+      if (btn.dataset.armed !== 'true') {
+        btn.dataset.armed = 'true';
+        btn.textContent = '한 번 더 클릭: 전체 초기화';
+        return;
+      }
+      btn.dataset.armed = 'false';
+      btn.textContent = '진도·퀴즈 초기화';
+      appState = {
+        completedUnits: [],
+        quizAnswers: {},
+        currentQuestionIdx: 0,
+        quizMode: 'all',
+        maskAnswers: false
+      };
+      renderFlashcards();
+      renderQuiz();
+      updateProgressUI();
+      saveState();
+    }
+
+    function exportStudyNotes() {
+      var lines = [];
+      lines.push(`=== 승강기설계 (Part 02) 학습 요약 ===`);
+      lines.push(`완료 단원 수: ` + appState.completedUnits.length + ` / 6`);
+      lines.push(`완료 목록: ` + (appState.completedUnits.join(', ') || '없음'));
+      lines.push(``);
+      lines.push(`[핵심 암기 공식 12선]`);
+      for (var i = 0; i < flashcardData.length; i++) {
+        lines.push((i + 1) + `. ` + flashcardData[i].title + `: ` + flashcardData[i].answer + ` (` + flashcardData[i].note + `)`);
+      }
+      var content = lines.join('\n');
+      if (window.notebookAppApi && typeof window.notebookAppApi.triggerFileDownload === 'function') {
+        window.notebookAppApi.triggerFileDownload({
+          content: content,
+          contentType: 'text/plain',
+          encoding: 'UTF-8',
+          filename: '승강기설계_Part02_핵심요약.txt'
+        });
+      }
+    }
+
+    // =========================================================================
+    // 6. Scroll Active Nav Tracking & Initialization
+    // =========================================================================
+    function initScrollSpy() {
+      var sections = document.querySelectorAll('.chapter-section');
+      var navLinks = document.querySelectorAll('.side-nav-link');
+      if (!('IntersectionObserver' in window) || sections.length === 0) return;
+
+      var observer = new IntersectionObserver(function(entries) {
+        for (var i = 0; i < entries.length; i++) {
+          if (entries[i].isIntersecting) {
+            var id = entries[i].target.id;
+            for (var j = 0; j < navLinks.length; j++) {
+              if (navLinks[j].dataset.nav === id) navLinks[j].classList.add('is-active');
+              else navLinks[j].classList.remove('is-active');
+            }
+          }
+        }
+      }, { rootMargin: '-15% 0px -70% 0px' });
+
+      for (var k = 0; k < sections.length; k++) {
+        observer.observe(sections[k]);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', async function() {
+      try {
+        if (window.notebookAppApi && typeof window.notebookAppApi.getAppState === 'function') {
+          var saved = await window.notebookAppApi.getAppState();
+          if (saved && typeof saved === 'object') {
+            if (Array.isArray(saved.completedUnits)) appState.completedUnits = saved.completedUnits;
+            if (saved.quizAnswers && typeof saved.quizAnswers === 'object') appState.quizAnswers = saved.quizAnswers;
+            if (typeof saved.currentQuestionIdx === 'number') appState.currentQuestionIdx = saved.currentQuestionIdx;
+            if (saved.quizMode === 'all' || saved.quizMode === 'wrong') appState.quizMode = saved.quizMode;
+            if (typeof saved.maskAnswers === 'boolean') appState.maskAnswers = saved.maskAnswers;
+          }
+        }
+      } catch (e) {
+        // Fallback to default state
+      }
+
+      // Render KaTeX Math
+      try {
+        if (typeof renderMathInElement === 'function') {
+          renderMathInElement(document.body, {
+            delimiters: [
+              { left: '$$', right: '$$', display: true },
+              { left: '$', right: '$', display: false }
+            ],
+            throwOnError: false
+          });
+        }
+      } catch (e) {
+        // Fallback if KaTeX unavailable
+      }
+
+      // Render Lucide Icons
+      try {
+        if (window.lucide && typeof window.lucide.createIcons === 'function') {
+          window.lucide.createIcons();
+        }
+      } catch (e) {
+        // Fallback
+      }
+
+      updatePart1Calc();
+      updatePart2Calc();
+      updatePart4Calc();
+      updatePart5Calc();
+      renderFlashcards();
+      renderQuiz();
+      updateProgressUI();
+      initScrollSpy();
+
+      if (window.notebookAppApi && typeof window.notebookAppApi.notifyAppReady === 'function') {
+        window.notebookAppApi.notifyAppReady();
+      }
+    });
+  </script>
+</body>
+</html>

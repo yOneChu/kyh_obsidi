@@ -1,0 +1,1932 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Part 02. 승강기 설계 완벽 정리 가이드</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --surface: #ffffff;
+      --surface-alt: #f8fafc;
+      --primary: #1e40af;
+      --primary-light: #dbeafe;
+      --primary-dark: #1e3a8a;
+      --accent: #0284c7;
+      --success: #059669;
+      --success-bg: #ecfdf5;
+      --warn: #d97706;
+      --warn-bg: #fffbeb;
+      --danger: #dc2626;
+      --danger-bg: #fef2f2;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --shadow: 0 4px 20px rgba(15, 23, 42, 0.06);
+      --radius: 14px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Malgun Gothic', '맑은 고딕', sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar Navigation */
+    .sidebar {
+      width: 280px;
+      background: var(--surface);
+      border-right: 1px solid var(--border);
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      overflow-y: auto;
+      padding: 24px 18px;
+      z-index: 100;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 18px;
+      margin-bottom: 18px;
+      border-bottom: 2px solid var(--primary-light);
+    }
+
+    .brand-badge {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: #fff;
+      font-weight: 800;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .brand-text h1 {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      line-height: 1.25;
+    }
+
+    .brand-text span {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .search-box {
+      margin-bottom: 16px;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 13px;
+      background: var(--surface-alt);
+      transition: all 0.2s;
+    }
+
+    .search-box input:focus {
+      outline: none;
+      border-color: var(--primary);
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.12);
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .nav-list a {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 13.5px;
+      font-weight: 600;
+      padding: 10px 12px;
+      border-radius: 8px;
+      transition: all 0.15s;
+    }
+
+    .nav-list a:hover,
+    .nav-list a.active {
+      background: var(--primary-light);
+      color: var(--primary-dark);
+    }
+
+    .nav-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      background: #e2e8f0;
+      color: #334155;
+      font-size: 11px;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+
+    .nav-list a:hover .nav-num,
+    .nav-list a.active .nav-num {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* Main Content */
+    .main {
+      margin-left: 280px;
+      flex: 1;
+      padding: 36px 48px 80px;
+      max-width: 1180px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 55%, #0284c7 100%);
+      color: #fff;
+      border-radius: 20px;
+      padding: 38px 40px;
+      margin-bottom: 36px;
+      box-shadow: 0 12px 30px rgba(30, 58, 138, 0.22);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-tag {
+      display: inline-block;
+      background: rgba(255, 255, 255, 0.18);
+      padding: 5px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      backdrop-filter: blur(4px);
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      font-weight: 800;
+      margin-bottom: 10px;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p {
+      font-size: 15.5px;
+      opacity: 0.92;
+      max-width: 720px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 10px;
+      margin-top: 24px;
+    }
+
+    .hero-chip {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-size: 12.5px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* Chapter Section */
+    .chapter {
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 34px 36px;
+      margin-bottom: 32px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--border);
+    }
+
+    .chapter-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .chapter-badge {
+      background: var(--primary);
+      color: #fff;
+      font-weight: 800;
+      font-size: 14px;
+      padding: 6px 14px;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .chapter-header h2 {
+      font-size: 23px;
+      font-weight: 800;
+      color: var(--primary-dark);
+      letter-spacing: -0.02em;
+    }
+
+    h3 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 28px 0 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h3::before {
+      content: "";
+      display: inline-block;
+      width: 5px;
+      height: 18px;
+      background: var(--accent);
+      border-radius: 3px;
+    }
+
+    h4 {
+      font-size: 15.5px;
+      font-weight: 700;
+      color: #334155;
+      margin: 18px 0 8px;
+    }
+
+    p {
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+
+    ul, ol {
+      padding-left: 22px;
+      margin-bottom: 14px;
+    }
+
+    li {
+      margin-bottom: 6px;
+      font-size: 14.8px;
+    }
+
+    /* Callout & Formula Boxes */
+    .tip-box {
+      background: var(--success-bg);
+      border-left: 4px solid var(--success);
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 14px 0;
+      font-size: 14.5px;
+    }
+
+    .tip-box strong {
+      color: #065f46;
+    }
+
+    .warn-box {
+      background: var(--warn-bg);
+      border-left: 4px solid var(--warn);
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 14px 0;
+      font-size: 14.5px;
+    }
+
+    .warn-box strong {
+      color: #92400e;
+    }
+
+    .danger-box {
+      background: var(--danger-bg);
+      border-left: 4px solid var(--danger);
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 14px 0;
+      font-size: 14.5px;
+    }
+
+    .formula-card {
+      background: #f8fafc;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin: 14px 0;
+    }
+
+    .formula-title {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--primary);
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      letter-spacing: 0.02em;
+    }
+
+    .formula-math {
+      font-size: 17px;
+      font-weight: 700;
+      color: #0f172a;
+      font-family: 'Cambria Math', 'Times New Roman', serif;
+      background: #fff;
+      padding: 10px 16px;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      display: inline-block;
+      margin: 4px 0 8px;
+    }
+
+    .formula-desc {
+      font-size: 13.5px;
+      color: var(--text-muted);
+    }
+
+    .frac {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      vertical-align: middle;
+      margin: 0 4px;
+      font-size: 0.92em;
+    }
+
+    .frac > span:first-child {
+      border-bottom: 1.5px solid #0f172a;
+      padding: 0 5px 1px;
+      line-height: 1.2;
+    }
+
+    .frac > span:last-child {
+      padding: 1px 5px 0;
+      line-height: 1.2;
+    }
+
+    /* Tables */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 16px 0;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      background: #fff;
+    }
+
+    th {
+      background: #eff6ff;
+      color: var(--primary-dark);
+      font-weight: 700;
+      text-align: center;
+      padding: 11px 14px;
+      border-bottom: 2px solid #bfdbfe;
+      border-right: 1px solid var(--border);
+    }
+
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      text-align: center;
+    }
+
+    td.left {
+      text-align: left;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    th:last-child, td:last-child {
+      border-right: none;
+    }
+
+    tr:nth-child(even) td {
+      background: #fcfdff;
+    }
+
+    /* Diagram Container */
+    .diagram-box {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 18px 0;
+      text-align: center;
+    }
+
+    .diagram-caption {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-top: 10px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 18px;
+      margin: 14px 0;
+    }
+
+    .info-card {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+    }
+
+    .info-card h4 {
+      margin-top: 0;
+      color: var(--primary-dark);
+    }
+
+    /* Interactive Calculator & Quiz */
+    .calc-panel {
+      background: linear-gradient(135deg, #eff6ff, #f0f9ff);
+      border: 1px solid #bfdbfe;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 18px 0;
+    }
+
+    .calc-inputs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin: 12px 0;
+    }
+
+    .calc-field {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      flex: 1;
+      min-width: 140px;
+    }
+
+    .calc-field label {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #334155;
+    }
+
+    .calc-field input {
+      padding: 8px 10px;
+      border: 1px solid #93c5fd;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    .calc-result {
+      background: #fff;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-weight: 700;
+      color: var(--primary-dark);
+      border: 1px solid #bfdbfe;
+      margin-top: 8px;
+    }
+
+    .quiz-item {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 16px;
+    }
+
+    .quiz-q {
+      font-weight: 700;
+      font-size: 15.5px;
+      margin-bottom: 10px;
+      color: #0f172a;
+    }
+
+    .quiz-btn {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      padding: 7px 14px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 8px;
+    }
+
+    .quiz-btn:hover {
+      background: var(--primary-dark);
+    }
+
+    .quiz-ans {
+      display: none;
+      margin-top: 10px;
+      padding: 12px 14px;
+      background: #ecfdf5;
+      border-radius: 8px;
+      border-left: 4px solid var(--success);
+      font-size: 14px;
+    }
+
+    @media (max-width: 960px) {
+      body {
+        flex-direction: column;
+      }
+      .sidebar {
+        position: static;
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+      }
+      .main {
+        margin-left: 0;
+        padding: 24px 18px 60px;
+      }
+    }
+
+    @media print {
+      .sidebar, .quiz-btn, .search-box {
+        display: none !important;
+      }
+      .main {
+        margin-left: 0;
+        padding: 0;
+      }
+      .quiz-ans {
+        display: block !important;
+      }
+      .chapter {
+        box-shadow: none;
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="brand">
+      <div class="brand-badge">P02</div>
+      <div class="brand-text">
+        <h1>승강기 설계</h1>
+        <span>승강기기사 핵심 요약·도해</span>
+      </div>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="키워드 검색 (예: 완충기, 균형추, VVVF)" onkeyup="filterSections()" />
+    </div>
+
+    <ul class="nav-list">
+      <li><a href="#ch1"><span class="nav-num">1</span>제1편 승강기 설계의 기본</a></li>
+      <li><a href="#ch2"><span class="nav-num">2</span>제2편 승강기 관련 기준</a></li>
+      <li><a href="#ch3"><span class="nav-num">3</span>제3편 카 및 승강관련 기준</a></li>
+      <li><a href="#ch4"><span class="nav-num">4</span>제4편 기계실 관련 기준</a></li>
+      <li><a href="#ch5"><span class="nav-num">5</span>제5편 기계요소 설계</a></li>
+      <li><a href="#ch6"><span class="nav-num">6</span>제6편 전기 설비 설계</a></li>
+      <li><a href="#ch7"><span class="nav-num">7</span>제7편 재해 대책 설비</a></li>
+      <li><a href="#quiz"><span class="nav-num">Q</span>실전 출제예상문제 &amp; 해설</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+    <section class="hero">
+      <span class="hero-tag">승강기기사 필기·실기 핵심 마스터</span>
+      <h2>Part 02. 승강기 설계 완벽 정리</h2>
+      <p>교통량 계산부터 가이드 레일·완충기·추락방지안전장치·권상기·전기제어·내진 및 비상용 승강기 기준까지, 복잡한 공식과 도면을 한눈에 이해할 수 있도록 재구성한 인터랙티브 학습 가이드입니다.</p>
+      <div class="hero-grid">
+        <div class="hero-chip">제1편 설계 기본·교통량</div>
+        <div class="hero-chip">제2편 승강로·레일·완충기</div>
+        <div class="hero-chip">제3편 도어·카·추락방지</div>
+        <div class="hero-chip">제4편 기계실·권상기·로프</div>
+        <div class="hero-chip">제5편 재료역학·활차·기어</div>
+        <div class="hero-chip">제6편 전동기·제어·전원</div>
+        <div class="hero-chip">제7편 내진·관제·비상승강기</div>
+      </div>
+    </section>
+
+    <!-- ==================== 제1편 ==================== -->
+    <section class="chapter" id="ch1">
+      <div class="chapter-header">
+        <span class="chapter-badge">제1편</span>
+        <h2>승강기 설계의 기본</h2>
+      </div>
+
+      <div class="tip-box">
+        <strong>쉽게 이해하기:</strong> 건물을 지을 때 엘리베이터를 <strong>"몇 대(양적 서비스)"</strong> 설치할지, 승객이 <strong>"얼마나 빨리(질적 서비스)"</strong> 탈 수 있을지를 결정하는 단계입니다. 핵심은 <strong>일주시간(RTT)</strong>과 <strong>5분간 수송능력</strong>입니다!
+      </div>
+
+      <h3>1. 설비 계획상의 요건 및 기본 시방</h3>
+      <ul>
+        <li><strong>엘리베이터의 기본 시방(사양):</strong> <strong>적재량(하중)과 정격속도</strong> 두 가지가 가장 기본이 됩니다.</li>
+        <li><strong>설비 계획 요건:</strong>
+          <ul>
+            <li>건물의 교통수요를 정확히 계산하여 수요에 적합하게 설계한다.</li>
+            <li>여러 대 설치 시 분산 배치보다 <strong>건물 중심부에 집중 배치</strong>한다 (대기시간 단축, 운전능률 향상, 설비비 절감 효과 / 단, 승객 보행거리가 무조건 단축되는 것은 아님).</li>
+            <li><strong>군관리(Group Control) 운전 시</strong> 서비스층은 최상층과 최하층을 일치시키고, 초고층 빌딩은 서비스층 분할(Low/High Zone)을 고려한다.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>2. 교통량 계산과 설치 대수 산정 (핵심 공식)</h3>
+      <p>건물 규모 산정 기준은 용도마다 다릅니다: <strong>공동주택(거주인구)</strong>, <strong>오피스빌딩(사무실 유효면적)</strong>, <strong>백화점(매장면적)</strong>, <strong>호텔(침실수)</strong>을 기준으로 산정합니다.</p>
+
+      <!-- SVG Diagram: RTT Concept -->
+      <div class="diagram-box">
+        <svg viewBox="0 0 760 210" width="100%" style="max-width:720px; height:auto;">
+          <defs>
+            <marker id="arrowBlue" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#1d4ed8" />
+            </marker>
+            <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+              <path d="M0,0 L8,4 L0,8 Z" fill="#059669" />
+            </marker>
+          </defs>
+          <rect x="20" y="20" width="720" height="170" rx="12" fill="#f8fafc" stroke="#cbd5e1" />
+          <!-- Building Floors -->
+          <rect x="60" y="130" width="110" height="40" rx="6" fill="#dbeafe" stroke="#1e40af" stroke-width="2" />
+          <text x="115" y="155" text-anchor="middle" font-size="13" font-weight="bold" fill="#1e3a8a">출발층 (1층)</text>
+
+          <rect x="250" y="45" width="120" height="40" rx="6" fill="#e0f2fe" stroke="#0284c7" stroke-width="2" />
+          <text x="310" y="70" text-anchor="middle" font-size="13" font-weight="bold" fill="#0369a1">각 층 정지·하차</text>
+
+          <rect x="450" y="45" width="110" height="40" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="2" />
+          <text x="505" y="70" text-anchor="middle" font-size="13" font-weight="bold" fill="#92400e">최상 반전층</text>
+
+          <rect x="610" y="130" width="110" height="40" rx="6" fill="#d1fae5" stroke="#059669" stroke-width="2" />
+          <text x="665" y="155" text-anchor="middle" font-size="13" font-weight="bold" fill="#065f46">출발층 재도착</text>
+
+          <path d="M170,145 Q210,65 245,65" fill="none" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arrowBlue)" />
+          <path d="M370,65 L445,65" fill="none" stroke="#1d4ed8" stroke-width="2.5" marker-end="url(#arrowBlue)" />
+          <path d="M560,65 Q590,65 620,125" fill="none" stroke="#059669" stroke-width="2.5" marker-end="url(#arrowGreen)" />
+
+          <text x="390" y="138" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#1e293b">일주시간 (RTT: One Round Trip Time)</text>
+          <text x="390" y="160" text-anchor="middle" font-size="12.5" fill="#475569">= Σ (주행시간 + 도어 개폐시간 + 승객 출입시간 + 손실시간[개폐+출입의 10%])</text>
+        </svg>
+        <div class="diagram-caption">[도해 1-1] 엘리베이터 일주시간(RTT) 구성 흐름도</div>
+      </div>
+
+      <div class="grid-2">
+        <div class="formula-card">
+          <div class="formula-title">① 양적인 면: 1대의 5분간 수송능력 (B) &amp; 필요 대수 (N)</div>
+          <div class="formula-math">
+            B = <span class="frac"><span>5 × 60 × S</span><span>RTT</span></span> = <span class="frac"><span>300 · S</span><span>RTT</span></span> (명) &nbsp;,&nbsp; N = <span class="frac"><span>Q</span><span>B</span></span> (대)
+          </div>
+          <div class="formula-desc">
+            • <strong>S</strong>: 1회 왕복 시 승객수 (보통 오피스 출근 시 정원의 80%)<br />
+            • <strong>RTT</strong>: 일주시간(초) &nbsp;• <strong>Q</strong>: 5분간의 전 교통수요(명)
+          </div>
+        </div>
+
+        <div class="formula-card">
+          <div class="formula-title">② 질적인 면: 평균 운전 간격 (대기시간 지표)</div>
+          <div class="formula-math">
+            평균 운전 간격 = <span class="frac"><span>RTT</span><span>N</span></span> (초)
+          </div>
+          <div class="formula-desc">
+            • <strong>N</strong>: 그룹 운전하고 있는 엘리베이터 대수<br />
+            • 대수가 많을수록 평균 운전 간격이 짧아져 서비스 질 향상!
+          </div>
+        </div>
+      </div>
+
+      <ul>
+        <li><strong>주행시간</strong> = 가속시간 + 감속시간 + 전속 주행시간</li>
+        <li><strong>도어 개폐시간 단축:</strong> 착상 동작 중에 도어가 미리 열리기 시작하는 <strong>런닝 오픈(Running Open)</strong> 방식을 적용하면 단축됨.</li>
+        <li><strong>손실시간:</strong> 불확정 요소를 고려해 <strong>(도어 개폐시간 + 승객 출입시간) 합계의 10%</strong>를 추가함.</li>
+      </ul>
+
+      <!-- Interactive RTT Calculator -->
+      <div class="calc-panel">
+        <h4>실시간 수송능력 &amp; 설치대수 계산기 (직접 숫자를 바꿔보세요!)</h4>
+        <div class="calc-inputs">
+          <div class="calc-field">
+            <label>1회 탑승 승객수 S (명)</label>
+            <input type="number" id="calcS" value="12" oninput="calcElevator()" />
+          </div>
+          <div class="calc-field">
+            <label>일주시간 RTT (초)</label>
+            <input type="number" id="calcRTT" value="120" oninput="calcElevator()" />
+          </div>
+          <div class="calc-field">
+            <label>5분간 교통수요 Q (명)</label>
+            <input type="number" id="calcQ" value="120" oninput="calcElevator()" />
+          </div>
+        </div>
+        <div class="calc-result" id="calcOut">
+          1대당 5분 수송능력(B) = 30.0명 | 필요 대수(N) = 4대 | 평균 운전 간격 = 30.0초
+        </div>
+      </div>
+
+      <h3>3. 건물 용도별 교통수요 산출 기준</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>승객수 가정</th>
+              <th>피크 시간대 및 집중율</th>
+              <th>비고 / 산출 기준</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>호텔</strong></td>
+              <td>상·하향 동일, 카 정원의 <strong>50%</strong></td>
+              <td>저녁 시간 / 5분 집중율 <strong>9~11%</strong></td>
+              <td class="left">평균 운전 간격 <strong>40초 이하</strong>가 이상적</td>
+            </tr>
+            <tr>
+              <td><strong>오피스 빌딩</strong></td>
+              <td>출근 오름 방향 카 정원의 <strong>80%</strong><br />(내림 승객은 없는 것으로 간주)</td>
+              <td>아침 출근 상승 피크 (사원식당 있으면 점심 피크 병행)<br />중식 집중율: <strong>9~16% (평균 12%)</strong></td>
+              <td class="left">• 중식 교통량: 12시경 하강 많음, 13시경 상승 많음 (비율 <strong>2 : 1</strong>)<br />• 렌탈비(유효면적비): 일반 2층 이상 <strong>80%</strong>, 초고층 <strong>75%</strong><br />• 1인당 점유면적: 중소빌딩 <strong>6~7 m²/인</strong>, 대규모 <strong>7~8 m²/인</strong></td>
+            </tr>
+            <tr>
+              <td><strong>아파트</strong></td>
+              <td>오름/내림 비율 3/2, 5/3, 6/4명 순차 가정</td>
+              <td>주로 저녁 귀가 시간 (또는 아침 출근)</td>
+              <td class="left">거주인구: 25평 이하 <strong>2.5~3명</strong>, 26평 이상 <strong>3.5~4명</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>4. 에스컬레이터 및 수평보행기 설계</h3>
+      <div class="grid-2">
+        <div class="info-card">
+          <h4>복열 승계형 (병렬 연속형)</h4>
+          <p>같은 방향의 시야가 넓어 백화점 등 매장 전시 효과가 뛰어나지만, <strong>바닥 면적을 넓게 차지</strong>하고 층간 이동 시 돌아가야 하는 단점이 있습니다.</p>
+        </div>
+        <div class="info-card">
+          <h4>교차 승계형 (크로스형)</h4>
+          <p>오름·내림 교통이 분리되어 혼잡이 적고 <strong>연속 운반이 매우 빠르지만</strong>, 쇼핑객의 시야가 좁고 위치 표시가 다소 어렵습니다.</p>
+        </div>
+      </div>
+
+      <!-- SVG Diagram: Escalator Layouts -->
+      <div class="diagram-box">
+        <svg viewBox="0 0 700 180" width="100%" style="max-width:660px; height:auto;">
+          <!-- Parallel -->
+          <rect x="20" y="15" width="310" height="150" rx="10" fill="#f8fafc" stroke="#cbd5e1" />
+          <text x="175" y="38" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">복열 승계형 (지그재그 배치)</text>
+          <line x1="55" y1="135" x2="295" y2="135" stroke="#475569" stroke-width="3" />
+          <line x1="55" y1="95" x2="295" y2="95" stroke="#475569" stroke-width="3" />
+          <line x1="55" y1="55" x2="295" y2="55" stroke="#475569" stroke-width="3" />
+          <line x1="95" y1="135" x2="235" y2="95" stroke="#2563eb" stroke-width="5" />
+          <line x1="95" y1="95" x2="235" y2="55" stroke="#2563eb" stroke-width="5" />
+          <text x="175" y="156" text-anchor="middle" font-size="12" fill="#64748b">시야 확보 우수 · 바닥 면적 많이 차지</text>
+
+          <!-- Criss-cross -->
+          <rect x="370" y="15" width="310" height="150" rx="10" fill="#f8fafc" stroke="#cbd5e1" />
+          <text x="525" y="38" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">교차 승계형 (X자 교차 배치)</text>
+          <line x1="405" y1="135" x2="645" y2="135" stroke="#475569" stroke-width="3" />
+          <line x1="405" y1="95" x2="645" y2="95" stroke="#475569" stroke-width="3" />
+          <line x1="405" y1="55" x2="645" y2="55" stroke="#475569" stroke-width="3" />
+          <line x1="455" y1="135" x2="595" y2="95" stroke="#2563eb" stroke-width="4.5" />
+          <line x1="595" y1="135" x2="455" y2="95" stroke="#059669" stroke-width="4.5" />
+          <line x1="455" y1="95" x2="595" y2="55" stroke="#2563eb" stroke-width="4.5" />
+          <line x1="595" y1="95" x2="455" y2="55" stroke="#059669" stroke-width="4.5" />
+          <text x="525" y="156" text-anchor="middle" font-size="12" fill="#64748b">연속 수송 빠름 · 승강구 혼잡 감소</text>
+        </svg>
+        <div class="diagram-caption">[도해 1-2] 에스컬레이터의 복열 승계형과 교차 승계형 비교</div>
+      </div>
+
+      <div class="grid-2">
+        <div class="formula-card">
+          <div class="formula-title">에스컬레이터 적재하중 (G)</div>
+          <div class="formula-math">G = 270√3 · W · H = 270 · A (kg)</div>
+          <div class="formula-desc">
+            • <strong>W</strong>: 계단(Step) 폭(m), <strong>H</strong>: 라이즈(양정, m)<br />
+            • <strong>A</strong>: 계단면의 수평투영 면적(m²)
+          </div>
+        </div>
+        <div class="formula-card">
+          <div class="formula-title">에스컬레이터 전동기 용량 (P)</div>
+          <div class="formula-math">
+            P = <span class="frac"><span>G · V · sinθ</span><span>6120 · η</span></span> × β (kW)
+          </div>
+          <div class="formula-desc">
+            • <strong>V</strong>: 속도(m/min), <strong>η</strong>: 종합효율, <strong>β</strong>: 승객 승입률(<strong>0.85</strong>)
+          </div>
+        </div>
+      </div>
+
+      <ul>
+        <li><strong>수송능력:</strong> <strong>800형 → 6,000명/시간</strong> &nbsp;|&nbsp; <strong>1200형 → 9,000명/시간</strong></li>
+        <li><strong>속도 및 경사도 제한:</strong>
+          <ul>
+            <li>에스컬레이터: 경사도 <strong>30° 이하 → 45 m/min 이하</strong> / 경사도 <strong>30° 초과 ~ 35° 이하 → 30 m/min 이하</strong></li>
+            <li>수평보행기(무빙워크): 경사도 <strong>12° 이하</strong>, 속도 <strong>45 m/min 이하</strong></li>
+          </ul>
+        </li>
+        <li><strong>배치 원칙:</strong> 정면 출입구와 엘리베이터의 중간에 배치하며, 1층에서는 사람의 움직임이 많은 곳에 설치.</li>
+      </ul>
+
+      <h3>5. 특수 목적 엘리베이터 법정 설치기준 비교</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>설치 대상 및 대수 기준</th>
+              <th>세부 규격 및 필수 요건</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>비상용 엘리베이터</strong></td>
+              <td class="left">• 높이 <strong>31m를 넘는</strong> 각층 최대 바닥면적 <strong>1,500m² 이하</strong>: <strong>1대 이상</strong><br />• <strong>1,500m² 초과 시</strong>: 초과하는 <strong>3,000m² 이내마다 1대씩 가산</strong></td>
+              <td class="left">2대 이상 설치 시 화재 진압·소화에 지장이 없도록 일정한 간격을 두고 배치</td>
+            </tr>
+            <tr>
+              <td><strong>화물용 엘리베이터</strong><br />(7층 이상 공동주택)</td>
+              <td class="left">• 계단실형: <strong>계단실마다</strong> 설치<br />• 복도형: <strong>100세대까지 1대</strong> + 초과 <strong>100세대마다 1대 추가</strong></td>
+              <td class="left">• 적재하중: <strong>0.9톤 이상</strong><br />• 카 치수: 한 변 <strong>1.35m 이상</strong>, 다른 변 <strong>1.6m 이상</strong></td>
+            </tr>
+            <tr>
+              <td><strong>장애인용 엘리베이터</strong></td>
+              <td class="left">장애인 편의시설 설치 대상 건축물</td>
+              <td class="left">• 크기: 너비 <strong>1.6m 이상</strong> × 깊이 <strong>1.35m 이상</strong>, 출입구 유효폭 <strong>0.8m 이상</strong><br />• 승강장 전면 유효바닥: <strong>1.4m × 1.4m 이상</strong><br />• 승강장-카 바닥 틈새: <strong>3cm 이하</strong> (일반은 3.5cm 이하)<br />• 광감지식 개폐장치: 바닥 위 <strong>0.3m ~ 1.4m</strong> 물체 감지<br />• 조작 스위치 높이: 바닥에서 <strong>0.8m 이상 ~ 1.2m 이하</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ==================== 제2편 ==================== -->
+    <section class="chapter" id="ch2">
+      <div class="chapter-header">
+        <span class="chapter-badge">제2편</span>
+        <h2>승강기 관련 기준 (승강로·균형추·레일·완충기·리미트)</h2>
+      </div>
+
+      <h3>1. 기호 표기법·틈새 기준·승강로 구출구</h3>
+      <ul>
+        <li><strong>엘리베이터 약호 예시 (<code>P - 5 - CO</code>):</strong> <strong>P</strong>(로프식 일반승객용) - <strong>5</strong>(정원 5인) - <strong>CO</strong>(2매 중앙 개폐식, Center Open / <code>2S</code>는 2매 측면 개폐식 Side Open).</li>
+        <li><strong>문지방 틈새:</strong> 카 문지방과 승강장 문지방 사이 틈새는 <strong>3.5cm(35mm) 이하</strong> (장애인용은 <strong>3cm 이하</strong>).</li>
+        <li><strong>승강로 벽과 카 문지방 틈새:</strong> <strong>150mm 이하</strong> (구조상 150mm 초과 시 추락 방지를 위해 <strong>페이셔 플레이트(Fascia Plate, 보호판)</strong> 설치).</li>
+        <li><strong>승강로 구출구(비상문) 및 점검문:</strong>
+          <ul>
+            <li>승장 문 없이 연속된 구간이 <strong>11m를 초과할 경우</strong> 승객 구출용 비상문을 설치한다.</li>
+            <li><strong>비상문 치수:</strong> 폭 <strong>0.5m 이상</strong> × 높이 <strong>1.8m 이상</strong> (갑종 또는 을종 방화문 구조, 자동 닫힘, 내·외부 키로만 개방).</li>
+            <li><strong>점검문 / 트랩 방식 점검문 치수:</strong> 안전상 사람이 함부로 들어가지 못하도록 폭 <strong>0.5m 이하</strong> × 높이 <strong>0.5m 이하</strong>로 제한!</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>2. 균형추 (Counter Weight)</h3>
+      <div class="formula-card">
+        <div class="formula-title">균형추 중량 산정 공식</div>
+        <div class="formula-math">균형추 중량 = 카의 자체하중(자중) + L × F</div>
+        <div class="formula-desc">
+          • <strong>L</strong>: 정격 적재하중(kg) &nbsp;|&nbsp; <strong>F</strong>: 오버 밸런스율 (<strong>승용 45% [0.45]</strong>, <strong>화물용 50% [0.50]</strong>)<br />
+          • 오버 밸런스율을 두는 이유: 카에 절반 정도의 승객이 탔을 때 완벽히 평형을 이루어 <strong>전동기 소요동력을 최소화</strong>하고, 시브와 로프 사이의 <strong>마찰비(Traction Ratio)를 개선해 미끄러짐을 방지</strong>하기 위함입니다.
+        </div>
+      </div>
+
+      <h3>3. 가이드 레일 (Guide Rail) 및 가이드 슈 (Guide Shoe)</h3>
+      <p>카와 균형추가 수직으로 흔들림 없이 이동하도록 안내하고, 추락방지안전장치 작동 시 수직하중을 지지합니다.</p>
+      <ul>
+        <li><strong>규격 및 호칭:</strong> 마무리 가공 전 소재의 <strong>1m당 중량(kg)</strong>으로 호칭 (예: 8K, 13K, 18K, 24K, 27K, 30K, 50K 등 T형 레일 사용).</li>
+        <li><strong>표준 길이:</strong> <strong>5m</strong> &nbsp;|&nbsp; <strong>허용응력:</strong> <strong>2,400 kg/cm²</strong> &nbsp;|&nbsp; <strong>레일 브래킷/중간빔 허용 휨:</strong> <strong>0.5cm(5mm) 이하</strong>.</li>
+        <li><strong>앵커볼트 안전기준:</strong> 앵커볼트의 인발하중 ≤ <strong>인발내력 / 4</strong> (안전율 4 이상).</li>
+        <li><strong>가이드 슈 구분:</strong> 저속용은 <strong>슬라이딩 가이드슈</strong>, 고속용은 진동·소음이 적은 <strong>롤러 가이드슈</strong>를 카/균형추 상하좌우 4곳에 부착.</li>
+      </ul>
+
+      <!-- SVG Diagram: T-Rail & Seismic Continuous Beam -->
+      <div class="diagram-box">
+        <svg viewBox="0 0 740 200" width="100%" style="max-width:700px; height:auto;">
+          <!-- T-Rail Cross Section -->
+          <rect x="15" y="15" width="330" height="170" rx="10" fill="#f8fafc" stroke="#cbd5e1" />
+          <text x="180" y="38" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#1e3a8a">T형 가이드 레일 및 가이드 슈 맞물림</text>
+          <path d="M80,65 L100,65 L100,102 L185,102 L185,118 L100,118 L100,155 L80,155 Z" fill="#94a3b8" stroke="#334155" stroke-width="2" />
+          <path d="M135,86 L210,86 L210,134 L135,134 L135,123 L196,123 L196,97 L135,97 Z" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2" />
+          <line x1="135" y1="146" x2="185" y2="146" stroke="#dc2626" stroke-width="2" />
+          <text x="160" y="162" text-anchor="middle" font-size="12" font-weight="bold" fill="#dc2626">걸림대 A (2.5~4.0cm)</text>
+          <text x="255" y="113" font-size="12" fill="#1e40af" font-weight="bold">← 가이드 슈</text>
+
+          <!-- 3-Span Beam -->
+          <rect x="365" y="15" width="360" height="170" rx="10" fill="#f8fafc" stroke="#cbd5e1" />
+          <text x="545" y="38" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#1e3a8a">지진하중(H) 작용 시 3분할 연속보 모델</text>
+          <line x1="400" y1="115" x2="690" y2="115" stroke="#334155" stroke-width="3" />
+          <path d="M400,115 Q445,102 490,115 Q545,135 600,115 Q645,102 690,115" fill="none" stroke="#dc2626" stroke-width="2" stroke-dasharray="5,4" />
+          <!-- Supports -->
+          <polygon points="400,117 392,132 408,132" fill="#1e293b" />
+          <polygon points="490,117 482,132 498,132" fill="#1e293b" />
+          <polygon points="600,117 592,132 608,132" fill="#1e293b" />
+          <polygon points="690,117 682,132 698,132" fill="#1e293b" />
+          <!-- Load H -->
+          <line x1="545" y1="65" x2="545" y2="112" stroke="#dc2626" stroke-width="2.5" />
+          <polygon points="545,114 540,104 550,104" fill="#dc2626" />
+          <text x="545" y="58" text-anchor="middle" font-size="13" font-weight="bold" fill="#dc2626">지진하중 H</text>
+          <text x="545" y="158" text-anchor="middle" font-size="12" fill="#475569">브래킷 간격 ℓ | 허용 휨 δ ≤ A - 1.0 (cm)</text>
+        </svg>
+        <div class="diagram-caption">[도해 2-1] 가이드 레일 걸림 치수(A) 및 지진하중 응력·휨 계산 모델</div>
+      </div>
+
+      <div class="grid-2">
+        <div class="formula-card">
+          <div class="formula-title">카용 가이드 레일 응력(σ) 및 휨(b)</div>
+          <div class="formula-math">
+            σ = <span class="frac"><span>7</span><span>40</span></span> × <span class="frac"><span>H · ℓ</span><span>Z</span></span> &nbsp;,&nbsp;
+            b = <span class="frac"><span>11</span><span>960</span></span> × <span class="frac"><span>H · ℓ³</span><span>E · I</span></span>
+          </div>
+          <div class="formula-desc">• ℓ: 레일 브래킷 간격(cm), Z: 단면계수(cm³), E: 영률(2.1×10⁶ kg/cm²), I(x): 단면 2차 모멘트(cm⁴)</div>
+        </div>
+        <div class="formula-card">
+          <div class="formula-title">균형추용 가이드 레일 (하중 저감율 β 적용)</div>
+          <div class="formula-math">
+            σ = <span class="frac"><span>7</span><span>40</span></span> × <span class="frac"><span>β · H · ℓ</span><span>Z</span></span> &nbsp;,&nbsp;
+            b = <span class="frac"><span>11</span><span>960</span></span> × <span class="frac"><span>β · H · ℓ³</span><span>E · I</span></span>
+          </div>
+          <div class="formula-desc">
+            • <strong>타이브래킷</strong> 설치 시 β = <strong>0.67</strong> (5K~30K 기준)<br />
+            • <strong>중간 스톱퍼</strong> 설치 시 β = <strong>0.70</strong> (동시 설치 시 한쪽 값만 채용, 미설치 시 β = 1)
+          </div>
+        </div>
+      </div>
+
+
+      <h4>가이드 레일 상세 규격 및 단면 특성표 (8K ~ 30K)</h4>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>구분 / 호칭</th>
+              <th>5K</th>
+              <th>8K</th>
+              <th>13K</th>
+              <th>18K</th>
+              <th>24K</th>
+              <th>30K</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>레일 높이 A (mm) / 밑변 B (mm)</strong></td>
+              <td>-</td>
+              <td>56 / 78</td>
+              <td>62 / 89</td>
+              <td>89 / 114</td>
+              <td>89 / 127</td>
+              <td>108 / 140</td>
+            </tr>
+            <tr>
+              <td><strong>블레이드 두께 C (mm) / 높이 D (mm)</strong></td>
+              <td>-</td>
+              <td>10 / 26</td>
+              <td>16 / 32</td>
+              <td>16 / 38</td>
+              <td>16 / 50</td>
+              <td>19 / 51</td>
+            </tr>
+            <tr>
+              <td><strong>단면 2차 모멘트 Ix / Iy (cm⁴)</strong></td>
+              <td>-</td>
+              <td>29.9 / 26.1</td>
+              <td>59.5 / 50.4</td>
+              <td>179 / 108</td>
+              <td>199 / 226</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td><strong>단면계수 Zx / Zy (cm³)</strong></td>
+              <td>-</td>
+              <td>7.56 / 6.71</td>
+              <td>14.3 / 11.3</td>
+              <td>29.7 / 19.1</td>
+              <td>31.1 / 35.6</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td><strong>가이드슈 걸림 A (cm) / 허용 휨 δ (cm)</strong></td>
+              <td>2.5 / 1.5</td>
+              <td>2.5 / 1.5</td>
+              <td>3.0 / 2.0</td>
+              <td>3.5 / 2.0</td>
+              <td>3.5 / 2.5</td>
+              <td>4.0 / -</td>
+            </tr>
+            <tr>
+              <td><strong>하중 저감율 β (타이브래킷 / 중간스톱퍼)</strong></td>
+              <td>0.67 / 0.7</td>
+              <td>0.67 / 0.7</td>
+              <td>0.67 / 0.7</td>
+              <td>0.78 / 0.78(구형 0.7)</td>
+              <td>0.67 / 0.7</td>
+              <td>0.67 / 0.7 (50K는 0.92)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <h3>4. 완충기 (Buffer) 및 피트 충격하중</h3>
+      <p>카 또는 균형추가 최하층을 지나 피트(Pit)로 낙하할 때 충격을 흡수해 승객을 보호하는 최후의 방어 장치입니다.</p>
+
+      <!-- SVG Diagram: Buffers -->
+      <div class="diagram-box">
+        <svg viewBox="0 0 680 200" width="100%" style="max-width:640px; height:auto;">
+          <rect x="20" y="15" width="300" height="170" rx="10" fill="#f8fafc" stroke="#cbd5e1" />
+          <text x="170" y="38" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">① 에너지 축적형 (스프링 완충기)</text>
+          <rect x="130" y="155" width="80" height="12" fill="#475569" />
+          <path d="M150,155 L190,143 L150,131 L190,119 L150,107 L190,95 L150,83 L190,71" fill="none" stroke="#2563eb" stroke-width="5" stroke-linecap="round" />
+          <rect x="145" y="63" width="50" height="8" rx="3" fill="#1e293b" />
+          <text x="170" y="180" text-anchor="middle" font-size="12" fill="#334155">정격속도 60 m/min 이하에만 사용</text>
+
+          <rect x="360" y="15" width="300" height="170" rx="10" fill="#f8fafc" stroke="#cbd5e1" />
+          <text x="510" y="38" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">② 에너지 분산형 (유입식 완충기)</text>
+          <rect x="480" y="100" width="60" height="65" fill="#bae6fd" stroke="#0369a1" stroke-width="2" />
+          <rect x="498" y="58" width="24" height="65" fill="#94a3b8" stroke="#334155" stroke-width="2" />
+          <rect x="492" y="50" width="36" height="8" rx="3" fill="#1e293b" />
+          <rect x="468" y="165" width="84" height="8" fill="#475569" />
+          <text x="585" y="80" font-size="11.5" fill="#334155">← 플런저 + 복귀스프링</text>
+          <text x="585" y="135" font-size="11.5" fill="#0369a1">← 실린더(오리피스·오일)</text>
+          <text x="510" y="182" text-anchor="middle" font-size="12" fill="#334155">모든 속도에 사용 가능 (복귀 90초 이하)</text>
+        </svg>
+        <div class="diagram-caption">[도해 2-2] 스프링 완충기와 유입식 완충기 구조 비교</div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>스프링 완충기 (에너지 축적형)</th>
+              <th>유입식 완충기 (에너지 분산형)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>적용 속도</strong></td>
+              <td>정격속도 <strong>60 m/min (1.0 m/s) 이하</strong></td>
+              <td><strong>모든 속도</strong>에 제한 없이 사용</td>
+            </tr>
+            <tr>
+              <td><strong>최소 행정(Stroke)</strong></td>
+              <td>정격속도 115% 중력정지거리의 <strong>2배 (0.135 V² [m]) 이상</strong><br />(단, 최소 <strong>65mm 이상</strong> / 정하중 2.5~4배에서 적용)</td>
+              <td>정격속도 115% 중력정지거리 <strong>1배 (0.0674 V² [m]) 이상</strong><br />공식(V₀: m/min): <strong>S = V₀² / 53.35 [mm]</strong></td>
+            </tr>
+            <tr>
+              <td><strong>감속도 및 복귀 기준</strong></td>
+              <td colspan="2">• 정격하중 싣고 115% 속도 자유낙하 충돌 시 평균 감속도 <strong>1g 이하</strong>, <strong>2.5g 초과 감속도는 0.04초 이하</strong><br />• 비선형 복귀속도 1 m/s 이하 / 유입식 플런저 완전 복귀시간 <strong>90초 이하</strong> / 세장비(길이/반경): <strong>L/R ≤ 80</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+      <h4>유입 완충기 정격속도별 최소 행정(Stroke) 및 재료 안전율</h4>
+      <div class="grid-2">
+        <div class="table-wrap" style="margin:0;">
+          <table>
+            <thead>
+              <tr>
+                <th>정격속도 (m/min)</th>
+                <th>최소 행정 (mm)</th>
+                <th>정격속도 (m/min)</th>
+                <th>최소 행정 (mm)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>90 (1.5 m/s)</td><td><strong>152</strong></td><td>180 (3.0 m/s)</td><td><strong>608</strong></td></tr>
+              <tr><td>105 (1.75 m/s)</td><td><strong>207</strong></td><td>210 (3.5 m/s)</td><td><strong>827</strong></td></tr>
+              <tr><td>120 (2.0 m/s)</td><td><strong>270</strong></td><td>240 (4.0 m/s)</td><td><strong>1,080</strong></td></tr>
+              <tr><td>150 (2.5 m/s)</td><td><strong>422</strong></td><td>300 (5.0 m/s)</td><td><strong>1,687</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-wrap" style="margin:0;">
+          <table>
+            <thead>
+              <tr>
+                <th>유입 완충기 재료 신율 (5cm당)</th>
+                <th>안전율</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>20% 이상</td><td><strong>3</strong></td></tr>
+              <tr><td>15 ~ 20%</td><td><strong>3.5 (3½)</strong></td></tr>
+              <tr><td>10 ~ 15%</td><td><strong>4</strong></td></tr>
+              <tr><td>10% 이하 / 주철</td><td><strong>5</strong> (단, <strong>주철은 10</strong>)</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="formula-card">
+        <div class="formula-title">피트 바닥의 충격하중 (P)</div>
+        <div class="formula-math">
+          P = 2W ( <span class="frac"><span>V²</span><span>2 · g · L</span></span> + 1 ) [kg]
+        </div>
+        <div class="formula-desc">• W: 카 또는 균형추 총중량(kg), V: 과속조절기 트립속도(m/s), L: 완충기 행정, g: 9.8 m/s² (※ 유입완충기 주철 안전율은 10)</div>
+      </div>
+
+      <h3>5. 단말 정차 장치 및 안전 스위치</h3>
+      <ul>
+        <li><strong>리미트 스위치(Limit Switch):</strong> 최상층·최하층 초과 충돌 방지를 위해 자동 감속 정지시키는 스위치 (카 상단·승강로 내부 부착형은 <strong>밀폐형</strong>).</li>
+        <li><strong>파이널 리미트 스위치(Final Limit Switch):</strong> 리미트 스위치가 고장 났을 때 작동하는 2차 안전장치. <strong>반드시 기계적으로 조작(금속 작동캠 사용)</strong>되어야 하며, 완충기가 완전히 압축될 때까지 작동 상태를 유지해야 함.</li>
+        <li><strong>로크다운(Lock-down) 추락방지안전장치:</strong> 속도 <strong>210 m/min 이상</strong> 고속 엘리베이터에서 카 추락방지장치 작동 시 균형추·보상로프가 관성으로 튀어 오르는(Jump) 현상을 막기 위해 보상로프 시브에 설치하는 장치.</li>
+      </ul>
+    </section>
+
+    <!-- ==================== 제3편 ==================== -->
+    <section class="chapter" id="ch3">
+      <div class="chapter-header">
+        <span class="chapter-badge">제3편</span>
+        <h2>카 및 승강관련 기준 (도어·카틀·추락방지안전장치)</h2>
+      </div>
+
+      <h3>1. 승장 도어 시스템 및 인터록 (Interlock)</h3>
+      <ul>
+        <li><strong>도어 개폐 방식별 주 용도:</strong>
+          <ul>
+            <li>가로 열림 - <strong>중앙개폐(CO, 2CO):</strong> 개폐 시간이 빨라 일반 <strong>승객용</strong>에 주로 사용.</li>
+            <li>가로 열림 - <strong>측면개폐(1S, 2S):</strong> 개구부 폭을 넓게 확보할 수 있어 <strong>화물용, 침대용</strong>에 주로 사용.</li>
+            <li>세로 열림 - <strong>상승개폐(2up, 3up):</strong> 대형 개구부가 필요한 <strong>자동차용</strong>에 사용.</li>
+          </ul>
+        </li>
+        <li><strong>도어 개폐 힘 기준:</strong> 1m/s 초과 운행 중인 카 문은 <strong>50N 이상의 힘</strong>이 있어야 열릴 것 / 정지 시 비상 개방에 필요한 힘은 <strong>300N을 초과하지 않을 것</strong>.</li>
+        <li><strong>도어 머신(Door Machine) 특징:</strong> 엘리베이터 1회 주행마다 문은 열림+닫힘 2번 동작하므로, <strong>동작 횟수가 기동 횟수의 2배</strong>가 되어 높은 내구성이 요구됨.</li>
+      </ul>
+
+      <div class="warn-box">
+        <strong>시험 단골! 도어 인터록(Door Interlock) 동작 순서:</strong><br />
+        • 닫힐 때: <strong>① 도어록(기계적 잠금)이 먼저 확실히 걸린 후 → ② 도어 스위치(전기 접점)가 ON</strong> 되어 출발 가능!<br />
+        • 열릴 때: <strong>① 도어 스위치(전기 접점)가 먼저 끊어진(OFF) 후 → ② 도어록(잠금)이 해제</strong>되는 구조여야 함!
+      </div>
+
+      <ul>
+        <li><strong>문닫힘 안전장치 3종:</strong> <strong>세이프티 슈</strong>(기계적 접촉 시 반전), <strong>광전 장치</strong>(투광기·수광기 빛 차단 시 반전), <strong>초음파 장치</strong>(승강장 접근 유모차·휠체어 사전 검출).</li>
+      </ul>
+
+      <h3>2. 카(Car) 및 카틀 구조·안전율</h3>
+      <ul>
+        <li><strong>카틀의 구성:</strong> <strong>상부 체대</strong>(로프를 매닮) + <strong>하부 체대</strong>(추락방지안전장치 프레임 지지) + <strong>카주(Stile)</strong>(상·하부 체대 수직 연결).</li>
+        <li><strong>카실 및 천장 구출구:</strong> 강판 두께 <strong>1.2mm 이상</strong>. 천장 구출구는 승객 임의 탈출 사고를 막기 위해 <strong>카 내부에서는 열리지 않고 외부에서만 열리는 구조</strong>여야 하며, 열려 있을 때 운전 불가능하게 하는 안전 스위치 설치 필수!</li>
+        <li><strong>카의 안전율:</strong> <strong>승용(인화용 포함) 7.5 이상</strong> &nbsp;|&nbsp; <strong>승용 이외(침대·화물·자동차용) 6.0 이상</strong>.</li>
+        <li><strong>최대 허용 처짐량:</strong> 상부 체대, 하부 체대, 카바닥 부재 모두 정지부하 기준 <strong>전장(Span)의 1/960 이하</strong>.</li>
+        <li><strong>비상등 기준:</strong> 정전 시 카 내부 조도 <strong>5 lux 이상으로 60분(1시간) 이상</strong> 유지되어야 함.</li>
+      </ul>
+
+      <h3>3. 추락방지안전장치 (Safety Gear)</h3>
+      <p>로프 절단이나 과속 하강 시 가이드 레일을 꽉 물어 카를 강제 정지시키는 핵심 기계적 안전장치입니다. 원칙적으로 <strong>카 하부체대</strong>에 설치하되, <strong>승강로 피트 하부가 사무실이나 통로로 사용되어 사람이 출입하는 경우에는 균형추에도 반드시 설치</strong>해야 합니다.</p>
+
+      <!-- SVG Diagram: Safety Gear Stopping Force Curves -->
+      <div class="diagram-box">
+        <svg viewBox="0 0 750 205" width="100%" style="max-width:720px; height:auto;">
+          <!-- FGC -->
+          <rect x="15" y="15" width="230" height="175" rx="10" fill="#f8fafc" stroke="#cbd5e1" />
+          <text x="130" y="38" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#1e3a8a">① 점진적: F·G·C형</text>
+          <line x1="50" y1="150" x2="210" y2="150" stroke="#334155" stroke-width="2" />
+          <line x1="50" y1="150" x2="50" y2="55" stroke="#334155" stroke-width="2" />
+          <polyline points="75,150 85,85 195,85" fill="none" stroke="#2563eb" stroke-width="3.5" />
+          <text x="34" y="105" font-size="11" fill="#475569">정지력</text>
+          <text x="195" y="168" font-size="11" fill="#475569">거리</text>
+          <text x="130" y="180" text-anchor="middle" font-size="11.5" fill="#1e40af">처음부터 끝까지 죄는 힘 일정</text>
+
+          <!-- FWC -->
+          <rect x="260" y="15" width="230" height="175" rx="10" fill="#f8fafc" stroke="#cbd5e1" />
+          <text x="375" y="38" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#1e3a8a">② 점진적: F·W·C형</text>
+          <line x1="295" y1="150" x2="455" y2="150" stroke="#334155" stroke-width="2" />
+          <line x1="295" y1="150" x2="295" y2="55" stroke="#334155" stroke-width="2" />
+          <polyline points="315,150 335,105 365,85 440,85" fill="none" stroke="#059669" stroke-width="3.5" />
+          <text x="375" y="180" text-anchor="middle" font-size="11.5" fill="#065f46">초기 약함 → 점차 증가 후 일정</text>
+
+          <!-- Instantaneous -->
+          <rect x="505" y="15" width="230" height="175" rx="10" fill="#f8fafc" stroke="#cbd5e1" />
+          <text x="620" y="38" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#1e3a8a">③ 즉시 작동형 (롤러식)</text>
+          <line x1="540" y1="150" x2="700" y2="150" stroke="#334155" stroke-width="2" />
+          <line x1="540" y1="150" x2="540" y2="55" stroke="#334155" stroke-width="2" />
+          <path d="M555,60 Q570,130 660,145" fill="none" stroke="#dc2626" stroke-width="3.5" />
+          <text x="620" y="180" text-anchor="middle" font-size="11.5" fill="#b91c1c">순간적으로 강한 제동 (저속용)</text>
+        </svg>
+        <div class="diagram-caption">[도해 3-1] 추락방지안전장치 종류별 정지력-거리 특성 곡선 (시험 빈출 그래프!)</div>
+      </div>
+
+      <ul>
+        <li><strong>속도별 적용 기준:</strong>
+          <ul>
+            <li><strong>60 m/min 초과:</strong> 반드시 <strong>점진적 작동형</strong>(FGC형: 구조 간단·복구 용이 / FWC형) 사용.</li>
+            <li><strong>60 m/min 이하:</strong> 완충효과가 있는 즉시 작동형 사용 가능.</li>
+            <li><strong>37.8 m/min 이하:</strong> 일반 <strong>즉시 작동형(롤러식)</strong> 사용 가능 (성능시험 시 레일 4개소 흔적 평균치로 정지거리 산정).</li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="grid-2">
+        <div class="formula-card">
+          <div class="formula-title">즉시 작동형 흡수에너지 (K)</div>
+          <div class="formula-math">
+            K = <span class="frac"><span>W · V²</span><span>2g</span></span> + W · S (kg·m)
+          </div>
+          <div class="formula-desc">• 운동에너지(WV²/2g) + 정지거리 동안의 위치에너지(W·S) 합계!</div>
+        </div>
+        <div class="formula-card">
+          <div class="formula-title">점진적 작동형 평균 감속도(β) &amp; 슬랙로프 동작속도(V)</div>
+          <div class="formula-math">
+            β = <span class="frac"><span>V</span><span>9.8 × T</span></span> (g) &nbsp;|&nbsp; V = V₀ + g · t (m/s)
+          </div>
+          <div class="formula-desc">• 슬랙로프 세이프티: 로프 장력 상실(처짐) 시 즉시 작동, 과속조절기 불필요(간접 유압식 등에 사용)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 제4편 ==================== -->
+    <section class="chapter" id="ch4">
+      <div class="chapter-header">
+        <span class="chapter-badge">제4편</span>
+        <h2>기계실 관련 기준 (권상기·제동기·과속조절기·와이어로프)</h2>
+      </div>
+
+      <h3>1. 기계대 강도 및 기계실 발열·환기</h3>
+      <div class="grid-2">
+        <div class="formula-card">
+          <div class="formula-title">기계대(머신빔) 설계 하중 (P)</div>
+          <div class="formula-math">P = P₁ + 2 · P₂ (kg)</div>
+          <div class="formula-desc">
+            • <strong>P₁</strong>: 권상기 등 기계대 고정 장치 총중량(kg)<br />
+            • <strong>P₂</strong>: 주로프 중량 및 주로프에 작용하는 하중(kg) → 움직이는 동하중이므로 <strong>2배</strong> 적용!
+          </div>
+        </div>
+        <div class="formula-card">
+          <div class="formula-title">유압기기 발열량(Q) 및 필요 환기량(G)</div>
+          <div class="formula-math">
+            Q = <span class="frac"><span>860 · P · T · N</span><span>3,600</span></span> &nbsp;,&nbsp;
+            G = <span class="frac"><span>Q</span><span>0.29 · (t₂ - t₁)</span></span>
+          </div>
+          <div class="formula-desc">
+            • P: 전동기 출력(kW), T: 1주행 구동시간(초), N: 시간당 왕복횟수<br />
+            • C = 0.29(공기 비열), t₂: 기계실 허용온도(℃), t₁: 외기온도(℃)
+          </div>
+        </div>
+      </div>
+
+      <h3>2. 권상기 (Traction Machine) 및 도르래 홈</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>기어식 - 웜 기어 (Worm Gear)</th>
+              <th>기어식 - 헬리컬 기어 (Helical Gear)</th>
+              <th>무기어식 (Gearless)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>효율</strong></td>
+              <td>낮다 (종합효율 <strong>0.50 ~ 0.70</strong>)</td>
+              <td>높다 (종합효율 <strong>0.80 ~ 0.85</strong>)</td>
+              <td>매우 높다 (<strong>0.85 ~ 0.90</strong>)</td>
+            </tr>
+            <tr>
+              <td><strong>소음 / 역구동</strong></td>
+              <td>소음 <strong>작다</strong> / 역구동 <strong>어렵다</strong>(자동제동 효과)</td>
+              <td>소음 <strong>크다</strong> / 역구동 <strong>쉽다</strong></td>
+              <td>정숙함 / 전동기 축 직결</td>
+            </tr>
+            <tr>
+              <td><strong>적용 속도</strong></td>
+              <td>중·저속용 (<strong>105 m/min 이하</strong>)</td>
+              <td>중·고속용 (<strong>120 ~ 240 m/min</strong>)</td>
+              <td>고속용 (<strong>120 m/min 이상</strong>)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- SVG Diagram: Sheave Grooves -->
+      <div class="diagram-box">
+        <svg viewBox="0 0 720 185" width="100%" style="max-width:680px; height:auto;">
+          <!-- U Groove -->
+          <rect x="20" y="15" width="210" height="155" rx="10" fill="#f8fafc" stroke="#cbd5e1" />
+          <text x="125" y="38" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">(a) U 홈 (반원홈)</text>
+          <path d="M75,75 L95,75 A30,30 0 0,0 155,75 L175,75" fill="none" stroke="#334155" stroke-width="4" />
+          <circle cx="125" cy="75" r="27" fill="#94a3b8" stroke="#1e293b" stroke-width="2" />
+          <text x="125" y="135" text-anchor="middle" font-size="12" fill="#475569">마찰력 가장 작음</text>
+          <text x="125" y="153" text-anchor="middle" font-size="11.5" fill="#059669">로프 수명 김 (2중 권상용)</text>
+
+          <!-- Undercut Groove -->
+          <rect x="255" y="15" width="210" height="155" rx="10" fill="#f8fafc" stroke="#cbd5e1" />
+          <text x="360" y="38" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">(b) 언더컷(Undercut) 홈</text>
+          <path d="M310,75 L330,75 L345,102 L345,118 L375,118 L375,102 L390,75 L410,75" fill="none" stroke="#334155" stroke-width="4" />
+          <circle cx="360" cy="73" r="27" fill="#94a3b8" stroke="#1e293b" stroke-width="2" />
+          <text x="360" y="138" text-anchor="middle" font-size="12" fill="#475569">마찰력 중간 · 마모 시에도 일정</text>
+          <text x="360" y="155" text-anchor="middle" font-size="11.5" fill="#1d4ed8">승객용 권상기에 가장 널리 사용</text>
+
+          <!-- V Groove -->
+          <rect x="490" y="15" width="210" height="155" rx="10" fill="#f8fafc" stroke="#cbd5e1" />
+          <text x="595" y="38" text-anchor="middle" font-size="14" font-weight="bold" fill="#1e3a8a">(c) V 홈</text>
+          <path d="M545,68 L565,68 L595,122 L625,68 L645,68" fill="none" stroke="#334155" stroke-width="4" />
+          <circle cx="595" cy="76" r="24" fill="#94a3b8" stroke="#1e293b" stroke-width="2" />
+          <text x="595" y="138" text-anchor="middle" font-size="12" font-weight="bold" fill="#dc2626">마찰력 가장 큼!</text>
+          <text x="595" y="155" text-anchor="middle" font-size="11.5" fill="#b91c1c">로프·도르래 마모 빠름 (중저속용)</text>
+        </svg>
+        <div class="diagram-caption">[도해 4-1] 권상기 시브 홈 형상 비교 — 마찰계수 크기 순서: <strong>U홈 &lt; 언더컷홈 &lt; V홈</strong></div>
+      </div>
+
+      <div class="grid-2">
+        <div class="formula-card">
+          <div class="formula-title">트랙션 능력(a) &amp; 엘리베이터 속도(V)</div>
+          <div class="formula-math">
+            a = e<sup>μθ</sup> &nbsp;|&nbsp; V = <span class="frac"><span>π · D · N</span><span>1000</span></span> × i (m/min)
+          </div>
+          <div class="formula-desc">
+            • μ: 마찰계수, θ: 권부각(rad), D: 시브 지름(mm), N: 전동기 회전수(rpm), i: 감속비<br />
+            • <strong>시브 지름 규격:</strong> 주로프 지름의 <strong>40배 이상</strong> (접촉길이가 둘레의 1/4 이하일 때만 <strong>36배 이상</strong> 허용)
+          </div>
+        </div>
+        <div class="formula-card">
+          <div class="formula-title">엘리베이터용 전동기 소요동력 (P₀)</div>
+          <div class="formula-math">
+            P₀ = <span class="frac"><span>M · V · (1 - F/100)</span><span>6120 · η</span></span> (kW)
+          </div>
+          <div class="formula-desc">
+            • M: 정격하중(kg), V: 정격속도(m/min), F: 오버밸런스율(%), η: 종합효율
+          </div>
+        </div>
+      </div>
+
+      <h3>3. 제동기(Brake) 및 과속조절기(Speed Governor)</h3>
+      <ul>
+        <li><strong>제동기 원리(페일 세이프):</strong> 평상시 전원이 투입될 때만 <strong>전자코일(솔레노이드)</strong> 힘으로 개방되고, 정전이나 정지 시에는 <strong>강력한 스프링 힘으로 자동 제동</strong>됩니다.</li>
+        <li><strong>제동기 능력:</strong> 정격하중의 <strong>125% 부하</strong>에서 전속력 하강 중인 카를 안전하게 감속 정지시킬 것 (감속도 약 0.1G).</li>
+        <li><strong>제동 공식:</strong> 제동 소요시간 <code>t = 120d / V (초)</code> &nbsp;|&nbsp; 제동토크 <code>T = K · (974 · kW) / N (kg·m)</code> (부하계수 K: 교류 1.5, 직류 1.0).</li>
+        <li><strong>과속조절기 작동 속도:</strong> 정격속도의 <strong>115% 이상</strong>에서 작동하되, 상한 속도 미만에서 작동 (고정 롤러 제외 즉시형 48 m/min, 고정 롤러 즉시형 60 m/min, 완충 즉시형·60 이하 점차형 90 m/min).</li>
+        <li><strong>과속조절기 종류:</strong> <strong>디스크형</strong>(저·중속용), <strong>플라이볼형</strong>(고속용, 원심력으로 로프캣치 작동), <strong>롤 세이프티형</strong>.</li>
+      </ul>
+
+      <h3>4. 제어반 절연저항 및 와이어로프 기준</h3>
+      <div class="grid-2">
+        <div class="table-wrap" style="margin:0;">
+          <table>
+            <thead>
+              <tr>
+                <th>전로 사용전압 구분</th>
+                <th>DC 시험전압</th>
+                <th>절연저항값</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>SELV 및 PELV</td>
+                <td>250 V</td>
+                <td><strong>0.5 MΩ 이상</strong></td>
+              </tr>
+              <tr>
+                <td>FELV, 500V 이하</td>
+                <td>500 V</td>
+                <td><strong>1.0 MΩ 이상</strong></td>
+              </tr>
+              <tr>
+                <td>500V 초과</td>
+                <td>1,000 V</td>
+                <td><strong>1.0 MΩ 이상</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="table-wrap" style="margin:0;">
+          <table>
+            <thead>
+              <tr>
+                <th>와이어로프 종류</th>
+                <th>안전율 (= 파괴강도/허용응력)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>권상용 (승용)</td>
+                <td>2본: <strong>16 이상</strong> / 3본 이상: <strong>12 이상</strong><br />(체인은 10 이상)</td>
+              </tr>
+              <tr>
+                <td>권상용 (화물용)</td>
+                <td><strong>6 이상</strong></td>
+              </tr>
+              <tr>
+                <td>과속조절기 로프</td>
+                <td><strong>8 이상</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- SVG Diagram: Wire Rope -->
+      <div class="diagram-box">
+        <svg viewBox="0 0 680 155" width="100%" style="max-width:640px; height:auto;">
+          <rect x="15" y="10" width="650" height="135" rx="10" fill="#f8fafc" stroke="#cbd5e1" />
+          <!-- Rope Cross Section -->
+          <circle cx="115" cy="78" r="22" fill="#fde68a" stroke="#b45309" stroke-width="2" />
+          <text x="115" y="82" text-anchor="middle" font-size="11" font-weight="bold" fill="#92400e">심강</text>
+          <circle cx="115" cy="38" r="14" fill="#cbd5e1" stroke="#334155" stroke-width="2" />
+          <circle cx="150" cy="58" r="14" fill="#cbd5e1" stroke="#334155" stroke-width="2" />
+          <circle cx="150" cy="98" r="14" fill="#cbd5e1" stroke="#334155" stroke-width="2" />
+          <circle cx="115" cy="118" r="14" fill="#cbd5e1" stroke="#334155" stroke-width="2" />
+          <circle cx="80" cy="98" r="14" fill="#cbd5e1" stroke="#334155" stroke-width="2" />
+          <circle cx="80" cy="58" r="14" fill="#cbd5e1" stroke="#334155" stroke-width="2" />
+          <text x="225" y="55" font-size="13" font-weight="bold" fill="#1e3a8a">와이어로프 3요소</text>
+          <text x="225" y="78" font-size="12.5" fill="#334155">1. 소선(Wire) → 2. 스트랜드(Strand) → 3. 심강(Core)</text>
+          <text x="225" y="100" font-size="12.5" fill="#1d4ed8" font-weight="bold">• 규격: 지름 8mm 이상, 강철제 2본 이상</text>
+          <text x="225" y="120" font-size="12.5" fill="#059669" font-weight="bold">• 꼬임: 승강기에는 변형이 적은 '보통 꼬임(Z꼬임)' 주로 사용</text>
+        </svg>
+        <div class="diagram-caption">[도해 4-2] 와이어로프의 3대 구성요소 및 규격 핵심 (권동식은 최저 위치에서 드럼에 2회 이상 여유 감김 필수)</div>
+      </div>
+    </section>
+
+    <!-- ==================== 제5편 ==================== -->
+    <section class="chapter" id="ch5">
+      <div class="chapter-header">
+        <span class="chapter-badge">제5편</span>
+        <h2>기계요소 설계 (재료역학·활차·브레이크·기어)</h2>
+      </div>
+
+      <h3>1. 후크의 법칙·탄성계수·포아송의 비</h3>
+      <div class="grid-2">
+        <div class="formula-card">
+          <div class="formula-title">세로 탄성계수(영률 E) 및 늘어난 길이(λ)</div>
+          <div class="formula-math">
+            σ = E · ε &nbsp;⇒&nbsp; λ = <span class="frac"><span>W · l</span><span>A · E</span></span>
+          </div>
+          <div class="formula-desc">• 비례한도 내에서 응력(σ)과 변형률(ε)은 비례 (후크의 법칙)<br />• 전단하중 시에는 가로 탄성계수(전단탄성률 G): τ = G · γ</div>
+        </div>
+        <div class="formula-card">
+          <div class="formula-title">포아송의 비 (μ)</div>
+          <div class="formula-math">
+            μ = <span class="frac"><span>가로 변형률 (ε')</span><span>세로 변형률 (ε)</span></span> = <span class="frac"><span>1</span><span>m</span></span> &lt; 1
+          </div>
+          <div class="formula-desc">• <strong>m(포아송의 수)</strong>: 보통 2~4이며 연강에서는 <strong>10/3</strong> (즉 μ = 0.3)<br />• 포아송의 비는 항상 1보다 작다!</div>
+        </div>
+      </div>
+
+      <h3>2. 활차(도르래) 장치의 힘의 원리</h3>
+      <!-- SVG Diagram: Pulleys -->
+      <div class="diagram-box">
+        <svg viewBox="0 0 700 185" width="100%" style="max-width:660px; height:auto;">
+          <!-- Fixed Pulley -->
+          <rect x="20" y="15" width="200" height="155" rx="10" fill="#f8fafc" stroke="#cbd5e1" />
+          <text x="120" y="36" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#1e3a8a">① 정활차 (고정도르래)</text>
+          <line x1="80" y1="50" x2="160" y2="50" stroke="#334155" stroke-width="4" />
+          <line x1="120" y1="50" x2="120" y2="80" stroke="#334155" stroke-width="2.5" />
+          <circle cx="120" cy="80" r="18" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2.5" />
+          <line x1="102" y1="80" x2="102" y2="135" stroke="#dc2626" stroke-width="2" />
+          <line x1="138" y1="80" x2="138" y2="125" stroke="#1e293b" stroke-width="2" />
+          <rect x="126" y="125" width="24" height="18" fill="#64748b" />
+          <text x="120" y="160" text-anchor="middle" font-size="13" font-weight="bold" fill="#dc2626">P = W (방향만 전환)</text>
+
+          <!-- Movable Pulley -->
+          <rect x="250" y="15" width="200" height="155" rx="10" fill="#f8fafc" stroke="#cbd5e1" />
+          <text x="350" y="36" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#1e3a8a">② 동활차 (움직도르래)</text>
+          <line x1="300" y1="50" x2="400" y2="50" stroke="#334155" stroke-width="4" />
+          <line x1="332" y1="50" x2="332" y2="95" stroke="#1e293b" stroke-width="2" />
+          <line x1="368" y1="55" x2="368" y2="95" stroke="#dc2626" stroke-width="2" />
+          <circle cx="350" cy="95" r="18" fill="#d1fae5" stroke="#059669" stroke-width="2.5" />
+          <rect x="338" y="120" width="24" height="18" fill="#64748b" />
+          <line x1="350" y1="95" x2="350" y2="120" stroke="#334155" stroke-width="2" />
+          <text x="350" y="160" text-anchor="middle" font-size="13" font-weight="bold" fill="#059669">P = ½ W (힘 절반 절약)</text>
+
+          <!-- Compound Pulley -->
+          <rect x="480" y="15" width="200" height="155" rx="10" fill="#f8fafc" stroke="#cbd5e1" />
+          <text x="580" y="36" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#1e3a8a">③ 복활차 (조합 활차)</text>
+          <text x="580" y="78" text-anchor="middle" font-size="13" fill="#334155">동활차 n개 조합 방식에 따라</text>
+          <text x="580" y="106" text-anchor="middle" font-size="15" font-weight="bold" fill="#1d4ed8">W = 2 · n · P</text>
+          <text x="580" y="130" text-anchor="middle" font-size="13.5" font-weight="bold" fill="#0369a1">또는 W = 2ⁿ · P</text>
+          <text x="580" y="158" text-anchor="middle" font-size="11.5" fill="#64748b">작은 힘으로 큰 하중 인양</text>
+        </svg>
+        <div class="diagram-caption">[도해 5-1] 정활차·동활차·복활차의 힘의 비 비교</div>
+      </div>
+
+
+      <h3>3. 제어용 제동장치(브레이크) 종류 및 설계 공식</h3>
+      <div class="grid-2">
+        <div class="formula-card">
+          <div class="formula-title">① 단식 블록 브레이크 (1개의 블록이 드럼 압착)</div>
+          <div class="formula-math">
+            T = <span class="frac"><span>Q · D</span><span>2</span></span> = <span class="frac"><span>μ · P · D</span><span>2</span></span> &nbsp;,&nbsp;
+            H = <span class="frac"><span>μ · P · V</span><span>75</span></span> (PS)
+          </div>
+          <div class="formula-desc">
+            • 브레이크 용량: <code>H = μ · q · V</code> (kg/mm² · m/s)<br />
+            • 레버 조작력: <code>F = μ·P·a / (b - μ·c)</code><br />
+            • 큰 하중이 걸리는 경우 2개의 블록을 마주 보게 누르는 <strong>복식 블록 브레이크</strong> 사용!
+          </div>
+        </div>
+        <div class="formula-card">
+          <div class="formula-title">② 밴드 브레이크 &amp; 드럼(내확)·축압 브레이크</div>
+          <div class="formula-math">
+            F = T₂ - T₁ = T₁(e<sup>μα</sup> - 1)
+          </div>
+          <div class="formula-desc">
+            • <strong>드럼 브레이크(내부 확장식/내확 브레이크):</strong> 주철 드럼 안쪽에서 양측 슈(라이닝 부착)를 캠이나 유압실린더로 확장해 제동.<br />
+            • <strong>축압 브레이크:</strong> 축 방향으로 압력을 가하는 원판(디스크) 브레이크 등.
+          </div>
+        </div>
+      </div>
+      <h3>4. 기어(Gear) 각부 명칭 및 계산</h3>
+      <ul>
+        <li><strong>기어의 핵심 용어 및 크기 표시:</strong>
+          <ul>
+            <li><strong>모듈 (Module, M):</strong> 피치원 지름(D, mm)을 잇수(Z)로 나눈 값 → <strong><code>M = D / Z</code></strong> (즉 <code>D = M · Z</code>).</li>
+            <li><strong>원주피치 (Circular Pitch, P):</strong> 피치원 둘레를 잇수로 나눈 값 → <strong><code>P = π · D / Z = π · M</code></strong>.</li>
+            <li><strong>백래시(Backlash):</strong> 맞물리는 한 쌍의 기어 잇면 사이의 미세한 틈새 (열팽창·마찰 간섭 방지).</li>
+            <li><strong>기초원(Base Circle):</strong> 인벌류트 치형 곡선을 만드는 기초가 되는 원.</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ==================== 제6편 ==================== -->
+    <section class="chapter" id="ch6">
+      <div class="chapter-header">
+        <span class="chapter-badge">제6편</span>
+        <h2>전기 설비 설계 (전동기·제어시스템·동력 및 조명전원)</h2>
+      </div>
+
+      <h3>1. 승강기용 전동기 및 절연재료 내열등급</h3>
+      <ul>
+        <li><strong>직류 타여자 전동기:</strong> 속도 제어 범위가 넓고 정속도 특성을 가지며 토크가 부하전류에 비례해 고속 엘리베이터에 사용됨. <strong style="color:#dc2626;">주의: 계자 전류가 0이 되면 속도가 무한정 폭주(급상승)하여 위험하므로 계자 회로에는 절대 퓨즈(Fuse)를 넣지 않는다!</strong></li>
+        <li><strong>3상 농형 유도전동기 기동법:</strong> 소용량은 <strong>전전압(직입) 기동</strong>, 10~15kW급은 기동전류를 1/3로 줄이는 <strong>Y-Δ(와이-델타) 기동</strong>, 15kW 이상 대용량은 단권변압기를 쓰는 <strong>기동 보상기법</strong> 사용.</li>
+        <li><strong>3상 유도전동기 기계적 출력:</strong> <code>P₀ = (1 - S) · P₂</code> (S: 슬립, P₂: 2차 입력).</li>
+      </ul>
+
+      <div class="tip-box">
+        <strong>암기 꿀팁! 절연재료 내열성 최고허용온도 (Y - A - E - B - F - H - C):</strong><br />
+        "<strong>예(Y:90) 아(A:105) 이(E:120) 비(B:130) 에프(F:155) 에이치(H:180) 씨(C:180초과)</strong>" 순서대로 온도가 올라갑니다!
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>절연 종류</th>
+              <th>Y종</th>
+              <th>A종</th>
+              <th>E종</th>
+              <th>B종</th>
+              <th>F종</th>
+              <th>H종</th>
+              <th>C종</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>최고허용온도 (℃)</strong></td>
+              <td><strong>90</strong></td>
+              <td><strong>105</strong></td>
+              <td><strong>120</strong></td>
+              <td><strong>130</strong></td>
+              <td><strong>155</strong></td>
+              <td><strong>180</strong></td>
+              <td><strong>180 초과</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>2. 승강기 속도제어 및 운전 조작방식</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>분류</th>
+              <th>제어 방식</th>
+              <th>핵심 원리 및 적용 특징</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="4"><strong>로프식 교류(AC)</strong></td>
+              <td>교류 1단 제어</td>
+              <td class="left">전원 투입/차단 + 기계 브레이크 정지 (<strong>30 m/min 이하</strong> 소형 화물용 등)</td>
+            </tr>
+            <tr>
+              <td>교류 2단 제어</td>
+              <td class="left">고속권선 주행 후 저속권선으로 감속 착상 (보통 4:1 속도비)</td>
+            </tr>
+            <tr>
+              <td>교류 귀환제어(ACVV)</td>
+              <td class="left">사이리스터 점호각 제어 + 감속 시 직류제동 병행 (<strong>45 ~ 105 m/min</strong>)</td>
+            </tr>
+            <tr>
+              <td><strong>VVVF (인버터) 제어</strong></td>
+              <td class="left"><strong>전압(Voltage)과 주파수(Frequency)를 동시에 가변</strong>하여 직류 전동기 수준의 매끄러운 승차감과 <strong>큰 소비전력 절감</strong> 달성 (현재 표준, 고속까지 적용)</td>
+            </tr>
+            <tr>
+              <td rowspan="2"><strong>로프식 직류(DC)</strong></td>
+              <td>워드-레오나드 방식</td>
+              <td class="left">전동발전기(M-G 세트)의 계자전류 조정으로 직류전압 연속 공급 (승차감 우수하나 회전기 보수 어려움)</td>
+            </tr>
+            <tr>
+              <td>정지 레오나드 방식</td>
+              <td class="left">회전 발전기 대신 <strong>사이리스터(정지형 변환기)</strong>로 교류를 직류로 변환 제어 (손실 적고 보수 용이)</td>
+            </tr>
+            <tr>
+              <td><strong>유압식</strong></td>
+              <td>미터인 / 블리드오프 등</td>
+              <td class="left">• 미터인(Meter-in): 주회로 유량 직접 제어, 정확하나 여분 오일이 안전밸브로 빠져 <strong>효율이 나쁨</strong><br />• 보호장치: 플런저 리미트, 공회전 방지 타이머, <strong>작동유 온도 검출 스위치(50~60℃ 이하 유지)</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <ul>
+        <li><strong>운전 조작방식 구분:</strong>
+          <ul>
+            <li><strong>단식 자동방식:</strong> 먼저 눌린 호출 1개에만 응답 (자동차용·화물용).</li>
+            <li><strong>하강 승합 자동식:</strong> 2층 이상 승강장에 내림 버튼만 존재 (방범·사생활 보호용).</li>
+            <li><strong>승합 전자동식:</strong> 상·하 호출 모두 기억해 진행 방향대로 순차 응답 (일반 1대 승용 표준).</li>
+            <li><strong>군승합 자동식(2~3대) vs 군관리 방식(3~8대):</strong> 군관리 방식은 건물 전체 교통 효율을 최적화하며, 승강장 카 위치 표시기 대신 도착 예정 카만 알려주는 <strong>홀랜턴(Hall Lantern)</strong>을 사용함.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>3. 동력전원 및 조명전원 설비 기준</h3>
+      <div class="grid-2">
+        <div class="formula-card">
+          <div class="formula-title">전원 변압기 용량(P₀) &amp; 배전선 통전용량(I₀)</div>
+          <div class="formula-math">
+            P₀ = <span class="frac"><span>√3 · V · I · N · Y</span><span>1000</span></span> (kVA) &nbsp;|&nbsp; I₀ = I·N·Y + I<sub>c</sub>·N (A)
+          </div>
+          <div class="formula-desc">• N: 대수, Y: 부등률(대수가 많을수록 동시 최대전류 확률이 낮아져 설비 이용도 향상), I<sub>c</sub>: 제어전류</div>
+        </div>
+        <div class="formula-card">
+          <div class="formula-title">허용 전압강하 및 노이즈 대책</div>
+          <div class="formula-desc" style="color:#0f172a; font-size:14px;">
+            • <strong>AC 엘리베이터:</strong> 변압기 <strong>6%</strong>, 전원선 <strong>5% 이하</strong><br />
+            • <strong>DC·인버터 엘리베이터:</strong> 변압기 <strong>4%</strong>, 전원선 <strong>3% 이하</strong><br />
+            • <strong>조명 전원:</strong> 동력전원과 <strong>독립 설비</strong>, 허용 전압강하 <strong>3% 이하</strong><br />
+            • <strong>주위 온도:</strong> 기계실 최고 온도 <strong>40℃ 이하</strong> 유지 (가속전류는 정격의 1.5~1.7배)<br />
+            • <strong>OA/통신기기 보호:</strong> 동력선과 <strong>1m 이상 이격</strong>(또는 금속관 배선), <strong>접지선 공용 금지!</strong>
+          </div>
+        </div>
+      </div>
+
+      <h4>엘리베이터 대수별 부등률 포함 대수 (N × Y) 표</h4>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="2">엘리베이터 대수 (N)</th>
+              <th rowspan="2">전부하 상승전류에 대한 비율</th>
+              <th colspan="2">전부하 상승 가속전류에 대한 비율</th>
+            </tr>
+            <tr>
+              <th>급행구간이 없는 경우</th>
+              <th>급행구간이 있는 경우</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>2대</td><td>2.0</td><td>1.7</td><td>1.85</td></tr>
+            <tr><td>3대</td><td>2.7</td><td>2.4</td><td>2.7</td></tr>
+            <tr><td>4대</td><td>3.1</td><td>2.95</td><td>3.4</td></tr>
+            <tr><td>5대</td><td>3.25</td><td>3.6</td><td>4.2</td></tr>
+            <tr><td>6대</td><td>3.3</td><td>4.1</td><td>4.9</td></tr>
+            <tr><td>7대</td><td>3.71</td><td>4.6</td><td>5.6</td></tr>
+            <tr><td>8대</td><td>4.08</td><td>5.1</td><td>6.3</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="formula-card">
+        <div class="formula-title">전압강하(e) 및 조명전원 인입선 굵기(S)</div>
+        <div class="formula-math">
+          e = <span class="frac"><span>34.2 · I · N · Y · L · k</span><span>1000 · S</span></span> (V) &nbsp;|&nbsp;
+          S ≥ <span class="frac"><span>R · I · L</span><span>1000 · e · V</span></span> · N · K (mm²)
+        </div>
+        <div class="formula-desc">• k: 전압강하계수 = (R·cosθ + X·sinθ)/R &nbsp;|&nbsp; R(연동선 계수): 단상 2선식·직류 2선식일 때 39.3</div>
+      </div>
+    </section>
+
+    <!-- ==================== 제7편 ==================== -->
+    <section class="chapter" id="ch7">
+      <div class="chapter-header">
+        <span class="chapter-badge">제7편</span>
+        <h2>재해 대책 설비 (내진설계·관제운전·비상용 승강기)</h2>
+      </div>
+
+      <h3>1. 엘리베이터 내진설계 및 지진 관제운전</h3>
+      <div class="grid-2">
+        <div class="formula-card">
+          <div class="formula-title">설계용 수평 지진력(F) 및 수직 지진력(F₀)</div>
+          <div class="formula-math">
+            F = K · W (kg) &nbsp;,&nbsp; F₀ = K₀ · W &nbsp;(단, K₀ = <span class="frac"><span>1</span><span>2</span></span> K)
+          </div>
+          <div class="formula-desc">• K: 설계용 수평진도, K₀: 설계용 수직진도(수평진도의 절반!), W: 기기의 중량(kg, 작용점은 기기 중심)</div>
+        </div>
+        <div class="info-card">
+          <h4>지진·정전 시 관제 운전 핵심</h4>
+          <ul>
+            <li><strong>지진 감지기:</strong> 건물 높이(60m 이하 / 60~120m / 120m 초과)에 따라 P파(초기 미동) 및 S파(본진, gal 단위) 설정치 감지 시 최근접 층에 정지.</li>
+            <li><strong>정전 시 관제 운전:</strong> 비상전원 투입 시 일반 승강기는 순차적으로 직근층·지정층 착상 피난 / <strong>비상용 엘리베이터는 즉시 비상전원 공급!</strong></li>
+          </ul>
+        </div>
+      </div>
+
+
+      <h4>설계용 표준진도 및 건축물 높이별 지진 감지기 설정값 (단위: gal)</h4>
+      <div class="grid-2">
+        <div class="table-wrap" style="margin:0;">
+          <table>
+            <thead>
+              <tr>
+                <th>대상 기기</th>
+                <th>설치 층</th>
+                <th>승용·침대용</th>
+                <th>화물용</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td rowspan="2"><strong>승강로의 기기</strong></td><td>1층 및 지하층</td><td>0.4</td><td>0.4</td></tr>
+              <tr><td>2층 이상 층</td><td><strong>0.6</strong></td><td><strong>0.45</strong></td></tr>
+              <tr><td rowspan="2"><strong>기계실의 기기</strong></td><td>1층 및 지하층</td><td>0.4</td><td>0.4</td></tr>
+              <tr><td>2층 이상 층</td><td><strong>1.0</strong></td><td><strong>1.0</strong></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-wrap" style="margin:0;">
+          <table>
+            <thead>
+              <tr>
+                <th>건축물 높이</th>
+                <th>저 설정치</th>
+                <th>고 설정치</th>
+                <th>특정 설정치</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>60m 이하</strong></td><td>120</td><td>150</td><td>80 또는 P파</td></tr>
+              <tr><td><strong>60m 초과 ~ 120m 이하</strong></td><td>60, 80, 100</td><td>100, 120, 150</td><td>30, 40, 60 또는 P파</td></tr>
+              <tr><td><strong>120m 초과</strong></td><td>40, 60, 80</td><td>80, 100, 120</td><td>25, 30 또는 P파</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <h3>2. 비상용 승강기의 3단계 비상운전 및 배선 기준</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>운전 단계</th>
+              <th>동작 내용 및 특징</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>① 비상 호출 운전</strong></td>
+              <td class="left">피난층 또는 중앙감시반의 호출 스위치 작동 시, 정상 운행 중이던 승강기가 모든 승장 호출을 취소하고 <strong>지정된 피난층으로 즉시 직행 복귀</strong>하는 운전 (이때 카 내 비상정지 스위치는 무효화됨!).</td>
+            </tr>
+            <tr>
+              <td><strong>② 1차 소방운전</strong></td>
+              <td class="left">소방대원이 카 내 전용 <strong>키 스위치</strong>로 전환하여 조작. 카 내 비상정지 스위치는 유효하나, 연기에 의한 오작동 방지를 위해 <strong>과부하 감지장치 및 문닫힘 안전장치(광전장치 등)는 무효화</strong>됨.</td>
+            </tr>
+            <tr>
+              <td><strong>③ 2차 소방운전</strong></td>
+              <td class="left">인명이 급박한 위험에 처해 있거나 화열로 문이 변형되어 정상 개폐가 불가능할 때, <strong>카와 승강장 문을 열린 상태로 승강</strong>할 수 있게 하는 긴급 운전.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="danger-box">
+        <strong>비상용 승강기 설계 시 절대 주의사항 (시험 단골 지문!):</strong>
+        <ul style="margin-top:6px; margin-bottom:0;">
+          <li>비상운전 종료 후 자동 복귀되면 위험하므로, 반드시 <strong>기계실에 설치된 복귀 장치를 수동 리셋(Reset)</strong>해야만 정상 복귀된다.</li>
+          <li><strong>터치버튼 사용 금지:</strong> 소화수(물기·수분)에 의한 오동작 위험이 있으므로 사용하지 않는다.</li>
+          <li><strong>누전 시 차단 금지:</strong> 비상시 전원이 끊기면 소방관이 갇히므로, 누전이 검출되더라도 <strong>전원을 차단하지 않고 경보만 울리도록</strong> 설계한다.</li>
+          <li><strong>전기 배선:</strong> 기계실 및 승강로 외부 배선은 <strong>내화배선</strong>으로 하고 일반용과 별도 배선한다. 승강로 내 분기단자는 침수 대비 최하층 바닥면에서 <strong>300mm 이상 높이</strong>에 설치한다.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ==================== 출제예상문제 ==================== -->
+    <section class="chapter" id="quiz">
+      <div class="chapter-header">
+        <span class="chapter-badge">실전 점검</span>
+        <h2>핵심 출제예상문제 &amp; 정답 확인</h2>
+      </div>
+      <p>교재에 수록된 출제예상문제와 각 편 핵심 기출 포인트를 직접 풀어보며 학습 내용을 점검해 보세요.</p>
+
+      <div class="quiz-item">
+        <div class="quiz-q">문제 1. 엘리베이터 설계 시 가장 기본이 되는 '기본 시방(사양)' 두 가지는?</div>
+        <div>가. 속도와 층수 &nbsp;&nbsp; 나. 적재량과 속도 &nbsp;&nbsp; 다. 적재량과 대수 &nbsp;&nbsp; 라. 속도와 대수</div>
+        <button class="quiz-btn" onclick="toggleAns('ans1')">정답 및 해설 보기</button>
+        <div class="quiz-ans" id="ans1">
+          <strong>정답: 나. 적재량과 속도</strong><br />
+          해설: 엘리베이터의 기본 시방은 얼마의 무게를 싣고(적재량/정원) 얼마나 빠르게 이동하는가(정격속도)로 결정됩니다.
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q">문제 2. 설치 대수의 산정 시 직접적으로 필요한 기초 자료가 아닌 것은?</div>
+        <div>가. 5분간 수송능력 &nbsp;&nbsp; 나. 교통수요 &nbsp;&nbsp; 다. 건물의 비상발전기 용량 &nbsp;&nbsp; 라. 평균운전 간격</div>
+        <button class="quiz-btn" onclick="toggleAns('ans2')">정답 및 해설 보기</button>
+        <div class="quiz-ans" id="ans2">
+          <strong>정답: 다. 건물의 비상발전기 용량</strong><br />
+          해설: 설치대수 산정에는 ① 5분간 교통수요(Q), ② 1대당 5분간 수송능력(B), ③ 질적 기준인 평균운전 간격(RTT/N)이 사용됩니다. 비상발전기 용량은 엘리베이터 대수와 전동기 용량이 결정된 이후에 산정합니다.
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q">문제 3. 엘리베이터를 분산 배치하는 것보다 한곳에 집중 배치하는 이유로 맞지 않는 것은?</div>
+        <div>가. 운전능률 향상 &nbsp;&nbsp; 나. 설비비용의 저렴 &nbsp;&nbsp; 다. 승객의 대기시간 단축 &nbsp;&nbsp; 라. 승객의 보행거리 단축</div>
+        <button class="quiz-btn" onclick="toggleAns('ans3')">정답 및 해설 보기</button>
+        <div class="quiz-ans" id="ans3">
+          <strong>정답: 라. 승객의 보행거리 단축</strong><br />
+          해설: 엘리베이터를 한곳에 모으면 군관리 등을 통해 운전능률이 오르고 대기시간과 설비비는 줄어들지만, 건물 양 끝단에 있는 승객이 중앙 코어까지 걸어와야 하는 보행거리는 오히려 길어질 수 있습니다.
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q">문제 4. 도어 인터록(Door Interlock)과 완충기 적용 속도에 대한 설명으로 옳은 것은?</div>
+        <div>가. 도어가 닫힐 때 도어 스위치가 먼저 연결된 후 도어록이 잠긴다.<br />나. 스프링 완충기는 정격속도 60 m/min 이하의 엘리베이터에만 사용한다.<br />다. 권상기 시브 홈의 마찰력은 V홈 &lt; 언더컷홈 &lt; U홈 순으로 크다.<br />라. 직류 타여자 전동기는 안전을 위해 계자 회로에 반드시 퓨즈를 설치한다.</div>
+        <button class="quiz-btn" onclick="toggleAns('ans4')">정답 및 해설 보기</button>
+        <div class="quiz-ans" id="ans4">
+          <strong>정답: 나. 스프링 완충기는 정격속도 60 m/min 이하의 엘리베이터에만 사용한다.</strong><br />
+          해설: ① 도어 인터록은 반드시 기계적 도어록이 먼저 잠긴 뒤 도어 스위치가 ON 되어야 합니다. ② 시브 마찰력은 U홈 &lt; 언더컷홈 &lt; V홈 순입니다. ③ 타여자 전동기 계자 회로가 단선되면 속도 폭주가 일어나므로 퓨즈를 절대 넣지 않습니다.
+        </div>
+      </div>
+
+      <div class="quiz-item">
+        <div class="quiz-q">문제 5. 비상용 승강기의 설비 및 운전 기준에 대한 설명 중 틀린 것은?</div>
+        <div>가. 1차 소방운전 시 과부하 감지장치 및 문닫힘 안전장치는 무효화된다.<br />나. 수분에 의한 오동작 방지를 위해 터치버튼은 사용하지 않는다.<br />다. 비상시 누전이 감지되면 즉시 주전원을 자동차단하여 감전을 예방한다.<br />라. 승강로에서 분기할 때 분기단자는 최하층 바닥면에서 300mm 이상 높이에 설치한다.</div>
+        <button class="quiz-btn" onclick="toggleAns('ans5')">정답 및 해설 보기</button>
+        <div class="quiz-ans" id="ans5">
+          <strong>정답: 다. 비상시 누전이 감지되면 즉시 주전원을 자동차단하여 감전을 예방한다. (X)</strong><br />
+          해설: 비상용 승강기는 화재 진압 중 전원이 끊기면 대원이 고립되므로, 누전이 검출되더라도 전원을 차단하지 않고 '경보만 울리도록' 조치해야 합니다.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function calcElevator() {
+      const S = parseFloat(document.getElementById('calcS').value) || 0;
+      const RTT = parseFloat(document.getElementById('calcRTT').value) || 1;
+      const Q = parseFloat(document.getElementById('calcQ').value) || 0;
+
+      const B = (300 * S) / RTT;
+      const N = B > 0 ? Math.ceil(Q / B) : 0;
+      const interval = N > 0 ? (RTT / N) : 0;
+
+      document.getElementById('calcOut').innerHTML =
+        `1대당 5분 수송능력(B) = <strong>${B.toFixed(1)}명</strong> &nbsp;|&nbsp; 필요 대수(N) = <strong>${N}대</strong> (산출값 ${(B > 0 ? (Q/B).toFixed(2) : 0)}대) &nbsp;|&nbsp; 평균 운전 간격 = <strong>${interval.toFixed(1)}초</strong>`;
+    }
+
+    function toggleAns(id) {
+      const el = document.getElementById(id);
+      el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+    }
+
+    function filterSections() {
+      const query = document.getElementById('searchInput').value.trim().toLowerCase();
+      const chapters = document.querySelectorAll('.chapter');
+      chapters.forEach(ch => {
+        if (!query) {
+          ch.style.display = 'block';
+        } else {
+          const text = ch.innerText.toLowerCase();
+          ch.style.display = text.includes(query) ? 'block' : 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

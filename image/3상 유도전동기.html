@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="승강기기사 시험 대비 3상 유도전동기 학습 노트: 구조, 원리, 회전자계, 동기속도, 슬립, 예제, 연습문제" />
+  <title>3상 유도전동기 | 승강기기사 학습노트</title>
+  <style>
+    :root { --bg:#f4f7fb; --paper:#fff; --navy:#16233b; --navy2:#22385e; --blue:#3265d6; --lightblue:#eaf1ff; --teal:#008b79; --orange:#dc851b; --ink:#1c2940; --muted:#5c6d85; --border:#dde5f0; --green:#0b855b; --red:#bc484a; --shadow:0 15px 45px rgba(31,49,78,.06); }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--ink); font-family: "Pretendard","Noto Sans KR","Malgun Gothic",Arial,sans-serif; line-height:1.75; word-break:keep-all; }
+    a { color:inherit; text-decoration:none; }
+    button,input,select { font:inherit; }
+    button { cursor:pointer; }
+    .layout { max-width:1180px; margin:auto; padding:0 24px 72px; display:grid; grid-template-columns:214px minmax(0,1fr); gap:28px; }
+    header { background:linear-gradient(120deg,#15233d 0%,#243c67 75%,#315b92 100%); color:white; }
+    .head-inner { max-width:1180px; margin:auto; padding:52px 24px 56px; }
+    .eyebrow { display:inline-block; padding:4px 11px; background:rgba(255,255,255,.13); border:1px solid rgba(255,255,255,.26); border-radius:20px; font-size:12px; font-weight:700; letter-spacing:.06em; }
+    h1 { font-size:clamp(28px,4vw,42px); line-height:1.3; margin:14px 0 10px; letter-spacing:-.04em; }
+    header p { margin:0; color:#dce8fc; font-size:16px; max-width:760px; }
+    .head-meta { margin-top:24px; display:flex; flex-wrap:wrap; gap:8px; }
+    .head-meta span { padding:6px 11px; border-radius:8px; background:rgba(255,255,255,.09); font-size:12px; color:#ecf2ff; }
+    nav { position:sticky; top:20px; align-self:start; margin-top:28px; padding:20px 12px; background:white; border:1px solid var(--border); border-radius:15px; box-shadow:var(--shadow); }
+    nav strong { display:block; color:var(--navy2); font-size:13px; padding:0 11px 10px; }
+    nav a { display:block; padding:8px 11px; border-radius:8px; color:#53637b; font-size:13px; }
+    nav a:hover,nav a:focus-visible { background:var(--lightblue); color:var(--blue); }
+    main { min-width:0; }
+    section { scroll-margin-top:24px; background:var(--paper); border:1px solid var(--border); border-radius:18px; margin-top:28px; padding:32px; box-shadow:var(--shadow); }
+    h2 { font-size:23px; color:var(--navy); letter-spacing:-.035em; line-height:1.4; margin:0 0 19px; }
+    h2 .num { font-size:13px; color:var(--blue); margin-right:9px; font-weight:800; vertical-align:middle; }
+    h3 { font-size:17px; margin:25px 0 12px; color:#243a60; }
+    p { margin:10px 0 16px; }
+    .lead { font-size:18px; font-weight:650; color:#223452; }
+    .highlight { color:var(--blue); font-weight:800; }
+    .callout { padding:17px 19px; border-left:4px solid var(--blue); background:#edf3ff; border-radius:0 11px 11px 0; margin:19px 0; }
+    .callout.orange { background:#fff6e8; border-color:var(--orange); }
+    .callout.green { background:#ebf8f3; border-color:var(--green); }
+    .callout strong { color:var(--navy); }
+    .two { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:15px 0; }
+    .mini { border:1px solid var(--border); border-radius:12px; padding:17px; background:#fcfdff; }
+    .mini h3 { margin:0 0 8px; }
+    .mini p { margin:0; font-size:14px; color:#526079; }
+    .figure { padding:18px; background:#fafcff; border:1px solid var(--border); border-radius:13px; margin:16px 0; text-align:center; }
+    .figure svg { display:block; width:100%; max-width:650px; height:auto; margin:auto; }
+    figcaption,.caption { margin-top:10px; font-size:12px; color:#65748a; text-align:center; }
+    .process { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:11px; margin:22px 0; }
+    .step { position:relative; border-radius:12px; padding:16px 12px; background:#eef3fb; border:1px solid #d8e4f4; text-align:center; }
+    .step b { display:block; font-size:13px; color:#163e82; margin-bottom:6px; }
+    .step span { display:block; font-size:12px; color:#516278; }
+    .step:not(:last-child)::after { content:"→"; position:absolute; right:-16px; top:40%; font-size:19px; color:#3265d6; z-index:1; font-weight:bold; }
+    .formula { background:#f1f5fc; border:1px solid #cfdbf0; border-radius:12px; text-align:center; padding:18px 15px; margin:16px 0; font-family:Georgia, "Times New Roman",serif; font-size:26px; font-weight:700; color:#173d7b; }
+    .formula small { display:block; font-family:inherit; font-size:12px; margin-top:8px; color:#64748b; font-weight:normal; }
+    .fraction { display:inline-flex; vertical-align:middle; flex-direction:column; text-align:center; line-height:1.35; font-size:.95em; padding:0 5px; }
+    .fraction .top { display:block; padding:0 7px 3px; border-bottom:2px solid currentColor; }
+    .fraction .bottom { display:block; padding:3px 7px 0; }
+    .defs { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
+    .defs div { border-radius:8px; padding:10px 13px; background:#f8fafc; font-size:14px; }
+    .defs b { color:#1b477e; }
+    .speed { margin:15px 0; }
+    .speed-line { display:flex; gap:12px; align-items:center; margin:12px 0; }
+    .speed-line .name { width:120px; flex-shrink:0; font-size:13px; color:#334155; }
+    .bar-bg { flex:1; background:#ebeff5; height:22px; border-radius:6px; overflow:hidden; }
+    .bar { height:100%; border-radius:6px; }
+    .speed-line .val { width:85px; flex-shrink:0; text-align:right; font-size:13px; font-variant-numeric:tabular-nums; font-weight:700; }
+    .controls { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; margin:16px 0; }
+    .control { min-width:0; }
+    label { display:block; color:#374862; font-size:13px; font-weight:700; margin-bottom:5px; }
+    select,input[type="number"] { background:white; width:100%; border-radius:8px; border:1px solid #cbd5e1; color:#17263d; padding:9px 11px; outline-color:var(--blue); }
+    .result { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:15px 0 5px; }
+    .result > div { border-radius:12px; background:#f1f6ff; padding:15px 18px; }
+    .result small { display:block; color:#556781; font-size:12px; }
+    .result b { display:block; font-size:24px; color:#1b509e; font-variant-numeric:tabular-nums; }
+    .data-table { width:100%; border-collapse:collapse; font-size:14px; }
+    .data-table th,.data-table td { padding:11px 13px; text-align:left; border-bottom:1px solid var(--border); }
+    .data-table th { background:#f2f6fb; color:#213b66; }
+    .table-scroll { overflow-x:auto; border:1px solid var(--border); border-radius:11px; }
+    .table-scroll table { min-width:510px; }
+    .quiz { margin:14px 0; padding:20px; border:1px solid #d8e2ef; border-radius:13px; background:#fbfdff; }
+    .quiz h3 { margin:0 0 13px; }
+    .quiz .options { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+    .quiz button { text-align:left; border:1px solid #d8e1ec; background:white; color:#273c5a; border-radius:9px; padding:12px 13px; }
+    .quiz button:hover { border-color:#4a76d4; background:#f0f5ff; }
+    .quiz button:focus-visible { outline:3px solid #89b1f8; }
+    .feedback { margin-top:13px; border-radius:9px; padding:12px 14px; font-size:14px; display:none; }
+    .feedback.show { display:block; }
+    .feedback.correct { background:#e8f7ee; color:#075d3e; }
+    .feedback.wrong { background:#fff1ed; color:#a14435; }
+    .recap { background:#fff9ed; border:1px solid #f0dfb9; }
+    .recap h2 { color:#74480a; }
+    .toolbar { display:flex; justify-content:flex-end; margin:0 0 14px; }
+    .toolbar button { border:1px solid #cbd5e1; border-radius:9px; background:white; padding:8px 13px; color:#243652; font-size:13px; }
+    .muted { color:var(--muted); font-size:14px; }
+    footer { text-align:center; padding:32px 20px; color:#64748b; font-size:12px; }
+    @media(max-width:820px) { .layout { display:block; padding:0 14px 40px; } nav { position:static; margin-top:16px; display:flex; gap:4px; flex-wrap:wrap; padding:12px; } nav strong { width:100%; padding-bottom:2px; } nav a { font-size:12px; padding:5px 8px; } section { padding:23px 18px; margin-top:16px; } .head-inner { padding:40px 18px; } .process { grid-template-columns:repeat(2,1fr); } .step:nth-child(2)::after { display:none; } .two { grid-template-columns:1fr; } }
+    @media(max-width:530px) { .process { grid-template-columns:1fr; } .step::after { display:none !important; } .controls { grid-template-columns:1fr 1fr; } .control:last-child { grid-column:1/-1; } .result { grid-template-columns:1fr 1fr; } .result b { font-size:19px; } .quiz .options { grid-template-columns:1fr; } .defs { grid-template-columns:1fr; } .speed-line .name { width:92px; } .speed-line .val { width:65px; } }
+    @media print { @page { margin:14mm; } body { background:white; } header { color:#16233b; background:white; border-bottom:2px solid #16233b; } header p,.head-meta span { color:#445574; } .head-meta span { border:1px solid #ddd; } .layout { display:block; padding:0; } nav,.toolbar,.quiz button { display:none; } section { break-inside:avoid; box-shadow:none; border-radius:0; padding:18px 0; border:0; border-bottom:1px solid #ddd; margin:0; } h2 { break-after:avoid; } .quiz .feedback { display:block !important; color:#243652; background:#f5f5f5; } }
+  </style>
+</head>
+<body>
+<header>
+  <div class="head-inner">
+    <span class="eyebrow">승강기기사 · 전기기초</span>
+    <h1>3상 유도전동기<br>원리부터 계산문제까지</h1>
+    <p>전기 용어가 낯선 학습자를 위한 쉬운 설명과 시험 대비 핵심 공식 정리</p>
+    <div class="head-meta"><span>① 구조와 작동 원리</span><span>② 동기속도·슬립</span><span>③ 승강기 적용</span><span>④ 연습문제</span></div>
+  </div>
+</header>
+<div class="layout">
+  <nav aria-label="학습 목차">
+    <strong>학습 목차</strong>
+    <a href="#intro">01. 3상 유도전동기란?</a>
+    <a href="#structure">02. 고정자와 회전자</a>
+    <a href="#three-phase">03. 왜 3상일까?</a>
+    <a href="#induction">04. 유도의 의미</a>
+    <a href="#speed">05. 동기속도</a>
+    <a href="#slip">06. 슬립(미끄럼)</a>
+    <a href="#calculator">07. 계산 실습</a>
+    <a href="#elevator">08. 승강기 적용</a>
+    <a href="#summary">09. 핵심 암기</a>
+    <a href="#quiz">10. 연습문제</a>
+  </nav>
+  <main>
+    <section id="intro">
+      <div class="toolbar"><button type="button" onclick="window.print()">⎙ 인쇄 / PDF로 저장</button></div>
+      <h2><span class="num">01</span>3상 유도전동기란?</h2>
+      <p class="lead">3개의 교류 전원을 이용해 <span class="highlight">회전하는 자기장</span>을 만들고, 그 자기장으로 회전자를 돌리는 전동기입니다.</p>
+      <div class="callout"><strong>한 줄 암기</strong><br>3상 교류 → 회전자계 발생 → 회전자에 전류 유도 → 회전력 발생</div>
+      <p>여기서 <strong>전동기</strong>는 전기에너지를 기계적인 회전운동으로 바꾸는 장치입니다. 승강기에 사용되는 전동기 중 하나이며, 모든 승강기 권상기가 유도전동기를 쓰는 것은 아닙니다.</p>
+    </section>
+
+    <section id="structure">
+      <h2><span class="num">02</span>고정자와 회전자</h2>
+      <figure class="figure">
+        <svg viewBox="0 0 640 310" role="img" aria-label="고정자 링 안에 회전자가 있는 3상 유도전동기 단면 개념도">
+          <defs>
+            <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0 0L7 3L0 6Z" fill="#3265d6"/></marker>
+          </defs>
+          <circle cx="265" cy="148" r="113" fill="#e6edf7" stroke="#5e7598" stroke-width="25"/>
+          <circle cx="265" cy="148" r="76" fill="#f9fafc" stroke="#bfd0e3" stroke-width="4"/>
+          <circle cx="265" cy="148" r="60" fill="#f4a957" stroke="#c77b23" stroke-width="5"/>
+          <g fill="#b46b17"> 
+            <circle cx="265" cy="101" r="6"/><circle cx="306" cy="124" r="6"/><circle cx="306" cy="172" r="6"/><circle cx="265" cy="195" r="6"/><circle cx="224" cy="172" r="6"/><circle cx="224" cy="124" r="6"/>
+          </g>
+          <circle cx="265" cy="148" r="16" fill="#fff9e7" stroke="#875f2c" stroke-width="4"/>
+          <g fill="#3265d6" stroke="white" stroke-width="2">
+            <rect x="254" y="26" width="22" height="35" rx="7"/><rect x="254" y="235" width="22" height="35" rx="7"/>
+            <rect x="146" y="137" width="35" height="22" rx="7"/><rect x="348" y="137" width="35" height="22" rx="7"/>
+            <rect x="179" y="59" width="27" height="25" rx="7" transform="rotate(-45 192 71)"/>
+            <rect x="327" y="211" width="27" height="25" rx="7" transform="rotate(-45 340 224)"/>
+            <rect x="327" y="59" width="27" height="25" rx="7" transform="rotate(45 340 71)"/>
+            <rect x="179" y="211" width="27" height="25" rx="7" transform="rotate(45 192 224)"/>
+          </g>
+          <path d="M310 95 A55 55 0 0 1 319 186" fill="none" stroke="#3265d6" stroke-width="4" marker-end="url(#arrow)"/>
+          <path d="M390 70L470 46H608" fill="none" stroke="#7188a7" stroke-width="2"/>
+          <text x="481" y="40" font-size="17" font-weight="700" fill="#22385e">고정자 (Stator)</text>
+          <text x="481" y="61" font-size="12" fill="#63758d">3상 코일로 자기장 생성</text>
+          <path d="M307 180L465 207H608" fill="none" stroke="#7188a7" stroke-width="2"/>
+          <text x="481" y="202" font-size="17" font-weight="700" fill="#a65e10">회전자 (Rotor)</text>
+          <text x="481" y="224" font-size="12" fill="#63758d">유도전류와 토크로 회전</text>
+          <text x="265" y="296" text-anchor="middle" font-size="12" fill="#63758d">단순화한 단면 개념도 · 실제 구조와 다를 수 있음</text>
+        </svg>
+      </figure>
+      <div class="two">
+        <div class="mini"><h3>고정자 (Stator)</h3><p>모터의 <strong>바깥쪽에 고정된 부분</strong>. 3상 교류를 공급하면 내부에 회전하는 자기장(회전자계)을 만듭니다.</p></div>
+        <div class="mini"><h3>회전자 (Rotor)</h3><p>모터의 <strong>안쪽에서 실제로 도는 부분</strong>. 고정자의 자기장에 의해 전류가 유도되고 회전력이 생깁니다.</p></div>
+      </div>
+      <p class="muted">용어 주의: ‘회전자(Rotor)’와 ‘회전자계(회전하는 자기장)’는 서로 다릅니다.</p>
+    </section>
+
+    <section id="three-phase">
+      <h2><span class="num">03</span>왜 ‘3상’이라고 부를까?</h2>
+      <p>3상이란 <strong>서로 120°의 위상차가 있는 세 개의 교류</strong>를 뜻합니다. 흔히 R상·S상·T상으로 부릅니다.</p>
+      <figure class="figure">
+        <svg id="wave-svg" viewBox="0 0 640 260" role="img" aria-label="120도 위상차가 있는 R S T 삼상 교류 파형">
+          <line x1="48" y1="125" x2="618" y2="125" stroke="#93a5bc" stroke-width="1.5"/>
+          <line x1="48" y1="24" x2="48" y2="228" stroke="#93a5bc" stroke-width="1.5"/>
+          <text x="52" y="18" font-size="12" fill="#64748b">전압</text><text x="575" y="245" font-size="12" fill="#64748b">시간 →</text>
+          <path id="wave-r" fill="none" stroke="#e05252" stroke-width="3"/>
+          <path id="wave-s" fill="none" stroke="#14957f" stroke-width="3"/>
+          <path id="wave-t" fill="none" stroke="#376fd5" stroke-width="3"/>
+          <g font-size="12" font-weight="700"><text x="200" y="19" fill="#d74e4e">R상</text><text x="290" y="19" fill="#148875">S상</text><text x="380" y="19" fill="#376fd5">T상</text></g>
+        </svg>
+        <figcaption>파형이 서로 1/3주기씩 어긋나 있으며, 고정자 코일과 함께 회전자계를 형성합니다.</figcaption>
+      </figure>
+      <div class="callout"><strong>핵심 이해</strong><br>고정자에 배치된 3상 코일에 이 교류를 흘리면, 자기장의 방향이 시간에 따라 바뀌면서 <strong>회전하는 자기장</strong>이 만들어집니다.</div>
+    </section>
+
+    <section id="induction">
+      <h2><span class="num">04</span>‘유도’라는 말의 의미</h2>
+      <p><strong>전자기 유도</strong>는 자기선속이 변할 때 전압이 발생하는 현상입니다. 회전자의 도체는 고정자의 회전자계와 상대적으로 움직이므로 전압과 전류가 유도될 수 있습니다.</p>
+      <div class="process">
+        <div class="step"><b>① 3상 전원</b><span>고정자 코일에 교류 공급</span></div>
+        <div class="step"><b>② 회전자계</b><span>회전하는 자기장 발생</span></div>
+        <div class="step"><b>③ 전류 유도</b><span>회전자 도체에 전류 발생</span></div>
+        <div class="step"><b>④ 토크 발생</b><span>회전자가 회전함</span></div>
+      </div>
+      <div class="callout orange"><strong>왜 회전자는 자기장보다 조금 느려야 할까?</strong><br>같은 속도로 돌면 회전자와 자기장 사이의 상대적인 움직임이 사라져 유도전압·유도전류가 생기지 않고, 이상적인 정상 상태에서는 토크도 발생하지 않습니다.</div>
+    </section>
+
+    <section id="speed">
+      <h2><span class="num">05</span>동기속도 (Synchronous Speed)</h2>
+      <p><strong>동기속도</strong>는 실제 회전자의 속도가 아니라, <strong>고정자가 만든 회전자계의 회전속도</strong>입니다.</p>
+      <div class="formula" aria-label="동기속도 엔 에스 는 120 곱하기 주파수 에프 나누기 극수 피">N<sub>s</sub> = <span class="fraction"><span class="top">120 × f</span><span class="bottom">P</span></span> <small>단위: rpm (분당 회전수)</small></div>
+      <div class="defs"><div><b>N<sub>s</sub></b> : 동기속도 (rpm)</div><div><b>f</b> : 전원 주파수 (Hz)</div><div><b>P</b> : 전동기 극수 (2, 4, 6, 8…)</div></div>
+      <h3>계산 예제</h3>
+      <p>60Hz, 4극인 전동기의 동기속도는?</p>
+      <div class="formula">N<sub>s</sub> = <span class="fraction"><span class="top">120 × 60</span><span class="bottom">4</span></span> = 1,800 rpm</div>
+      <div class="callout green"><strong>시험 포인트</strong> : 주파수가 커지면 동기속도는 증가하고, 극수가 많아지면 동기속도는 감소합니다.</div>
+    </section>
+
+    <section id="slip">
+      <h2><span class="num">06</span>슬립(Slip, 미끄럼)이란?</h2>
+      <p>슬립은 <strong>동기속도와 회전자의 실제 회전속도가 얼마나 차이 나는지</strong>를 나타내는 비율입니다. 정상적인 유도전동기 전동 운전에서는 회전자 속도가 동기속도보다 약간 느립니다.</p>
+      <div class="formula" aria-label="슬립 퍼센트는 동기속도 빼기 실제속도 나누기 동기속도 곱하기 100">s(%) = <span class="fraction"><span class="top">N<sub>s</sub> − N</span><span class="bottom">N<sub>s</sub></span></span> × 100</div>
+      <div class="defs"><div><b>s</b> : 슬립(%)</div><div><b>N<sub>s</sub></b> : 동기속도 (rpm)</div><div><b>N</b> : 실제 회전자 속도 (rpm)</div></div>
+      <h3>계산 예제</h3>
+      <p>동기속도 1,800rpm, 실제 회전속도 1,740rpm이면?</p>
+      <div class="speed">
+        <div class="speed-line"><span class="name">동기속도</span><div class="bar-bg"><div class="bar" style="background:#3972d4;width:100%"></div></div><span class="val">1,800rpm</span></div>
+        <div class="speed-line"><span class="name">실제 회전속도</span><div class="bar-bg"><div class="bar" style="background:#14957f;width:96.6667%"></div></div><span class="val">1,740rpm</span></div>
+      </div>
+      <div class="formula">s = <span class="fraction"><span class="top">1,800 − 1,740</span><span class="bottom">1,800</span></span> × 100 ≈ 3.33%</div>
+      <div class="callout orange"><strong>헷갈림 주의</strong> : ‘슬립’은 로프와 시브 사이의 미끄럼을 말하는 것이 아닙니다. 여기서는 <strong>자기장과 회전자 사이의 속도 차이</strong>를 뜻합니다.</div>
+    </section>
+
+    <section id="calculator">
+      <h2><span class="num">07</span>직접 계산해 보기</h2>
+      <p>주파수·극수·회전자 속도를 바꿔보면 동기속도와 슬립이 자동 계산됩니다.</p>
+      <div class="controls">
+        <div class="control"><label for="freq">전원 주파수 f (Hz)</label><input type="number" id="freq" min="1" max="500" step="1" value="60"></div>
+        <div class="control"><label for="poles">극수 P</label><select id="poles"><option value="2">2극</option><option value="4" selected>4극</option><option value="6">6극</option><option value="8">8극</option><option value="10">10극</option><option value="12">12극</option></select></div>
+        <div class="control"><label for="rotor">회전자 속도 N (rpm)</label><input type="number" id="rotor" min="0" step="1" value="1740"></div>
+      </div>
+      <div class="result" aria-live="polite"><div><small>계산된 동기속도</small><b id="result-ns">1,800 rpm</b></div><div><small>계산된 슬립</small><b id="result-slip">3.33%</b></div></div>
+      <p id="calc-note" class="muted" aria-live="polite">전동 운전에서 0% &lt; 슬립 &lt; 100% 입니다.</p>
+      <p class="muted">참고: 회전자 속도가 동기속도보다 크면 계산상 슬립은 음수가 되며, 이 경우는 통상적인 유도전동기 구동 상태가 아닙니다(발전 운전 영역 등).</p>
+    </section>
+
+    <section id="elevator">
+      <h2><span class="num">08</span>승강기에서는 어떻게 활용할까?</h2>
+      <p>유도전동기를 적용한 권상식 승강기에서는, 전동기가 권상기를 구동하여 시브를 회전시키고 로프를 움직이게 합니다.</p>
+      <div class="process">
+        <div class="step"><b>① 제어반/인버터</b><span>전동기의 주파수·전압 등을 제어</span></div>
+        <div class="step"><b>② 전동기</b><span>회전속도 및 토크 발생</span></div>
+        <div class="step"><b>③ 권상기 시브</b><span>회전하면서 로프 구동</span></div>
+        <div class="step"><b>④ 승강기 카</b><span>상승 또는 하강</span></div>
+      </div>
+      <p>주파수를 변경하면 회전자계의 동기속도가 달라지므로 속도 제어에 활용할 수 있습니다. 다만 <strong>실제 모터 속도는 부하와 슬립, 제어 방식에도 영향을 받습니다.</strong></p>
+      <div class="callout"><strong>알아둘 점</strong><br>현재의 기어리스 승강기에는 <strong>영구자석 동기전동기(PMSM)</strong>가 사용되는 경우도 많습니다. 유도전동기와 동기전동기는 원리가 다르므로 시험에서 구별해야 합니다.</div>
+    </section>
+
+    <section id="summary" class="recap">
+      <h2><span class="num">09</span>시험 직전 핵심 암기표</h2>
+      <div class="table-scroll"><table class="data-table"><thead><tr><th>용어</th><th>의미 / 암기 포인트</th></tr></thead><tbody>
+        <tr><td><strong>3상</strong></td><td>120° 위상차를 갖는 3개의 교류</td></tr>
+        <tr><td><strong>고정자</strong></td><td>회전자계를 만드는 부분</td></tr>
+        <tr><td><strong>회전자</strong></td><td>유도전류에 의해 회전력을 얻는 부분</td></tr>
+        <tr><td><strong>회전자계</strong></td><td>공간적으로 회전하는 자기장</td></tr>
+        <tr><td><strong>동기속도</strong></td><td>N<sub>s</sub> = 120f / P</td></tr>
+        <tr><td><strong>슬립(%)</strong></td><td>(N<sub>s</sub> − N) / N<sub>s</sub> × 100</td></tr>
+        <tr><td><strong>주파수 증가</strong></td><td>동기속도 증가 (극수 일정)</td></tr>
+        <tr><td><strong>극수 증가</strong></td><td>동기속도 감소 (주파수 일정)</td></tr>
+      </tbody></table></div>
+      <h3>마지막 한 문장</h3>
+      <p><strong>“3상 교류는 회전자계를 만들고, 유도전동기의 회전자는 그 자기장보다 약간 느리게 돌아야 토크가 생긴다.”</strong></p>
+    </section>
+
+    <section id="quiz">
+      <h2><span class="num">10</span>연습문제</h2>
+      <div class="quiz" data-answer="2"><h3>문제 1. 60Hz, 6극인 3상 유도전동기의 동기속도는?</h3><div class="options"><button type="button" data-choice="0">① 600 rpm</button><button type="button" data-choice="1">② 900 rpm</button><button type="button" data-choice="2">③ 1,200 rpm</button><button type="button" data-choice="3">④ 1,800 rpm</button></div><div class="feedback" role="status" data-explanation="Ns = (120 × 60) / 6 = 1,200rpm. 정답은 ③입니다."></div></div>
+      <div class="quiz" data-answer="1"><h3>문제 2. 동기속도 1,500rpm, 회전자 속도 1,440rpm일 때 슬립은?</h3><div class="options"><button type="button" data-choice="0">① 2%</button><button type="button" data-choice="1">② 4%</button><button type="button" data-choice="2">③ 6%</button><button type="button" data-choice="3">④ 10%</button></div><div class="feedback" role="status" data-explanation="s = (1,500 − 1,440) / 1,500 × 100 = 4%. 정답은 ②입니다."></div></div>
+      <div class="quiz" data-answer="3"><h3>문제 3. 3상 유도전동기에서 올바른 설명은?</h3><div class="options"><button type="button" data-choice="0">① 회전자는 정상 전동 운전에서 항상 동기속도보다 빠르다.</button><button type="button" data-choice="1">② 극수가 증가하면 동기속도도 증가한다.</button><button type="button" data-choice="2">③ 3상 교류는 90° 위상차를 갖는다.</button><button type="button" data-choice="3">④ 고정자에서 회전자계가 발생한다.</button></div><div class="feedback" role="status" data-explanation="고정자에 공급되는 3상 교류가 회전자계를 형성합니다. 정답은 ④입니다."></div></div>
+      <p class="muted">이 문서의 문제는 학습용으로 만든 기출 <strong>유형</strong> 문제이며, 실제 기출문제를 그대로 인용한 것은 아닙니다.</p>
+    </section>
+  </main>
+</div>
+<footer>승강기기사 학습 노트 · 3상 유도전동기 · 외부 이미지·서버 없이 실행되는 단일 HTML 파일</footer>
+<script>
+(function () {
+  // 3상 파형을 SVG path로 그리기
+  const svgWidth = 568, xStart = 48, midY = 125, amplitude = 73;
+  [['wave-r',0],['wave-s',-2*Math.PI/3],['wave-t',-4*Math.PI/3]].forEach(([id,phase]) => {
+    let d = '';
+    for(let i=0;i<=280;i++) {
+      const x = xStart + i/280*svgWidth;
+      const y = midY - amplitude*Math.sin(i/280*4*Math.PI + phase);
+      d += (i===0?'M':'L')+x.toFixed(2)+','+y.toFixed(2)+' ';
+    }
+    document.getElementById(id).setAttribute('d',d);
+  });
+  const freq = document.getElementById('freq'), poles = document.getElementById('poles'), rotor = document.getElementById('rotor');
+  const nsEl = document.getElementById('result-ns'), slipEl = document.getElementById('result-slip'), note = document.getElementById('calc-note');
+  function calc() {
+    const f = Number(freq.value), p = Number(poles.value), n = Number(rotor.value);
+    if (!Number.isFinite(f) || f <= 0 || !Number.isFinite(p) || p <= 0 || !Number.isFinite(n) || n < 0 || freq.value==='' || rotor.value==='') {
+      nsEl.textContent='—'; slipEl.textContent='—'; note.textContent='양수인 주파수와 0 이상의 회전자 속도를 입력하세요.'; return;
+    }
+    const ns = 120*f/p, s = (ns-n)/ns*100;
+    nsEl.textContent=ns.toLocaleString('ko-KR',{maximumFractionDigits:2})+' rpm';
+    slipEl.textContent=s.toLocaleString('ko-KR',{maximumFractionDigits:2})+'%';
+    note.textContent=n===ns?'슬립 0%: 이상적인 정상 상태에서는 유도토크가 발생하지 않습니다.':n>ns?'슬립 음수: 일반적인 전동 구동 범위를 벗어납니다.':n===0?'정지 상태: 슬립은 100%입니다.':'정상적인 전동 운전의 슬립 범위(0% 초과, 100% 미만)입니다.';
+  }
+  [freq,poles,rotor].forEach(el=>el.addEventListener('input',calc)); calc();
+  document.querySelectorAll('.quiz').forEach(quiz => {
+    quiz.querySelectorAll('button[data-choice]').forEach(btn => btn.addEventListener('click',()=> {
+      const good = btn.dataset.choice === quiz.dataset.answer;
+      const fb = quiz.querySelector('.feedback');
+      fb.className='feedback show '+(good?'correct':'wrong');
+      fb.textContent=(good?'✔ 정답입니다. ':'✘ 다시 확인해 보세요. ')+fb.dataset.explanation;
+      quiz.querySelectorAll('button').forEach(b=>{
+        b.setAttribute('aria-pressed',String(b===btn));
+        b.style.borderColor=b===btn?(good?'#0b855b':'#bc484a'):'#d8e1ec';
+      });
+    }));
+  });
+})();
+</script>
+</body>
+</html>

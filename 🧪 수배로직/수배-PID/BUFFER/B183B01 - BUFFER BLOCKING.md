@@ -55,4 +55,16 @@ EL_ECBUFBH = [$ round( {EL_EHP}-{P_TH}-{S_TH}-{B_TH}-{CAR_RB}-{B183AA_BH}-{FOOTI
 2500(승강로 PIT높이) - 213(플랫폼 높이) - 230(세이프티 높이) - 240(CAR RUN BY)  + 90(고속기종 여유치수)
 
 
+
 ## | AUTO_EL_ECWBUFBH : CWT BUFFER BLOCKING 높이
+
+
+
+
+## 05. BOLSTER 란?
+
+![[Pasted image 20261123164616.png]]
+
+![[Pasted image 20261123164631.png]]
+LAYOUT을 보면 이해가 쉽긴 한데...
+시브 2개가 수평으로 있는게 아니고 틀어져서 사선으로 있어서 탑빔에 불가해서 저렇게 한듯?
