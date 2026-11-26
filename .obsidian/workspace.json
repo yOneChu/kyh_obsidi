@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/03_내가개발한_시스템_정리/화면 UI LINK 정리.md",
+                "file": "🧪 수배로직/수배-PID/정합성검증/CAL_SHUTDOWN_DAY.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "화면 UI LINK 정리"
+              "title": "CAL_SHUTDOWN_DAY"
             }
           },
           {
@@ -49,7 +49,8 @@
               "title": "ETS (Emergency Terminal Stopping device)"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -83,7 +84,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "BUFF",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": true,
@@ -175,7 +176,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "🧪 수배로직/🟡 작업_진행중/03_내가개발한_시스템_정리/화면 UI LINK 정리.md",
+                "file": "기계공학_엘베/용어/ETS (Emergency Terminal Stopping device).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -213,12 +214,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1d1386bb0c0cdae1",
+  "active": "6a3fffbad106ba04",
   "lastOpenFiles": [
-    "🧪 수배로직/🟡 작업_진행중/03_내가개발한_시스템_정리/AI - 04773.md",
-    "🧪 수배로직/🟡 작업_진행중/03_내가개발한_시스템_정리/화면 UI LINK 정리.md",
-    "🧪 수배로직/🟡 작업_진행중/03_내가개발한_시스템_정리/문의 건.md",
+    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/08. 발표 대본.md",
+    "🧪 수배로직/수배-PID/정합성검증/CAL_SHUTDOWN_DAY.md",
+    "🧪 수배로직/수배-PID/E331A - CAR DOOR.md",
+    "기계공학_엘베/용어/ETS (Emergency Terminal Stopping device).md",
+    "image/ETS_정의.html",
+    "🧪 수배로직/🟡 작업_진행중/엘베_업무지식/MLB Knowledge.md",
     "🧪 수배로직/🟡 작업_진행중/09_로직업무/과제 업무 절차.md",
+    "🧪 수배로직/🟡 작업_진행중/03_내가개발한_시스템_정리/화면 UI LINK 정리.md",
+    "🧪 수배로직/🟡 작업_진행중/03_내가개발한_시스템_정리/AI - 04773.md",
+    "🧪 수배로직/🟡 작업_진행중/03_내가개발한_시스템_정리/문의 건.md",
     "🧪 수배로직/🟡 작업_진행중/IT_관련_개발건/영업사양 정보 메타정보.md",
     "🧪 수배로직/수배-PID/BUFFER/B183B01 - BUFFER BLOCKING.md",
     "🧪 수배로직/수배-PID/EL_PB183D01 - BUFFER FOOTING/B183D01 - BUFFER FOOTING.md",
@@ -245,21 +252,15 @@
     "image/elevator_rope_overbalance_study.html",
     "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/PLM bom 시뮬.md",
     "image/Pasted image 20261120132952.png",
-    "🧪 수배로직/🟡 작업_진행중/05_직무_COP/2026-BOM이상감지/08. 발표 대본.md",
-    "기계공학_엘베/용어/ETS (Emergency Terminal Stopping device).md",
     "🧪 수배로직/수배-PID/CAL-로직/CAL_ETS_SPD1.md",
     "기계공학_엘베/용어/SEISMIC ZONE (US).md",
     "🧪 수배로직/수배-PID/BUFFER/런 바이(RUN BY) 기준.md",
     "🧪 수배로직/🟡 작업_진행중/09_로직업무",
     "🧪 수배로직/🟡 작업_진행중/AI_작업현황/수배 로직 PID 분석 에이전트(제출완료).md",
     "🧪 수배로직/🟡 작업_진행중/AI_작업현황/자재현장 추적 (제출완료).md",
-    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/AI 에이전트 기반 설계 BOM 검증.md",
-    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/DB-명세서 - 쿼리 및 정리.md",
-    "🧪 수배로직/🟡 작업_진행중/AI_작업현황/PLM 데이터 분석 AI 에이전트(제출완료).md",
     "image/Pasted image 20261113144937.png",
     "image/Pasted image 20261109114417.png",
     "🧪 수배로직/🟡 작업_진행중/11_이클립스_사용법",
-    "기계공학_엘베/엘베 설치 사진",
-    "🧪 수배로직/수배-PID/B184A02 - SIDE SCREEN"
+    "기계공학_엘베/엘베 설치 사진"
   ]
 }
