@@ -16,3 +16,10 @@
 ```
 화면: extract/gongsa
 ```
+
+
+특성코드 조회 기능
+```
+/mlb/codeListView
+
+```
